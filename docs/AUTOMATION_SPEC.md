@@ -125,7 +125,54 @@ The recovery schedule must handle missed dispatch events. A run with no source c
 
 GitHub workflow-generated commits made with `GITHUB_TOKEN` do not normally trigger another workflow. Therefore, use the GitHub App token for the commit/merge event that must invoke the existing Pages workflow, or revise the workflow so generation and Pages deployment happen in the same run. This specification selects the App-token commit path to preserve the stated “commit to `main` publishes Pages” contract.
 
-## 7. Failure handling and corrections
+## 7. Historical backfill and replay
+
+The historical backfill is a separate, resumable workflow. It must not publish a mass import of old agenda items as if each were an accountability record.
+
+### Date range and source baseline
+
+- Read the official meeting inventory from the public-records repository's catalog/city-council-agendas/meetings.json, pinned to a commit SHA.
+- As of October 28, 2026, that structured inventory reaches back to **January 19, 2021**. The archive also has individual annotated-agenda manifests from at least **January 23, 2018**, but those holdings are not represented as a complete meeting inventory.
+- Set a configurable BACKFILL_START_DATE; default it to 2021-01-19 for the first complete pass over the structured meeting inventory. Allow the maintainer to set a later start, such as late 2024, if that is the chosen Council Watch accountability period. Allow extension into 2018–2020 after an inventory confirms what is available; do not treat those partial records as a complete series.
+- Record the selected start date, end date, inventory commit SHA, and run timestamp in every backfill report. A run must accept an explicit date range and a dry-run option.
+
+### Pass 1: Inventory and source completion
+
+1. Walk the selected meetings chronologically, including regular and special meetings; preserve meeting IDs and meeting types.
+2. Compare meeting records and linked agenda material with archive manifests. Reuse existing source records and checksums. Do not redownload or upload an unchanged source already represented in the archive.
+3. For missing material, retrieve official City agenda pages, packets, annotated agendas/minutes, and linked item reports using the daily workflow's host allowlist and validation rules.
+4. Write missing source records to the public-records repository through its configured review/auto-merge route. Maintain idempotency and resumable checkpoints; a rerun resumes safely and does not create duplicate archive items.
+5. Produce an inventory report with counts by year, meeting type, source type, present/missing/invalid state, and exact source IDs. A missing source is an exception, not evidence that no meeting or action occurred.
+
+### Pass 2: Accountability candidate discovery
+
+Scan agenda text, annotated agendas/minutes, staff reports, and other archived sources for explicit accountability markers, including phrases such as “report back,” “return to Council,” “provide an update,” “status report,” annual follow-up language, a named deadline, or a cited prior Council motion. Keep the phrase patterns configurable and versioned.
+
+Create a review bundle of candidate events and candidate links. Each candidate must include:
+
+- meeting ID, agenda item, date, title, source ID, and exact page/section locator;
+- the exact matched text and the rule that matched it;
+- any explicit deadline or reporting cadence captured from that text;
+- possible prior or follow-up item IDs and the evidence for each proposed link;
+- whether a recorded Council action, vote, or annotated minutes source has been found;
+- known gaps and a label that the relation is **unconfirmed** until reviewed.
+
+Use deterministic matching only: stable item IDs, explicit references to a prior motion or report, exact/repeated titles, and configurable date windows. A title or keyword resemblance alone can create a candidate, never a confirmed commitment or follow-up relation. Do not use an LLM or infer the meaning of meeting speech.
+
+The review bundle may be emitted as a downloadable workflow artifact or a draft PR, grouped by calendar year or another bounded batch. It must not auto-merge into published accountability records. A reviewer confirms, corrects, or rejects each proposed relationship and records the sources for that decision. After confirmation, write the accountability record to the human-reviewed data area; never mix it into data/generated/agenda-intake/.
+
+### Replay fixture: Restaurant Inspections
+
+Include a deterministic end-to-end historical fixture using:
+
+- July 30, 2024, Action Calendar Item 18: the auditor's recommended January 2025 report-back and the recorded Council motion changing the first check-back to December 2024;
+- December 10, 2024, Information Calendar Item 22: the first Restaurant Inspection Audit Status Report.
+
+The expected result is a candidate link between the July direction and December update, with the final December date taken from Council's recorded action rather than the auditor's original January recommendation. Preserve the December report's statuses as City-reported progress. Do not mark recommendations completed or verified unless a cited independent source establishes that.
+
+Test both the sources already represented in manifests and the missing December status-report manifest/source capture path. Running the fixture twice must create identical output and no duplicate records or uploads.
+
+## 8. Failure handling and corrections
 
 - A source-site outage or parse failure must never be interpreted as “no new records.” Record the run as failed or incomplete.
 - Do not delete a previously published Council Watch entry because a City listing temporarily omits it.
@@ -135,7 +182,7 @@ GitHub workflow-generated commits made with `GITHUB_TOKEN` do not normally trigg
 - Provide a documented rollback procedure: revert the generated-data commit on `main`; the Pages workflow then republishes the prior state. Do not erase source archive history as a rollback method.
 - Send a notification only for actionable exceptions or failed runs. Routine successful runs need no human response.
 
-## 8. Security and access
+## 9. Security and access
 
 - Grant each workflow only the permissions it needs, at job level where possible.
 - Keep IA credentials and the GitHub App private key in Actions secrets; never expose them to pull-request code from forks.
@@ -145,7 +192,7 @@ GitHub workflow-generated commits made with `GITHUB_TOKEN` do not normally trigg
 - Restrict the bot's changed paths to the records catalog/manifest and Council Watch `data/generated/agenda-intake/` directory. Fail the workflow if the bot modifies application code, workflow files, or human-authored editorial files.
 - Log source IDs, hashes, workflow run IDs, and commit SHAs. Do not log credentials.
 
-## 9. Required validation checks
+## 10. Required validation checks
 
 Before a generated PR can auto-merge, checks must verify:
 
@@ -158,10 +205,11 @@ Before a generated PR can auto-merge, checks must verify:
 7. The static site builds successfully and links resolve within the generated dataset.
 8. No secrets, local paths, or private repository URLs appear in generated output.
 
-## 10. Deliverables for implementation
+## 11. Deliverables for implementation
 
 Claude Code should produce:
 
+- a resumable historical backfill/replay command or workflow with configurable date bounds, dry-run, inventory report, and grouped review bundle;
 - Python package or scripts for discovery, parsing, validation, archive metadata, record generation, and run reporting;
 - explicit JSON Schema (or equivalent) for archive catalog rows and Council Watch records;
 - GitHub Actions workflows for the two stages, manual recovery, cross-repository dispatch, and auto-merge path;
@@ -171,18 +219,19 @@ Claude Code should produce:
 - integration instructions for GitHub App permissions, Actions secrets, branch protections/auto-merge, and the updated records-repository policy;
 - operator documentation describing run reports, exception notifications, recovery, rollback, and how to add a City page or document format.
 
-## 11. Acceptance criteria
+## 12. Acceptance criteria
 
 The build is complete when:
 
 - a scheduled run discovers a new official agenda record, validates and archives its source, updates the archive catalog, and creates the corresponding Council Watch entry;
 - the generated Council Watch update reaches `main` without a human approval for a routine, valid source record;
 - the commit to `main` invokes the existing Pages workflow and the resulting site displays the new record with its City and archive links;
-- an unchanged rerun produces no duplicate upload, record, PR, or commit;
+- an unchanged daily rerun produces no duplicate upload, record, PR, or commit;
+- the backfill replay fixture links July 30, 2024 Item 18 to December 10, 2024 Item 22 as an unconfirmed candidate with the December check-back date sourced to Council's recorded action;
 - a malformed document, unknown action, or unavailable City page cannot create a misleading public entry and is visible in the exception report;
 - the entire runtime completes without an AI service or AI-generated interpretation.
 
-## 12. Official GitHub references
+## 13. Official GitHub references
 
 - [GitHub Actions workflows and scheduled triggers](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows)
 - [Events that trigger workflows, including `GITHUB_TOKEN` behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
