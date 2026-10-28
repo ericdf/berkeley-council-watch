@@ -9,6 +9,8 @@
   candidates --archive PATH --start DATE --end DATE [--out DIR]
                             backfill Pass 2: write unconfirmed review bundles; fail on any quote that
                             is not on its cited pages
+  import-decisions --bundle FILE --decisions FILE --archive PATH
+                            turn review decisions on a candidate bundle into data/tracked/ records
   replay-check --archive PATH
                             the backfill acceptance fixture: July 30, 2024 Item 18 must link to
                             December 10, 2024 Item 22, with the deadline from Council's recorded action
@@ -19,7 +21,7 @@ import os
 import sys
 import tempfile
 
-from . import candidates, generate, links, site, tracked, validate
+from . import candidates, decisions, generate, links, site, tracked, validate
 
 
 def main(argv=None):
@@ -48,6 +50,11 @@ def main(argv=None):
     c.add_argument("--out", default="_backfill")
     c.add_argument("--allow-dirty", action="store_true")
     sub.add_parser("replay-check").add_argument("--archive", required=True)
+    imp = sub.add_parser("import-decisions")
+    imp.add_argument("--bundle", required=True)
+    imp.add_argument("--decisions", required=True)
+    imp.add_argument("--archive", required=True)
+    imp.add_argument("--tracked", default=tracked.TRACKED_DIR)
     a = p.parse_args(argv)
 
     if a.cmd == "generate":
@@ -94,6 +101,19 @@ def main(argv=None):
             print(x)
         print(f"{len(problems)} quote check failures")
         return 1 if problems else 0
+    if a.cmd == "import-decisions":
+        try:
+            added, undecided = decisions.run(a.bundle, a.decisions, a.archive, a.tracked)
+        except decisions.DecisionError as x:
+            print(x)
+            print("nothing written")
+            return 1
+        errors = tracked.validate(a.tracked)
+        for e in errors:
+            print(e)
+        print(f"{added} records added; {len(undecided)} candidates in the bundle have no decision yet; "
+              f"{len(errors)} validation errors")
+        return 1 if errors else 0
     if a.cmd == "replay-check":
         problems = candidates.replay_check(a.archive)
         for x in problems:
