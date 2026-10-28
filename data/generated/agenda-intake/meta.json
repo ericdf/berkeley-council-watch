@@ -1,0 +1,25 @@
+{
+ "counts": {
+  "archived_council_documents_without_catalog_meeting": 142,
+  "items": 35,
+  "meetings": 424,
+  "meetings_with_archived_documents": 270,
+  "meetings_with_indexed_items": 1
+ },
+ "dataset": "agenda-intake",
+ "exceptions": [],
+ "generator_version": 1,
+ "source": {
+  "archive_commit": "7a22d845c6f0f8476f21d19f0d261500be4333c7",
+  "archive_repository": "ericdf/berkeley-public-records",
+  "catalog_listing_sha256": "db90e2f6ecfcbf1b98b2b94a20809aa3c2e612392c2b0d1d332a5a875e6de364",
+  "catalog_retrieved": "2026-10-28",
+  "catalog_url": "https://berkeleyca.gov/your-government/city-council/city-council-agendas"
+ },
+ "status_vocabulary": [
+  "scheduled",
+  "source_archived",
+  "awaiting_meeting_record",
+  "action_recorded"
+ ]
+}

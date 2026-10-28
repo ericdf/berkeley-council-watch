@@ -64,7 +64,7 @@ The initial implementation should favor a small, auditable system. The technical
 
 ## Status
 
-This repository is being established. Its purpose and evidence standards are defined here; the data model and site implementation will be developed and reviewed incrementally.
+The first part of the site is built: agenda records for every City Council meeting the City lists, generated from the public-records archive (see [docs/DATA.md](docs/DATA.md)). Tracked commitments and follow-up will be added as reviewed records. GitHub Pages is not enabled yet.
 
 ## Corrections and contributions
 

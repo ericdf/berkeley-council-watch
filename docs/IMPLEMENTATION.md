@@ -30,7 +30,7 @@ Publish through GitHub Pages as a static site.
 - Make URLs work under the repository’s GitHub Pages base path. Do not assume the site is served from a domain root.
 - Avoid external services and third-party runtime scripts. Any later addition must have a documented purpose and privacy impact.
 
-The frontend framework and build tool are intentionally undecided. Choose a simple, actively maintained static build approach after inspecting the repository and documenting the choice. Avoid a framework or service whose main benefit is solving a problem the initial site does not have.
+The build is plain Python using only the standard library (`councilwatch/`, Python 3.11 or later). It has no framework and no third-party dependencies. A generator writes the dataset, and a renderer writes static HTML with relative links only, so pages work under any Pages base path and need no JavaScript. Commands and the dataset are described in [docs/DATA.md](DATA.md). Revisit this choice only when a documented requirement needs something the standard library cannot do.
 
 ## Conceptual data model
 

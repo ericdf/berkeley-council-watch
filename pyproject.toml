@@ -1,0 +1,6 @@
+[project]
+name = "councilwatch"
+version = "0.1.0"
+description = "Berkeley Council Watch: dataset generator and static site builder"
+requires-python = ">=3.11"
+dependencies = []
