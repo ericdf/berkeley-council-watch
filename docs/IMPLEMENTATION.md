@@ -6,7 +6,7 @@ This repository owns the public Berkeley Council Watch dataset, validation code,
 
 The public-records archive at [ericdf/berkeley-public-records](https://github.com/ericdf/berkeley-public-records) remains authoritative for source documents and their provenance. Tracker records should point to archive record IDs and exact locations. Do not copy archived source PDFs, captions, transcripts, or other blobs into this repository.
 
-This system does not import nonpublic data or depend on nonpublic sources. Public entries must be supported by public records and reviewed before publication.
+This system does not import nonpublic data or depend on nonpublic sources. Substantive tracker entries must be supported by public records and reviewed before publication. The limited deterministic agenda-intake lane may publish schema-validated official meeting and agenda metadata without human review, under [docs/AUTOMATION_SPEC.md](AUTOMATION_SPEC.md). It must not infer decisions, commitments, or outcomes.
 
 The [Berkeley Decision Project](https://ericdf.github.io/berkeley-decision-project/index.html) publishes analysis, positions, and arguments about systemic issues; its [Substack publication](https://berkeleydecisionproject.substack.com) distributes shorter updates and points readers to full analysis. Berkeley Council Watch presents attributed statements, decisions, evidence, and status. Link analysis to relevant tracker records, and link Substack posts to Council Watch when it tracks the matter.
 
@@ -20,11 +20,11 @@ When an analysis covers a tracked matter, link from the [Berkeley Decision Proje
 
 Publish through GitHub Pages as a static site.
 
-- Build pages from version-controlled, reviewed data and site code.
-- Do not introduce a server, database, login, write API, secret, or runtime dependency for the initial implementation.
+- Build pages from version-controlled data and site code. Review substantive tracker claims before publication. The narrowly scoped agenda-intake data may be generated and auto-merged under [docs/AUTOMATION_SPEC.md](AUTOMATION_SPEC.md).
+- Do not introduce a server, database, login, write API, site runtime secret, or external runtime dependency for the initial implementation. If the automated archive sync is enabled, keep any GitHub App credential in Actions secrets and out of the build and published site. Store Internet Archive credentials only in the public-records repository's Actions secrets.
 - The published site must work using static files. Client-side search or filtering may be added if it does not require a server.
 - Keep source data available in machine-readable form as part of the repository or generated site output.
-- Build and validate in GitHub Actions. Once deployment is enabled, the production site deploys from the default branch after checks pass, so merging a pull request publishes it. Review every change to data or pages to the publication standard before it merges.
+- Build and validate in GitHub Actions. Once deployment is enabled, a commit to the default branch publishes through the existing Pages workflow. Substantive changes to tracker data or pages require review. Only schema-validated agenda-intake metadata within the configured file allowlist may auto-merge after required checks pass.
 - Enabling GitHub Pages is a separate, deliberate step taken by the maintainer, not a side effect of the pull request that adds the build or deploy workflow.
 - Do not deploy pull-request previews to a public location unless that behavior is deliberately configured and documented.
 - Make URLs work under the repository’s GitHub Pages base path. Do not assume the site is served from a domain root.
@@ -165,7 +165,7 @@ Provide automated checks for:
 
 External links can change or be temporarily unavailable. Report link-check results clearly; do not make a temporary failure rewrite or erase the archived source reference.
 
-For every data change, reviewers should be able to see what evidence was added, what status changed, and why. Public data changes should go through a pull request or an equivalently reviewable Git change.
+For every data change, the Git history must show what evidence was added, what status changed, and why. Substantive public data changes require a reviewable pull request. The agenda-intake workflow may auto-merge only the narrow, schema-validated changes defined in [docs/AUTOMATION_SPEC.md](AUTOMATION_SPEC.md).
 
 ## Privacy, security, and licensing
 
