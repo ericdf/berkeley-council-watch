@@ -144,7 +144,7 @@ Begin with text-based, Git-tracked records such as JSON or YAML, grouped by reco
 
 Generate overview, matter-detail, audit/recommendation, and contract timeline pages from the same records. Pages should show source links next to factual claims, display the last-reviewed date, and preserve context when filtering or searching. Avoid unexplained composite scores in the accountability site.
 
-Every published page must include a visible, consistent attribution notice in its shared footer: “Original content by Berkeley Council Watch is licensed under CC BY 4.0. Please credit Berkeley Council Watch, link to this page and the license, and indicate changes.” Link CC BY 4.0 to https://creativecommons.org/licenses/by/4.0/. This notice applies to original project-authored material; public records, source documents, quoted or excerpted third-party material, and items marked with separate terms remain subject to their own applicable terms.
+Every published page must include a visible, consistent attribution notice in its shared footer: “Original written content by Berkeley Council Watch is licensed under CC BY 4.0. Please credit Berkeley Council Watch, link to this page and the license, and indicate changes.” Link CC BY 4.0 to https://creativecommons.org/licenses/by/4.0/. This notice applies to original written content and original data selection or arrangement only. The site's software code is licensed under MIT. Public records, source documents, quoted or excerpted third-party material, and items marked with separate terms remain subject to their own applicable terms.
 
 Keep the rendered site reproducible from a checkout of the repository. Generated output should not become a second place to edit the data.
 
@@ -169,7 +169,7 @@ The repository and deployed site are public. Commit only material that is intend
 
 Do not add secrets or credentials to code, data, build logs, GitHub Actions artifacts, or site output. A static public site should not need secrets to build or serve its content.
 
-Original project-authored text, code, and compilations in this repository are licensed under CC BY 4.0. Official public records, source documents, quoted or excerpted third-party material, and items with separate terms are not relicensed by this notice; retain their citations and follow their applicable terms. Make the licensed scope clear wherever those materials appear alongside project-authored content.
+Software code in this repository is licensed under the MIT License. Original written content and original data selection or arrangement are licensed under CC BY 4.0 as described in [CONTENT_LICENSE.md](../CONTENT_LICENSE.md). These notices apply only to rights Berkeley Council Watch has authority to license. Official public records, source documents, quoted or excerpted third-party material, and items with separate terms are not relicensed by these notices; retain citations and follow their applicable terms.
 
 ## Initial implementation sequence
 
