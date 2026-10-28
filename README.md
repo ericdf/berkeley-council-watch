@@ -70,4 +70,4 @@ This repository is being established. Its purpose and evidence standards are def
 
 Use GitHub issues to report missing records, broken links, factual corrections, or questions about methodology. Proposed data or code changes should include the public source and exact locator needed to review them.
 
-See [LICENSE](LICENSE) for the license applying to this repository’s contributions.
+Original project material is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), subject to the limits described in [LICENSE](LICENSE).
