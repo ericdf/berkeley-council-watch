@@ -30,7 +30,7 @@ Financial figures retain their meaning. Contract ceilings, appropriations, amend
 
 Berkeley Council Watch is the accountability tracker. Its job is to put public commitments and follow-through back in view, with links to the underlying record.
 
-The policy site is where we publish analysis, position papers, and arguments about systemic problems that may emerge across tracked matters. It may cite Berkeley Council Watch records, while the tracker presents attributed facts, status, and evidence.
+The [Berkeley Decision Project](https://ericdf.github.io/berkeley-decision-project/index.html) publishes full analysis, position papers, and arguments about systemic problems that may emerge across tracked matters. Its [Substack publication](https://berkeleydecisionproject.substack.com) carries shorter updates and directs readers to the full analysis. Berkeley Council Watch presents attributed facts, status, and evidence; analysis should link to relevant tracker records, and Substack posts should link to Council Watch when it tracks the matter.
 
 The tracker publishes material supported by public records and reviewed for public release.
 
