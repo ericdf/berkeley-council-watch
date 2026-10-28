@@ -32,7 +32,7 @@ Berkeley Council Watch is the accountability tracker. Its job is to put public c
 
 The policy site is where we publish analysis, position papers, and arguments about systemic problems that may emerge across tracked matters. It may cite Berkeley Council Watch records, while the tracker presents attributed facts, status, and evidence.
 
-The private Berkeley Council Scorecards repository is separate. This public repository does not read from it or publish its contents automatically. Any material developed privately must go through deliberate public review and be supported by public sources before appearing here.
+The tracker publishes material supported by public records and reviewed for public release.
 
 ## Source records
 
