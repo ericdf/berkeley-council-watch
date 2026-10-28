@@ -24,7 +24,8 @@ Publish through GitHub Pages as a static site.
 - Do not introduce a server, database, login, write API, secret, or runtime dependency for the initial implementation.
 - The published site must work using static files. Client-side search or filtering may be added if it does not require a server.
 - Keep source data available in machine-readable form as part of the repository or generated site output.
-- Build and validate in GitHub Actions. Deploy the production site from the default branch after checks pass.
+- Build and validate in GitHub Actions. Once deployment is enabled, the production site deploys from the default branch after checks pass, so merging a pull request publishes it. Review every change to data or pages to the publication standard before it merges.
+- Enabling GitHub Pages is a separate, deliberate step taken by the maintainer, not a side effect of the pull request that adds the build or deploy workflow.
 - Do not deploy pull-request previews to a public location unless that behavior is deliberately configured and documented.
 - Make URLs work under the repository’s GitHub Pages base path. Do not assume the site is served from a domain root.
 - Avoid external services and third-party runtime scripts. Any later addition must have a documented purpose and privacy impact.
@@ -128,13 +129,16 @@ Every current status must have an as-of date and supporting evidence. Keep statu
 
 At minimum, the model should distinguish:
 
-- Not yet due.
+- Not yet due: a stated due date has not passed.
+- No due date stated.
 - In progress, as reported.
 - Delayed, with the stated revised date when available.
 - Reported complete.
 - Completion verified by cited evidence.
 - Cancelled, replaced, or superseded.
 - Unknown or no current public update located.
+
+A City statement that work is complete, such as a staff report, management response, or department update, supports “reported complete,” however authoritative its source. “Completion verified” requires evidence independent of that statement: for example, an auditor’s follow-up report, an executed contract or amendment, an adopted ordinance, resolution, or policy, or a published deliverable that can be inspected. Cite that evidence with the status.
 
 If a stated due date has passed and no completion evidence is recorded, the interface may say that the item is past its stated date and that completion has not been verified in the tracker as of a particular date. Do not state that the work was not done without evidence supporting that claim.
 
@@ -177,7 +181,8 @@ Software code in this repository is licensed under the MIT License. Original wri
 2. Define the smallest usable schemas and validate sample records.
 3. Create one end-to-end tracked matter with an official source, a specific commitment, a dated follow-up, and a clear evidence-based status.
 4. Build accessible overview and detail pages from those records.
-5. Add automated validation and GitHub Pages deployment.
-6. Review the public rendering, citations, status language, and base-path behavior before expanding the dataset.
+5. Add automated validation and a build that produces the site without deploying it.
+6. Review the built site’s rendering, citations, status language, and base-path behavior.
+7. Enable GitHub Pages deployment as a separate maintainer step, then expand the dataset.
 
 Keep the data model broad enough for any Council item with trackable commitments or follow-through. Use the contracting audit as an initial case, not as the whole product scope.

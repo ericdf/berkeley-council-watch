@@ -29,6 +29,7 @@ Treat README.md and docs/IMPLEMENTATION.md as the project contract. If the reque
 - A missing public update supports “no update located as of [date]”; it does not establish that no work occurred.
 - A possible relationship to an audit finding is a research classification, not proof of misconduct, illegality, waste, favoritism, or failure.
 - When analyzing transcripts or captions, treat them as fallible. Keep speaker attribution confidence and corroborate important wording with authoritative records or video where possible.
+- A City statement that work is complete supports “reported complete.” “Verified” requires independent evidence, as defined in docs/IMPLEMENTATION.md under Status and history.
 - If evidence is insufficient, mark the point unresolved and state what record would resolve it.
 
 ## Data and code changes
@@ -63,5 +64,7 @@ For content-only updates, verify IDs, citations, locators, dates, amounts, and l
 - Treat the repository as public at every stage. Review diffs for private or personal information before committing.
 - Keep generated output reproducible from committed source data and code.
 - Changes to public data must make clear what changed and which public evidence supports it.
+- Once deployment is enabled, merging to the default branch publishes. Hold data and page changes to the publication standard before they merge.
+- Do not enable GitHub Pages or add a deploy step as a side effect of other work. Enabling deployment is a separate maintainer decision.
 - Do not deploy from an unreviewed branch or enable pull-request previews at a public URL unless explicitly requested.
 - If a task could publish a disputed or sensitive claim, surface the evidence and uncertainty in the proposed change rather than silently resolving the judgment yourself.
