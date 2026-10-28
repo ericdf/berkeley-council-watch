@@ -167,7 +167,7 @@ The repository and deployed site are public. Commit only material that is intend
 
 Do not add secrets or credentials to code, data, build logs, GitHub Actions artifacts, or site output. A static public site should not need secrets to build or serve its content.
 
-The repository’s license applies to material contributed here. Source documents remain governed by their own source and reuse terms; cite them and link to the archive rather than copying them.
+Original project-authored text, code, and compilations in this repository are licensed under CC BY 4.0. Official public records, source documents, quoted or excerpted third-party material, and items with separate terms are not relicensed by this notice; retain their citations and follow their applicable terms. Make the licensed scope clear wherever those materials appear alongside project-authored content.
 
 ## Initial implementation sequence
 
