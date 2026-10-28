@@ -13,7 +13,7 @@ Treat README.md and docs/IMPLEMENTATION.md as the project contract. If the reque
 ## Product boundaries
 
 - This repository builds the public Berkeley Council Watch accountability tracker and its static GitHub Pages site.
-- The tracker records what was said, directed, promised, and later documented. The policy site publishes analysis and positions.
+- The tracker records what was said, directed, promised, and later documented. The [Berkeley Decision Project](https://ericdf.github.io/berkeley-decision-project/index.html) publishes analysis and positions; its [Substack](https://berkeleydecisionproject.substack.com) distributes shorter updates. Link relevant analysis and Substack posts to Council Watch records when available.
 - The public-records archive is authoritative for source documents. Link to its stable record IDs and precise locators; do not duplicate archived documents here.
 - Do not import or publish nonpublic notes, analysis, or data. Public tracker entries must be grounded in public records and deliberately reviewed for publication.
 - Track any relevant Council item, not audits alone. Audits are one source of findings, recommendations, and explicit follow-up commitments.
