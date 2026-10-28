@@ -1,0 +1,66 @@
+{
+ "source": {
+  "url": "https://berkeleyca.gov/your-government/city-council/city-council-agendas",
+  "listing_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+ },
+ "retrieved": "2026-10-28",
+ "entries": [
+  {
+   "meeting": "city-council-2026-10-27",
+   "name": "City Council 2026-10-27 - Regular",
+   "date": "2026-10-27",
+   "label": "regular",
+   "listed_time": "10/27/2026 - 6:00 pm",
+   "start_utc": "2026-10-28T01:00:00Z",
+   "page_url": "https://berkeleyca.gov/x/city-council-2026-10-27",
+   "city": {
+    "agenda_html": "https://berkeleyca.gov/agenda-oct-27",
+    "agenda_packet": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-10-27-packet.pdf",
+    "annotated_agenda": null,
+    "video": null,
+    "mp3": null,
+    "mp4": null
+   },
+   "first_listed": "2026-10-28",
+   "last_listed": "2026-10-28"
+  },
+  {
+   "meeting": "city-council-2026-10-13",
+   "name": "City Council 2026-10-13 - Regular",
+   "date": "2026-10-13",
+   "label": "regular",
+   "listed_time": "10/13/2026 - 6:00 pm",
+   "start_utc": "2026-10-14T01:00:00Z",
+   "page_url": "https://berkeleyca.gov/x/city-council-2026-10-13",
+   "city": {
+    "agenda_html": null,
+    "agenda_packet": null,
+    "annotated_agenda": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-10-13-annotated.pdf",
+    "video": null,
+    "mp3": null,
+    "mp4": null
+   },
+   "first_listed": "2026-10-28",
+   "last_listed": "2026-10-28"
+  },
+  {
+   "meeting": "city-council-2026-10-05",
+   "name": "City Council 2026-10-05 - Closed Session",
+   "date": "2026-10-05",
+   "label": "closed session",
+   "listed_time": "10/05/2026 - 4:00 pm",
+   "start_utc": "2026-10-05T23:00:00Z",
+   "page_url": "https://berkeleyca.gov/x/city-council-2026-10-05",
+   "city": {
+    "agenda_html": null,
+    "agenda_packet": null,
+    "annotated_agenda": null,
+    "video": null,
+    "mp3": null,
+    "mp4": null
+   },
+   "first_listed": "2026-10-28",
+   "last_listed": "2026-10-28"
+  }
+ ]
+}

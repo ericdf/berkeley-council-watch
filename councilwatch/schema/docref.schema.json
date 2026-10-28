@@ -1,0 +1,20 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "docref.schema.json",
+ "title": "Archived document reference",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["archive_id", "title", "sha256", "retrieved", "city_source_url", "archive_url", "manifest_url"],
+ "properties": {
+  "archive_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+  "title": {"type": ["string", "null"]},
+  "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+  "retrieved": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "city_source_url": {"type": ["string", "null"], "pattern": "^https?://"},
+  "archive_url": {"type": ["string", "null"], "pattern": "^https://(archive\\.org/details/|github\\.com/ericdf/berkeley-public-records/blob/[0-9a-f]{40}/)"},
+  "manifest_url": {"type": "string", "pattern": "^https://github\\.com/ericdf/berkeley-public-records/blob/[0-9a-f]{40}/manifest/"},
+  "listed_by_city": {"type": "boolean"},
+  "version_label": {"type": "string"},
+  "revision_of": {"type": "string"}
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "item.schema.json",
+ "title": "Agenda-intake item record",
+ "type": "object",
+ "additionalProperties": false,
+ "required": ["record_id", "meeting_id", "meeting_date", "meeting_type", "agenda_item_number", "section", "official_title", "status", "city_source_url", "archive_id", "archive_url", "source_sha256", "source_retrieved_at", "source_locator", "source_archive_commit", "last_checked_at"],
+ "properties": {
+  "record_id": {"type": "string", "pattern": "^city-council-\\d{4}-\\d{2}-\\d{2}(-\\d+)?--item-[0-9A-Za-z.]+$"},
+  "meeting_id": {"type": "string", "pattern": "^city-council-\\d{4}-\\d{2}-\\d{2}(-\\d+)?$"},
+  "meeting_date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "meeting_type": {"type": "string", "enum": ["regular", "special", "closed session", "canceled"]},
+  "agenda_item_number": {"type": "string", "pattern": "^[0-9A-Za-z.]+$"},
+  "section": {"type": ["string", "null"]},
+  "official_title": {"type": "string", "minLength": 1},
+  "status": {"type": "string", "enum": ["scheduled", "source_archived", "awaiting_meeting_record", "action_recorded"]},
+  "city_source_url": {"type": "string", "pattern": "^https://berkeleyca\\.gov/"},
+  "archive_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+  "archive_url": {"type": "string", "pattern": "^https://(archive\\.org/details/|github\\.com/ericdf/berkeley-public-records/blob/[0-9a-f]{40}/)"},
+  "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+  "source_retrieved_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+  "source_locator": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": ["pages", "page_basis", "index_archive_id"],
+   "properties": {
+    "pages": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "integer", "minimum": 1}},
+    "page_basis": {"type": "string"},
+    "index_archive_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"}
+   }
+  },
+  "source_archive_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+  "last_checked_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "bcc-2026-10-27-regular-agenda-packet-items",
+ "packet": "bcc-2026-10-27-regular-agenda-packet",
+ "text": "t",
+ "text_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+ "page_basis": "pages are the form-feed-delimited pages of the L1 text, counted from 1",
+ "pages": 40,
+ "items": [
+  {
+   "item": "1",
+   "section": "Consent Calendar",
+   "heading": "Minutes for approval",
+   "pages": [
+    19,
+    20
+   ]
+  },
+  {
+   "item": "2",
+   "section": "Consent Calendar",
+   "heading": "Contract amendment & <renewal>",
+   "pages": [
+    21,
+    24
+   ]
+  },
+  {
+   "item": "10",
+   "section": "Action Calendar",
+   "heading": "Budget referral",
+   "pages": [
+    25,
+    40
+   ]
+  }
+ ],
+ "spans": []
+}

@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Python version
+        run: python3 --version
+
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Validate the generated dataset
+        run: python3 -m councilwatch validate
+
+      - name: Reproduce the dataset from its pinned archive commit
+        run: |
+          commit=$(python3 -c "import json; print(json.load(open('data/generated/agenda-intake/meta.json'))['source']['archive_commit'])")
+          git clone --quiet --filter=blob:none --no-checkout https://github.com/ericdf/berkeley-public-records "$RUNNER_TEMP/archive"
+          git -C "$RUNNER_TEMP/archive" sparse-checkout set catalog manifest L2 tools
+          git -C "$RUNNER_TEMP/archive" checkout --quiet "$commit"
+          python3 -m councilwatch reproduce --archive "$RUNNER_TEMP/archive"
+
+      - name: Build the site
+        run: python3 -m councilwatch build
+
+      - name: Check internal links
+        run: python3 -m councilwatch check-links
