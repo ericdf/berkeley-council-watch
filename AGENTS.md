@@ -7,6 +7,7 @@ Before changing code or data, read:
 1. README.md
 2. docs/IMPLEMENTATION.md
 3. Any more specific AGENTS.md files in the directory you will edit
+4. docs/AUTOMATION_SPEC.md when changing or reviewing the unattended agenda-intake workflow
 
 Treat README.md and docs/IMPLEMENTATION.md as the project contract. If the requested change conflicts with them, explain the conflict and propose a small update to the relevant documentation.
 
@@ -15,7 +16,7 @@ Treat README.md and docs/IMPLEMENTATION.md as the project contract. If the reque
 - This repository builds the public Berkeley Council Watch accountability tracker and its static GitHub Pages site.
 - The tracker records what was said, directed, promised, and later documented. The [Berkeley Decision Project](https://ericdf.github.io/berkeley-decision-project/index.html) publishes analysis and positions; its [Substack](https://berkeleydecisionproject.substack.com) distributes shorter updates. Link relevant analysis and Substack posts to Council Watch records when available.
 - The public-records archive is authoritative for source documents. Link to its stable record IDs and precise locators; do not duplicate archived documents here.
-- Do not import or publish nonpublic notes, analysis, or data. Public tracker entries must be grounded in public records and deliberately reviewed for publication.
+- Do not import or publish nonpublic notes, analysis, or data. Substantive tracker entries about commitments, Council handling, reported work, or outcomes must be grounded in public records and deliberately reviewed for publication. The deterministic agenda-intake lane may publish only schema-validated meeting and agenda metadata without human review, within the limits in [docs/AUTOMATION_SPEC.md](docs/AUTOMATION_SPEC.md).
 - Track any relevant Council item, not audits alone. Audits are one source of findings, recommendations, and explicit follow-up commitments.
 - Keep the initial architecture static and simple. Do not add a database, server, account system, write API, analytics service, or external runtime dependency without a documented requirement.
 
@@ -64,7 +65,7 @@ For content-only updates, verify IDs, citations, locators, dates, amounts, and l
 - Treat the repository as public at every stage. Review diffs for private or personal information before committing.
 - Keep generated output reproducible from committed source data and code.
 - Changes to public data must make clear what changed and which public evidence supports it.
-- Once deployment is enabled, merging to the default branch publishes. Hold data and page changes to the publication standard before they merge.
+- Once deployment is enabled, merging to the default branch publishes. Substantive data and page changes must meet the publication standard before they merge. The agenda-intake workflow may auto-merge only its allowlisted, schema-validated metadata updates after all required checks pass; it must not publish interpreted accountability claims.
 - Do not enable GitHub Pages or add a deploy step as a side effect of other work. Enabling deployment is a separate maintainer decision.
 - Do not deploy from an unreviewed branch or enable pull-request previews at a public URL unless explicitly requested.
 - If a task could publish a disputed or sensitive claim, surface the evidence and uncertainty in the proposed change rather than silently resolving the judgment yourself.
