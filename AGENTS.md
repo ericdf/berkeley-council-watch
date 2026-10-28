@@ -15,7 +15,7 @@ Treat README.md and docs/IMPLEMENTATION.md as the project contract. If the reque
 - This repository builds the public Berkeley Council Watch accountability tracker and its static GitHub Pages site.
 - The tracker records what was said, directed, promised, and later documented. The policy site publishes analysis and positions.
 - The public-records archive is authoritative for source documents. Link to its stable record IDs and precise locators; do not duplicate archived documents here.
-- Berkeley Council Scorecards is private and independent. Do not access, import, link build processes to, or publish content from that repository. Public tracker entries must be grounded in public records and deliberately reviewed for publication.
+- Do not import or publish nonpublic notes, analysis, or data. Public tracker entries must be grounded in public records and deliberately reviewed for publication.
 - Track any relevant Council item, not audits alone. Audits are one source of findings, recommendations, and explicit follow-up commitments.
 - Keep the initial architecture static and simple. Do not add a database, server, account system, write API, analytics service, or external runtime dependency without a documented requirement.
 
