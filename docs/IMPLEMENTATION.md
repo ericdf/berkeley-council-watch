@@ -6,7 +6,7 @@ This repository owns the public Berkeley Council Watch dataset, validation code,
 
 The public-records archive at [ericdf/berkeley-public-records](https://github.com/ericdf/berkeley-public-records) remains authoritative for source documents and their provenance. Tracker records should point to archive record IDs and exact locations. Do not copy archived source PDFs, captions, transcripts, or other blobs into this repository.
 
-The private Berkeley Council Scorecards repository is outside this system. There must be no automatic import, build dependency, shared credential, or publication pipeline from that repository. Public entries must be supportable from public records and reviewed for publication before they enter this repository.
+This system does not import nonpublic data or depend on nonpublic sources. Public entries must be supported by public records and reviewed before publication.
 
 The policy site has a separate editorial purpose: analysis, positions, and systemic arguments. It may cite tracker records. Berkeley Council Watch presents attributed statements, decisions, evidence, and status.
 
@@ -157,7 +157,7 @@ For every data change, reviewers should be able to see what evidence was added, 
 
 ## Privacy, security, and licensing
 
-The repository and deployed site are public. Commit only material that is intended for public release and supported by public sources. Never copy unpublished notes, personal information, credentials, or private scorecard contents into the tracker.
+The repository and deployed site are public. Commit only material that is intended for public release and supported by public sources. Never copy unpublished notes, personal information, credentials, or other nonpublic material into the tracker.
 
 Do not add secrets or credentials to code, data, build logs, GitHub Actions artifacts, or site output. A static public site should not need secrets to build or serve its content.
 
