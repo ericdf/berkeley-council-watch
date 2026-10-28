@@ -1,0 +1,179 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "decisions.schema.json",
+ "title": "Review decisions on a backfill candidate bundle",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "year",
+  "rules_version",
+  "archive_commit",
+  "reviewed_on",
+  "decisions"
+ ],
+ "properties": {
+  "year": {
+   "type": "string",
+   "pattern": "^\\d{4}$"
+  },
+  "rules_version": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "archive_commit": {
+   "type": "string",
+   "pattern": "^[0-9a-f]{40}$"
+  },
+  "reviewed_on": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "decisions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "candidate_id",
+     "decision"
+    ],
+    "properties": {
+     "candidate_id": {
+      "type": "string",
+      "pattern": "^city-council-.*--item-[0-9A-Za-z.]+$"
+     },
+     "decision": {
+      "type": "string",
+      "enum": [
+       "confirm",
+       "reject"
+      ]
+     },
+     "reason": {
+      "type": "string",
+      "minLength": 1
+     },
+     "matter_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]*$"
+     },
+     "matter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "id",
+       "title",
+       "description"
+      ],
+      "properties": {
+       "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9.-]*$"
+       },
+       "title": {
+        "type": "string",
+        "minLength": 1
+       },
+       "kind": {
+        "type": "string",
+        "enum": [
+         "audit",
+         "council_referral",
+         "contract",
+         "budget_action",
+         "other"
+        ]
+       },
+       "description": {
+        "type": "string",
+        "minLength": 1
+       }
+      }
+     },
+     "commitment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "label",
+       "actor",
+       "kind"
+      ],
+      "properties": {
+       "label": {
+        "type": "string",
+        "minLength": 1
+       },
+       "actor": {
+        "type": "string",
+        "minLength": 1
+       },
+       "kind": {
+        "type": "string",
+        "enum": [
+         "report_back",
+         "deliverable",
+         "deadline",
+         "spending_condition",
+         "outcome_measure"
+        ]
+       },
+       "quote_field": {
+        "type": "string",
+        "enum": [
+         "action",
+         "recommendation",
+         "policy committee recommendation"
+        ]
+       }
+      }
+     },
+     "links": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "additionalProperties": false,
+       "required": [
+        "to",
+        "decision"
+       ],
+       "properties": {
+        "to": {
+         "type": "string",
+         "pattern": "^city-council-.*--item-[0-9A-Za-z.]+$"
+        },
+        "decision": {
+         "type": "string",
+         "enum": [
+          "confirm",
+          "reject"
+         ]
+        },
+        "status": {
+         "type": "string",
+         "enum": [
+          "in_progress_reported",
+          "reported_complete",
+          "delayed",
+          "cancelled_or_superseded"
+         ]
+        },
+        "basis": {
+         "type": "string",
+         "minLength": 1
+        },
+        "reason": {
+         "type": "string",
+         "minLength": 1
+        },
+        "actor": {
+         "type": "string",
+         "minLength": 1
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

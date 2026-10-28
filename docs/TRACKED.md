@@ -43,6 +43,9 @@ Each commitment has a `status_history`. An entry is never edited away; new evide
 
 ## Adding a matter
 
+For matters found by the backfill, use the decisions importer instead (REVIEW.md). The steps below
+are for matters added by hand, such as an audit.
+
 1. Add the sources first, with the archive id when the archive holds the document and the City URL
    otherwise.
 2. Prefer scripts for structured text: the contracts-audit recommendations were extracted from the PDF

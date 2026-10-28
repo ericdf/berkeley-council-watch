@@ -58,11 +58,8 @@ The pipeline is deterministic and uses no model:
 
 ## Reviewing a bundle
 
-Read `candidates-<year>.md`. For each candidate, decide one of:
-- **reject** it;
-- **confirm it as a commitment**, written in `data/tracked/` with its citation and locator;
-- **confirm a proposed follow-up**, written as an event linked to that commitment, with its status
-  entry.
+See [REVIEW.md](REVIEW.md). The reviewer writes a decisions file (confirm or reject, with a reason),
+and `import-decisions` turns confirmed candidates into tracked records with their citations.
 
 The rule-match counts in `report.json` show which rules are noisy. A rule change bumps the rules
 `version`, which every bundle records.
