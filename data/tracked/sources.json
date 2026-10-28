@@ -1,0 +1,54 @@
+[
+ {
+  "archive_id": null,
+  "archive_url": null,
+  "document_date": "2026-02-19",
+  "id": "src-contracts-audit-2026",
+  "issuer": "City of Berkeley, City Auditor",
+  "kind": "audit_report",
+  "note": "Presented to the City Council as Consent Calendar Item 6 on March 10, 2026. Page locators are pages of this PDF, which the City stamps \"Page N of 45\".",
+  "official_url": "https://berkeleyca.gov/sites/default/files/2026-02/2026-03-10%20Item%2006%20City%20Contracts%20Outdated%20Process%20Led%20to%20Non-Competitive.pdf",
+  "retrieved": "2026-10-28",
+  "sha256": "b8cf23338bc73b58cdc65e8d306c30dc15c246b81edec46dc0fa1ec9b7c77208",
+  "title": "City Contracts: Outdated Process Led to Non-Competitive Contracts"
+ },
+ {
+  "archive_id": "bcc-2026-03-10-regular-annotated-agenda",
+  "archive_url": "https://github.com/ericdf/berkeley-public-records/blob/7a22d845c6f0f8476f21d19f0d261500be4333c7/L0/annotated-agendas/bcc-2026-03-10-regular-annotated-agenda.pdf",
+  "document_date": "2026-03-10",
+  "id": "src-bcc-2026-03-10-annotated-agenda",
+  "issuer": "City of Berkeley, City Clerk Department",
+  "kind": "annotated_agenda",
+  "note": null,
+  "official_url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-03-10%20Annotated%20Agenda%20-%20Council.pdf",
+  "retrieved": "2026-10-28",
+  "sha256": "354f9f15f290accd79a48547502c593bb799143802af1dac59d6547cefc5dfcf",
+  "title": "Annotated Agenda, Berkeley City Council regular meeting, March 10, 2026"
+ },
+ {
+  "archive_id": "audits-audit-plan-fy2027",
+  "archive_url": "https://github.com/ericdf/berkeley-public-records/blob/7a22d845c6f0f8476f21d19f0d261500be4333c7/L0/sources/audits/audits-audit-plan-fy2027.pdf",
+  "document_date": "2026-06-30",
+  "id": "src-auditor-plan-fy2027",
+  "issuer": "City of Berkeley, City Auditor",
+  "kind": "audit_plan",
+  "note": "The plan prints no date. It was Information Report Item 50 at the City Council meeting of June 30, 2026.",
+  "official_url": "https://berkeleyca.gov/sites/default/files/2026-05/City_Auditor_Fiscal_Year_2027_Audit_Plan.pdf",
+  "retrieved": null,
+  "sha256": "b1828483d850a8637f683e5ca55c92118bb4df12d71fa84d2f88370333a1ce8f",
+  "title": "City Auditor Fiscal Year 2027 Audit Plan"
+ },
+ {
+  "archive_id": "bcc-2026-06-30-regular-annotated-agenda",
+  "archive_url": "https://github.com/ericdf/berkeley-public-records/blob/7a22d845c6f0f8476f21d19f0d261500be4333c7/L0/annotated-agendas/bcc-2026-06-30-regular-annotated-agenda.pdf",
+  "document_date": "2026-06-30",
+  "id": "src-bcc-2026-06-30-annotated-agenda",
+  "issuer": "City of Berkeley, City Clerk Department",
+  "kind": "annotated_agenda",
+  "note": null,
+  "official_url": "https://berkeleyca.gov/sites/default/files/city-council-meetings/2026-06-30%20Annotated%20Agenda%20-%20Council.pdf",
+  "retrieved": "2026-09-29",
+  "sha256": "e351f317c54d69cef4291f2762c203d5b99353e0b94059887b76f24ee10e09e1",
+  "title": "Annotated Agenda, Berkeley City Council regular meeting, June 30, 2026"
+ }
+]

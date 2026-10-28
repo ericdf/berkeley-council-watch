@@ -1,0 +1,98 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Source reference",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "kind",
+  "issuer",
+  "title",
+  "document_date",
+  "note",
+  "official_url",
+  "archive_id",
+  "archive_url",
+  "sha256",
+  "retrieved"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^src-[a-z0-9.-]+$"
+  },
+  "kind": {
+   "type": "string",
+   "enum": [
+    "audit_report",
+    "audit_plan",
+    "auditor_follow_up",
+    "annotated_agenda",
+    "minutes",
+    "staff_report",
+    "council_item",
+    "executed_contract",
+    "adopted_legislation",
+    "published_deliverable",
+    "other"
+   ]
+  },
+  "issuer": {
+   "type": "string",
+   "minLength": 1
+  },
+  "title": {
+   "type": "string",
+   "minLength": 1
+  },
+  "document_date": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "note": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "official_url": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^https://"
+  },
+  "archive_id": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^[a-z0-9][a-z0-9-]*$"
+  },
+  "archive_url": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^https://(archive\\.org/details/|github\\.com/ericdf/berkeley-public-records/blob/[0-9a-f]{40}/)"
+  },
+  "sha256": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^[0-9a-f]{64}$"
+  },
+  "retrieved": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  }
+ },
+ "$id": "source.schema.json"
+}

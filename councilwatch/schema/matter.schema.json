@@ -1,0 +1,76 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Tracked matter",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "title",
+  "kind",
+  "opened",
+  "description",
+  "agenda_items",
+  "qualifications",
+  "last_reviewed"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "title": {
+   "type": "string",
+   "minLength": 1
+  },
+  "kind": {
+   "type": "string",
+   "enum": [
+    "audit",
+    "council_referral",
+    "contract",
+    "budget_action",
+    "other"
+   ]
+  },
+  "opened": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "description": {
+   "type": "string",
+   "minLength": 1
+  },
+  "agenda_items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "meeting_id",
+     "item"
+    ],
+    "properties": {
+     "meeting_id": {
+      "type": "string",
+      "pattern": "^city-council-\\d{4}-\\d{2}-\\d{2}(-\\d+)?$"
+     },
+     "item": {
+      "type": "string",
+      "pattern": "^[0-9A-Za-z.]+$"
+     }
+    }
+   }
+  },
+  "qualifications": {
+   "type": "array",
+   "items": {
+    "$ref": "citation.schema.json"
+   }
+  },
+  "last_reviewed": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  }
+ },
+ "$id": "matter.schema.json"
+}

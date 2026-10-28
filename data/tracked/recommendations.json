@@ -1,0 +1,244 @@
+[
+ {
+  "addressed_to": [
+   "Public Works"
+  ],
+  "citation": {
+   "locator": "PDF p. 30",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-1",
+  "id": "contracts-audit-2026-rec-1.1",
+  "management_response": {
+   "corrective_action_plan": "Will assess and develop timeframe for 2026",
+   "implementation_date": "To be determined",
+   "position": "Agree"
+  },
+  "number": "1.1",
+  "text": "To ensure Berkeley is getting the best value for recycling services, we recommend that Public Works pursue open competition on the City’s recycling contracts."
+ },
+ {
+  "addressed_to": [
+   "City Council",
+   "City management",
+   "City Attorney"
+  ],
+  "citation": {
+   "locator": "PDF p. 30",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-1",
+  "id": "contracts-audit-2026-rec-1.2",
+  "management_response": {
+   "corrective_action_plan": "To be determined",
+   "implementation_date": "To be determined",
+   "position": "To be determined"
+  },
+  "number": "1.2",
+  "text": "To ensure large contracts have adequate competition, we recommend City Council work with City management and the City Attorney to propose updates to the Berkeley Municipal Code Chapter 7.18 to require competition for service contracts that City Council approves."
+ },
+ {
+  "addressed_to": [
+   "Finance Department"
+  ],
+  "citation": {
+   "locator": "PDF p. 30",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-1",
+  "id": "contracts-audit-2026-rec-1.3",
+  "management_response": {
+   "corrective_action_plan": "The language in both the Competitive Solicitation Waiver form and the Purchasing Manual has been updated to be consistent.",
+   "implementation_date": "November 2025",
+   "position": "Agree, this was completed in November 2025"
+  },
+  "number": "1.3",
+  "text": "To ensure clear standards for waiving competition, we recommend that the Finance Department update the waiver of competitive solicitation form to be consistent with the Purchasing Manual."
+ },
+ {
+  "addressed_to": [
+   "City management",
+   "Finance Department",
+   "Human Resources",
+   "City Attorney's office"
+  ],
+  "citation": {
+   "locator": "PDF p. 31",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-1",
+  "id": "contracts-audit-2026-rec-1.4",
+  "management_response": {
+   "corrective_action_plan": "Will incorporate into guidance for staff. Will work on solutions for contractor disclosures but need to determine how best to incorporate given potential enforcement challenges.",
+   "implementation_date": "To be determined",
+   "position": "Partially agree"
+  },
+  "number": "1.4",
+  "text": "To ensure transparency, we recommend that City management work with the Finance Department, Human Resources, and the City Attorney’s office to strengthen the City’s existing ethical standards, including guidance for City officials, staff, and contractors regarding disclosing personal, professional, and business relationships."
+ },
+ {
+  "addressed_to": [
+   "Finance Department"
+  ],
+  "citation": {
+   "locator": "PDF p. 31",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-1",
+  "id": "contracts-audit-2026-rec-1.5",
+  "management_response": {
+   "corrective_action_plan": "This information is in the updated purchasing manual and the contract training class.",
+   "implementation_date": "November 2025",
+   "position": "Agree"
+  },
+  "number": "1.5",
+  "text": "To ensure City staff have guidance on how to appropriately use amendments, we recommend that the Finance Department develop and distribute written policies and procedures on contract amendments, including when contracts are required to go back out for competition."
+ },
+ {
+  "addressed_to": [
+   "City Attorney's Office"
+  ],
+  "citation": {
+   "locator": "PDF p. 31",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-1",
+  "id": "contracts-audit-2026-rec-1.6",
+  "management_response": {
+   "corrective_action_plan": "The City Attorney’s Office will report new legal services contracts and amendments to the City Council on an annual basis beginning with contracts entered into Q1 2026. The reports will not include any confidential or attorney-client privileged information.",
+   "implementation_date": "April 30, 2026",
+   "position": "Agree"
+  },
+  "number": "1.6",
+  "text": "To increase transparency of spending on legal services contracts, we recommend that the City Attorney’s Office regularly report legal services contracts and amendments to City Council."
+ },
+ {
+  "addressed_to": [
+   "City management",
+   "Finance Department"
+  ],
+  "citation": {
+   "locator": "PDF p. 32",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-2",
+  "id": "contracts-audit-2026-rec-2.1",
+  "management_response": {
+   "corrective_action_plan": "Several departments have implemented Docusign for the full contract routing process (about 65% of city contracts). Citywide, Docusign has been adopted for all extension letters and waivers. There are budget and resource constraints to purchasing software that would integrate with the City’s current financial system. However, a multi departmental work group has been working for several months on bringing electronic contracts management system recommendations to the City Manager for a new system.",
+   "implementation_date": "Partially implemented July 2025",
+   "position": "Agree"
+  },
+  "number": "2.1",
+  "text": "To increase efficiency and accountability in the contract process, we recommend that City management work with the Finance Department to adopt a comprehensive and integrated electronic contract management system, as funds are available."
+ },
+ {
+  "addressed_to": [
+   "Finance Department"
+  ],
+  "citation": {
+   "locator": "PDF p. 32",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-2",
+  "id": "contracts-audit-2026-rec-2.2",
+  "management_response": {
+   "corrective_action_plan": "By implementing Docusign for all waivers, the process itself has all the necessary information to track quantity, date, and all approvals. This solution will not add additional steps, time or expense which is helpful given limited resources and financial constraints. We continue to assess for use in potential new systems.",
+   "implementation_date": "July 2025",
+   "position": "Partially Agree"
+  },
+  "number": "2.2",
+  "text": "To more easily assess the use of non-competitive contracts, we recommend that the Finance Department track what type of competition is used for each contract and maintain documentation in an accessible format as part of the new contract management system."
+ },
+ {
+  "addressed_to": [
+   "Finance Department"
+  ],
+  "citation": {
+   "locator": "PDF p. 32",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-2",
+  "id": "contracts-audit-2026-rec-2.3",
+  "management_response": {
+   "corrective_action_plan": "The updates have been made.",
+   "implementation_date": "November 2025",
+   "position": "Agree"
+  },
+  "number": "2.3",
+  "text": "To ensure consistent application of standards, we recommend the Finance Department update the Purchasing Manual and any additional guidance documents for staff to include complete sections on key topics such as amendments, piggybacking, ethics, and suspension or debarment of contractors who engage in misconduct."
+ },
+ {
+  "addressed_to": [
+   "Finance Department",
+   "City Attorney",
+   "City management"
+  ],
+  "citation": {
+   "locator": "PDF p. 33",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-2",
+  "id": "contracts-audit-2026-rec-2.4",
+  "management_response": {
+   "corrective_action_plan": "Ongoing process to improve guidelines and process flows.",
+   "implementation_date": "Partially implemented",
+   "position": "Agree"
+  },
+  "number": "2.4",
+  "text": "To ensure clarity in the primary guidance on purchasing for all City staff and consistent application of standards, we recommend the Finance Department work with the City Attorney and City management to update the Purchasing Manual with a table of contents, clear definitions, and consistent language and standards across the Purchasing Manual and related forms, boilerplates, templates, and other additional guidance documents."
+ },
+ {
+  "addressed_to": [
+   "Finance Department"
+  ],
+  "citation": {
+   "locator": "PDF p. 33",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-2",
+  "id": "contracts-audit-2026-rec-2.5",
+  "management_response": {
+   "corrective_action_plan": "We have already had several sessions of Contract Training classes and will continue them in 2026.",
+   "implementation_date": "May 2025",
+   "position": "Agree"
+  },
+  "number": "2.5",
+  "text": "To ensure that City staff know how to use the contracting process correctly and efficiently, we recommend that the Finance Department offer and publicize a regular procurement training program for staff from other departments."
+ },
+ {
+  "addressed_to": [
+   "City management"
+  ],
+  "citation": {
+   "locator": "PDF p. 33",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-2",
+  "id": "contracts-audit-2026-rec-2.6",
+  "management_response": {
+   "corrective_action_plan": "All vacancies in the Finance Department are in the process of being filled including the General Services Manager and Buyer.",
+   "implementation_date": "In process",
+   "position": "Agree"
+  },
+  "number": "2.6",
+  "text": "To ensure adequate resource support for City contracts, we recommend that City management assess Finance Department staff positions needed to provide oversight and prioritize filling these positions when possible."
+ },
+ {
+  "addressed_to": [
+   "City management"
+  ],
+  "citation": {
+   "locator": "PDF p. 34",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "finding_id": "contracts-audit-2026-finding-2",
+  "id": "contracts-audit-2026-rec-2.7",
+  "management_response": {
+   "corrective_action_plan": "This was assigned to the DEI Officer.",
+   "implementation_date": "September 24, 2025",
+   "position": "Agree"
+  },
+  "number": "2.7",
+  "text": "To ensure the City makes progress towards promoting fairness in contracts, we recommend that City management formally assign responsibility for managing the demographic data from potential contractors to facilitate data analytics and implementing prior recommendations related to contractor outreach and the contracting process."
+ }
+]

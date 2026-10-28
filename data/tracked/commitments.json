@@ -1,0 +1,420 @@
+[
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Consent Calendar, Item 6",
+   "source_id": "src-bcc-2026-03-10-annotated-agenda"
+  },
+  "due": {
+   "as_stated": "Fall 2026, and annually thereafter",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-report-back",
+  "kind": "report_back",
+  "label": "City Manager report back on the audit recommendations",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": null,
+  "statement": "We recommend City Council request that the City Manager report back by Fall 2026, and annually thereafter, regarding the status of our audit recommendations until reported fully implemented by the Finance Department and other relevant departments.",
+  "status_history": [
+   {
+    "as_of": "2026-03-10",
+    "basis": "The Council approved the recommendation on March 10, 2026.",
+    "citations": [
+     {
+      "locator": "Consent Calendar, Item 6",
+      "quote": "Action: Approved recommendation.",
+      "source_id": "src-bcc-2026-03-10-annotated-agenda"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2026-10-28",
+    "basis": "Fall 2026 has not ended. No report back was found in the records searched.",
+    "citations": [],
+    "searched": "The annotated agendas of every City Council meeting from March 10 through October 13, 2026, and the item index of the October 27, 2026 agenda packet, in the public-records archive.",
+    "status": "not_yet_due"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Public Works",
+  "citation": {
+   "locator": "PDF p. 30",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "To be determined",
+   "is_date": false
+  },
+  "id": "contracts-audit-2026-cap-1.1",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 1.1",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-1.1",
+  "statement": "Will assess and develop timeframe for 2026",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management's implementation date is \"To be determined\".",
+    "citations": [
+     {
+      "locator": "PDF p. 30",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Finance Department",
+  "citation": {
+   "locator": "PDF p. 30",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "November 2025",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-1.3",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 1.3",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-1.3",
+  "statement": "The language in both the Competitive Solicitation Waiver form and the Purchasing Manual has been updated to be consistent.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action implemented (implementation date \"November 2025\"). Not verified by the Auditor or by this tracker.",
+    "citations": [
+     {
+      "locator": "PDF p. 30",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City management",
+  "citation": {
+   "locator": "PDF p. 31",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "To be determined",
+   "is_date": false
+  },
+  "id": "contracts-audit-2026-cap-1.4",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 1.4",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-1.4",
+  "statement": "Will incorporate into guidance for staff. Will work on solutions for contractor disclosures but need to determine how best to incorporate given potential enforcement challenges.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management's implementation date is \"To be determined\".",
+    "citations": [
+     {
+      "locator": "PDF p. 31",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Finance Department",
+  "citation": {
+   "locator": "PDF p. 31",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "November 2025",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-1.5",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 1.5",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-1.5",
+  "statement": "This information is in the updated purchasing manual and the contract training class.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action implemented (implementation date \"November 2025\"). Not verified by the Auditor or by this tracker.",
+    "citations": [
+     {
+      "locator": "PDF p. 31",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Attorney's Office",
+  "citation": {
+   "locator": "PDF p. 31",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "April 30, 2026",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-1.6",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 1.6",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-1.6",
+  "statement": "The City Attorney’s Office will report new legal services contracts and amendments to the City Council on an annual basis beginning with contracts entered into Q1 2026. The reports will not include any confidential or attorney-client privileged information.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management's implementation date, April 30, 2026, had not yet passed.",
+    "citations": [
+     {
+      "locator": "PDF p. 31",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2026-10-28",
+    "basis": "The stated date, April 30, 2026, has passed. No report of legal services contracts to the City Council was found in the records searched. A report made another way, such as an off-agenda memo, would not appear in them.",
+    "citations": [],
+    "searched": "The annotated agendas of every City Council meeting from March 10 through October 13, 2026, and the item index of the October 27, 2026 agenda packet, in the public-records archive.",
+    "status": "unknown_no_update_located"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City management",
+  "citation": {
+   "locator": "PDF p. 32",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "Partially implemented July 2025",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-2.1",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 2.1",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-2.1",
+  "statement": "Several departments have implemented Docusign for the full contract routing process (about 65% of city contracts). Citywide, Docusign has been adopted for all extension letters and waivers. There are budget and resource constraints to purchasing software that would integrate with the City’s current financial system. However, a multi departmental work group has been working for several months on bringing electronic contracts management system recommendations to the City Manager for a new system.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action under way (implementation date \"Partially implemented July 2025\").",
+    "citations": [
+     {
+      "locator": "PDF p. 32",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "in_progress_reported"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Finance Department",
+  "citation": {
+   "locator": "PDF p. 32",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "July 2025",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-2.2",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 2.2",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-2.2",
+  "statement": "By implementing Docusign for all waivers, the process itself has all the necessary information to track quantity, date, and all approvals. This solution will not add additional steps, time or expense which is helpful given limited resources and financial constraints. We continue to assess for use in potential new systems.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action implemented (implementation date \"July 2025\"). Not verified by the Auditor or by this tracker.",
+    "citations": [
+     {
+      "locator": "PDF p. 32",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Finance Department",
+  "citation": {
+   "locator": "PDF p. 32",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "November 2025",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-2.3",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 2.3",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-2.3",
+  "statement": "The updates have been made.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action implemented (implementation date \"November 2025\"). Not verified by the Auditor or by this tracker.",
+    "citations": [
+     {
+      "locator": "PDF p. 32",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Finance Department",
+  "citation": {
+   "locator": "PDF p. 33",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "Partially implemented",
+   "is_date": false
+  },
+  "id": "contracts-audit-2026-cap-2.4",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 2.4",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-2.4",
+  "statement": "Ongoing process to improve guidelines and process flows.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action under way (implementation date \"Partially implemented\").",
+    "citations": [
+     {
+      "locator": "PDF p. 33",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "in_progress_reported"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Finance Department",
+  "citation": {
+   "locator": "PDF p. 33",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "May 2025",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-2.5",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 2.5",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-2.5",
+  "statement": "We have already had several sessions of Contract Training classes and will continue them in 2026.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action implemented (implementation date \"May 2025\"). Not verified by the Auditor or by this tracker.",
+    "citations": [
+     {
+      "locator": "PDF p. 33",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City management",
+  "citation": {
+   "locator": "PDF p. 33",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "In process",
+   "is_date": false
+  },
+  "id": "contracts-audit-2026-cap-2.6",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 2.6",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-2.6",
+  "statement": "All vacancies in the Finance Department are in the process of being filled including the General Services Manager and Buyer.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action under way (implementation date \"In process\").",
+    "citations": [
+     {
+      "locator": "PDF p. 33",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "in_progress_reported"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City management",
+  "citation": {
+   "locator": "PDF p. 34",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "due": {
+   "as_stated": "September 24, 2025",
+   "is_date": true
+  },
+  "id": "contracts-audit-2026-cap-2.7",
+  "kind": "corrective_action",
+  "label": "Corrective action plan for Recommendation 2.7",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_id": "contracts-audit-2026-rec-2.7",
+  "statement": "This was assigned to the DEI Officer.",
+  "status_history": [
+   {
+    "as_of": "2026-02-19",
+    "basis": "Management reported the action implemented (implementation date \"September 24, 2025\"). Not verified by the Auditor or by this tracker.",
+    "citations": [
+     {
+      "locator": "PDF p. 34",
+      "source_id": "src-contracts-audit-2026"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ }
+]

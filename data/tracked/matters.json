@@ -1,0 +1,23 @@
+[
+ {
+  "agenda_items": [
+   {
+    "item": "6",
+    "meeting_id": "city-council-2026-03-10"
+   }
+  ],
+  "description": "The City Auditor's audit of non-competitive City contracts, its 13 recommendations, City management's responses, and the Council's direction that the City Manager report back on them.",
+  "id": "contracts-audit-2026",
+  "kind": "audit",
+  "last_reviewed": "2026-10-28",
+  "opened": "2026-02-19",
+  "qualifications": [
+   {
+    "locator": "PDF p. 30",
+    "quote": "We have not yet confirmed to what extent any recommendations may have been implemented prior to the audit release date.",
+    "source_id": "src-contracts-audit-2026"
+   }
+  ],
+  "title": "City Contracts audit (City Auditor, February 2026)"
+ }
+]

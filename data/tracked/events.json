@@ -1,0 +1,100 @@
+[
+ {
+  "actor": "City Auditor",
+  "citations": [
+   {
+    "locator": "PDF p. 4",
+    "source_id": "src-contracts-audit-2026"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2026-02-19",
+  "description": "The City Auditor issued the audit report, with 13 recommendations and City management's responses.",
+  "id": "contracts-audit-2026-event-report",
+  "kind": "report_issued",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Auditor",
+  "citations": [
+   {
+    "locator": "City Auditor Comments",
+    "quote": "The City Auditor provided a presentation on the City Contracts audit. 5 speakers.",
+    "source_id": "src-bcc-2026-03-10-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2026-03-10",
+  "description": "The City Auditor presented the audit to the City Council.",
+  "id": "contracts-audit-2026-event-presentation",
+  "kind": "presentation",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Consent Calendar, Item 6",
+    "quote": "Action: Approved recommendation.",
+    "source_id": "src-bcc-2026-03-10-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "contracts-audit-2026-report-back"
+  ],
+  "date": "2026-03-10",
+  "description": "On the Consent Calendar, the City Council approved the Auditor's recommendation that the City Manager report back by Fall 2026 and annually thereafter.",
+  "id": "contracts-audit-2026-event-council-approval",
+  "kind": "council_action",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Auditor",
+  "citations": [
+   {
+    "locator": "PDF p. 2",
+    "quote": "Our contracts audit has already led to a Councilmember proposal to amend the Berkeley Municipal Code to require competition for service contracts greater than $100,000.",
+    "source_id": "src-auditor-plan-fy2027"
+   },
+   {
+    "locator": "Information Reports, Item 50",
+    "quote": "Action: Received and filed.",
+    "source_id": "src-bcc-2026-06-30-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2026-06-30",
+  "description": "In its FY 2027 audit plan, filed with the City Council on June 30, 2026, the City Auditor reported that the audit had led to a Councilmember proposal to amend the Municipal Code.",
+  "id": "contracts-audit-2026-event-auditor-plan-proposal",
+  "kind": "reported_development",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_ids": [
+   "contracts-audit-2026-rec-1.2"
+  ]
+ },
+ {
+  "actor": "City Auditor",
+  "citations": [
+   {
+    "locator": "PDF p. 4",
+    "quote": "The Not Started category includes 19 recommendations from the recently released Homeless Response Team audit and contracts audit, which we will follow up on for the first time in FY 2027.",
+    "source_id": "src-auditor-plan-fy2027"
+   },
+   {
+    "locator": "Information Reports, Item 50",
+    "quote": "Action: Received and filed.",
+    "source_id": "src-bcc-2026-06-30-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2026-06-30",
+  "description": "In its FY 2027 audit plan, filed with the City Council on June 30, 2026, the City Auditor scheduled its first follow-up on the audit's recommendations for FY 2027.",
+  "id": "contracts-audit-2026-event-auditor-plan-followup",
+  "kind": "reported_development",
+  "matter_id": "contracts-audit-2026",
+  "recommendation_ids": []
+ }
+]
