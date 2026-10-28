@@ -1,0 +1,26 @@
+{
+ "version": 4,
+ "note": "Phrase rules for backfill Pass 2 (docs/AUTOMATION_SPEC.md §7). A match makes an unconfirmed candidate for review, never a record. Regexes are case-insensitive and run on whitespace-normalized field text.",
+ "direction_rules": [
+  {"id": "report_back", "pattern": "\\breport(?:ing)?[ -]back\\b"},
+  {"id": "return_to_council", "pattern": "\\breturn(?:s|ed|ing)? to (?:the )?(?:City )?Council\\b"},
+  {"id": "provide_update", "pattern": "\\bprovide (?:an? |regular |annual )?(?:update|status report|progress report)s?\\b"},
+  {"id": "annual_follow_up", "pattern": "\\b(?:and )?(?:at least )?annually thereafter\\b"},
+  {"id": "check_back", "pattern": "\\bcheck[- ]back\\b"},
+  {"id": "refer_to_city_manager", "pattern": "\\brefer(?:red|ral|ring)? (?:\\w+ )?to the City Manager\\b"},
+  {"id": "direct_city_manager", "pattern": "\\bdirect(?:ed|s|ing)? (?:the )?City Manager\\b"},
+  {"id": "within_period", "pattern": "\\bwithin (?:\\d+|thirty|sixty|ninety|six|twelve) (?:days|months)\\b"}
+ ],
+ "direction_fields": ["recommendation", "action", "policy committee recommendation"],
+ "follow_up_exclude_pattern": "^(?:Budget Referral|Referral|Refer|Referring|Contract|Contracts|Adopt|Adoption|Amendments?|Amending|Ordinance|Resolution|Companion Report)\\b",
+ "follow_up_title_pattern": "\\b(?:status report|update|report back|annual report|follow[- ]up|progress report)\\b",
+ "deadline_pattern": "\\b(?:by|for|in|no later than|before|until) (January|February|March|April|May|June|July|August|September|October|November|December|Spring|Summer|Fall|Winter) (\\d{4})\\b",
+ "link": {
+  "min_shared_terms": 2,
+  "max_term_share": 0.02,
+  "min_link_score": 10.0,
+  "grace_days_after_deadline": 180,
+  "window_days_without_deadline": 730,
+  "generic_terms": ["berkeley", "city", "council", "report", "status", "update", "audit", "program", "response", "annual", "item", "follow", "progress", "referral", "recommendation", "recommendations", "information", "back", "with", "from", "that", "this", "their", "plan", "policy", "services", "service", "department"]
+ }
+}
