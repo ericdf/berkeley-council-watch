@@ -8,7 +8,13 @@ The public-records archive at [ericdf/berkeley-public-records](https://github.co
 
 This system does not import nonpublic data or depend on nonpublic sources. Public entries must be supported by public records and reviewed before publication.
 
-The policy site has a separate editorial purpose: analysis, positions, and systemic arguments. It may cite tracker records. Berkeley Council Watch presents attributed statements, decisions, evidence, and status.
+The [Berkeley Decision Project](https://ericdf.github.io/berkeley-decision-project/index.html) publishes analysis, positions, and arguments about systemic issues; its [Substack publication](https://berkeleydecisionproject.substack.com) distributes shorter updates and points readers to full analysis. Berkeley Council Watch presents attributed statements, decisions, evidence, and status. Link analysis to relevant tracker records, and link Substack posts to Council Watch when it tracks the matter.
+
+## Cross-linking and subscriptions
+
+Use the sites as connected entry points with distinct jobs. Add a modest, sitewide header or footer callout on Council Watch inviting readers to subscribe to the [Berkeley Decision Project on Substack](https://berkeleydecisionproject.substack.com) for new analysis. Keep it a simple outbound link; do not embed a signup form or add tracking without a documented need.
+
+When an analysis covers a tracked matter, link from the [Berkeley Decision Project](https://ericdf.github.io/berkeley-decision-project/index.html) to the relevant Council Watch record. Substack posts should link to the full analysis and, where useful, the related Council Watch record. Avoid duplicating full articles or tracker data across the sites; use links so readers can move between analysis, evidence, and follow-through.
 
 ## Deployment model
 
