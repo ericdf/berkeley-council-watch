@@ -1,0 +1,57 @@
+name: Backfill candidates
+
+# Backfill Pass 2 (docs/AUTOMATION_SPEC.md §7): scan archived annotated agendas for accountability
+# candidates and upload the review bundles as an artifact. Nothing is committed or merged; no secrets.
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: First meeting date (YYYY-MM-DD)
+        default: "2021-01-19"
+        required: true
+      end:
+        description: Last meeting date (YYYY-MM-DD); blank means today
+        default: ""
+        required: false
+      archive_ref:
+        description: Archive commit or branch to read
+        default: main
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: backfill-candidates
+  cancel-in-progress: false
+
+jobs:
+  candidates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Install pdftotext
+        run: sudo apt-get install -y -qq poppler-utils >/dev/null
+
+      - name: Fetch the archive's annotated agendas
+        env:
+          ARCHIVE_REF: ${{ inputs.archive_ref }}
+        run: |
+          git clone --quiet --filter=blob:none --no-checkout https://github.com/ericdf/berkeley-public-records "$RUNNER_TEMP/archive"
+          git -C "$RUNNER_TEMP/archive" sparse-checkout set catalog manifest L2 tools L0/annotated-agendas L1/annotated-agendas
+          git -C "$RUNNER_TEMP/archive" checkout --quiet "$ARCHIVE_REF"
+
+      - name: Find candidates
+        env:
+          START: ${{ inputs.start }}
+          END: ${{ inputs.end }}
+        run: python3 -m councilwatch candidates --archive "$RUNNER_TEMP/archive" --start "$START" --end "${END:-$(date -u +%F)}" --out _backfill
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: backfill-candidates
+          path: _backfill/
+          retention-days: 30

@@ -35,6 +35,14 @@ jobs:
           git -C "$RUNNER_TEMP/archive" checkout --quiet "$commit"
           python3 -m councilwatch reproduce --archive "$RUNNER_TEMP/archive"
 
+      - name: Backfill replay fixture (AUTOMATION_SPEC §12)
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          git clone --quiet --filter=blob:none --no-checkout https://github.com/ericdf/berkeley-public-records "$RUNNER_TEMP/archive-full"
+          git -C "$RUNNER_TEMP/archive-full" sparse-checkout set catalog manifest L2 tools L0/annotated-agendas L1/annotated-agendas
+          git -C "$RUNNER_TEMP/archive-full" checkout --quiet main
+          python3 -m councilwatch replay-check --archive "$RUNNER_TEMP/archive-full"
+
       - name: Build the site
         run: python3 -m councilwatch build
 

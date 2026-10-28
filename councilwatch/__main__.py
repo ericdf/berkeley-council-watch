@@ -6,6 +6,12 @@
   build                     render the static site into _site/
   check-links               check internal links in _site/
   paths FILE...             fail if any path is outside the agenda-intake allowlist
+  candidates --archive PATH --start DATE --end DATE [--out DIR]
+                            backfill Pass 2: write unconfirmed review bundles; fail on any quote that
+                            is not on its cited pages
+  replay-check --archive PATH
+                            the backfill acceptance fixture: July 30, 2024 Item 18 must link to
+                            December 10, 2024 Item 22, with the deadline from Council's recorded action
 """
 import argparse
 import filecmp
@@ -13,7 +19,7 @@ import os
 import sys
 import tempfile
 
-from . import generate, links, site, tracked, validate
+from . import candidates, generate, links, site, tracked, validate
 
 
 def main(argv=None):
@@ -35,6 +41,13 @@ def main(argv=None):
     b.add_argument("--tracked", default=tracked.TRACKED_DIR)
     sub.add_parser("check-links").add_argument("--site", default=site.SITE_DIR)
     sub.add_parser("paths").add_argument("files", nargs="*")
+    c = sub.add_parser("candidates")
+    c.add_argument("--archive", required=True)
+    c.add_argument("--start", default="2021-01-19")
+    c.add_argument("--end", required=True)
+    c.add_argument("--out", default="_backfill")
+    c.add_argument("--allow-dirty", action="store_true")
+    sub.add_parser("replay-check").add_argument("--archive", required=True)
     a = p.parse_args(argv)
 
     if a.cmd == "generate":
@@ -69,6 +82,23 @@ def main(argv=None):
         for x in problems:
             print(x)
         print(f"{n} pages, {len(problems)} broken links")
+        return 1 if problems else 0
+    if a.cmd == "candidates":
+        cs, report = candidates.run(a.archive, a.start, a.end, allow_dirty=a.allow_dirty)
+        problems = candidates.verify_all(a.archive, cs, a.allow_dirty)
+        years = candidates.write_bundles(cs, report, a.out)
+        print(f"{report['meetings_scanned']} meetings, {report['items_parsed']} items, candidates {report['candidates']}, "
+              f"{report['linked_directions']} directions with proposed follow-ups, {len(report['exceptions'])} exceptions; "
+              f"bundles for {', '.join(years) or 'no years'} in {a.out}")
+        for x in problems:
+            print(x)
+        print(f"{len(problems)} quote check failures")
+        return 1 if problems else 0
+    if a.cmd == "replay-check":
+        problems = candidates.replay_check(a.archive)
+        for x in problems:
+            print(x)
+        print("replay fixture passes" if not problems else "replay fixture fails")
         return 1 if problems else 0
     if a.cmd == "paths":
         bad = validate.check_paths(a.files)
