@@ -185,4 +185,4 @@ Software code in this repository is licensed under the MIT License. Original wri
 6. Review the built site’s rendering, citations, status language, and base-path behavior.
 7. Enable GitHub Pages deployment as a separate maintainer step, then expand the dataset.
 
-Keep the data model broad enough for any Council item with trackable commitments or follow-through. Use the contracting audit as an initial case, not as the whole product scope.
+Keep the data model broad enough for any Council item with trackable commitments or follow-through. Use the contracting audit as an initial case, not as the whole product scope: City Auditor Jenny Wong, *City Contracts: Outdated Process Led to Non-Competitive Contracts* (report dated February 19, 2026; presented to Council as Consent Calendar Item 6, March 10, 2026; 13 recommendations). Official copy: https://berkeleyca.gov/sites/default/files/2026-02/2026-03-10%20Item%2006%20City%20Contracts%20Outdated%20Process%20Led%20to%20Non-Competitive.pdf. Cite it by archive ID once the public-records archive holds it.
