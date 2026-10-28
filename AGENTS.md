@@ -46,8 +46,8 @@ Treat README.md and docs/IMPLEMENTATION.md as the project contract. If the reque
 ## Static site and accessibility
 
 - Ensure pages work when served from the GitHub Pages project base path, including direct navigation to detail pages.
-- Include a visible attribution notice in the shared footer on every published page. Use consistent wording: “Original content by Berkeley Council Watch is licensed under CC BY 4.0. Please credit Berkeley Council Watch, link to this page and the license, and indicate changes.” Link “CC BY 4.0” to https://creativecommons.org/licenses/by/4.0/.
-- Make clear on pages that include official records or third-party material that those materials may have separate terms and are not relicensed by the repository’s CC BY notice.
+- Include a visible CC BY 4.0 attribution notice in the shared footer on every published page. Use consistent wording: “Original written content by Berkeley Council Watch is licensed under CC BY 4.0. Please credit Berkeley Council Watch, link to this page and the license, and indicate changes.” Link “CC BY 4.0” to https://creativecommons.org/licenses/by/4.0/. The code is MIT-licensed; the footer notice applies to original written content and original data selection or arrangement only.
+- Make clear on pages that include official records or third-party material that those materials may have separate terms and are not relicensed by the CC BY 4.0 content notice.
 - Use semantic HTML, keyboard-accessible controls, visible focus, readable contrast, responsive layouts, and descriptive link text.
 - Keep core facts and citations available without client-side JavaScript where practical.
 - Do not hide caveats, status dates, or source links behind hover-only interactions.
