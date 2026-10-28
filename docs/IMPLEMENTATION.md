@@ -144,6 +144,8 @@ Begin with text-based, Git-tracked records such as JSON or YAML, grouped by reco
 
 Generate overview, matter-detail, audit/recommendation, and contract timeline pages from the same records. Pages should show source links next to factual claims, display the last-reviewed date, and preserve context when filtering or searching. Avoid unexplained composite scores in the accountability site.
 
+Every published page must include a visible, consistent attribution notice in its shared footer: “Original content by Berkeley Council Watch is licensed under CC BY 4.0. Please credit Berkeley Council Watch, link to this page and the license, and indicate changes.” Link CC BY 4.0 to https://creativecommons.org/licenses/by/4.0/. This notice applies to original project-authored material; public records, source documents, quoted or excerpted third-party material, and items marked with separate terms remain subject to their own applicable terms.
+
 Keep the rendered site reproducible from a checkout of the repository. Generated output should not become a second place to edit the data.
 
 ## Validation and CI
