@@ -1,0 +1,22 @@
+[
+ {
+  "citation": {
+   "locator": "PDF p. 13",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "heading": "Berkeley spent millions of dollars on non-competitive contracts when competition was likely possible.",
+  "id": "contracts-audit-2026-finding-1",
+  "matter_id": "contracts-audit-2026",
+  "number": "1"
+ },
+ {
+  "citation": {
+   "locator": "PDF p. 22",
+   "source_id": "src-contracts-audit-2026"
+  },
+  "heading": "Paper contracts, unclear guidance, and short staffing led to delays and overuse of non-competitive contracts.",
+  "id": "contracts-audit-2026-finding-2",
+  "matter_id": "contracts-audit-2026",
+  "number": "2"
+ }
+]

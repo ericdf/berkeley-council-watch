@@ -8,6 +8,7 @@ import html
 import os
 import shutil
 
+from . import tracked as tracked_mod
 from .generate import OUT_DIR
 from .validate import load_dataset
 
@@ -58,6 +59,9 @@ ul.links{margin:4px 0;padding-left:20px}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px}dt{font-weight:600}dd{margin:0}
 footer{border-top:1px solid var(--line);margin-top:40px;padding-top:12px;padding-bottom:32px;font-size:.92rem;color:var(--muted)}
 code{font-size:.9em;overflow-wrap:anywhere}
+blockquote{margin:4px 0 6px;padding-left:10px;border-left:3px solid var(--line)}
+details{margin-top:4px}summary{cursor:pointer}
+h3{font-size:1.05rem;margin:20px 0 4px}h4{font-size:1rem;margin:16px 0 4px}
 """
 
 
@@ -93,6 +97,7 @@ def page(title, body, depth, meta):
 <p class="tagline">{TAGLINE}</p>
 <nav aria-label="Site"><ul>
 <li><a href="{up}index.html">Home</a></li>
+<li><a href="{up}matters/index.html">Tracked matters</a></li>
 <li><a href="{up}meetings/index.html">Meetings</a></li>
 <li><a href="{up}about.html">About the records</a></li>
 <li><a href="{up}data/index.html">Data</a></li>
@@ -159,7 +164,9 @@ def render_index(d):
     body = f"""<h1>{TITLE}</h1>
 <p>A public, source-linked record of what Berkeley's City Council and City government said would happen,
 what they directed, and what the public record shows afterward.</p>
-<p class="note">{SCOPE_NOTE} Tracking of commitments and follow-through will be added as reviewed records.</p>
+<p>{link("matters/index.html", "Tracked matters")} follow specific commitments: who made them, what was
+due, and what the record shows since, with every statement linked to its source.</p>
+<p class="note">The meeting pages hold agenda records. {SCOPE_NOTE}</p>
 <h2>What is here now</h2>
 <ul>
 <li>{c['meetings']} City Council meetings listed by the City, {c['meetings_with_archived_documents']} with archived
@@ -294,11 +301,142 @@ def render_data(d):
     return page("Data", body, 1, meta)
 
 
-def build(data_dir=OUT_DIR, out=SITE_DIR):
+COMMITMENT_STATUS = {
+    "not_yet_due": "Not yet due",
+    "no_due_date_stated": "No due date stated",
+    "in_progress_reported": "In progress, as reported",
+    "delayed": "Delayed",
+    "reported_complete": "Reported complete",
+    "completion_verified": "Completion verified",
+    "cancelled_or_superseded": "Cancelled or superseded",
+    "unknown_no_update_located": "No update located",
+}
+
+
+def source_link(src, loc):
+    """A citation rendered beside its claim: archived copy first, then the City's copy."""
+    target = src.get("archive_url") or src.get("official_url")
+    label = f"{src['title']}, {loc}"
+    extra = ""
+    if src.get("archive_url") and src.get("official_url"):
+        extra = f" ({link(src['official_url'], 'City copy')})"
+    return f"{link(target, label)}{extra}"
+
+
+def cites(citations, sources, with_quotes=True):
+    out = []
+    for c in citations:
+        s = sources[c["source_id"]]
+        q = f"<blockquote>{esc(c['quote'])}</blockquote>" if with_quotes and c.get("quote") else ""
+        out.append(f"{q}<span class=\"muted\">Source: {source_link(s, c['locator'])}</span>")
+    return "<br>".join(out)
+
+
+def render_matters_index(t, meta):
+    rows = []
+    for m in t["matters.json"]:
+        cs = [c for c in t["commitments.json"] if c["matter_id"] == m["id"]]
+        rows.append(f"<tr><td>{link(m['id'] + '.html', m['title'])}</td><td>{esc(fmt_date(m['opened']))}</td>"
+                    f"<td>{len(cs)}</td><td>{esc(fmt_date(m['last_reviewed']))}</td></tr>")
+    body = ("<h1>Tracked matters</h1>"
+            "<p>Public commitments and what the record shows afterward. Each entry is reviewed before it is "
+            "published, and every statement links to its source.</p>"
+            '<div class="table-wrap"><table><caption>Tracked matters</caption><thead><tr>'
+            '<th scope="col">Matter</th><th scope="col">Opened</th><th scope="col">Commitments</th>'
+            f'<th scope="col">Last reviewed</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
+    return page("Tracked matters", body, 1, meta)
+
+
+def render_matter(m, t, meta, meetings):
+    sources = {s["id"]: s for s in t["sources.json"]}
+    recs = {r["id"]: r for r in t["recommendations.json"]}
+    cs = [c for c in t["commitments.json"] if c["matter_id"] == m["id"]]
+    evs = sorted((e for e in t["events.json"] if e["matter_id"] == m["id"]), key=lambda e: (e["date"], e["id"]))
+    finds = [f for f in t["findings.json"] if f["matter_id"] == m["id"]]
+    body = [f"<h1>{esc(m['title'])}</h1>",
+            f"<p>{esc(m['description'])}</p>",
+            f"<p class=\"muted\">Last reviewed {esc(fmt_date(m['last_reviewed']))}. Statuses describe the "
+            "evidence located as of the date shown. A missing update is a gap in the public record, not proof "
+            "that no work occurred.</p>"]
+    if m["agenda_items"]:
+        links_ = []
+        for a in m["agenda_items"]:
+            mt = meetings.get(a["meeting_id"])
+            when = fmt_date(mt["meeting_date"]) if mt else a["meeting_id"]
+            links_.append(link(f"../meetings/{a['meeting_id']}.html", f"Council meeting, {when}, Item {a['item']}"))
+        body.append("<p>On the agenda: " + " · ".join(links_) + "</p>")
+    if m["qualifications"]:
+        body.append(f'<div class="note"><strong>Qualification in the source.</strong> {cites(m["qualifications"], sources)}</div>')
+
+    body.append("<h2>Commitments and status</h2>")
+    rows = []
+    for c in cs:
+        cur = tracked_mod.current_status(c)
+        rec = recs.get(c["recommendation_id"]) if c["recommendation_id"] else None
+        what = f'<a href="#rec-{esc(rec["number"])}">{esc(c["label"])}</a>' if rec else esc(c["label"])
+        due = esc(c["due"]["as_stated"]) if c["due"]["as_stated"] else '<span class="muted">not stated</span>'
+        hist = []
+        for h in c["status_history"]:
+            src = cites(h["citations"], sources, with_quotes=False)
+            searched = f"<br><span class=\"muted\">Searched: {esc(h['searched'])}</span>" if h.get("searched") else ""
+            hist.append(f"<li><strong>{esc(COMMITMENT_STATUS[h['status']])}</strong> as of {esc(fmt_date(h['as_of']))}. "
+                        f"{esc(h['basis'])}{searched}{'<br>' + src if src else ''}</li>")
+        rows.append(f"<tr><td>{what}<br><span class=\"muted\">{esc(c['actor'])}</span></td><td>{due}</td>"
+                    f"<td><strong>{esc(COMMITMENT_STATUS[cur['status']])}</strong><br>"
+                    f"<span class=\"muted\">as of {esc(fmt_date(cur['as_of']))}</span></td>"
+                    f"<td><blockquote>{esc(c['statement'])}</blockquote>"
+                    f"<span class=\"muted\">Source: {source_link(sources[c['citation']['source_id']], c['citation']['locator'])}</span>"
+                    f"<details><summary>Status history</summary><ul>{''.join(hist)}</ul></details></td></tr>")
+    body.append('<div class="table-wrap"><table><caption>Commitments</caption><thead><tr>'
+                '<th scope="col">Commitment and who is responsible</th><th scope="col">Date, as stated</th>'
+                '<th scope="col">Current status</th><th scope="col">What the record says</th></tr></thead>'
+                f'<tbody>{"".join(rows)}</tbody></table></div>')
+
+    if evs:
+        body.append("<h2>Timeline</h2><ul>")
+        for e in evs:
+            body.append(f"<li><strong>{esc(fmt_date(e['date']))}</strong>: {esc(e['description'])}<br>{cites(e['citations'], sources)}</li>")
+        body.append("</ul>")
+
+    if finds:
+        body.append("<h2>Findings and recommendations</h2>")
+        for f in finds:
+            body.append(f"<h3>Finding {esc(f['number'])}</h3><p>{esc(f['heading'])}<br>"
+                        f"<span class=\"muted\">Source: {source_link(sources[f['citation']['source_id']], f['citation']['locator'])}</span></p>")
+            for r in (x for x in t["recommendations.json"] if x["finding_id"] == f["id"]):
+                mr = r["management_response"]
+                body.append(f'<h4 id="rec-{esc(r["number"])}">Recommendation {esc(r["number"])}</h4>'
+                            f"<blockquote>{esc(r['text'])}</blockquote><dl>"
+                            f"<dt>Addressed to</dt><dd>{esc(', '.join(r['addressed_to']))}</dd>"
+                            f"<dt>Management response</dt><dd>{esc(mr['position'])}</dd>"
+                            f"<dt>Implementation date</dt><dd>{esc(mr['implementation_date'])}</dd>"
+                            f"<dt>Corrective action plan</dt><dd>{esc(mr['corrective_action_plan'])}</dd></dl>"
+                            f"<p class=\"muted\">Source: {source_link(sources[r['citation']['source_id']], r['citation']['locator'])}</p>")
+
+    body.append("<h2>Sources</h2><ul>")
+    used = sorted({c["source_id"] for rec in [m, *cs, *evs, *finds, *t["recommendations.json"]]
+                   for c in tracked_mod.citations_of(rec)} & set(sources))
+    for sid in used:
+        s = sources[sid]
+        bits = [link(s["archive_url"], "archived copy")] if s.get("archive_url") else []
+        if s.get("official_url"):
+            bits.append(link(s["official_url"], "City copy"))
+        fp = f" sha256 <code>{esc(s['sha256'][:16])}…</code>." if s.get("sha256") else ""
+        note = f" {esc(s['note'])}" if s.get("note") else ""
+        date = fmt_date(s["document_date"]) if s.get("document_date") else "undated"
+        body.append(f"<li>{esc(s['issuer'])}, <em>{esc(s['title'])}</em>, {esc(date)}. {' · '.join(bits)}."
+                    f"<span class=\"muted\">{fp}{note}</span></li>")
+    body.append("</ul><p class=\"muted\">Quoted official records keep their own terms and are not relicensed "
+                "by this site's content notice.</p>")
+    return page(m["title"], "\n".join(body), 1, meta)
+
+
+def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None):
     d = load_dataset(data_dir)
     if os.path.isdir(out):
         shutil.rmtree(out)
     os.makedirs(os.path.join(out, "meetings"))
+    os.makedirs(os.path.join(out, "matters"))
     os.makedirs(os.path.join(out, "assets"))
     shutil.copytree(data_dir, os.path.join(out, "data", "agenda-intake"))
     files = {
@@ -314,6 +452,12 @@ def build(data_dir=OUT_DIR, out=SITE_DIR):
         by_meeting.setdefault(it["meeting_id"], []).append(it)
     for m in d["meetings.json"]:
         files[f"meetings/{m['meeting_id']}.html"] = render_meeting(m, by_meeting.get(m["meeting_id"], []), d["meta.json"])
+    t = tracked_mod.load(tracked_dir or tracked_mod.TRACKED_DIR)
+    meetings = {m["meeting_id"]: m for m in d["meetings.json"]}
+    files["matters/index.html"] = render_matters_index(t, d["meta.json"])
+    for m in t["matters.json"]:
+        files[f"matters/{m['id']}.html"] = render_matter(m, t, d["meta.json"], meetings)
+    shutil.copytree(tracked_dir or tracked_mod.TRACKED_DIR, os.path.join(out, "data", "tracked"))
     for name, text in files.items():
         with open(os.path.join(out, name), "w", encoding="utf-8") as f:
             f.write(text)

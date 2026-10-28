@@ -64,7 +64,11 @@ The initial implementation should favor a small, auditable system. The technical
 
 ## Status
 
-The first part of the site is built: agenda records for every City Council meeting the City lists, generated from the public-records archive (see [docs/DATA.md](docs/DATA.md)). Tracked commitments and follow-up will be added as reviewed records. GitHub Pages is not enabled yet.
+The site is built from two kinds of data:
+- **Agenda records** for every City Council meeting the City lists. They are generated from the public-records archive; see [docs/DATA.md](docs/DATA.md).
+- **Reviewed tracked matters.** The first is the City Auditor's 2026 contracts audit; see [docs/TRACKED.md](docs/TRACKED.md).
+
+GitHub Pages is not enabled yet.
 
 ## Corrections and contributions
 

@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 import unittest
 
-from councilwatch import generate, links, site, validate
+from councilwatch import generate, links, site, tracked, validate
 from councilwatch.archive import Archive, ArchiveError
 
 FIXTURE = os.path.join(os.path.dirname(__file__), "fixtures", "archive")
@@ -186,10 +186,15 @@ class SiteTests(Base):
     def test_build_and_links(self):
         self.gen()
         out = os.path.join(self.tmp, "site")
-        site.build(self.out, out)
+        empty = os.path.join(self.tmp, "tracked")
+        os.makedirs(empty)
+        for name in tracked.FILES:
+            with open(os.path.join(empty, name), "w") as f:
+                f.write("[]\n")
+        site.build(self.out, out, empty)
         n, problems = links.check(out)
         self.assertEqual(problems, [])
-        self.assertEqual(n, 3 + 4)  # three meeting pages, home, about, meetings index, data index
+        self.assertEqual(n, 3 + 5)  # three meeting pages; home, about, meetings, matters and data indexes
         with open(os.path.join(out, "meetings", "city-council-2026-10-27.html")) as f:
             page = f.read()
         self.assertIn("Contract amendment &amp; &lt;renewal&gt;", page)

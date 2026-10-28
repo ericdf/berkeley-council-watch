@@ -77,6 +77,9 @@ for it:
 `counts.archived_council_documents_without_catalog_meeting` counts archived Council documents with
 no meeting in the City listing. They are mostly from before the listing's January 2021 start.
 
+Reviewed accountability records (matters, commitments, follow-up events) live separately in
+`data/tracked/`. See [TRACKED.md](TRACKED.md).
+
 ## Not yet built
 
 - The unattended workflows: daily discovery in the archive, and sync and auto-merge here. Both wait on

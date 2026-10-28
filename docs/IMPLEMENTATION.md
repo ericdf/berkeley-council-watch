@@ -125,6 +125,8 @@ Represent each amount with its type, currency, period, status (proposed, authori
 
 ## Status and history
 
+The reviewed records are implemented in `data/tracked/`, described in [TRACKED.md](TRACKED.md).
+
 Every current status must have an as-of date and supporting evidence. Keep status changes as dated history rather than overwriting the only record of what was previously reported.
 
 At minimum, the model should distinguish:

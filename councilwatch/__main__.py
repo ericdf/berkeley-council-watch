@@ -1,7 +1,7 @@
 """Command line: python3 -m councilwatch <command>
 
   generate --archive PATH   regenerate data/generated/agenda-intake/ from an archive checkout
-  validate                  check the generated dataset (schemas, ids, status rules, forbidden text)
+  validate                  check the generated dataset and the reviewed records in data/tracked/
   reproduce --archive PATH  regenerate into a scratch directory and require byte-identical output
   build                     render the static site into _site/
   check-links               check internal links in _site/
@@ -13,7 +13,7 @@ import os
 import sys
 import tempfile
 
-from . import generate, links, site, validate
+from . import generate, links, site, tracked, validate
 
 
 def main(argv=None):
@@ -23,13 +23,16 @@ def main(argv=None):
     g.add_argument("--archive", required=True)
     g.add_argument("--out", default=generate.OUT_DIR)
     g.add_argument("--allow-dirty", action="store_true")
-    sub.add_parser("validate").add_argument("--data", default=generate.OUT_DIR)
+    v = sub.add_parser("validate")
+    v.add_argument("--data", default=generate.OUT_DIR)
+    v.add_argument("--tracked", default=tracked.TRACKED_DIR)
     r = sub.add_parser("reproduce")
     r.add_argument("--archive", required=True)
     r.add_argument("--data", default=generate.OUT_DIR)
     b = sub.add_parser("build")
     b.add_argument("--data", default=generate.OUT_DIR)
     b.add_argument("--out", default=site.SITE_DIR)
+    b.add_argument("--tracked", default=tracked.TRACKED_DIR)
     sub.add_parser("check-links").add_argument("--site", default=site.SITE_DIR)
     sub.add_parser("paths").add_argument("files", nargs="*")
     a = p.parse_args(argv)
@@ -42,6 +45,8 @@ def main(argv=None):
         return 0
     if a.cmd == "validate":
         errors = validate.validate(a.data)
+        meeting_ids = {m["meeting_id"] for m in validate.load_dataset(a.data)["meetings.json"]}
+        errors += tracked.validate(a.tracked, meeting_ids)
         for e in errors:
             print(e)
         print(f"{len(errors)} errors")
@@ -56,7 +61,7 @@ def main(argv=None):
             print("reproducible" if not (mismatch or missing) else "not reproducible")
             return 1 if mismatch or missing else 0
     if a.cmd == "build":
-        files = site.build(a.data, a.out)
+        files = site.build(a.data, a.out, a.tracked)
         print(f"built {len(files)} files into {a.out}")
         return 0
     if a.cmd == "check-links":

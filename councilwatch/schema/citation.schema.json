@@ -1,0 +1,25 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Citation",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "source_id",
+  "locator"
+ ],
+ "properties": {
+  "source_id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "locator": {
+   "type": "string",
+   "minLength": 1
+  },
+  "quote": {
+   "type": "string",
+   "minLength": 1
+  }
+ },
+ "$id": "citation.schema.json"
+}

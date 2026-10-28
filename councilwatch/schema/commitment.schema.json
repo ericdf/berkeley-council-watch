@@ -1,0 +1,95 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Commitment",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "matter_id",
+  "recommendation_id",
+  "kind",
+  "label",
+  "statement",
+  "actor",
+  "due",
+  "success_measure",
+  "citation",
+  "status_history"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "matter_id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "recommendation_id": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "kind": {
+   "type": "string",
+   "enum": [
+    "corrective_action",
+    "report_back",
+    "deliverable",
+    "deadline",
+    "spending_condition",
+    "outcome_measure"
+   ]
+  },
+  "label": {
+   "type": "string",
+   "minLength": 1
+  },
+  "statement": {
+   "type": "string",
+   "minLength": 1
+  },
+  "actor": {
+   "type": "string",
+   "minLength": 1
+  },
+  "due": {
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+    "as_stated",
+    "is_date"
+   ],
+   "properties": {
+    "as_stated": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "is_date": {
+     "type": "boolean"
+    }
+   }
+  },
+  "success_measure": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "citation": {
+   "$ref": "citation.schema.json"
+  },
+  "status_history": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "$ref": "status_entry.schema.json"
+   }
+  }
+ },
+ "$id": "commitment.schema.json"
+}

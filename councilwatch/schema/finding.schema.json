@@ -1,0 +1,35 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Audit finding",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "id",
+  "matter_id",
+  "number",
+  "heading",
+  "citation"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "matter_id": {
+   "type": "string",
+   "pattern": "^[a-z0-9][a-z0-9.-]*$"
+  },
+  "number": {
+   "type": "string",
+   "minLength": 1
+  },
+  "heading": {
+   "type": "string",
+   "minLength": 1
+  },
+  "citation": {
+   "$ref": "citation.schema.json"
+  }
+ },
+ "$id": "finding.schema.json"
+}
