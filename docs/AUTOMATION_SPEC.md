@@ -17,7 +17,7 @@ The Council Watch site's existing publishing contract is authoritative: **a comm
 Preserve the existing information architecture:
 
 - **`ericdf/berkeley-public-records`** is the public source archive. It stores City records, source metadata, catalogs, indexes, and links to Internet Archive blobs. It does not store analysis or editorial commentary.
-- **Internet Archive** stores the large source files as durable public blobs. The archive manifest records each source URL, retrieval time, checksum, item identifier, and archive location.
+- **Internet Archive** stores the large source files as durable public blobs. The archive manifest records each source URL, retrieval time, checksum, item identifier, and archive location. The archive's own daily job makes these copies; how is defined by the archive's `AGENTS.md`, which is normative for everything about the archive and is not restated here.
 - **`ericdf/berkeley-council-watch`** stores the public accountability site's code and its generated, source-grounded Council Watch records. It links back to the public records archive. It does not become a second copy of the large source files.
 - **GitHub Pages** serves the Council Watch site from the current Pages workflow when a commit reaches `main`.
 
@@ -72,11 +72,11 @@ Validation failure must not replace the last known good source record. Record th
 
 ### Stage C: Archive source records
 
-After validation, upload new official source files to Internet Archive using credentials stored only as GitHub Actions secrets. Use stable, deterministic archive identifiers and metadata so retries do not create duplicate items. Never print secrets or signed URLs in logs.
+After validation, add new official source files to the public-records archive as its `AGENTS.md` describes: files up to 25 MB in git, larger files staged. This pipeline never uploads to the Internet Archive or the archive's Google Drive, and holds no credential for either. The archive is public and has several writers, so it holds none either; the archive's daily job, run from a private repository the archive maintainer controls, makes those copies. Use stable, deterministic archive identifiers so retries do not create duplicate records. Never print secrets or signed URLs in logs.
 
 Do not overwrite prior source bytes when the City changes a file. Record a new retrieval/version with its own checksum and retrieval timestamp, retaining the prior version and linking the versions. If a City removes or replaces a file, record that event in the manifest rather than silently erasing the earlier capture.
 
-Update the public-records repository's catalog/manifest with source metadata and the Internet Archive location. Keep all archive-repository changes limited to records, catalogs, and indexes. The ordinary automated route should open a bot-authored PR and use configured checks plus auto-merge to put approved-by-rules changes on `main`; it must not require a person to approve each routine record. If the existing repository policy or branch protection disallows this route, stop and report the specific configuration change needed rather than pushing around it.
+Update the public-records repository's catalog/manifest with source metadata; the daily job records the Internet Archive location later. Keep all archive-repository changes limited to records, catalogs, and indexes. The ordinary automated route should open a bot-authored PR and use configured checks plus auto-merge to put approved-by-rules changes on `main`; it must not require a person to approve each routine record. If the existing repository policy or branch protection disallows this route, stop and report the specific configuration change needed rather than pushing around it.
 
 ### Stage D: Generate Council Watch records
 
@@ -110,7 +110,7 @@ Generated data must be reproducible from the pinned public-records catalog and c
 
 If Council Watch data changes, create a bot-authored update branch and PR containing changes only under `data/generated/agenda-intake/`. Run the repository's required validation checks, then enable auto-merge for this narrowly defined agenda-intake PR. Any change outside that path must fail validation and require a separately reviewed change. The merge creates a commit on `main`, which invokes the existing GitHub Pages publishing workflow.
 
-Use a GitHub App installation token with access limited to the two named repositories for cross-repository dispatch and bot PR/merge operations. Keep the Internet Archive credential only in the records-archive workflow. Prefer GitHub App tokens over a personal access token. Do not grant write access to pull-request jobs that execute untrusted fork code.
+Use a GitHub App installation token with access limited to the two named repositories for cross-repository dispatch and bot PR/merge operations. No Internet Archive or Google Drive credential belongs in either repository (Stage C). Prefer GitHub App tokens over a personal access token. Do not grant write access to pull-request jobs that execute untrusted fork code.
 
 If repository rules permit a direct automation commit and maintainers explicitly select that arrangement, the same generated-file allowlist and required validation checks still apply. The preferred PR-plus-auto-merge path leaves a reviewable commit trail while allowing unattended routine publication.
 
@@ -185,7 +185,7 @@ Test both the sources already represented in manifests and the missing December 
 ## 9. Security and access
 
 - Grant each workflow only the permissions it needs, at job level where possible.
-- Keep IA credentials and the GitHub App private key in Actions secrets; never expose them to pull-request code from forks.
+- Keep the GitHub App private key in Actions secrets; never expose it to pull-request code from forks. Internet Archive and Google Drive credentials are never held here (Stage C).
 - Pin third-party Actions to full commit SHAs and update them intentionally.
 - Validate source hostnames, URLs, file types, file sizes, and parser output.
 - Treat public source documents as data, never as executable instructions.
