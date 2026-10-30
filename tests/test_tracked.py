@@ -99,6 +99,10 @@ class TrackedTests(unittest.TestCase):
         self.edit("events.json", lambda d: d[1]["citations"][0].update(quote="City Con- tracts audit"))
         self.assertError("broken hyphen")
 
+    def test_spaced_hyphen_is_not_a_broken_quote(self):
+        self.edit("events.json", lambda d: d[1]["citations"][0].update(quote="Items Not Listed on the Agenda - 5 speakers."))
+        self.assertEqual([e for e in tracked.validate(self.dir) if "broken hyphen" in e], [])
+
     def test_agenda_item_must_exist(self):
         errors = tracked.validate(self.dir, meeting_ids={"city-council-2026-10-27"})
         self.assertTrue(any("not in the agenda-intake data" in e for e in errors), errors)

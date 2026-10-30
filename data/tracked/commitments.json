@@ -1119,5 +1119,1059 @@
    }
   ],
   "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 26, Recommendation (p. 12)",
+   "quote": "Refer to the City Manager to develop modifications to Berkeley Municipal Code Title 21 (Subdivisions) and refer to the City Manager and Planning Commission to develop modifications to Title 23 (Zoning) to enhance ownership opportunities for middle housing–in alignment with unanimous Council direction for a Middle Housing Ordinance and allowances under Chapter 783, Statutes of 2023 (S.B.",
+   "source_id": "src-bcc-2025-01-21-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "middle-income-homeownership-2025--2025-01-21--item-26",
+  "kind": "deliverable",
+  "label": "City Manager develop changes to BMC Title 21 (Subdivisions), and with the Planning Commission to Title 23 (Zoning), to expand ownership opportunities for middle housing",
+  "matter_id": "middle-income-homeownership-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager to develop modifications to Berkeley Municipal Code Title 21 (Subdivisions) and refer to the City Manager and Planning Commission to develop modifications to Title 23 (Zoning) to enhance ownership opportunities for middle housing–in alignment with unanimous Council direction for a Middle Housing Ordinance and allowances under Chapter 783, Statutes of 2023 (S.B.",
+  "status_history": [
+   {
+    "as_of": "2025-01-21",
+    "basis": "The City Council took the recorded action on Item 26.",
+    "citations": [
+     {
+      "locator": "Item 26, Action (p. 12)",
+      "quote": "Moved to Consent Calendar. Councilmembers Humbert, Bartlett, and Lunaparra added as co-sponsors. Approved recommendation as submitted in Supplemental Communications Packet #2 by Councilmember Kesarwani.",
+      "source_id": "src-bcc-2025-01-21-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 7, Recommendation (p. 5)",
+   "quote": "Refer to the City Manager a request to have staff prioritize study of intersections that include traffic diverters but do not feature stop signs; additionally, staff are requested to review past Council referrals for adoption of National Association of City Transportation Officials (NACTO) street design standards and provide an update on the status and timeline for meeting past policy directives.",
+   "source_id": "src-bcc-2025-02-11-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "traffic-diverter-intersections-nacto-2025--2025-02-11-0--item-7",
+  "kind": "report_back",
+  "label": "City Manager prioritize study of intersections with traffic diverters but no stop signs, and update Council on the status and timeline of past referrals to adopt NACTO street design standards",
+  "matter_id": "traffic-diverter-intersections-nacto-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager a request to have staff prioritize study of intersections that include traffic diverters but do not feature stop signs; additionally, staff are requested to review past Council referrals for adoption of National Association of City Transportation Officials (NACTO) street design standards and provide an update on the status and timeline for meeting past policy directives.",
+  "status_history": [
+   {
+    "as_of": "2025-02-11",
+    "basis": "The City Council took the recorded action on Item 7.",
+    "citations": [
+     {
+      "locator": "Item 7, Action (p. 5)",
+      "quote": "Councilmember Tregub added as a co-sponsor. Approved recommendation as revised in Supplemental Communications Packet #2 from Councilmember Humbert. Recess 8:06 p.m. – 8:18 p.m.",
+      "source_id": "src-bcc-2025-02-11-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 8, Recommendation (p. 5)",
+   "quote": "We recommend City Council request that the City Manager report back during the next follow-up period in fall 2025, and every year thereafter, regarding the status of the 8 re-opened recommendations until reported fully implemented by the Public Works Department and City Manager’s Office.",
+   "source_id": "src-bcc-2025-02-11-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": "fall 2025",
+   "is_date": true
+  },
+  "id": "leases-audit-follow-up-2025--2025-02-11-0--item-8",
+  "kind": "report_back",
+  "label": "City Manager report back on the status of the 8 re-opened 2009 leases audit recommendations in fall 2025, and every year until fully implemented",
+  "matter_id": "leases-audit-follow-up-2025",
+  "recommendation_id": null,
+  "statement": "We recommend City Council request that the City Manager report back during the next follow-up period in fall 2025, and every year thereafter, regarding the status of the 8 re-opened recommendations until reported fully implemented by the Public Works Department and City Manager’s Office.",
+  "status_history": [
+   {
+    "as_of": "2025-02-11",
+    "basis": "The City Council took the recorded action on Item 8. The deadline used is from the recommendation: \"in fall 2025\".",
+    "citations": [
+     {
+      "locator": "Item 8, Action (p. 5)",
+      "quote": "2 speakers. Presentation made and discussion held. M/S/C (Taplin/Blackaby) to approve the recommendation from the City Auditor.",
+      "source_id": "src-bcc-2025-02-11-regular-annotated-agenda"
+     }
+    ],
+    "status": "not_yet_due"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 9, Action (p. 6)",
+   "quote": "3) refer to the City Manager to award six points for panel upgrades; and 4) request an evaluation report three years after implementation.",
+   "source_id": "src-bcc-2025-02-11-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "beso-amendments-2025--2025-02-11-0--item-9",
+  "kind": "deliverable",
+  "label": "City Manager award six points for panel upgrades under the amended BESO; the Council also requested an evaluation report three years after implementation",
+  "matter_id": "beso-amendments-2025",
+  "recommendation_id": null,
+  "statement": "3) refer to the City Manager to award six points for panel upgrades; and 4) request an evaluation report three years after implementation.",
+  "status_history": [
+   {
+    "as_of": "2025-02-11",
+    "basis": "The City Council took the recorded action on Item 9.",
+    "citations": [
+     {
+      "locator": "Item 9, Action (p. 6)",
+      "quote": "17 speakers. M/S/C (Kesarwani/Blackaby) to: 1) adopt first reading of Ordinance No. 7,953-N.S. amended to establish the escrow deposit amount at $5,000; 2) refer the 50/50 buyer/seller split to the City Attorney for analysis; 3) refer to the City Manager to award six points for panel upgrades; and 4) request an evaluation report three years after implementation. Second reading scheduled for March 25, 2025.",
+      "source_id": "src-bcc-2025-02-11-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 1b, Recommendation (p. 3)",
+   "quote": "Staff will return to Council by the end of 2025 with a resolution for the triannual adoption of the existing Berkeley Building, Historical and Fire Codes that will be applicable to Berkeley Fire Zone 3 and 4.",
+   "source_id": "src-bcc-2025-02-11-special-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "ember-building-code-2025--2025-02-11-1--item-1b",
+  "kind": "deliverable",
+  "label": "City Manager return to Council by the end of 2025 with a resolution adopting building, historical and fire codes for Berkeley Fire Zones 3 and 4",
+  "matter_id": "ember-building-code-2025",
+  "recommendation_id": null,
+  "statement": "Staff will return to Council by the end of 2025 with a resolution for the triannual adoption of the existing Berkeley Building, Historical and Fire Codes that will be applicable to Berkeley Fire Zone 3 and 4.",
+  "status_history": [
+   {
+    "as_of": "2025-02-11",
+    "basis": "The City Council took the recorded action on Item 1b.",
+    "citations": [
+     {
+      "locator": "Item 1b, Action (p. 3)",
+      "quote": "See action listed under Item 1a.",
+      "source_id": "src-bcc-2025-02-11-special-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 1c, Recommendation (p. 3)",
+   "quote": "Staff propose returning to City Council no later than the 2nd week of May 2025; and 2.",
+   "source_id": "src-bcc-2025-02-11-special-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "ember-leave-early-2025--2025-02-11-1--item-1c",
+  "kind": "report_back",
+  "label": "City Manager return to Council by the second week of May 2025 on the thresholds for Extreme Fire Weather and Particularly Dangerous Situation designations and their effect on the Leave Early concept",
+  "matter_id": "ember-leave-early-2025",
+  "recommendation_id": null,
+  "statement": "Staff propose returning to City Council no later than the 2nd week of May 2025; and 2.",
+  "status_history": [
+   {
+    "as_of": "2025-02-11",
+    "basis": "The City Council took the recorded action on Item 1c.",
+    "citations": [
+     {
+      "locator": "Item 1c, Action (p. 3)",
+      "quote": "See action listed under Item 1a.",
+      "source_id": "src-bcc-2025-02-11-special-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 1d, Recommendation (p. 4)",
+   "quote": "Refer to the City Manager to direct the Departments of Public Works, Police and Fire to work collaboratively to implement Safe Passages Program – EMBER Initiative Phase 1 and 2 and report back to City Council on progress no later than the 2nd week of May 2025.",
+   "source_id": "src-bcc-2025-02-11-special-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "ember-safe-passages-2025--2025-02-11-1--item-1d",
+  "kind": "report_back",
+  "label": "City Manager direct Public Works, Police and Fire to implement Safe Passages Program phases 1 and 2, and report back on progress by the second week of May 2025",
+  "matter_id": "ember-safe-passages-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager to direct the Departments of Public Works, Police and Fire to work collaboratively to implement Safe Passages Program – EMBER Initiative Phase 1 and 2 and report back to City Council on progress no later than the 2nd week of May 2025.",
+  "status_history": [
+   {
+    "as_of": "2025-02-11",
+    "basis": "The City Council took the recorded action on Item 1d.",
+    "citations": [
+     {
+      "locator": "Item 1d, Action (p. 4)",
+      "quote": "See action listed under Item 1a. Councilmember Taplin added as a co-sponsor in Supplemental Communications Packet #2 from Councilmember Blackaby.",
+      "source_id": "src-bcc-2025-02-11-special-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 14, Recommendation (p. 8)",
+   "quote": "Adopt a referral to the City Manager to study the fiscal impacts and feasibility of a transfer tax exemption for 100% affordable housing projects owned and operated by non-profit entities or community land trusts, including but not limited to: the rehabilitation of existing projects; acquisition, rehabilitation, and conversion of market-rate housing complexes into deed-restricted affordable housing; and land donated for the purpose of constructing deed-restricted affordable housing and make a recommendation for further Council action.",
+   "source_id": "src-bcc-2025-03-11-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "affordable-housing-transfer-tax-exemption-2025--2025-03-11--item-14",
+  "kind": "deliverable",
+  "label": "City Manager study the fiscal impact and feasibility of a transfer tax exemption for 100% affordable housing owned by non-profits or community land trusts, and recommend further Council action",
+  "matter_id": "affordable-housing-transfer-tax-exemption-2025",
+  "recommendation_id": null,
+  "statement": "Adopt a referral to the City Manager to study the fiscal impacts and feasibility of a transfer tax exemption for 100% affordable housing projects owned and operated by non-profit entities or community land trusts, including but not limited to: the rehabilitation of existing projects; acquisition, rehabilitation, and conversion of market-rate housing complexes into deed-restricted affordable housing; and land donated for the purpose of constructing deed-restricted affordable housing and make a recommendation for further Council action.",
+  "status_history": [
+   {
+    "as_of": "2025-03-11",
+    "basis": "The City Council took the recorded action on Item 14.",
+    "citations": [
+     {
+      "locator": "Item 14, Action (p. 8)",
+      "quote": "Approved recommendation as recommended by the Land Use, Housing & Economic Development Policy Committee.",
+      "source_id": "src-bcc-2025-03-11-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 1, Action (p. 2)",
+   "quote": "Direct the City Manager to run the ranking algorithm and return to Council with a final ranked list of referrals for adoption.",
+   "source_id": "src-bcc-2025-03-11-special-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "referral-prioritization-rrv-2024--2025-03-11-0--item-1",
+  "kind": "deliverable",
+  "label": "City Manager run the 2025 referral ranking algorithm and return to Council with a final ranked list for adoption",
+  "matter_id": "referral-prioritization-rrv-2024",
+  "recommendation_id": null,
+  "statement": "Direct the City Manager to run the ranking algorithm and return to Council with a final ranked list of referrals for adoption.",
+  "status_history": [
+   {
+    "as_of": "2025-03-11",
+    "basis": "The City Council took the recorded action on Item 1.",
+    "citations": [
+     {
+      "locator": "Item 1, Action (p. 2)",
+      "quote": "11 speakers. M/S/C (Tregub/O’Keefe) to: 1. Approve the removal of referrals that have been nominated for removal by the Council as revised to retain the following referrals as part of the Referral Prioritization Process: • Adding BMC Chapter 13.107, Helping Achieve Responsible Development with Healthcare and Apprenticeship Training Standards (HARD HATS) Ordinance (ID# DMND0004099); • Budget Referral: No Right on Red Signs (ID# DMND0004059); • Prioritizing Pedestrians at Intersections (ID# DMND0002584); • Berkeley Food Utility and Access Resilience Measure (FARM) (ID# DMND0004109); • Adopt Berkeley Municipal Code Chapter 13.89: Community/Tenant Opportunity to Purchase Act (ID# DMND0004197); and • Planning Commission Referral for a Pilot Density Bonus Program for the Telegraph Avenue Commercial District to Generate Revenue to House the Homeless and Extremely Low-Income Individuals (ID# DMND0004188). 2. Direct the City Manager to run the ranking algorithm and return to Council with a final ranked list of referrals for adoption.",
+      "source_id": "src-bcc-2025-03-11-special-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Attorney",
+  "citation": {
+   "locator": "Item 12, Recommendation (p. 7)",
+   "quote": "Referral to the City Attorney to return to City Council in June with an analysis and recommendation regarding the codification of Berkeley’s Sanctuary policies and protections through a city ordinance.",
+   "source_id": "src-bcc-2025-04-15-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "sanctuary-city-ordinance-2025--2025-04-15--item-12",
+  "kind": "report_back",
+  "label": "City Attorney return to Council in June 2025 with an analysis and recommendation on codifying Berkeley's Sanctuary policies in an ordinance",
+  "matter_id": "sanctuary-city-ordinance-2025",
+  "recommendation_id": null,
+  "statement": "Referral to the City Attorney to return to City Council in June with an analysis and recommendation regarding the codification of Berkeley’s Sanctuary policies and protections through a city ordinance.",
+  "status_history": [
+   {
+    "as_of": "2025-04-15",
+    "basis": "The City Council took the recorded action on Item 12.",
+    "citations": [
+     {
+      "locator": "Item 12, Action (p. 7)",
+      "quote": "Approved recommendation.",
+      "source_id": "src-bcc-2025-04-15-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 14, Recommendation (p. 8)",
+   "quote": "Approve the Resolution and refer to the City Manager to establish an open and transparent process for community-based organizations seeking a grant of emergency funds outside of the City’s existing request for proposal (RFP) or other procurement processes.",
+   "source_id": "src-bcc-2025-04-15-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "cbo-emergency-funding-process-2025--2025-04-15--item-14",
+  "kind": "deliverable",
+  "label": "City Manager establish an open and transparent process for community-based organizations seeking emergency grants outside the City's RFP and procurement processes",
+  "matter_id": "cbo-emergency-funding-process-2025",
+  "recommendation_id": null,
+  "statement": "Approve the Resolution and refer to the City Manager to establish an open and transparent process for community-based organizations seeking a grant of emergency funds outside of the City’s existing request for proposal (RFP) or other procurement processes.",
+  "status_history": [
+   {
+    "as_of": "2025-04-15",
+    "basis": "The City Council took the recorded action on Item 14.",
+    "citations": [
+     {
+      "locator": "Item 14, Action (p. 8)",
+      "quote": "Adopted Resolution No. 71,719–N.S. as recommended by the Budget & Finance Committee.",
+      "source_id": "src-bcc-2025-04-15-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 29, Recommendation (p. 11)",
+   "quote": "Refer to the City Manager a request for staff to identify a list of potential locations of City-owned and private properties (to be leased or acquired) – for the purpose of establishing 24/7 staffed shelter sites, including but not limited to indoor/outdoor camping areas, safe RV and car park zones, and/or congregate or non-congregate shelters for people experiencing homelessness based on the model used at Grayson Street and other models deemed successful by the City Manager.",
+   "source_id": "src-bcc-2025-05-20-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "shelter-sites-and-homelessness-report-2025--2025-05-20--item-29",
+  "kind": "deliverable",
+  "label": "City Manager identify potential City-owned and private sites for 24/7 staffed shelter, and report to Council on ongoing efforts to address homelessness and the mental health crisis, including costs",
+  "matter_id": "shelter-sites-and-homelessness-report-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager a request for staff to identify a list of potential locations of City-owned and private properties (to be leased or acquired) – for the purpose of establishing 24/7 staffed shelter sites, including but not limited to indoor/outdoor camping areas, safe RV and car park zones, and/or congregate or non-congregate shelters for people experiencing homelessness based on the model used at Grayson Street and other models deemed successful by the City Manager.",
+  "status_history": [
+   {
+    "as_of": "2025-05-20",
+    "basis": "The City Council took the recorded action on Item 29.",
+    "citations": [
+     {
+      "locator": "Item 29, Recommendation (p. 11)",
+      "source_id": "src-bcc-2025-05-20-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 24, Action (p. 11)",
+   "quote": "Beforehand and until such permanent capital improvements are feasible, refer to the City Manager to design and construct a an interim “quick build” project if deemed feasible, prudent, and non-disruptive to permanent improvements.",
+   "source_id": "src-bcc-2025-06-03-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "oxford-street-safety-2025--2025-06-03--item-24",
+  "kind": "deliverable",
+  "label": "City Manager design and build an interim quick-build project with Class IV protected bike lanes and pedestrian safety improvements on Oxford and Fulton Streets between Bancroft Way and Hearst Avenue, if feasible",
+  "matter_id": "oxford-street-safety-2025",
+  "recommendation_id": null,
+  "statement": "Beforehand and until such permanent capital improvements are feasible, refer to the City Manager to design and construct a an interim “quick build” project if deemed feasible, prudent, and non-disruptive to permanent improvements.",
+  "status_history": [
+   {
+    "as_of": "2025-06-03",
+    "basis": "The City Council took the recorded action on Item 24.",
+    "citations": [
+     {
+      "locator": "Item 24, Action (p. 11)",
+      "quote": "Approved revised recommendation from Councilmember Tregub in to add Councilmember Humbert as a co-sponsor and revise the recommendation to read as below. 1. Provide direction to City Manager and staff to implement city-adopted 2017 Bike Plan, the 2021 UC Berkeley Oxford St./Fulton St. Multimodal Mobility and Urban Design Study and the 2025 Bike Plan Update recommendations on Oxford Street and Fulton Street from Bancroft Way to Hearst Avenue alongside upcoming repaving. 2. Beforehand and until such permanent capital improvements are feasible, refer to the City Manager to design and construct a an interim “quick build” project if deemed feasible, prudent, and non-disruptive to permanent improvements. Improvements implemented should, at minimum, include Class IV protected bike lanes and pedestrian safety facilities. Pedestrian facilities may include daylighting, high-visibility crosswalks, curb extensions, and other improvements that increase safety for pedestrians on the corridor, informed by the above-mentioned plans. 3. Refer to the City Manager to seek funding in the amount of $400,000 from all available sources including, but not limited to the Street and Open Space Improvement Fund (SOSIP), Measure FF (2024), Long Range Development Plan (LRDP) and refer to the June budget process (FY26 Mid-Biennial Update) to provide the City of Berkeley Public Works Department with funds to support design, engineering, and construction costs for the quick build and permanent components of the project. 4. Refer to the City Manager and to The City/UC/Student Relations “4x6” Committee to explore opportunities to leverage existing and establish new financial partnerships with UC Berkeley on safety projects along Oxford Street and adjacent areas, including the Oxford and Bancroft volleyball courts project and similar initiatives.",
+      "source_id": "src-bcc-2025-06-03-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 28, Recommendation (p. 12)",
+   "quote": "Refer to the City Manager the assessment of potential 2026 revenue ballot measures to support capital improvements to fire department facilities and return recommendations for council adoption.",
+   "source_id": "src-bcc-2025-06-17-regular-annotated-agenda-v2"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "fire-facility-revenue-measures-2025--2025-06-17--item-28",
+  "kind": "report_back",
+  "label": "City Manager assess potential 2026 revenue ballot measures for fire department facility improvements and return recommendations for Council adoption",
+  "matter_id": "fire-facility-revenue-measures-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager the assessment of potential 2026 revenue ballot measures to support capital improvements to fire department facilities and return recommendations for council adoption.",
+  "status_history": [
+   {
+    "as_of": "2025-06-17",
+    "basis": "The City Council took the recorded action on Item 28.",
+    "citations": [
+     {
+      "locator": "Item 28, Action (p. 12)",
+      "quote": "Approved recommendation as recommended by the Budget & Finance Committee.",
+      "source_id": "src-bcc-2025-06-17-regular-annotated-agenda-v2"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 43a, Action (p. 19)",
+   "quote": "Refer to the City Manager to develop a comprehensive roll-out and implementation plan for EMBER; then return to City Council before September 9, 2025;",
+   "source_id": "src-bcc-2025-06-17-regular-annotated-agenda-v2"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "ember-implementation-plan-2025--2025-06-17--item-43a",
+  "kind": "deadline",
+  "label": "City Manager return to Council before September 9, 2025 with an EMBER roll-out plan, and before December 31, 2025 with vegetation management amendments from a resident working group and clarifying Fire Code language",
+  "matter_id": "ember-implementation-plan-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager to develop a comprehensive roll-out and implementation plan for EMBER; then return to City Council before September 9, 2025;",
+  "status_history": [
+   {
+    "as_of": "2025-06-17",
+    "basis": "The City Council took the recorded action on Item 43a.",
+    "citations": [
+     {
+      "locator": "Item 43a, Action (p. 19)",
+      "quote": "M/S/C (Blackaby/Lunaparra) to: 1) Adopt the second reading of Ordinance No. 7,959–N.S. in Item 43.a. including material in Supplemental Communications Packet #2 from the City Attorney’s Office, and further amended at the meeting by the Fire Chief to make minor wording changes in paragraph (b) of the supplemental materials. 2) Adopt second reading of Ordinance No. 7,958-N.S. in Item 43.b. to designate Fire Hazard Severity Zones (FHSZ) within the Local Responsibility Area as recommended by the California Department of Forestry and Fire Protection (CALFIRE) pursuant to Government Code Section 51178. 3) Adopt the recommendations in Item 43.c. including materials in Supplemental Communications Packet #2 from Councilmember Blackaby to: 1. Refer to the City Manager to develop a comprehensive roll-out and implementation plan for EMBER; then return to City Council before September 9, 2025; 2. Refer to the City Manager to create a working group of Berkeley residents and stakeholders to review the vegetation management portion of the Fire Code to ensure that it is clear, reflects unique local conditions, and incorporates the best available fire science (inclusive of any more conservative code adopted by the California Board of Forestry); then return with additional amendments to the City Council before December 31, 2025 as part of the Fire Department’s Triennial Fire Code Update Process; and 3. Refer to the City Manager to incorporate additional clarifying language listed in this report; then return amendments to the City Council before December 31, 2025 as part of the Fire Department’s Triennial Fire Code Update Process.",
+      "source_id": "src-bcc-2025-06-17-regular-annotated-agenda-v2"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 17, Action (p. 11)",
+   "quote": "71,903–N.S. accepting the attached Surveillance Acquisition Report for the Flock Safety Condor video cameras, pursuant to Berkeley Municipal Code (B.M.C.) Chapter 2.99. and re-affirming the associated Berkeley Police Department (BPD) Use Policies (BPD Policy 351: External Fixed Video Surveillance Cameras and BPD Policy 1304: Surveillance Use Policy—External Fixed Video Surveillance Cameras), which were previously approved by Council on June 13, 2023; and 2) As part of Item 17, the Berkeley City Council directs the City Manager to address each of the elements below: 1.",
+   "source_id": "src-bcc-2025-07-22-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "flock-camera-safeguards-2025--2025-07-22--item-17",
+  "kind": "report_back",
+  "label": "City Manager include in each November biannual Surveillance Technology Report confirmation that BPD has no direct data-sharing agreements, and a log of any sharing of surveillance video or audio",
+  "matter_id": "flock-camera-safeguards-2025",
+  "recommendation_id": null,
+  "statement": "71,903–N.S. accepting the attached Surveillance Acquisition Report for the Flock Safety Condor video cameras, pursuant to Berkeley Municipal Code (B.M.C.) Chapter 2.99. and re-affirming the associated Berkeley Police Department (BPD) Use Policies (BPD Policy 351: External Fixed Video Surveillance Cameras and BPD Policy 1304: Surveillance Use Policy—External Fixed Video Surveillance Cameras), which were previously approved by Council on June 13, 2023; and 2) As part of Item 17, the Berkeley City Council directs the City Manager to address each of the elements below: 1.",
+  "status_history": [
+   {
+    "as_of": "2025-07-22",
+    "basis": "The City Council took the recorded action on Item 17.",
+    "citations": [
+     {
+      "locator": "Item 17, Action (p. 11)",
+      "quote": "20 speakers. M/S/C (Tregub/Ishii) to: 1) adopt Resolution No. 71,903–N.S. accepting the attached Surveillance Acquisition Report for the Flock Safety Condor video cameras, pursuant to Berkeley Municipal Code (B.M.C.) Chapter 2.99. and re-affirming the associated Berkeley Police Department (BPD) Use Policies (BPD Policy 351: External Fixed Video Surveillance Cameras and BPD Policy 1304: Surveillance Use Policy—External Fixed Video Surveillance Cameras), which were previously approved by Council on June 13, 2023; and 2) As part of Item 17, the Berkeley City Council directs the City Manager to address each of the elements below: 1. Biannual (Twice Per Year) Audit Report The Berkeley Police Department’s Biannual Surveillance Technology Report, presented each November, shall include, but not be limited to the following information from the preceding review period as an additional privacy safeguard: a. Confirm that BPD doesn’t enter any direct data sharing agreements or give direct access to outside agencies. A log of any instance of when surveillance video and/or audio data has been shared, including date, time, reason for search, and any recipient agencies.",
+      "source_id": "src-bcc-2025-07-22-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 25, Recommendation (p. 12)",
+   "quote": "Refer to the City Manager a feasibility analysis and request for recommendations for possible models to either establish a green workforce development board within the City of Berkeley or strengthen the alignment between City of Berkeley and community partner programs and the Alameda County Workforce development board to create pathways to gainful employment in green industries and accelerate the transition to a fossil-free local economy.",
+   "source_id": "src-bcc-2025-07-29-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "green-workforce-development-2025--2025-07-29--item-25",
+  "kind": "deliverable",
+  "label": "City Manager analyze feasibility and recommend models for a City green workforce development board, or for closer alignment with the Alameda County Workforce Development Board",
+  "matter_id": "green-workforce-development-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager a feasibility analysis and request for recommendations for possible models to either establish a green workforce development board within the City of Berkeley or strengthen the alignment between City of Berkeley and community partner programs and the Alameda County Workforce development board to create pathways to gainful employment in green industries and accelerate the transition to a fossil-free local economy.",
+  "status_history": [
+   {
+    "as_of": "2025-07-29",
+    "basis": "The City Council took the recorded action on Item 25.",
+    "citations": [
+     {
+      "locator": "Item 25, Action (p. 12)",
+      "quote": "Approved recommendation as recommended by the Land Use, Housing & Economic Development Committee and as revised in Supplemental Communications Packet #1 by Councilmember Taplin.",
+      "source_id": "src-bcc-2025-07-29-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 12, Recommendation (pp. 6–7)",
+   "quote": "Refer to the City Manager and Planning Commission to amend BMC Chapter 23.204.020 to allow for Alcoholic Beverage Retail Sales in the Telegraph Avenue Commercial District.",
+   "source_id": "src-bcc-2025-09-16-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "telegraph-alcohol-retail-2025--2025-09-16-1--item-12",
+  "kind": "deliverable",
+  "label": "City Manager and Planning Commission amend BMC 23.204.020 to allow alcoholic beverage retail sales in the Telegraph Avenue Commercial District",
+  "matter_id": "telegraph-alcohol-retail-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager and Planning Commission to amend BMC Chapter 23.204.020 to allow for Alcoholic Beverage Retail Sales in the Telegraph Avenue Commercial District.",
+  "status_history": [
+   {
+    "as_of": "2025-09-16",
+    "basis": "The City Council took the recorded action on Item 12.",
+    "citations": [
+     {
+      "locator": "Item 12, Action (pp. 6–7)",
+      "quote": "Mayor Ishii and Councilmember Tregub added as co-sponsors. Approved recommendation. Public Comment – Items Not Listed on the Agenda - 5 speakers.",
+      "source_id": "src-bcc-2025-09-16-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 1b, Recommendation (p. 2)",
+   "quote": "We recommend City Council request that the City Manager report back during the audit follow-up period in Fall 2026, and annually thereafter, regarding the status of our audit recommendations until reported fully implemented by the Homelessness Response Team and the City Manager’s Office.",
+   "source_id": "src-bcc-2025-09-16-special-annotated-agenda"
+  },
+  "due": {
+   "as_stated": "Fall 2026",
+   "is_date": true
+  },
+  "id": "homeless-response-team-audit-2025--2025-09-16-3--item-1b",
+  "kind": "report_back",
+  "label": "City Manager report back on the status of the Homeless Response Team audit recommendations in fall 2026, and annually until fully implemented",
+  "matter_id": "homeless-response-team-audit-2025",
+  "recommendation_id": null,
+  "statement": "We recommend City Council request that the City Manager report back during the audit follow-up period in Fall 2026, and annually thereafter, regarding the status of our audit recommendations until reported fully implemented by the Homelessness Response Team and the City Manager’s Office.",
+  "status_history": [
+   {
+    "as_of": "2025-09-16",
+    "basis": "The City Council took the recorded action on Item 1b. The deadline used is from the recommendation: \"in Fall 2026\".",
+    "citations": [
+     {
+      "locator": "Item 1b, Action (p. 2)",
+      "quote": "Presentation made and discussion held. M/S/C (Lunaparra/Taplin) to approve the recommendation with the amendment noted by the City Manager regarding the changing the reporting schedule from quarterly to semi-annually.",
+      "source_id": "src-bcc-2025-09-16-special-annotated-agenda"
+     }
+    ],
+    "status": "not_yet_due"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 11, Recommendation (p. 6)",
+   "quote": "Refer to the City Manager the assessment of potential revenue measures to finance capital improvements for certain recreational and community-serving city facilities that have completed the conceptual or design phase and return to the city council with recommendations for placing such measures on the November 2026 midterm election ballot.",
+   "source_id": "src-bcc-2025-09-30-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "recreation-facility-revenue-measures-2025--2025-09-30--item-11",
+  "kind": "report_back",
+  "label": "City Manager assess revenue measures for recreation and community facility improvements and return with recommendations for the November 2026 ballot",
+  "matter_id": "recreation-facility-revenue-measures-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager the assessment of potential revenue measures to finance capital improvements for certain recreational and community-serving city facilities that have completed the conceptual or design phase and return to the city council with recommendations for placing such measures on the November 2026 midterm election ballot.",
+  "status_history": [
+   {
+    "as_of": "2025-09-30",
+    "basis": "The City Council took the recorded action on Item 11.",
+    "citations": [
+     {
+      "locator": "Item 11, Action (p. 6)",
+      "quote": "Approved recommendation as recommended by the Facilities, Infrastructure, Transportation, Environment & Sustainability Policy Committee.",
+      "source_id": "src-bcc-2025-09-30-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 15, Recommendation (p. 8)",
+   "quote": "Refer to the City Manager in collaboration with the City Attorney’s Office to develop proposed increases to the shared micromobility program fees and return to Council within 120 days.",
+   "source_id": "src-bcc-2025-09-30-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "micromobility-fees-2025--2025-09-30--item-15",
+  "kind": "deadline",
+  "label": "City Manager, with the City Attorney, develop proposed increases to shared micromobility program fees and return to Council within 120 days",
+  "matter_id": "micromobility-fees-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager in collaboration with the City Attorney’s Office to develop proposed increases to the shared micromobility program fees and return to Council within 120 days.",
+  "status_history": [
+   {
+    "as_of": "2025-09-30",
+    "basis": "The City Council took the recorded action on Item 15.",
+    "citations": [
+     {
+      "locator": "Item 15, Action (p. 8)",
+      "quote": "Approved recommendation as recommended by the Facilities, Infrastructure, Transportation, Environment & Sustainability Policy Committee.",
+      "source_id": "src-bcc-2025-09-30-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Attorney",
+  "citation": {
+   "locator": "Item 18, Action (p. 9)",
+   "quote": "3 speakers. M/S/C (Ishii/Tregub) to refer the item to the City Attorney with direction to prepare a memorandum to City staff and the City Council addressing the applicable legal doctrines related to due process, pending investigations, and other related matters.",
+   "source_id": "src-bcc-2025-09-30-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "personnel-investigation-communications-2025--2025-09-30--item-18",
+  "kind": "deliverable",
+  "label": "City Attorney prepare a memorandum to City staff and Council on the legal doctrines of due process and pending investigations",
+  "matter_id": "personnel-investigation-communications-2025",
+  "recommendation_id": null,
+  "statement": "3 speakers. M/S/C (Ishii/Tregub) to refer the item to the City Attorney with direction to prepare a memorandum to City staff and the City Council addressing the applicable legal doctrines related to due process, pending investigations, and other related matters.",
+  "status_history": [
+   {
+    "as_of": "2025-09-30",
+    "basis": "The City Council took the recorded action on Item 18.",
+    "citations": [
+     {
+      "locator": "Item 18, Action (p. 9)",
+      "quote": "3 speakers. M/S/C (Ishii/Tregub) to refer the item to the City Attorney with direction to prepare a memorandum to City staff and the City Council addressing the applicable legal doctrines related to due process, pending investigations, and other related matters.",
+      "source_id": "src-bcc-2025-09-30-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Attorney",
+  "citation": {
+   "locator": "Item 12, Recommendation (p. 6)",
+   "quote": "Refer to the City Manager a request that the City Attorney draft amendments to Berkeley Municipal Code Chapter 13.40, Community Noise, to prohibit in certain circumstances the installation and use of motion-activated surveillance devices that emit artificial or pre-recorded sound—including alarms, sirens, or voice recordings—in response to the presence or motion of persons in the public right-of-way or on private property that is open to the public, with additional clarification regarding location parameters and permissible volume levels.",
+   "source_id": "src-bcc-2025-10-14-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "motion-activated-sound-devices-2025--2025-10-14--item-12",
+  "kind": "deliverable",
+  "label": "City Attorney draft amendments to BMC Chapter 13.40 to prohibit, in certain circumstances, motion-activated devices that emit sound at people in public spaces",
+  "matter_id": "motion-activated-sound-devices-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager a request that the City Attorney draft amendments to Berkeley Municipal Code Chapter 13.40, Community Noise, to prohibit in certain circumstances the installation and use of motion-activated surveillance devices that emit artificial or pre-recorded sound—including alarms, sirens, or voice recordings—in response to the presence or motion of persons in the public right-of-way or on private property that is open to the public, with additional clarification regarding location parameters and permissible volume levels.",
+  "status_history": [
+   {
+    "as_of": "2025-10-14",
+    "basis": "The City Council took the recorded action on Item 12.",
+    "citations": [
+     {
+      "locator": "Item 12, Action (p. 6)",
+      "quote": "Councilmembers Humbert, Tregub, and Lunaparra added as co-sponsors. Approved recommendation as recommended by the Public Safety Committee.",
+      "source_id": "src-bcc-2025-10-14-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 2, Recommendation (p. 3)",
+   "quote": "Adopt a Resolution implementing Option A for the approximately 200-foot segment of Virginia Street east of Acton Street next to the North Berkeley BART Station and directing the City Manager to work with BART to proceed with the Virginia Street Bikeway.",
+   "source_id": "src-bcc-2025-10-28-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "virginia-street-bikeway-2025--2025-10-28--item-2",
+  "kind": "deliverable",
+  "label": "City Manager work with BART to proceed with the Virginia Street Bikeway east of Acton Street (Option A)",
+  "matter_id": "virginia-street-bikeway-2025",
+  "recommendation_id": null,
+  "statement": "Adopt a Resolution implementing Option A for the approximately 200-foot segment of Virginia Street east of Acton Street next to the North Berkeley BART Station and directing the City Manager to work with BART to proceed with the Virginia Street Bikeway.",
+  "status_history": [
+   {
+    "as_of": "2025-10-28",
+    "basis": "The City Council took the recorded action on Item 2.",
+    "citations": [
+     {
+      "locator": "Item 2, Action (p. 3)",
+      "quote": "Adopted Resolution No. 71,985–N.S.",
+      "source_id": "src-bcc-2025-10-28-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 27, Action (p. 11)",
+   "quote": "Item 27 was referred to the City Manager for consideration of the Commission’s recommendation and to report back to Council.",
+   "source_id": "src-bcc-2025-10-28-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "turtle-island-monument-2025--2025-10-28--item-27",
+  "kind": "report_back",
+  "label": "City Manager consider the Commission's recommendation on the Turtle Island Monument information and report back to Council",
+  "matter_id": "turtle-island-monument-2025",
+  "recommendation_id": null,
+  "statement": "Item 27 was referred to the City Manager for consideration of the Commission’s recommendation and to report back to Council.",
+  "status_history": [
+   {
+    "as_of": "2025-10-28",
+    "basis": "The City Council took the recorded action on Item 27.",
+    "citations": [
+     {
+      "locator": "Item 27, Action (p. 11)",
+      "quote": "Item 27 was referred to the City Manager for consideration of the Commission’s recommendation and to report back to Council.",
+      "source_id": "src-bcc-2025-10-28-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 12, Action (p. 8)",
+   "quote": "16 speakers. M/S/C (Kesarwani/Humbert) to refer the proposal from Councilmember Kesarwani in Supplemental Communications Packet #1 and the proposal from Councilmember Tregub in Supplemental Communications Packet #2 to the City Manager and the City Attorney to consider potential amendments to Chapter 3.24.",
+   "source_id": "src-bcc-2025-11-10-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "landmarks-designation-procedure-2025--2025-11-10--item-12",
+  "kind": "deliverable",
+  "label": "City Manager and City Attorney consider amendments to BMC Chapter 3.24 on landmark designation procedures, from the two proposals referred",
+  "matter_id": "landmarks-designation-procedure-2025",
+  "recommendation_id": null,
+  "statement": "16 speakers. M/S/C (Kesarwani/Humbert) to refer the proposal from Councilmember Kesarwani in Supplemental Communications Packet #1 and the proposal from Councilmember Tregub in Supplemental Communications Packet #2 to the City Manager and the City Attorney to consider potential amendments to Chapter 3.24.",
+  "status_history": [
+   {
+    "as_of": "2025-11-10",
+    "basis": "The City Council took the recorded action on Item 12.",
+    "citations": [
+     {
+      "locator": "Item 12, Action (p. 8)",
+      "quote": "16 speakers. M/S/C (Kesarwani/Humbert) to refer the proposal from Councilmember Kesarwani in Supplemental Communications Packet #1 and the proposal from Councilmember Tregub in Supplemental Communications Packet #2 to the City Manager and the City Attorney to consider potential amendments to Chapter 3.24.",
+      "source_id": "src-bcc-2025-11-10-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 26, Recommendation (p. 10)",
+   "quote": "Structured Bond Issuance Framework: Refer to the City Manager assessment, analysis, and presentation to the Council of a potential comprehensive fiscal policy every two years that institutionalizes, codifies, and makes publicly accessible a regular, predictive schedule for general obligation bond issuance.",
+   "source_id": "src-bcc-2025-11-18-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "bond-issuance-and-investment-policy-2025--2025-11-18--item-26",
+  "kind": "deliverable",
+  "label": "City Manager assess and present to Council a biennial bond issuance policy, and review and benchmark the City's investment policies",
+  "matter_id": "bond-issuance-and-investment-policy-2025",
+  "recommendation_id": null,
+  "statement": "Structured Bond Issuance Framework: Refer to the City Manager assessment, analysis, and presentation to the Council of a potential comprehensive fiscal policy every two years that institutionalizes, codifies, and makes publicly accessible a regular, predictive schedule for general obligation bond issuance.",
+  "status_history": [
+   {
+    "as_of": "2025-11-18",
+    "basis": "The City Council took the recorded action on Item 26.",
+    "citations": [
+     {
+      "locator": "Item 26, Recommendation (p. 10)",
+      "source_id": "src-bcc-2025-11-18-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 30, Action (p. 13)",
+   "quote": "72,048– N.S. as amended in Supplemental Communications Packet #2 by Councilmember Humbert; and further amended to add a clause directing the City Manager to initiate non-renewal proceedings for all Mills Act contracts.",
+   "source_id": "src-bcc-2025-11-18-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "mills-act-non-renewal-2025--2025-11-18--item-30",
+  "kind": "deliverable",
+  "label": "City Manager initiate non-renewal proceedings for all Mills Act contracts",
+  "matter_id": "mills-act-non-renewal-2025",
+  "recommendation_id": null,
+  "statement": "72,048– N.S. as amended in Supplemental Communications Packet #2 by Councilmember Humbert; and further amended to add a clause directing the City Manager to initiate non-renewal proceedings for all Mills Act contracts.",
+  "status_history": [
+   {
+    "as_of": "2025-11-18",
+    "basis": "The City Council took the recorded action on Item 30.",
+    "citations": [
+     {
+      "locator": "Item 30, Action (p. 13)",
+      "quote": "10 speakers. M/S/C (Humbert/Lunaparra) to adopt Resolution No. 72,048– N.S. as amended in Supplemental Communications Packet #2 by Councilmember Humbert; and further amended to add a clause directing the City Manager to initiate non-renewal proceedings for all Mills Act contracts. In addition, Councilmember Humbert noted for the record that this action does not constitute a project under the California Environmental Quality Act.",
+      "source_id": "src-bcc-2025-11-18-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 31, Recommendation (p. 14)",
+   "quote": "Refer to the City Manager the initiation of the process outlined by BMC 2.99: Surveillance Technology Ordinance (STO) for the Berkeley Police Department (BPD) to acquire and use Unmanned Aerial Systems (UAS), including Drones as First Responders (DFR), consistent with all auditing, transparency, data and privacy protections required for all use policies and acquisition reports under the STO.",
+   "source_id": "src-bcc-2025-11-18-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "police-drones-2025--2025-11-18--item-31",
+  "kind": "deliverable",
+  "label": "City Manager start the Surveillance Technology Ordinance process for the Police Department to acquire and use drones, including Drones as First Responders",
+  "matter_id": "police-drones-2025",
+  "recommendation_id": null,
+  "statement": "Refer to the City Manager the initiation of the process outlined by BMC 2.99: Surveillance Technology Ordinance (STO) for the Berkeley Police Department (BPD) to acquire and use Unmanned Aerial Systems (UAS), including Drones as First Responders (DFR), consistent with all auditing, transparency, data and privacy protections required for all use policies and acquisition reports under the STO.",
+  "status_history": [
+   {
+    "as_of": "2025-11-18",
+    "basis": "The City Council took the recorded action on Item 31.",
+    "citations": [
+     {
+      "locator": "Item 31, Action (p. 14)",
+      "quote": "3 speakers. Councilmember Blackaby added as a co-sponsor. M/S/C (Taplin/Humbert) to approve the recommendation.",
+      "source_id": "src-bcc-2025-11-18-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 33, Recommendation (p. 17)",
+   "quote": "Referral to the City Manager and City Attorney to develop a vibrant storefront policy that sets performance standards and considers additional strategies to address a growing number of ground-floor storefront vacancies in Berkeley’s commercial districts.",
+   "source_id": "src-bcc-2025-12-02-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "vibrant-storefront-policy-2025--2025-12-02--item-33",
+  "kind": "deliverable",
+  "label": "City Manager and City Attorney develop a vibrant storefront policy with performance standards to address ground-floor vacancies",
+  "matter_id": "vibrant-storefront-policy-2025",
+  "recommendation_id": null,
+  "statement": "Referral to the City Manager and City Attorney to develop a vibrant storefront policy that sets performance standards and considers additional strategies to address a growing number of ground-floor storefront vacancies in Berkeley’s commercial districts.",
+  "status_history": [
+   {
+    "as_of": "2025-12-02",
+    "basis": "The City Council took the recorded action on Item 33.",
+    "citations": [
+     {
+      "locator": "Item 33, Action (p. 17)",
+      "quote": "Mayor Ishii added as a co-sponsor. Approved recommendation.",
+      "source_id": "src-bcc-2025-12-02-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 36, Recommendation (p. 17)",
+   "quote": "Referral to the City Manager to develop a proactive communication system to alert the community of upcoming infrastructure projects from Public Works, EBMUD, PG&E, and other large housing or commercial development projects.",
+   "source_id": "src-bcc-2025-12-02-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "infrastructure-project-notification-2025--2025-12-02--item-36",
+  "kind": "deliverable",
+  "label": "City Manager develop a proactive system to alert residents to upcoming Public Works, utility and large development projects",
+  "matter_id": "infrastructure-project-notification-2025",
+  "recommendation_id": null,
+  "statement": "Referral to the City Manager to develop a proactive communication system to alert the community of upcoming infrastructure projects from Public Works, EBMUD, PG&E, and other large housing or commercial development projects.",
+  "status_history": [
+   {
+    "as_of": "2025-12-02",
+    "basis": "The City Council took the recorded action on Item 36.",
+    "citations": [
+     {
+      "locator": "Item 36, Action (p. 17)",
+      "quote": "Approved recommendation.",
+      "source_id": "src-bcc-2025-12-02-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Item 41, Action (p. 20)",
+   "quote": "7,991–N.S. and approve the recommendations below. • Thank the members of the WUI Vegetation Code Workgroup for their efforts, including their very detailed and thoughtful recommendations in 2 letters back to Council; • Refer to the City Manager the items in the Workgroup's letter (including non-combustible trash & recycling bins, wood shake roofs, wire mesh size for Vector Control, and facilitating permitting of metal privacy screens to replace privacy hedges) to then return to Council with specific proposals for consideration; and • After the State Board of Forestry finalizes its Zone Zero regulations, request that the City Manager reconvene the Workgroup to help provide feedback on the differences between the state and local vegetation management laws (if any), such that the City Manager can then report back to City Council with an update within 90 days of the state's new rules.",
+   "source_id": "src-bcc-2025-12-02-regular-annotated-agenda"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "wui-code-follow-up-2025--2025-12-02--item-41",
+  "kind": "report_back",
+  "label": "City Manager return with proposals on the WUI Workgroup's items, and report back within 90 days of the State's final Zone Zero rules on differences between state and local vegetation management law",
+  "matter_id": "wui-code-follow-up-2025",
+  "recommendation_id": null,
+  "statement": "7,991–N.S. and approve the recommendations below. • Thank the members of the WUI Vegetation Code Workgroup for their efforts, including their very detailed and thoughtful recommendations in 2 letters back to Council; • Refer to the City Manager the items in the Workgroup's letter (including non-combustible trash & recycling bins, wood shake roofs, wire mesh size for Vector Control, and facilitating permitting of metal privacy screens to replace privacy hedges) to then return to Council with specific proposals for consideration; and • After the State Board of Forestry finalizes its Zone Zero regulations, request that the City Manager reconvene the Workgroup to help provide feedback on the differences between the state and local vegetation management laws (if any), such that the City Manager can then report back to City Council with an update within 90 days of the state's new rules.",
+  "status_history": [
+   {
+    "as_of": "2025-12-02",
+    "basis": "The City Council took the recorded action on Item 41.",
+    "citations": [
+     {
+      "locator": "Item 41, Action (p. 20)",
+      "quote": "M/S/C (Blackaby/Humbert) to adopt the second reading of Ordinance No. 7,991–N.S. and approve the recommendations below. • Thank the members of the WUI Vegetation Code Workgroup for their efforts, including their very detailed and thoughtful recommendations in 2 letters back to Council; • Refer to the City Manager the items in the Workgroup's letter (including non-combustible trash & recycling bins, wood shake roofs, wire mesh size for Vector Control, and facilitating permitting of metal privacy screens to replace privacy hedges) to then return to Council with specific proposals for consideration; and • After the State Board of Forestry finalizes its Zone Zero regulations, request that the City Manager reconvene the Workgroup to help provide feedback on the differences between the state and local vegetation management laws (if any), such that the City Manager can then report back to City Council with an update within 90 days of the state's new rules.",
+      "source_id": "src-bcc-2025-12-02-regular-annotated-agenda"
+     }
+    ],
+    "status": "no_due_date_stated"
+   }
+  ],
+  "success_measure": null
  }
 ]
