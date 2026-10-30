@@ -96,5 +96,440 @@
   "kind": "reported_development",
   "matter_id": "contracts-audit-2026",
   "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 28, Action (p. 13)",
+    "quote": "Moved to Consent Calendar. Approved the recommended actions presented in Supplemental Communications Packet #2 from Councilmember Hahn, amended to only apply to Area C. 1. Direct the City Manager to issue permits to Berkeley High School pursuant to Berkeley Municipal Code Chapter 14.72, which allows the City to issue a number of permits equal to up to 60% of the school’s employees, in the same or other RPP Areas, in conformance with criteria found in Sections 14.72.080 and 14.72.105. 2. Direct the City Manager to issue such permits in RPP Area C, or in a combination of Areas C, J and/or E, in consultation with the Councilmember representing the majority of potentially impacted areas of RPP Areas C, J and E. 3. With respect to BMC Sections 14.72.080 (B) and 14.72.105(B)(1), (2), (3), and (6), the Berkeley City Council hereby takes the following actions: Pursuant to BMC 14.72.105(B)(1), the Berkeley City Council finds that inadequate off-street parking for Berkeley High School exists and there is no financially feasible way of creating adequate off-street parking on the site of Berkeley High School. The cost estimated by BUSD is more than $25 million to create such parking; this cost is deemed",
+    "source_id": "src-bcc-2024-01-16-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "berkeley-high-school-staff-parking-permits-2024--2024-01-16--item-28"
+  ],
+  "date": "2024-01-16",
+  "description": "Item 28, \"Consideration of Options for Berkeley High School Staff Parking\", was on the agenda, with the recorded action quoted.",
+  "id": "berkeley-high-school-staff-parking-permits-2024--2024-01-16--item-28--action",
+  "kind": "council_action",
+  "matter_id": "berkeley-high-school-staff-parking-permits-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 29, Action (p. 15)",
+    "quote": "Moved to Consent Calendar. Approved the item as recommended by the Land Use, Housing, & Economic Development Committee with the following amendment. “Refer to the City Manager and Planning Commission to consider and develop report back on policies to permit neighborhood-scale retail uses in residential zones to increase economic opportunity, vitality, and walkability in Berkeley neighborhoods.”",
+    "source_id": "src-bcc-2024-01-16-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "neighborhood-scale-commercial-2024--2024-01-16--item-29"
+  ],
+  "date": "2024-01-16",
+  "description": "Item 29, \"Referral: Neighborhood-Scale Commercial (Reviewed by the Land Use, Housing, & Economic Development Committee)\", was on the agenda, with the recorded action quoted.",
+  "id": "neighborhood-scale-commercial-2024--2024-01-16--item-29--action",
+  "kind": "council_action",
+  "matter_id": "neighborhood-scale-commercial-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 12, Action (p. 7)",
+    "quote": "Approved recommendation as amended to read as follows. Refer to the City Manager to analyze and develop recommendations for public safety crime prevention programs to address the current rising crime against women, particularly",
+    "source_id": "src-bcc-2024-02-13-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "crime-prevention-women-2024--2024-02-13--item-12"
+  ],
+  "date": "2024-02-13",
+  "description": "Item 12, \"Recommendation on Public Safety/Crime Prevention for Women\", was on the agenda, with the recorded action quoted.",
+  "id": "crime-prevention-women-2024--2024-02-13--item-12--action",
+  "kind": "council_action",
+  "matter_id": "crime-prevention-women-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 13, Recommendation (p. 8)",
+    "source_id": "src-bcc-2024-02-13-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "west-berkeley-service-center-2024--2024-02-13--item-13"
+  ],
+  "date": "2024-02-13",
+  "description": "Item 13, \"RFP for Development of West Berkeley Service Center (Continued from January 16, 2024)\", was on the agenda, with the recorded action quoted.",
+  "id": "west-berkeley-service-center-2024--2024-02-13--item-13--action",
+  "kind": "council_action",
+  "matter_id": "west-berkeley-service-center-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 16, Action (p. 8)",
+    "quote": "M/S/C (Arreguin/Hahn) to adopt first reading of Ordinance No. 7,898–N.S. Second reading scheduled for March 12, 2024. Referred to the City Manager a request to develop regulations and performance standards to mitigate noise impacts for Group Class Instruction uses.",
+    "source_id": "src-bcc-2024-02-27-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024--2024-02-27--item-16"
+  ],
+  "date": "2024-02-27",
+  "description": "Item 16, \"Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23\", was on the agenda, with the recorded action quoted.",
+  "id": "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024--2024-02-27--item-16--action",
+  "kind": "council_action",
+  "matter_id": "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 19, Action (p. 10)",
+    "quote": "Approved recommendation.",
+    "source_id": "src-bcc-2024-03-26-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "long-term-care-facility-oversight-2024--2024-03-26--item-19"
+  ],
+  "date": "2024-03-26",
+  "description": "Item 19, \"Response to Council Referral: Long Term Care Facility Oversight\", was on the agenda, with the recorded action quoted.",
+  "id": "long-term-care-facility-oversight-2024--2024-03-26--item-19--action",
+  "kind": "council_action",
+  "matter_id": "long-term-care-facility-oversight-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 33b, Action (p. 15)",
+    "quote": "Approved recommendation in Item 33b.",
+    "source_id": "src-bcc-2024-05-07-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "age-friendly-action-plan-2024--2024-05-07-0--item-33b"
+  ],
+  "date": "2024-05-07",
+  "description": "Item 33b, \"Companion Report: Achieving Goals of 2018 Berkeley Age-Friendly Action Plan\", was on the agenda, with the recorded action quoted.",
+  "id": "age-friendly-action-plan-2024--2024-05-07-0--item-33b--action",
+  "kind": "council_action",
+  "matter_id": "age-friendly-action-plan-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 43, Action (p. 18)",
+    "quote": "Councilmembers Lunaparra and Kesarwani added as co-sponsors. Approved recommendation.",
+    "source_id": "src-bcc-2024-05-07-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "bicycle-boulevards-vision-zero-2024--2024-05-07-0--item-43"
+  ],
+  "date": "2024-05-07",
+  "description": "Item 43, \"Budget Referral: Vision Zero Rapid Response on Bicycle Boulevards\", was on the agenda, with the recorded action quoted.",
+  "id": "bicycle-boulevards-vision-zero-2024--2024-05-07-0--item-43--action",
+  "kind": "council_action",
+  "matter_id": "bicycle-boulevards-vision-zero-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 51, Action (p. 21)",
+    "quote": "Approved recommendation.",
+    "source_id": "src-bcc-2024-05-07-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "budget-referral-for-development-of-voluntary-design-guidelin-2024--2024-05-07-0--item-51"
+  ],
+  "date": "2024-05-07",
+  "description": "Item 51, \"Budget Referral for Development of Voluntary Design Guidelines\", was on the agenda, with the recorded action quoted.",
+  "id": "budget-referral-for-development-of-voluntary-design-guidelin-2024--2024-05-07-0--item-51--action",
+  "kind": "council_action",
+  "matter_id": "budget-referral-for-development-of-voluntary-design-guidelin-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 26, Action (p. 12)",
+    "quote": "3 speakers. M/S/C (Kesarwani/Hahn) to: 1. Remove Referral #55 from the list. 2. Combine Items 50 (Plant-Based Food) and 57 (Good food Purchasing) and remove them from the list since there are programs already underway. 3. Combine Items 16 and 17 regarding housing for artists and add to the recommendation to refer consideration of any and all potential programs and services on this topic to the City Manager. 3. Refer to the City Manager to conduct an RRV process in early 2025 in time for the mid-cycle budget. 4. Adopt Resolution No. 71,340–N.S. approving the list of prioritized referrals to city staff.",
+    "source_id": "src-bcc-2024-05-14-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "referral-prioritization-rrv-2024--2024-05-14--item-26"
+  ],
+  "date": "2024-05-14",
+  "description": "Item 26, \"2024 City Council Referral Prioritization Process Using Re-Weighted Range Voting (RRV)\", was on the agenda, with the recorded action quoted.",
+  "id": "referral-prioritization-rrv-2024--2024-05-14--item-26--action",
+  "kind": "council_action",
+  "matter_id": "referral-prioritization-rrv-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 14, Action (p. 7)",
+    "quote": "Councilmember Humbert added as a co-sponsor. Approved recommendation.",
+    "source_id": "src-bcc-2024-05-21-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024--2024-05-21--item-14"
+  ],
+  "date": "2024-05-21",
+  "description": "Item 14, \"Develop a pilot program for 5-10 Seriously Mentally Ill (SMI) persons who have required frequent interventions\", was on the agenda, with the recorded action quoted.",
+  "id": "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024--2024-05-21--item-14--action",
+  "kind": "council_action",
+  "matter_id": "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 33, Action (p. 12)",
+    "quote": "Report received and filed.",
+    "source_id": "src-bcc-2024-06-25-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "audit-recommendation-status-berkeley-police-2024--2024-06-25-0--item-33"
+  ],
+  "date": "2024-06-25",
+  "description": "Item 33, \"Audit Recommendation Status - Berkeley Police: Improvements Needed to Manage Overtime and Security Work for Outside Entities (Reviewed by the Budget & Finance Committee)\", was on the agenda, with the recorded action quoted.",
+  "id": "audit-recommendation-status-berkeley-police-2024--2024-06-25-0--item-33--action",
+  "kind": "council_action",
+  "matter_id": "audit-recommendation-status-berkeley-police-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 53, Action (p. 20)",
+    "quote": "M/S/C (Arreguin/Hahn) to 1) adopt Resolution No. 71,433–N.S. as proposed in the materials provided by the City Manager and accepted at the meeting by the Council, including additional allocations of $200,000 in FY 2026 for food insecurity, $670,240 in FY 2025 & 2026 for Legislative Aides funded at the top step; and adding $150,000 for security cameras in District 8 and District 3; and 2) Refer to the City Manager to develop and require annual financial reports by community agencies receiving funds outside the RFP process, including itemized use of City funds; City staff may provide basic technical assistance if needed by the agencies. For the requested allocations list, Market Match is removed, and the remaining unfunded elements of the CARE Program are carried forward to AAO#1.",
+    "source_id": "src-bcc-2024-06-25-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "community-agency-annual-financial-reports-2024--2024-06-25-0--item-53"
+  ],
+  "date": "2024-06-25",
+  "description": "Item 53, \"Fiscal Years 2025 & 2026 Biennial Budget Adoption\", was on the agenda, with the recorded action quoted.",
+  "id": "community-agency-annual-financial-reports-2024--2024-06-25-0--item-53--action",
+  "kind": "council_action",
+  "matter_id": "community-agency-annual-financial-reports-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 59, Action (p. 23)",
+    "quote": "Councilmember Bartlett added as a co-sponsor. Moved to Consent Calendar.",
+    "source_id": "src-bcc-2024-06-25-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "food-assistance-provider-rfp-2024--2024-06-25-0--item-59"
+  ],
+  "date": "2024-06-25",
+  "description": "Item 59, \"Referral for Development of Request for Proposal (RFP) to Support Berkeley-Based Non-Profit Food Assistance Providers Serving Food Insecure Households (Reviewed by the Health, Life Enrichment, Equity, & Community Committee)\", was on the agenda, with the recorded action quoted.",
+  "id": "food-assistance-provider-rfp-2024--2024-06-25-0--item-59--action",
+  "kind": "council_action",
+  "matter_id": "food-assistance-provider-rfp-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 23, Action (p. 11)",
+    "quote": "Moved to Consent Calendar and referred to the City Attorney for a legal opinion on the item. Requested that the item return to the Council agenda when the legal opinion is complete.",
+    "source_id": "src-bcc-2024-07-09-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "short-term-rental-amendments-2024--2024-07-09--item-23"
+  ],
+  "date": "2024-07-09",
+  "description": "Item 23, \"Amendments to Berkeley Municipal Code 23C.22: Short Term Rentals (Reviewed by the Land Use, Housing, & Economic Development Committee)\", was on the agenda, with the recorded action quoted.",
+  "id": "short-term-rental-amendments-2024--2024-07-09--item-23--action",
+  "kind": "council_action",
+  "matter_id": "short-term-rental-amendments-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 14, Action (p. 8)",
+    "quote": "Approved item as recommended by the Facilities, Infrastructure, Transportation, Environment & Sustainability Policy Committee.",
+    "source_id": "src-bcc-2024-07-30-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "curb-management-plan-2024--2024-07-30--item-14"
+  ],
+  "date": "2024-07-30",
+  "description": "Item 14, \"Referral to Develop Curb Management Plan (Reviewed by the Facilities, Infrastructure, Transportation, Environment & Sustainability Policy Committee)\", was on the agenda, with the recorded action quoted.",
+  "id": "curb-management-plan-2024--2024-07-30--item-14--action",
+  "kind": "council_action",
+  "matter_id": "curb-management-plan-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 15, Action (p. 9)",
+    "quote": "Approved recommendation as revised in Supplemental Communications Packet #2 from Mayor Arreguin.",
+    "source_id": "src-bcc-2024-07-30-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "ashby-bart-eifd-2024--2024-07-30--item-15"
+  ],
+  "date": "2024-07-30",
+  "description": "Item 15, \"Referral to City Manager: Ashby BART Area Enhanced Infrastructure Finance District (EIFD) Analysis\", was on the agenda, with the recorded action quoted.",
+  "id": "ashby-bart-eifd-2024--2024-07-30--item-15--action",
+  "kind": "council_action",
+  "matter_id": "ashby-bart-eifd-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 18, Action (p. 10)",
+    "quote": "7 speakers. M/S/C (Arreguin/Taplin) to approve the recommendation with a revision to schedule the report back for December 2024.",
+    "source_id": "src-bcc-2024-07-30-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "berkeley-restaurant-inspections-2024--2024-07-30--item-18"
+  ],
+  "date": "2024-07-30",
+  "description": "Item 18, \"Berkeley Restaurant Inspections: Chronically Understaffed Program Did Not Meet Targets\", was on the agenda, with the recorded action quoted.",
+  "id": "berkeley-restaurant-inspections-2024--2024-07-30--item-18--action",
+  "kind": "council_action",
+  "matter_id": "berkeley-restaurant-inspections-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City staff",
+  "citations": [
+   {
+    "locator": "Item 22, Action (p. 11)",
+    "quote": "Moved to Action Calendar. 0 speakers. Discussion held.",
+    "source_id": "src-bcc-2024-12-10-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "berkeley-restaurant-inspections-2024--2024-07-30--item-18"
+  ],
+  "date": "2024-12-10",
+  "description": "Item 22, \"Restaurant Inspection Audit Status Report\", was on the agenda, with the recorded action quoted.",
+  "id": "berkeley-restaurant-inspections-2024--2024-07-30--item-18--follow-up-2024-12-10-item-22",
+  "kind": "staff_report",
+  "matter_id": "berkeley-restaurant-inspections-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 1, Action (pp. 2–3)",
+    "quote": "58 speakers. M/S/Carried (Hahn/Tregub) to refer to the City Manager to study and return to Council with recommendations for a program based on San Francisco’s COPA and to study additional concepts including but not limited to: • A potential requirement to offer to “go coop” within a certain number of years of purchase by a qualified non-profit. • To consider an appropriate threshold where COPA would apply, taking into consideration operational and fiscal realities. • Report on administration costs and sources of funds to support Small Sites projects. • Consider potential to provide notice and “right of first refusal” for tenants or groups of tenants to match the best “market” offer. • Study models other jurisdictions have in place to achieve these tenant acquisition goals. • Refer $100,000 to budget process to support the study.",
+    "source_id": "src-bcc-2024-09-30-special-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "community-opportunity-to-purchase-2024--2024-09-30-0--item-1"
+  ],
+  "date": "2024-09-30",
+  "description": "Item 1, \"Adopt Berkeley Municipal Code Chapter 13.89: Community/Tenant Opportunity to Purchase Act (Reviewed by the Land Use, Housing, & Economic Development Committee) (Item contains revised material)\", was on the agenda, with the recorded action quoted.",
+  "id": "community-opportunity-to-purchase-2024--2024-09-30-0--item-1--action",
+  "kind": "council_action",
+  "matter_id": "community-opportunity-to-purchase-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 1, Action (p. 2)",
+    "quote": "22 speakers. M/S/C (Taplin/Kesarwani) to provide direction to staff to 1) complete the parking study; 2) prepare a nature and recreation-based conceptual plan for Caesar Chavez Park; 3) proceed with the EIR with the highest development scenario; and 4) return to Council with the revised Specific Plan and certification of the EIR.",
+    "source_id": "src-bcc-2024-11-18-special-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "waterfront-specific-plan-2024--2024-11-18--item-1"
+  ],
+  "date": "2024-11-18",
+  "description": "Item 1, \"Update on the Waterfront Specific Plan for the City of Berkeley Public Tidelands Area\", was on the agenda, with the recorded action quoted.",
+  "id": "waterfront-specific-plan-2024--2024-11-18--item-1--action",
+  "kind": "council_action",
+  "matter_id": "waterfront-specific-plan-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 24, Recommendation (p. 9)",
+    "source_id": "src-bcc-2024-11-19-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "equity-for-black-berkeley-2024--2024-11-19--item-24"
+  ],
+  "date": "2024-11-19",
+  "description": "Item 24, \"Referral to City Manager: Equity for Black Berkeley (E4BB) Initiative\", was on the agenda, with the recorded action quoted.",
+  "id": "equity-for-black-berkeley-2024--2024-11-19--item-24--action",
+  "kind": "council_action",
+  "matter_id": "equity-for-black-berkeley-2024",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Item 17, Action (p. 10)",
+    "quote": "Councilmember Tregub added as a co-sponsor. Approved recommendation of the Land Use, Housing & Economic Development Committee.",
+    "source_id": "src-bcc-2024-12-03-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "ab-812-artist-housing-2024--2024-12-03--item-17"
+  ],
+  "date": "2024-12-03",
+  "description": "Item 17, \"Affordable Housing for Artists: AB-812 Implementation and Cultural District Statutory Standardization (Reviewed by the Land Use, Housing & Economic Development Committee)\", was on the agenda, with the recorded action quoted.",
+  "id": "ab-812-artist-housing-2024--2024-12-03--item-17--action",
+  "kind": "council_action",
+  "matter_id": "ab-812-artist-housing-2024",
+  "recommendation_ids": []
  }
 ]

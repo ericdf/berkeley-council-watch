@@ -1,0 +1,683 @@
+{
+ "year": "2024",
+ "rules_version": 4,
+ "archive_commit": "7a22d845c6f0f8476f21d19f0d261500be4333c7",
+ "reviewed_on": "2026-10-30",
+ "decisions": [
+  {
+   "candidate_id": "city-council-2024-01-16--item-7",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-01-16--item-20",
+   "decision": "reject",
+   "reason": "Procedural motion, not a commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-01-16--item-22",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-01-16--item-23",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-01-16--item-25",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-01-16--item-28",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager issue Berkeley High School staff parking permits in RPP Area C",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-01-16, Item 28: Consideration of Options for Berkeley High School Staff Parking. Moved to the Consent Calendar and adopted as amended to apply only to RPP Area C. The same action referred options to increase walking, biking, carpooling and transit use by Berkeley High employees and students to the 2x2 Committee and the City Manager, and asked BUSD to consider formally withdrawing from planning a garage on its Milvia Street property. On 2024-06-04 the Council re-approved the findings and set how the number of permits is calculated (Resolution No. 71,358-N.S.).",
+    "id": "berkeley-high-school-staff-parking-permits-2024",
+    "kind": "council_referral",
+    "title": "Berkeley High School staff parking permits"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-01-16--item-29",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "report_back",
+    "label": "City Manager and Planning Commission consider and develop policies to permit neighborhood-scale retail in residential zones, and report back",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-01-16, Item 29: Referral: Neighborhood-Scale Commercial.",
+    "id": "neighborhood-scale-commercial-2024",
+    "kind": "council_referral",
+    "title": "Neighborhood-scale commercial uses in residential zones"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-01-23--item-1",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-01-30--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-02-13--item-9",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-02-13--item-12",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager analyze and recommend public safety and crime prevention programs addressing crime against women",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-02-13, Item 12: Recommendation on Public Safety/Crime Prevention for Women.",
+    "id": "crime-prevention-women-2024",
+    "kind": "council_referral",
+    "title": "Crime prevention programs addressing crime against women"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-02-13--item-13",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager issue an RFP for development of the West Berkeley Service Center",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-02-13, Item 13: RFP for Development of West Berkeley Service Center.",
+    "id": "west-berkeley-service-center-2024",
+    "kind": "council_referral",
+    "title": "West Berkeley Service Center redevelopment"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-02-13--item-17",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-02-27--item-16",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager: Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-02-27, Item 16: Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23.",
+    "id": "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024",
+    "kind": "council_referral",
+    "title": "Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-02-27-0--item-1",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-03-12--item-2",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-03-12--item-16",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-03-12-0--item-1",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-03-19--item-1",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-03-19--item-10",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-03-26--item-19",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager and the budget process consider an enhanced Ombudsperson program to oversee skilled nursing and residential care facilities",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-03-26, Item 19: Response to Council Referral: Long Term Care Facility Oversight.",
+    "id": "long-term-care-facility-oversight-2024",
+    "kind": "council_referral",
+    "title": "Long-term care facility oversight"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-03-26--item-24b",
+   "decision": "reject",
+   "reason": "the action was to stop doing something so there's no expected followup"
+  },
+  {
+   "candidate_id": "city-council-2024-03-26--item-25",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-05-07-0--item-15",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-05-07-0--item-33a",
+   "decision": "reject",
+   "reason": "Acted on together with Item 33b; recorded once, on Item 33b."
+  },
+  {
+   "candidate_id": "city-council-2024-05-07-0--item-33b",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager review and prioritize the Age-Friendly Action Plan recommendations alongside the 2024 Community Health Assessment",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-05-07, Item 33b: Companion Report: Achieving Goals of 2018 Berkeley Age-Friendly Action Plan.",
+    "id": "age-friendly-action-plan-2024",
+    "kind": "council_referral",
+    "title": "Age-Friendly Action Plan (2018) implementation"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-05-07-0--item-42",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-05-07-0--item-43",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager apply Oakland's Neighborhood Bike Route Implementation Guide to all designated Bicycle Boulevards",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-05-07, Item 43: Budget Referral: Vision Zero Rapid Response on Bicycle Boulevards.",
+    "id": "bicycle-boulevards-vision-zero-2024",
+    "kind": "council_referral",
+    "title": "Vision Zero rapid response on bicycle boulevards"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-05-07-0--item-51",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "report_back",
+    "label": "City Manager report back on Budget Referral for Development of Voluntary Design Guidelines",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-05-07, Item 51: Budget Referral for Development of Voluntary Design Guidelines.",
+    "id": "budget-referral-for-development-of-voluntary-design-guidelin-2024",
+    "kind": "council_referral",
+    "title": "Budget Referral for Development of Voluntary Design Guidelines"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-05-07-0--item-58",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-05-14--item-22",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-05-14--item-25",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-05-14--item-26",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager conduct a re-weighted range voting referral prioritization in early 2025, before the mid-cycle budget",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-05-14, Item 26: 2024 City Council Referral Prioritization Process Using Re-Weighted Range Voting (RRV).",
+    "id": "referral-prioritization-rrv-2024",
+    "kind": "council_referral",
+    "title": "Council referral prioritization (re-weighted range voting)"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-05-14--item-27",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-05-14--item-29",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-05-14--item-30",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-05-21--item-4",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-05-21--item-14",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "report_back",
+    "label": "City Manager report back on Develop a pilot program for 5-10 Seriously Mentally Ill (SMI) persons who have required frequent interventions",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-05-21, Item 14: Develop a pilot program for 5-10 Seriously Mentally Ill (SMI) persons who have required frequent interventions.",
+    "id": "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024",
+    "kind": "council_referral",
+    "title": "Develop a pilot program for 5-10 Seriously Mentally Ill (SMI) persons who have required frequent interventions"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-05-21--item-20",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-06-04--item-31",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-06-14--item-1",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-06-14--item-2",
+   "decision": "reject",
+   "reason": "aged out"
+  },
+  {
+   "candidate_id": "city-council-2024-06-25-0--item-15",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-06-25-0--item-33",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "report_back",
+    "label": "City Manager report back on Audit Recommendation Status - Berkeley Police",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-06-25, Item 33: Audit Recommendation Status - Berkeley Police: Improvements Needed to Manage Overtime and Security Work for Outside Entities.",
+    "id": "audit-recommendation-status-berkeley-police-2024",
+    "kind": "council_referral",
+    "title": "Audit Recommendation Status - Berkeley Police"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-06-25-0--item-53",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager develop and require annual financial reports, itemizing use of City funds, from community agencies funded outside the RFP process",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-06-25, Item 53: Fiscal Years 2025 & 2026 Biennial Budget Adoption.",
+    "id": "community-agency-annual-financial-reports-2024",
+    "kind": "budget_action",
+    "title": "Annual financial reports from community agencies funded outside the RFP process"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-06-25-0--item-57",
+   "decision": "reject",
+   "reason": "Referred to a Council policy committee; no direction to the City Manager yet."
+  },
+  {
+   "candidate_id": "city-council-2024-06-25-0--item-58",
+   "decision": "reject",
+   "reason": "The Council took no action on this item, so nothing was directed."
+  },
+  {
+   "candidate_id": "city-council-2024-06-25-0--item-59",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager develop and fund an RFP to support Berkeley non-profit food assistance providers serving food-insecure households",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-06-25, Item 59: Referral for Development of Request for Proposal (RFP) to Support Berkeley-Based Non-Profit Food Assistance Providers Serving Food Insecure Households.",
+    "id": "food-assistance-provider-rfp-2024",
+    "kind": "council_referral",
+    "title": "RFP for Berkeley non-profit food assistance providers"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-06-25-0--item-61",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-07-09--item-13",
+   "decision": "reject",
+   "reason": "The Council did not approve the recommendation."
+  },
+  {
+   "candidate_id": "city-council-2024-07-09--item-16",
+   "decision": "reject",
+   "reason": "A referral response the Council received; no further act is directed."
+  },
+  {
+   "candidate_id": "city-council-2024-07-09--item-23",
+   "commitment": {
+    "actor": "City Attorney",
+    "kind": "deliverable",
+    "label": "City Attorney provide a legal opinion on the short-term rental amendments, after which the item returns to Council",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-07-09, Item 23: Amendments to Berkeley Municipal Code 23C.22: Short Term Rentals.",
+    "id": "short-term-rental-amendments-2024",
+    "kind": "council_referral",
+    "title": "Short-term rental ordinance amendments (BMC 23C.22)"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-07-23-0--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-07-23-0--item-21",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-07-30--item-14",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager fund and develop a Curb Management Plan",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-07-30, Item 14: Referral to Develop Curb Management Plan.",
+    "id": "curb-management-plan-2024",
+    "kind": "council_referral",
+    "title": "Curb Management Plan"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-07-30--item-15",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "report_back",
+    "label": "City Manager and City Attorney return to Council with an analysis and recommended actions to initiate an EIFD for the Ashby BART area",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-07-30, Item 15: Referral to City Manager: Ashby BART Area Enhanced Infrastructure Finance District (EIFD) Analysis.",
+    "id": "ashby-bart-eifd-2024",
+    "kind": "council_referral",
+    "title": "Ashby BART area Enhanced Infrastructure Financing District"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-07-30--item-18",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "report_back",
+    "label": "City Manager report back on Berkeley Restaurant Inspections",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "links": [
+    {
+     "basis": "Item 22, \"Restaurant Inspection Audit Status Report\", was on the 2024-12-10 agenda.",
+     "decision": "confirm",
+     "status": "in_progress_reported",
+     "to": "city-council-2024-12-10--item-22"
+    }
+   ],
+   "matter": {
+    "description": "City Council, 2024-07-30, Item 18: Berkeley Restaurant Inspections: Chronically Understaffed Program Did Not Meet Targets.",
+    "id": "berkeley-restaurant-inspections-2024",
+    "kind": "audit",
+    "title": "Berkeley Restaurant Inspections"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-09-10--item-9",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-09-10--item-10",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2024-09-10--item-32",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-09-24--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-09-30-0--item-1",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "report_back",
+    "label": "City Manager study and return to Council with recommendations for a program based on San Francisco's COPA",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-09-30, Item 1: Adopt Berkeley Municipal Code Chapter 13.89: Community/Tenant Opportunity to Purchase Act. The Council referred a program modeled on San Francisco's COPA for study instead of adopting the ordinance.",
+    "id": "community-opportunity-to-purchase-2024",
+    "kind": "council_referral",
+    "title": "Community Opportunity to Purchase Act (COPA)"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-10-01--item-6",
+   "decision": "reject",
+   "reason": "Routine referral with no deliverable or date that can be checked."
+  },
+  {
+   "candidate_id": "city-council-2024-10-15--item-4",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-10-15--item-20",
+   "decision": "reject",
+   "reason": "Not tracked: a minor matter the reviewer judged not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2024-10-15--item-25",
+   "decision": "reject",
+   "reason": "Referred to a Council policy committee; no direction to the City Manager yet."
+  },
+  {
+   "candidate_id": "city-council-2024-10-15--item-26",
+   "decision": "reject",
+   "reason": "Referred to a Council policy committee; no direction to the City Manager yet."
+  },
+  {
+   "candidate_id": "city-council-2024-10-29--item-3",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-10-29--item-8",
+   "decision": "reject",
+   "reason": "The update requirement binds the funding recipient, not the City."
+  },
+  {
+   "candidate_id": "city-council-2024-10-29--item-21a",
+   "decision": "reject",
+   "reason": "Adopted together with Item 21b; recorded once."
+  },
+  {
+   "candidate_id": "city-council-2024-10-29--item-21b",
+   "decision": "reject",
+   "reason": "Same direction already recorded on 2024-05-07 Item 33b; the Council adopted it again after Budget & Finance Committee review."
+  },
+  {
+   "candidate_id": "city-council-2024-10-29-0--item-1",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-11-12--item-3",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-11-12--item-10",
+   "decision": "reject",
+   "reason": "Routine referral with no deliverable or date that can be checked."
+  },
+  {
+   "candidate_id": "city-council-2024-11-18--item-1",
+   "commitment": {
+    "actor": "City staff",
+    "kind": "deliverable",
+    "label": "Staff complete the parking study and Cesar Chavez Park concept plan, proceed with the EIR, and return to Council with the revised Specific Plan and EIR certification",
+    "quote_field": "action"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-11-18, Item 1: Update on the Waterfront Specific Plan for the City of Berkeley Public Tidelands Area.",
+    "id": "waterfront-specific-plan-2024",
+    "kind": "council_referral",
+    "title": "Waterfront Specific Plan (public tidelands)"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-11-19--item-6",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-11-19--item-23",
+   "decision": "reject",
+   "reason": "Referred to a Council policy committee; no direction to the City Manager yet."
+  },
+  {
+   "candidate_id": "city-council-2024-11-19--item-24",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager establish an E4BB Representative and determine the staffing and resources to monitor E4BB projects",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-11-19, Item 24: Referral to City Manager: Equity for Black Berkeley (E4BB) Initiative. Adopted Resolution No. 71,582-N.S. and approved the recommendation.",
+    "id": "equity-for-black-berkeley-2024",
+    "kind": "council_referral",
+    "title": "Equity for Black Berkeley (E4BB)"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-12-03--item-17",
+   "commitment": {
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "label": "City Manager, City Attorney and Planning Commission study and develop an ordinance implementing AB 812's artist set-aside of below-market-rate units",
+    "quote_field": "recommendation"
+   },
+   "decision": "confirm",
+   "matter": {
+    "description": "City Council, 2024-12-03, Item 17: Affordable Housing for Artists: AB-812 Implementation and Cultural District Statutory Standardization.",
+    "id": "ab-812-artist-housing-2024",
+    "kind": "council_referral",
+    "title": "Affordable housing for artists (AB 812) and cultural district standards"
+   }
+  },
+  {
+   "candidate_id": "city-council-2024-12-03--item-21",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-12-03--item-22",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-12-10--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2024-12-10--item-21",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  },
+  {
+   "candidate_id": "city-council-2024-12-10--item-22",
+   "decision": "reject",
+   "reason": "Recorded as the follow-up to 2024-07-30 Item 18 (restaurant inspections)."
+  },
+  {
+   "candidate_id": "city-council-2024-12-10--item-23",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2024 bundle."
+  }
+ ]
+}
