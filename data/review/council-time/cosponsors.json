@@ -1,0 +1,714 @@
+{
+ "additions": [
+  {
+   "finding": "thanked_only",
+   "line": 1246,
+   "member": "off-humbert",
+   "quote": "THANK YOU TO MY COSPONSORS ON THAT ITEM. COUNCILMEMBERS HUMBERT, BARTLETT AND",
+   "reason": "During her consent-calendar remarks on her middle-housing/homeownership item (item 26), the author thanks Humbert, Bartlett and Lunaparra as her co-sponsors; no addition is shown happening at the meeting.",
+   "record_id": "city-council-2025-01-21--item-26",
+   "transcript": "bcc-2025-01-21-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "line": 1246,
+   "member": "off-bartlett",
+   "quote": "THANK YOU TO MY COSPONSORS ON THAT ITEM. COUNCILMEMBERS HUMBERT, BARTLETT AND",
+   "reason": "The item 26 author thanks Humbert, Bartlett and Lunaparra as co-sponsors during consent remarks; no addition is shown at the meeting.",
+   "record_id": "city-council-2025-01-21--item-26",
+   "transcript": "bcc-2025-01-21-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "line": 1246,
+   "member": "off-lunaparra",
+   "quote": "THANK YOU TO MY COSPONSORS ON THAT ITEM. COUNCILMEMBERS HUMBERT, BARTLETT AND … LUNAPARRA AND THAT'S ALL I HAVE",
+   "reason": "The item 26 author thanks Humbert, Bartlett and Lunaparra as co-sponsors during consent remarks; no addition is shown at the meeting.",
+   "record_id": "city-council-2025-01-21--item-26",
+   "transcript": "bcc-2025-01-21-regular-captions-text"
+  },
+  {
+   "finding": "not_found",
+   "member": "off-tregub",
+   "quote": null,
+   "reason": "Searched the transcript for co-sponsor language and Tregub's remarks; nothing shows Tregub joining item 7 (the Mayor asked to join it and was told it already had four).",
+   "record_id": "city-council-2025-02-11-0--item-7",
+   "transcript": null
+  },
+  {
+   "finding": "not_found",
+   "member": "off-taplin",
+   "quote": null,
+   "reason": "No co-sponsor language anywhere in the special-meeting transcript; Taplin only says he supports the proposal.",
+   "record_id": "city-council-2025-02-11-1--item-1d",
+   "transcript": null
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1108,
+   "member": "off-tregub",
+   "quote": "ON ITEM 15, THIS IS THE BUDGET REFERRAL TO EXPAND AFTERSCHOOL CARE. I AM ADDING COUNCILMEMBER TREGUB TO THE ITEM.",
+   "reason": "Author Taplin announces in consent remarks that he is adding Tregub to item 15.",
+   "record_id": "city-council-2025-04-29--item-15",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1116,
+   "member": "off-humbert",
+   "quote": "ON ITEM 16, THIS IS THE BUDGET REFERRAL TO DO REPAIRS TO THE F AND G. I AM ADDING COUNCILMEMBER HUMBERT.",
+   "reason": "Author Taplin announces in consent remarks that he is adding Humbert to item 16.",
+   "record_id": "city-council-2025-04-29--item-16",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1478,
+   "member": "off-taplin",
+   "quote": "I WAS GOING TO ASK COUNCILMEMBER BARTLETT IF I MAY JOIN ITEM 17 AS A COSPONSOR? … I'D BE HONORED, SIR.",
+   "reason": "Taplin asks author Bartlett to join item 17 as co-sponsor and Bartlett accepts.",
+   "record_id": "city-council-2025-04-29--item-17",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1488,
+   "member": "off-ishii",
+   "quote": "THANK YOU VERY MUCH. I WOULD LIKE TO BE ADDED AS A COSPONSOR. … I WOULD BE HONORED, MA'AM.",
+   "reason": "Immediately after Taplin joins item 17, Mayor Ishii asks to be added as a co-sponsor and author Bartlett accepts.",
+   "record_id": "city-council-2025-04-29--item-17",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1210,
+   "member": "off-bartlett",
+   "quote": "MY ITEM NUMBER 20, LETTER IN SUPPORT OF SB 456 … I WOULD LIKE TO ADD COUNCILMEMBER BARTLETT AS A COSPONSOR.",
+   "reason": "Author O'Keefe says she would like to add Bartlett as a co-sponsor of item 20.",
+   "record_id": "city-council-2025-04-29--item-20",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1511,
+   "member": "off-ishii",
+   "quote": "20. COUNCILMEMBER O'KEEFE, DO YOU HAVE ROOM STILL? ON YOUR MURAL ITEM? CAN I? … YOU'RE ALLOWED. I'D BE HONORED.",
+   "reason": "Mayor Ishii asks O'Keefe for room on her mural item (20) and O'Keefe accepts.",
+   "record_id": "city-council-2025-04-29--item-20",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1517,
+   "member": "off-ishii",
+   "quote": "AND ALSO COUNCILMEMBER BLACKABY ON THE ADA ONE. … ABSOLUTELY WOULD BE HONORED TO HAVE YOU.",
+   "reason": "Mayor Ishii asks to join Blackaby's ADA item (22) and Blackaby accepts.",
+   "record_id": "city-council-2025-04-29--item-22",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1384,
+   "member": "off-tregub",
+   "quote": "FINALLY FOR THE STREET BUDGET REFERRAL, I WOULD LIKE TO ADD COUNCILMEMBER TREGUB IS A COSPONSOR AS WELL",
+   "reason": "Author Lunaparra adds Tregub as a co-sponsor of the Street Spirit budget referral (item 24).",
+   "record_id": "city-council-2025-04-29--item-24",
+   "transcript": "bcc-2025-04-29-regular-captions-text"
+  },
+  {
+   "finding": "not_found",
+   "member": "off-okeefe",
+   "quote": null,
+   "reason": "An unlabeled speaker asks to co-sponsor Street Spirit (line 1410) but is not identified; nothing identifiable shows O'Keefe joining item 24.",
+   "record_id": "city-council-2025-04-29--item-24",
+   "transcript": null
+  },
+  {
+   "finding": "not_found",
+   "member": "off-ishii",
+   "quote": null,
+   "reason": "The Mayor asks to join items she calls 2022 and the urgent item, not item 24; nothing shows her joining the Street Spirit referral.",
+   "record_id": "city-council-2025-04-29--item-24",
+   "transcript": null
+  },
+  {
+   "finding": "at_meeting",
+   "line": 900,
+   "member": "off-blackaby",
+   "quote": "ITEM 27, DO YOU HAVE A SPOT AS A CO-SPONSOR? … I'D BE DELIGHTED.",
+   "reason": "Blackaby, in his consent remarks, asks author Tregub for a co-sponsor spot on item 27 and Tregub accepts.",
+   "record_id": "city-council-2025-05-20--item-27",
+   "transcript": "bcc-2025-05-20-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1319,
+   "member": "off-okeefe",
+   "quote": "SO ITEM 21, COUNCILMEMBER TREGUB, WAS THERE ANOTHER ROOM FOR COSPONSORING OR DID SOMEBODY ELSE GRAB IT?",
+   "reason": "O'Keefe asks author Tregub for a co-sponsor spot on item 21 (AB 942) and Tregub says there is one.",
+   "record_id": "city-council-2025-06-03--item-21",
+   "transcript": "bcc-2025-06-03-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1112,
+   "member": "off-blackaby",
+   "quote": "QUESTION FOR COUNCILMEMBER TREGUB ON ITEM NUMBER 23, DO YOU STILL HAVE A COSPONSOR SPOT AVAILABLE",
+   "reason": "Blackaby asks Tregub for a co-sponsor spot on the Superfund item (23); Tregub agrees to add him.",
+   "record_id": "city-council-2025-06-03--item-23",
+   "transcript": "bcc-2025-06-03-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1290,
+   "member": "off-bartlett",
+   "quote": "THANK YOU FOR YOUR EFFORTS ON ITEM 23, COUNCILMEMBER TREGUB AND COUNCILMEMBER LUNAPARRA. 25 -- … IT IS NOT FULL IF YOU WOULD LIKE TO ADD YOUR NAME. … SURE. CERTAINLY.",
+   "reason": "Tregub tells Bartlett item 23 is not full and Bartlett accepts; the clerk later confirms Blackaby and Bartlett were added to 23.",
+   "record_id": "city-council-2025-06-03--item-23",
+   "transcript": "bcc-2025-06-03-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "line": 1566,
+   "member": "off-humbert",
+   "quote": "ON ITEM 24, I WOULD LIKE TO THANK COUNCILMEMBER LUNAPARRA AND HUMBERT AS WELL AS COUNCILMEMBER TAPLIN",
+   "reason": "Author Tregub thanks Humbert among others on item 24 (Oxford for All); no addition is shown at the meeting.",
+   "record_id": "city-council-2025-06-03--item-24",
+   "transcript": "bcc-2025-06-03-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 940,
+   "member": "off-humbert",
+   "quote": "I ASKED COUNCILMEMBER TAPLIN, WHO WAS THE AUTHOR, … IF I COULD BE ADDED AS A COSPONSOR AND CONTRIBUTE $150. … YES.",
+   "reason": "Humbert, in his consent remarks on the Port Chicago item, says he asked author Taplin to add him as co-sponsor and Taplin answers yes on the record.",
+   "record_id": "city-council-2025-07-08--item-25",
+   "transcript": "bcc-2025-07-08-regular-captions-text"
+  },
+  {
+   "finding": "not_found",
+   "member": "off-bartlett",
+   "quote": null,
+   "reason": "Bartlett's consent remarks fall in a captioner outage ([CAPTIONER WORKING WITH TECH]); nothing legible shows him joining item 25.",
+   "record_id": "city-council-2025-07-08--item-25",
+   "transcript": null
+  },
+  {
+   "finding": "not_found",
+   "member": "off-tregub",
+   "quote": null,
+   "reason": "No passage shows Tregub joining the Port Chicago item; he does not speak in the consent remarks captured.",
+   "record_id": "city-council-2025-07-08--item-25",
+   "transcript": null
+  },
+  {
+   "finding": "not_found",
+   "member": "off-okeefe",
+   "quote": null,
+   "reason": "No identifiable passage shows O'Keefe joining item 24 (Nightlife Council); her thanks for being added (line 315) does not name the item.",
+   "record_id": "city-council-2025-07-29--item-24",
+   "transcript": null
+  },
+  {
+   "finding": "at_meeting",
+   "line": 407,
+   "member": "off-kesarwani",
+   "quote": "ITEM 26, THE RESOLUTION IN SUPPORT OF CALIFORNIA SENATE BILL 627 … I'D LIKE TO ADD COUNCILMEMBER KESARWANI IS A COSPONSOR.",
+   "reason": "Kesarwani asks if there is space to co-sponsor item 26, and author Tregub then adds her.",
+   "record_id": "city-council-2025-07-29--item-26",
+   "transcript": "bcc-2025-07-29-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "line": 415,
+   "member": "off-tregub",
+   "quote": "ITEM 27, BERKELEY'S FIRST SUNDAY EVENT. VERY EXCITED TO SUPPORT THIS ITEM AND THANK YOU, HUMBERT, FOR ADDING ME AS A COSPONSOR.",
+   "reason": "Tregub thanks author Humbert for adding him to item 27; the author had already listed Tregub as a co-sponsor, so the addition is not shown happening at the meeting.",
+   "record_id": "city-council-2025-07-29--item-27",
+   "transcript": "bcc-2025-07-29-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "line": 293,
+   "member": "off-okeefe",
+   "quote": "THIS PURPOSE. BROUGHT TO US -- AND AM ACTING AS COSPONSORS COUNCILMEMBERS TREGUB AND O'KEEFE. THERE'S STILL ONE SPOT",
+   "reason": "Author Humbert names O'Keefe as an existing co-sponsor of item 27; no addition is shown at the meeting.",
+   "record_id": "city-council-2025-07-29--item-27",
+   "transcript": "bcc-2025-07-29-regular-captions-text"
+  },
+  {
+   "finding": "not_found",
+   "member": "off-lunaparra",
+   "quote": null,
+   "reason": "The caption records a request to be added to \"item number seven\", not item 27; the item is not established from the transcript.",
+   "record_id": "city-council-2025-07-29--item-27",
+   "transcript": null
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1061,
+   "member": "off-tregub",
+   "quote": "ON ITEM 23, I WOULD LIKE TO THANK COUNCILMEMBER TAPLIN FOR DOING THE ITEM. I WOULD LOVE TO REQUEST TO BE ADDED AS A CO-SPONSOR",
+   "reason": "Tregub requests to be added to item 23 and author Taplin answers yes.",
+   "record_id": "city-council-2025-09-09--item-23",
+   "transcript": "bcc-2025-09-09-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1098,
+   "member": "off-bartlett",
+   "quote": "I WOULD LIKE TO CO- SPONSOR ITEM 23 WITH THE VICE MAYOR, WATERSIDE WORKSHOPS?",
+   "reason": "Bartlett asks to co-sponsor item 23 with author Taplin.",
+   "record_id": "city-council-2025-09-09--item-23",
+   "transcript": "bcc-2025-09-09-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1233,
+   "member": "off-humbert",
+   "quote": "AS TO ITEM 23, THE WATERSIDE WORKSHOP … VICE MAYOR TAPLIN HAS ASKED ME TO BE A CO-SPONSOR ON THIS ITEM, I GUESS I'M THE FOURTH. IT WOULD BE MY PRIVILEGE.",
+   "reason": "Humbert accepts on the record Taplin's invitation to co-sponsor item 23.",
+   "record_id": "city-council-2025-09-09--item-23",
+   "transcript": "bcc-2025-09-09-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1318,
+   "member": "off-taplin",
+   "quote": "ITEM 11 I WANTED TO RELINQUISH 500 FOR ITEM 13 AND ASK IF I MAY BE ADDED AS A COSPONSOR. OH, HOW WONDERFUL.",
+   "reason": "Taplin asks to be added as co-sponsor of item 11 (caption also mentions item 13); author Bartlett later thanks Taplin for co-sponsoring.",
+   "record_id": "city-council-2025-09-16-1--item-11",
+   "transcript": "bcc-2025-09-16-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1336,
+   "member": "off-ishii",
+   "quote": "THANK YOU VERY MUCH FOR BRINGING IT FORWARD. AND ADD MAYOR ISHII AND COMES A MEMBER TREGUB TO ITEM 12.",
+   "reason": "Author Lunaparra adds Mayor Ishii and Tregub to item 12; the Mayor later thanks her for being added.",
+   "record_id": "city-council-2025-09-16-1--item-12",
+   "transcript": "bcc-2025-09-16-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1336,
+   "member": "off-tregub",
+   "quote": "THANK YOU VERY MUCH FOR BRINGING IT FORWARD. AND ADD MAYOR ISHII AND COMES A MEMBER TREGUB TO ITEM 12.",
+   "reason": "Author Lunaparra adds Mayor Ishii and Tregub ('COMES A MEMBER TREGUB') to item 12.",
+   "record_id": "city-council-2025-09-16-1--item-12",
+   "transcript": "bcc-2025-09-16-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 950,
+   "member": "off-blackaby",
+   "quote": "ITEM 13, COUNCILMEMBER O'KEEFE, I WOULD ASK IF I COULD BE ADDED AS A COSPONSOR ON THE BERKELEY ARTS CENTER FALL DINNER.",
+   "reason": "Blackaby asks author O'Keefe to be added as co-sponsor of item 13.",
+   "record_id": "city-council-2025-09-30--item-13",
+   "transcript": "bcc-2025-09-30-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 1252,
+   "member": "off-taplin",
+   "quote": "WANT TO RELINQUISH $250 TO THE BERKELEY ART CENTER COMMUNITY CENTER. I WAS WONDERING IF THERE MIGHT BE ROOM TO COSPONSOR. … I BELIEVE I HAVE SPACE FOR ONE MORE AND IT'S YOURS.",
+   "reason": "Taplin asks for room to co-sponsor the Art Center item and the author gives him the last spot.",
+   "record_id": "city-council-2025-09-30--item-13",
+   "transcript": "bcc-2025-09-30-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 926,
+   "member": "off-humbert",
+   "quote": "I HOPE ONE DAY SOON OUR CITY WILL BE RID OF ROBO COP SURVEILLANCE STYLE DEVICES. I WOULD LIKE TO ADD COUNCILMEMBERS HUMBERT AND LUNAPARRA AND TREGUB.",
+   "reason": "Author O'Keefe adds Humbert, Lunaparra and Tregub to the ROBOCOP item.",
+   "record_id": "city-council-2025-10-14--item-12",
+   "transcript": "bcc-2025-10-14-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 926,
+   "member": "off-tregub",
+   "quote": "I HOPE ONE DAY SOON OUR CITY WILL BE RID OF ROBO COP SURVEILLANCE STYLE DEVICES. I WOULD LIKE TO ADD COUNCILMEMBERS HUMBERT AND LUNAPARRA AND TREGUB.",
+   "reason": "Author O'Keefe adds Humbert, Lunaparra and Tregub to the ROBOCOP item.",
+   "record_id": "city-council-2025-10-14--item-12",
+   "transcript": "bcc-2025-10-14-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "line": 926,
+   "member": "off-lunaparra",
+   "quote": "I HOPE ONE DAY SOON OUR CITY WILL BE RID OF ROBO COP SURVEILLANCE STYLE DEVICES. I WOULD LIKE TO ADD COUNCILMEMBERS HUMBERT AND LUNAPARRA AND TREGUB.",
+   "reason": "Author O'Keefe adds Humbert, Lunaparra and Tregub to the ROBOCOP item; Lunaparra then says she was going to ask to be added.",
+   "record_id": "city-council-2025-10-14--item-12",
+   "transcript": "bcc-2025-10-14-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "line": 552,
+   "member": "off-taplin",
+   "quote": "AND ON ITEM #8, I WANT TO THANK MY CO-SPONSORS WHICH, PER MY SUPPLEMENTAL ITEM INCLUDES COUNCILMEMBERS HUMBERT AND TAPLIN.",
+   "reason": "Author Tregub says Humbert and Taplin were added through his supplemental, i.e. before the meeting.",
+   "record_id": "city-council-2025-11-10--item-8",
+   "transcript": "bcc-2025-11-10-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "line": 552,
+   "member": "off-humbert",
+   "quote": "AND ON ITEM #8, I WANT TO THANK MY CO-SPONSORS WHICH, PER MY SUPPLEMENTAL ITEM INCLUDES COUNCILMEMBERS HUMBERT AND TAPLIN.",
+   "reason": "Author Tregub says Humbert and Taplin were added through his supplemental; Humbert also thanks him for adding him.",
+   "record_id": "city-council-2025-11-10--item-8",
+   "transcript": "bcc-2025-11-10-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "member": "off-blackaby",
+   "quote": "I would like to thank my co-sponsors, Vice Mayor Humbert, Councilmembers Councillor Wani and Blackaby",
+   "reason": "Author Taplin, introducing the drones item, thanks Blackaby among his co-sponsors; no addition is shown at the meeting.",
+   "record_id": "city-council-2025-11-18--item-31",
+   "start": "03:41:33",
+   "transcript": "bcc-2025-11-18-special-sabra-regular-captions-vtt-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-okeefe",
+   "quote": "I wanted to thank my colleagues for their support of the resolution in support of the Colby Lang Union, and I wanted to confirm that we are adding Councilor O'Keefe as a co-sponsor.",
+   "reason": "Author Taplin confirms on the record that O'Keefe is being added to the Ecole Bilingue item (30).",
+   "record_id": "city-council-2025-12-02--item-30",
+   "start": "03:18:25",
+   "transcript": "bcc-2025-12-02-special-jpfa-and-regular-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-bartlett",
+   "quote": "And I did want to add Councilmember Bartlett as a co-sponsor of that item.",
+   "reason": "Author Kesarwani, speaking on item 19 (tiny homes), adds Bartlett as co-sponsor.",
+   "record_id": "city-council-2026-01-20--item-19",
+   "start": "00:35:14",
+   "transcript": "bcc-2026-01-20-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-ishii",
+   "quote": "For item 22, I first want to add Mayor Ishii, Councilmember Humber, and Councilmember Blackaby.",
+   "reason": "The item 22 author adds Mayor Ishii, Humbert and Blackaby as co-sponsors.",
+   "record_id": "city-council-2026-01-27--item-22",
+   "start": "01:37:37",
+   "transcript": "bcc-2026-01-27-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-humbert",
+   "quote": "For item 22, I first want to add Mayor Ishii, Councilmember Humber, and Councilmember Blackaby.",
+   "reason": "The item 22 author adds Mayor Ishii, Humbert and Blackaby as co-sponsors.",
+   "record_id": "city-council-2026-01-27--item-22",
+   "start": "01:37:37",
+   "transcript": "bcc-2026-01-27-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-blackaby",
+   "quote": "For item 22, I first want to add Mayor Ishii, Councilmember Humber, and Councilmember Blackaby.",
+   "reason": "The item 22 author adds Mayor Ishii, Humbert and Blackaby as co-sponsors.",
+   "record_id": "city-council-2026-01-27--item-22",
+   "start": "01:37:37",
+   "transcript": "bcc-2026-01-27-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-taplin",
+   "quote": "On item 17, I would like to be recorded as relinquishing $500. … And I request, to be added as a co-sponsor if Councilmember Barlett is amenable.",
+   "reason": "Taplin, called on by the Mayor, requests to be added as co-sponsor of item 17.",
+   "record_id": "city-council-2026-02-24--item-17",
+   "start": "00:29:44",
+   "transcript": "bcc-2026-02-24-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-tregub",
+   "quote": "I wish to, again, relinquish $250 from my D13 account. to support the BUSD Historical Study, and would be honored to be added in as a co-sponsor.",
+   "reason": "Tregub, called on by the Mayor, asks to be added as co-sponsor of the BUSD Historical Study item (17).",
+   "record_id": "city-council-2026-02-24--item-17",
+   "start": "00:30:22",
+   "transcript": "bcc-2026-02-24-regular-captions-text"
+  },
+  {
+   "finding": "not_found",
+   "member": "off-lunaparra",
+   "quote": null,
+   "reason": "Author Tregub offers Lunaparra a spot on item 10 ('would be happy to add you'), but no acceptance or addition is recorded.",
+   "record_id": "city-council-2026-03-10--item-10",
+   "transcript": null
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-okeefe",
+   "quote": "I would like to, ask if I could co-sponsor item 10, Councilmember Trigger.",
+   "reason": "O'Keefe, called on by the Mayor, asks author Tregub to co-sponsor item 10 and he accepts; Tregub later confirms adding her.",
+   "record_id": "city-council-2026-03-10--item-10",
+   "start": "02:35:01",
+   "transcript": "bcc-2026-03-10-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-blackaby",
+   "quote": "And I would like to, just briefly on item 10, … make sure we are adding, council members, Blackaby and O'Keefe as co-sponsors",
+   "reason": "Author Tregub confirms he is adding Blackaby and O'Keefe to item 10 (Blackaby had just asked whether he was a co-sponsor).",
+   "record_id": "city-council-2026-03-10--item-10",
+   "start": "02:45:19",
+   "transcript": "bcc-2026-03-10-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-kesarwani",
+   "quote": "And with respect to, item number 13, which is Pitch, the project to increase telegraph and Claremont housing, I'd like to add Councilmember Kassarwani as a co-sponsor, with her permission.",
+   "reason": "Author Humbert adds Kesarwani as co-sponsor of item 13; Kesarwani later says she is pleased to co-sponsor it.",
+   "record_id": "city-council-2026-03-10--item-13",
+   "start": "02:46:49",
+   "transcript": "bcc-2026-03-10-special-and-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "member": "off-taplin",
+   "quote": "First, I want to acknowledge that I've added the co-sponsors, Terry Taplin, Ben Bartlett, and Brent Blackaby",
+   "reason": "Author Kesarwani says she has added Taplin, Bartlett and Blackaby (past tense) and had already thanked them as co-sponsors when introducing the urgent item; the addition is not shown happening at the meeting.",
+   "record_id": "city-council-2026-03-24--item-urgent-1",
+   "start": "03:35:28",
+   "transcript": "bcc-2026-03-24-special-and-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "member": "off-bartlett",
+   "quote": "First, I want to acknowledge that I've added the co-sponsors, Terry Taplin, Ben Bartlett, and Brent Blackaby",
+   "reason": "Author Kesarwani says she has added Taplin, Bartlett and Blackaby (past tense) and had already thanked them as co-sponsors when introducing the urgent item; the addition is not shown happening at the meeting.",
+   "record_id": "city-council-2026-03-24--item-urgent-1",
+   "start": "03:35:28",
+   "transcript": "bcc-2026-03-24-special-and-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "member": "off-blackaby",
+   "quote": "First, I want to acknowledge that I've added the co-sponsors, Terry Taplin, Ben Bartlett, and Brent Blackaby",
+   "reason": "Author Kesarwani says she has added Taplin, Bartlett and Blackaby (past tense) and had already thanked them as co-sponsors when introducing the urgent item; the addition is not shown happening at the meeting.",
+   "record_id": "city-council-2026-03-24--item-urgent-1",
+   "start": "03:35:28",
+   "transcript": "bcc-2026-03-24-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-okeefe",
+   "quote": "Item 20, I just wanted to say thank you to Councilmember Trey Group, I think that's an important issue, and just really appreciate you. Is there a co-sponsor spot, or not?",
+   "reason": "O'Keefe asks author Tregub for a co-sponsor spot on item 20 and he says 'Yes, happy to.'",
+   "record_id": "city-council-2026-03-24--item-20",
+   "start": "02:50:12",
+   "transcript": "bcc-2026-03-24-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-okeefe",
+   "quote": "I was pleased to be able to bring that forward with the Mayor, the Berkeley Public Schools Fund Luncheon. I also wanted to add, Councilmember O'Keefe as a co-sponsor to that item",
+   "reason": "Author Blackaby adds O'Keefe as co-sponsor of item 24.",
+   "record_id": "city-council-2026-03-24--item-24",
+   "start": "02:48:26",
+   "transcript": "bcc-2026-03-24-special-and-regular-captions-text"
+  },
+  {
+   "finding": "not_found",
+   "member": "off-okeefe",
+   "quote": null,
+   "reason": "O'Keefe only donates to item 14; no co-sponsor language for the Kala Art item appears in the transcript.",
+   "record_id": "city-council-2026-04-14--item-14",
+   "transcript": null
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-kesarwani",
+   "quote": "Item 15 is a support position on SB 1257 by Senator Arrigin, … I would also like to add Councilmember Kesarwani as, co-sponsors",
+   "reason": "Author Tregub adds Kesarwani as a co-sponsor of item 15.",
+   "record_id": "city-council-2026-04-21--item-15",
+   "start": "00:18:00",
+   "transcript": "bcc-2026-04-21-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "member": "off-tregub",
+   "quote": "Also, I would like to thank Councilmember Blackaby for, … Adding me as a co-sponsor to item 17, setting measurable goals and metrics for key city priorities.",
+   "reason": "Tregub thanks author Blackaby for adding him to item 17; no addition is shown happening at the meeting.",
+   "record_id": "city-council-2026-04-21--item-17",
+   "start": "00:19:07",
+   "transcript": "bcc-2026-04-21-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-taplin",
+   "quote": "On item 16, I would like to be recorded as relinquishing $250 for Juneteenth. … And if there's room, I request being added as a co-sponsor.",
+   "reason": "Taplin, called on by the Mayor, requests to be added as co-sponsor of item 16.",
+   "record_id": "city-council-2026-05-12--item-16",
+   "start": "00:39:44",
+   "transcript": "bcc-2026-05-12-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "member": "off-blackaby",
+   "quote": "I wanted to thank Councilmember Bartlett for his item on Juneteenth. I believe he had me as a co-sponsor",
+   "reason": "Blackaby says he believes author Bartlett already had him as a co-sponsor; no addition is shown at the meeting.",
+   "record_id": "city-council-2026-05-12--item-16",
+   "start": "00:35:04",
+   "transcript": "bcc-2026-05-12-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-tregub",
+   "quote": "I would like to thank Councilmember Kesarwani for her work, and wanted to see if it would be possible to be added as a co-sponsor. … Yes, Councilmember Trigger, we'd be delighted to have you.",
+   "reason": "Tregub asks to be added to item 15 and author Kesarwani accepts.",
+   "record_id": "city-council-2026-05-19--item-15",
+   "start": "02:53:47",
+   "transcript": "bcc-2026-05-19-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-ishii",
+   "quote": "kind comments about the item related to incorporating food insecurity as a funded category in our community agency RFP. … process, I want to add the mayor as my final co-sponsor.",
+   "reason": "Author Kesarwani adds the Mayor as final co-sponsor of the food-insecurity item (15).",
+   "record_id": "city-council-2026-05-19--item-15",
+   "start": "03:07:38",
+   "transcript": "bcc-2026-05-19-special-and-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-taplin",
+   "quote": "On item 19, I would like to be recorded as relinquishing $1,000 by D13. … And I, if there's room, I would request being added as a co- sponsor.",
+   "reason": "Taplin requests to be added to item 19 and the author accepts ('we'd love to have you join us').",
+   "record_id": "city-council-2026-06-09--item-19",
+   "start": "00:37:24",
+   "transcript": "bcc-2026-06-09-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-taplin",
+   "quote": "On IM21, I would like to be recorded as relinquishing $500 from AD-13. … And I would, if there's room, request to be listed as a co- sponsor on this one as well.",
+   "reason": "Taplin requests to be listed as co-sponsor of item 21; Tregub confirms there is space.",
+   "record_id": "city-council-2026-06-09--item-21",
+   "start": "00:37:50",
+   "transcript": "bcc-2026-06-09-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-kesarwani",
+   "quote": "And then with respect to item 22, the final item, … that relates to hot tubs, I'd like to add … Councilmembers Bartlett, Kesarwani, and Tragoob, as co- sponsors, on this item",
+   "reason": "Author Humbert adds Bartlett, Kesarwani and Tregub to item 22; Kesarwani had asked to be added earlier in the meeting.",
+   "record_id": "city-council-2026-06-09--item-22",
+   "start": "00:32:16",
+   "transcript": "bcc-2026-06-09-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-bartlett",
+   "quote": "And then with respect to item 22, the final item, … that relates to hot tubs, I'd like to add … Councilmembers Bartlett, Kesarwani, and Tragoob, as co- sponsors, on this item",
+   "reason": "Author Humbert adds Bartlett, Kesarwani and Tregub to item 22.",
+   "record_id": "city-council-2026-06-09--item-22",
+   "start": "00:32:16",
+   "transcript": "bcc-2026-06-09-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-humbert",
+   "quote": "which is Resorcery Org's Mural Reveal and Food Driver Relinquishment. … authored by Councilmember Bartlett, who has offered to make me a co-sponsor, which I'm",
+   "reason": "Humbert accepts on the record Bartlett's offer to make him a co-sponsor of item 31.",
+   "record_id": "city-council-2026-06-16--item-31",
+   "start": "00:32:23",
+   "transcript": "bcc-2026-06-16-regular-captions-text"
+  },
+  {
+   "finding": "thanked_only",
+   "member": "off-kesarwani",
+   "quote": "I thank my co-sponsors, Councilmembers Blackaby, Humber, and Kassarwani",
+   "reason": "Author Taplin thanks Kesarwani among his co-sponsors of the large-vehicle item; Kesarwani thanks him for allowing her to co-sponsor; no addition is shown at the meeting.",
+   "record_id": "city-council-2026-07-07--item-8",
+   "start": "01:12:36",
+   "transcript": "bcc-2026-07-07-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-blackaby",
+   "quote": "I'd like to add Councilmember Blackaby to item number 21, which is the rescission of the greenhouse gas endangerment finding",
+   "reason": "Author Mayor Ishii adds Blackaby to item 21.",
+   "record_id": "city-council-2026-07-28--item-21",
+   "start": "00:34:24",
+   "transcript": "bcc-2026-07-28-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-okeefe",
+   "quote": "Madam Mayor, real quick, could I add two other co-sponsors, which I didn't get a chance to do, on the wildfire item? Councilmember Humbert and Councilmember, O'Keefe.",
+   "reason": "Before the consent vote, the urgent item's author adds Humbert and O'Keefe as co-sponsors; the clerk confirms 'O'Keefe and Humbert'.",
+   "record_id": "city-council-2026-09-15--item-urgent-1",
+   "start": "01:42:04",
+   "transcript": "bcc-2026-09-15-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-humbert",
+   "quote": "Madam Mayor, real quick, could I add two other co-sponsors, which I didn't get a chance to do, on the wildfire item? Councilmember Humbert and Councilmember, O'Keefe.",
+   "reason": "Before the consent vote, the urgent item's author adds Humbert and O'Keefe as co-sponsors.",
+   "record_id": "city-council-2026-09-15--item-urgent-1",
+   "start": "01:42:04",
+   "transcript": "bcc-2026-09-15-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-taplin",
+   "quote": "for item 15, this is supporting the Gilman District Merchants Association. I'd like to add Councilmember Terry Taplin as a co-sponsor.",
+   "reason": "Author Kesarwani adds Taplin as co-sponsor of item 15.",
+   "record_id": "city-council-2026-09-15--item-15",
+   "start": "00:51:44",
+   "transcript": "bcc-2026-09-15-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-humbert",
+   "quote": "As to number 16, which is Councilmember Kesarwani's item. … I, I would like to be added, if I might. … As a co-sponsor. Yes, we'd be delighted to have you as a co- sponsor.",
+   "reason": "Humbert asks to be added to item 16 and author Kesarwani accepts.",
+   "record_id": "city-council-2026-09-15--item-16",
+   "start": "00:43:25",
+   "transcript": "bcc-2026-09-15-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-lunaparra",
+   "quote": "I also want to thank Councilmember Castarwani for item 16, and I'm wondering if I can also be a co-sponsor? Yes, we have room.",
+   "reason": "Lunaparra, called on by the Mayor, asks to co-sponsor item 16 and is told there is room.",
+   "record_id": "city-council-2026-09-15--item-16",
+   "start": "00:44:37",
+   "transcript": "bcc-2026-09-15-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-tregub",
+   "quote": "And I want to thank Mayor Ishii for also joining as a co- sponsor, as well as Councilor Gunapara. Councilor Tregroup, you are now a co- sponsor. So I say that now into the record.",
+   "reason": "Author Taplin, on item 27, states into the record that Tregub is now a co-sponsor.",
+   "record_id": "city-council-2026-09-29--item-27",
+   "start": "00:38:16",
+   "transcript": "bcc-2026-09-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-ishii",
+   "quote": "Councilmember Humbert, you were saying that you are alone now on Item 31. Is that right? … I'm happy to add my name as a co-sponsor as well.",
+   "reason": "After the clerk corrects item 31's co-sponsor list, the Mayor adds her name to it and Humbert thanks her.",
+   "record_id": "city-council-2026-09-29--item-31",
+   "start": "01:02:14",
+   "transcript": "bcc-2026-09-29-regular-captions-text"
+  },
+  {
+   "finding": "at_meeting",
+   "member": "off-tregub",
+   "quote": "So I would like to add Councilmember Tragov as a co-sponsor, and also move that we accept this item to the consent calendar.",
+   "reason": "The urgent item's author adds Tregub as a co-sponsor while moving the item onto consent.",
+   "record_id": "city-council-2026-10-27--item-urgent-1",
+   "start": "00:45:00",
+   "transcript": "bcc-2026-10-27-jpfa-and-regular-captions-text"
+  }
+ ]
+}
