@@ -125,7 +125,7 @@ def validate(tracked_dir=TRACKED_DIR, meeting_ids=None):
     for name in FILES:
         for rec in d[name]:
             for c in citations_of(rec):
-                if c.get("quote") and re.search(r"\s{2,}|- \w", c["quote"]):
+                if c.get("quote") and re.search(r"\s{2,}|(?<=\w)- \w", c["quote"]):
                     errors.append(f"{name}[{rec.get('id')}]: quote has spacing or a broken hyphen; copy it exactly")
     return errors
 
