@@ -469,16 +469,16 @@ def render_thread(a, t, h):
     if a.authored[t]:
         rows = []
         for it, heard in sorted(a.authored[t], key=lambda x: x[0]["meeting_date"]):
-            authors = ", ".join(x["as_printed"] for x in it["attribution"] if x["role"] in ("author", "co-author"))
+            authors = h["roles_html"](it["record_id"])
             rows.append(f"<tr><td class=\"num\">{mlink(h, it['meeting_id'], fd(it['meeting_date']))}</td>"
-                        f"<td>Item {esc(it['item'])}: {esc(it['heading'])}<br><span class=\"muted\">{esc(authors)}</span></td>"
-                        f"<td>{esc(it['section'] or '')}</td><td>{'Heard' if heard else 'Not heard'}</td></tr>")
+                        f"<td>Item {esc(it['item'])}: {esc(it['heading'])}<br><span class=\"roles\">{authors}</span></td>"
+                        f"<td>{esc(it['section'] or '')}</td><td>{'Timed' if heard else 'Not timed separately'}</td></tr>")
         n_not = sum(1 for _, heard in a.authored[t] if not heard)
-        body.append(f'<h2 id="authored">Items Council members wrote</h2><p>{len(a.authored[t])} items, {n_not} of them adopted '
-                    'or acted on without being heard. Those took no meeting time, but each was written, placed on an agenda '
+        body.append(f'<h2 id="authored">Items Council members wrote</h2><p>{len(a.authored[t])} items, {n_not} of them with no meeting time of their own: '
+                    'adopted on the consent calendar, or taken up within another part of the meeting. Those took no meeting time, but each was written, placed on an agenda '
                     'and reviewed by staff.</p><div class="table-wrap"><table><caption>Member-authored items on this subject</caption>'
-                    '<thead><tr><th scope="col">Meeting</th><th scope="col">Item and authors, as printed</th>'
-                    '<th scope="col">Agenda section</th><th scope="col">In the transcript</th></tr></thead>'
+                    '<thead><tr><th scope="col">Meeting</th><th scope="col">Item, and who brought it</th>'
+                    '<th scope="col">Agenda section</th><th scope="col">Meeting time</th></tr></thead>'
                     f'<tbody>{"".join(rows)}</tbody></table></div>')
     cs = [c for _, v in sorted(a.consent[t].items()) for c in v]
     if cs:
@@ -539,7 +539,7 @@ def meeting_block(a, m, h):
     esc, link = h["esc"], h["link"]
     segs = a.by_meeting.get(m["meeting_id"], [])
     letters = a.letters_by_meeting.get(m["meeting_id"], Counter())
-    if not segs and not letters:
+    if not segs and not letters and not any(h["item_roles"].get(it["record_id"]) for it in h["items_by_meeting"].get(m["meeting_id"], [])):
         return ""
     by = defaultdict(lambda: {"disc": 0.0, "pc": 0.0, "labels": [], "est": False})
     for s in segs:
@@ -577,6 +577,21 @@ def meeting_block(a, m, h):
            '<div class="table-wrap"><table><caption>Time and letters by topic</caption><thead><tr><th scope="col">Topic</th>'
            '<th scope="col">What was heard</th><th scope="col">Staff and Council (min)</th><th scope="col">Public comment (min)</th>'
            f'<th scope="col">Letters</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>']
+    brought = [it for it in h["items_by_meeting"].get(m["meeting_id"], []) if h["item_roles"].get(it["record_id"])]
+    if brought:
+        rows = []
+        for it in brought:
+            t = a.record_thread.get(it["record_id"]) or h["item_thread"].get(it["record_id"])
+            topic = ("Routine" if t == "routine" else link("../time/" + t + ".html", a.thread_info[t]["label"])) if t else ""
+            heard = "Timed" if it["record_id"] in a.record_thread else esc(it["section"] or "")
+            rows.append(f"<tr><td class=\"num\">{esc(it['item'])}</td><td>{esc(it['heading'])}<br>"
+                        f"<span class=\"roles\">{h['roles_html'](it['record_id'])}</span></td><td>{topic}</td><td>{heard}</td></tr>")
+        out.append('<h3 id="brought">Items Council members brought</h3>'
+                   '<p class="muted">Every item on this agenda that names a Council member, with the role the agenda gives each. '
+                   'The members\' pages show the same items from the member\'s side.</p>'
+                   '<div class="table-wrap"><table><caption>Member items on this agenda</caption><thead><tr><th scope="col">Item</th>'
+                   '<th scope="col">Item, and who brought it</th><th scope="col">Topic</th><th scope="col">Timed, or the agenda section</th>'
+                   f'</tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
     rec = m.get("city_links", {}).get("video")
     if rec:
         out.append(f'<p>{link(rec, "Watch the City\'s recording")}. <span class="muted">Times in the table below are from the '
@@ -711,6 +726,7 @@ tr:target td{background:var(--soft)}
 tr.routine th,tr.routine td{color:var(--muted);font-weight:400}
 tr:target td:first-child{box-shadow:inset 4px 0 0 var(--accent)}
 .decision{font-weight:600}
+.roles{font-size:.9rem}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .analysis{border:1px solid var(--line);border-radius:6px;padding:4px 14px;margin:14px 0;font-size:.95rem}

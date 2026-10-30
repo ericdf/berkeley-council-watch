@@ -18,7 +18,7 @@ pages keep the roles apart:
 | Role | Rule |
 |---|---|
 | Lead author | The only author or co-author named; or, among several, the one whose name appears in the item's Contact line |
-| Joint author | One of several authors or co-authors, where the Contact line names none of them or more than one |
+| Joint author | One of several authors or co-authors who is not the lead: the Contact line names none of them, more than one, or another author |
 | Co-sponsor, on the agenda as posted | Named as a co-sponsor in the From line |
 | Co-sponsor, added at the meeting | The Action records the member as added, and the transcript shows the addition at the meeting (`cosponsors.json`, finding `at_meeting`) |
 | Co-sponsor, added later; when is not stated | The Action records the member as added, and the transcript does not show when |
@@ -33,6 +33,9 @@ commemorations, appointments, excused absences) and count positions on state, fe
 international matters (the `external` thread) in a column of their own. Each member's page still
 lists every item, routine ones included, by subject. Without this, a member who authors many
 relinquishments or support letters would read as a prolific author of City business.
+
+Topic and meeting pages show the same roles from the item's side: each item, with every member it
+names and their role, linking to the member pages.
 
 ## Votes
 
