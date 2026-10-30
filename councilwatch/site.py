@@ -86,6 +86,8 @@ def link(href, text):
 
 
 CSS_VERSION = "__css_version__"
+# Set by build(): a sentence saying which meetings the record covers, shown on every page.
+RECORD_THROUGH = ""
 
 
 def page(title, body, depth, meta, extra=""):
@@ -122,6 +124,7 @@ def page(title, body, depth, meta, extra=""):
 {body}
 </main>
 <footer>
+<p>{RECORD_THROUGH}</p>
 <p>Agenda records generated from the public-records archive at commit
 <a href="{ARCHIVE}/tree/{esc(commit)}"><code>{esc(commit[:12])}</code></a>, using the City meeting listing
 retrieved {esc(fmt_date(src['catalog_retrieved']))}.{extra}</p>
@@ -171,6 +174,18 @@ SCOPE_NOTE = ("These are agenda records: what the City scheduled, with links to 
               "that the item was heard, adopted, amended, continued or completed.")
 
 
+def record_through(timed, agendas):
+    """The sentence naming the last meeting in the record. Meeting time comes from transcripts and
+    votes and items from annotated agendas, which arrive separately, so each is named when they differ."""
+    if not (timed or agendas):
+        return ""
+    if timed == agendas or not timed or not agendas:
+        return (f"Record through the meeting of {fmt_date(timed or agendas)}. Later meetings are added as their "
+                "annotated agendas and transcripts are processed.")
+    return (f"Votes and items through the meeting of {fmt_date(agendas)}; meeting time through "
+            f"{fmt_date(timed)}. Later meetings are added as their annotated agendas and transcripts are processed.")
+
+
 def render_index(d, a, t, h):
     meetings, meta = d["meetings.json"], d["meta.json"]
     recent = [m for m in meetings if m["meeting_type"] in ("regular", "special")][:8]
@@ -184,6 +199,7 @@ def render_index(d, a, t, h):
 plain record of both: what the Council spends its meeting time on, what it and City management commit to do, and what
 each member brings, moves and votes. Everything comes from the City's records, linked at every step, so you can check it and
 draw your conclusions.</p>
+<p class="muted">{RECORD_THROUGH}</p>
 {h["questions"]}
 <h2>What is the Council spending its time on?</h2>
 <p>{link("time/index.html", "Council time")} measures meeting time on every non-routine item in {cm['transcripts']} meeting
@@ -616,6 +632,9 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     item_roles = mem.item_roles()
     timed = sorted((x["meeting_date"], x["meeting_id"]) for x in td["segments.json"] if x["meeting_id"])
     latest_meeting = f"meetings/{timed[-1][1]}.html#council-time" if timed else None
+    global RECORD_THROUGH
+    RECORD_THROUGH = record_through(timed[-1][0] if timed else None,
+                                    max((x["meeting_date"] for x in td["items.json"]), default=None))
     contacts = {it["record_id"]: it.get("contact") for it in td["items.json"]}
     items_by_meeting = {}
     for it in td["items.json"]:
