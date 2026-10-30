@@ -6,6 +6,7 @@ The home page's questions appear one at a time by CSS alone, and show as a plain
 motion is reduced, CSS is off, or the reader asks to see them all.
 """
 import datetime
+import hashlib
 import html
 import os
 import shutil
@@ -84,6 +85,9 @@ def link(href, text):
     return f'<a href="{esc(href)}">{esc(text)}</a>'
 
 
+CSS_VERSION = "__css_version__"
+
+
 def page(title, body, depth, meta, extra=""):
     up = "../" * depth
     src = meta["source"]
@@ -94,7 +98,7 @@ def page(title, body, depth, meta, extra=""):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} · {TITLE}</title>
-<link rel="stylesheet" href="{up}assets/site.css">
+<link rel="stylesheet" href="{up}assets/site.css?v={CSS_VERSION}">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -663,6 +667,12 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     files["index.html"] = render_index(d, a, t, h)
     nq = len(time_site.questions(h, available))
     files["assets/site.css"] = CSS + member_site.CSS + time_site.css(-(-nq // time_site.GROUP))
+    # Version the stylesheet URL by its content, so a browser holding the
+    # previous stylesheet never pairs it with new markup after a deploy.
+    version = hashlib.sha256(files["assets/site.css"].encode()).hexdigest()[:10]
+    for name in files:
+        if name.endswith(".html"):
+            files[name] = files[name].replace(CSS_VERSION, version)
     for name, text in files.items():
         with open(os.path.join(out, name), "w", encoding="utf-8") as f:
             f.write(text)
