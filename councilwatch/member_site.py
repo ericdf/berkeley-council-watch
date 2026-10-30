@@ -4,6 +4,7 @@ score; every count sits beside the range across the Council. Votes and authorshi
 Clerk printed them in the annotated agendas (archive L2), from the first meeting of the Council
 seated in December 2024.
 """
+import re
 import statistics
 from collections import Counter, defaultdict
 
@@ -119,8 +120,9 @@ SHORT = {"lead": "Lead author", "joint": "Joint authors", "listed": "Co-sponsors
          "at_meeting": "Added at the meeting", "later": "Added later; when not stated", "unlabeled": "Named, role not printed"}
 
 
-def roles_html(roles, name, link, up="../"):
-    """'Lead author: Kesarwani · Co-sponsors on the agenda: Ishii, Taplin', each name linking to the member page."""
+def roles_html(roles, name, link, up="../", contact=None):
+    """'Lead author: Kesarwani · Co-sponsors on the agenda: Ishii, Taplin', each name linking to the member page,
+    then the agenda's Contact line as printed (without its phone number), the basis for naming a lead."""
     groups = defaultdict(list)
     for member, b in roles:
         if member in name:
@@ -129,7 +131,12 @@ def roles_html(roles, name, link, up="../"):
             label = html_escape(member)
         if label not in groups[b]:
             groups[b].append(label)
-    return " · ".join(f"{SHORT[k]}: {', '.join(groups[k])}" for k, _, _ in BINS if groups.get(k))
+    out = " · ".join(f"{SHORT[k]}: {', '.join(groups[k])}" for k, _, _ in BINS if groups.get(k))
+    if contact:
+        c = re.sub(r",?\s*\(?\d{3}\)?[\s.-]*\d{3}[\s.-]*\d{4}.*$", "", contact).strip().rstrip(",")
+        if c:
+            out += f' <span class="muted">· Contact, as printed: {html_escape(c)}</span>'
+    return out
 
 
 def html_escape(s):

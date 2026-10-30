@@ -593,6 +593,7 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     a = time_site.Attention(td)
     mem = member_site.Members(a, td)
     item_roles = mem.item_roles()
+    contacts = {it["record_id"]: it.get("contact") for it in td["items.json"]}
     items_by_meeting = {}
     for it in td["items.json"]:
         items_by_meeting.setdefault(it["meeting_id"], []).append(it)
@@ -602,7 +603,8 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
          "status_labels": COMMITMENT_STATUS, "meeting_ids": {m["meeting_id"] for m in d["meetings.json"]},
          "mlink": time_site.mlink, "item_roles": item_roles, "items_by_meeting": items_by_meeting,
          "item_thread": mem.item_thread,
-         "roles_html": lambda rid: member_site.roles_html(item_roles.get(rid, []), mem.name, link), "bdp": BDP.rsplit("/", 1)[0] + "/",
+         "roles_html": lambda rid: member_site.roles_html(item_roles.get(rid, []), mem.name, link,
+                                                          contact=contacts.get(rid)), "bdp": BDP.rsplit("/", 1)[0] + "/",
          "time_footer": f' Council time computed from the archive at commit <a href="{ARCHIVE}/tree/{esc(commit)}">'
                         f'<code>{esc(commit[:12])}</code></a>.'}
     if os.path.isdir(out):
