@@ -194,7 +194,10 @@ class SiteTests(Base):
         site.build(self.out, out, empty)
         n, problems = links.check(out)
         self.assertEqual(problems, [])
-        self.assertEqual(n, 3 + 5)  # three meeting pages; home, about, meetings, matters and data indexes
+        # three meeting pages; home, about, meetings, matters and data indexes; the council-time pages (an index and
+        # one per thread) and the commitments index
+        threads = len([x for x in os.listdir(os.path.join(out, "time")) if x != "index.html"])
+        self.assertEqual(n, 3 + 5 + 1 + threads + 1)
         with open(os.path.join(out, "meetings", "city-council-2026-10-27.html")) as f:
             page = f.read()
         self.assertIn("Contract amendment &amp; &lt;renewal&gt;", page)

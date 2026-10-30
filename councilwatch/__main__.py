@@ -76,7 +76,8 @@ def main(argv=None):
         errors = validate.validate(a.data)
         meeting_ids = {m["meeting_id"] for m in validate.load_dataset(a.data)["meetings.json"]}
         errors += tracked.validate(a.tracked, meeting_ids)
-        errors += council_time.validate(meeting_ids=meeting_ids)
+        errors += council_time.validate(meeting_ids=meeting_ids,
+                                        matter_ids=[m["id"] for m in tracked.load(a.tracked)["matters.json"]])
         for e in errors:
             print(e)
         print(f"{len(errors)} errors")

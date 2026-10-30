@@ -1,20 +1,23 @@
-"""Render the static site from the generated dataset.
+"""Render the static site from the generated datasets and the reviewed records.
 
 Every link is relative, so the site works under any GitHub Pages base path, including direct
 navigation to a detail page. No client-side JavaScript; facts, citations and dates are in the HTML.
+The home page's questions appear one at a time by CSS alone, and show as a plain list wherever
+motion is reduced, CSS is off, or the reader asks to see them all.
 """
 import datetime
 import html
 import os
 import shutil
 
+from . import time_site
 from . import tracked as tracked_mod
 from .generate import OUT_DIR
 from .validate import load_dataset
 
 SITE_DIR = "_site"
 TITLE = "Berkeley Council Watch"
-TAGLINE = "Tracking Council commitments and City follow-through."
+TAGLINE = "What Berkeley's City Council spends its time on, and what it commits to do."
 SUBSTACK = "https://berkeleydecisionproject.substack.com"
 BDP = "https://ericdf.github.io/berkeley-decision-project/index.html"
 REPO = "https://github.com/ericdf/berkeley-council-watch"
@@ -44,6 +47,7 @@ header,main,footer{max-width:960px;margin:0 auto;padding:0 16px}
 header{border-bottom:1px solid var(--line);padding-top:16px;padding-bottom:12px}
 header .name{font-size:1.25rem;font-weight:700;text-decoration:none;color:var(--fg)}
 header .tagline{margin:2px 0 8px;color:var(--muted)}
+.lede{font-size:1.1rem}
 nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:16px}
 h1{font-size:1.6rem;line-height:1.25;margin:24px 0 8px}
 h2{font-size:1.2rem;margin:28px 0 8px}
@@ -78,7 +82,7 @@ def link(href, text):
     return f'<a href="{esc(href)}">{esc(text)}</a>'
 
 
-def page(title, body, depth, meta):
+def page(title, body, depth, meta, extra=""):
     up = "../" * depth
     src = meta["source"]
     commit = src["archive_commit"]
@@ -97,6 +101,8 @@ def page(title, body, depth, meta):
 <p class="tagline">{TAGLINE}</p>
 <nav aria-label="Site"><ul>
 <li><a href="{up}index.html">Home</a></li>
+<li><a href="{up}time/index.html">Council time</a></li>
+<li><a href="{up}commitments/index.html">Commitments</a></li>
 <li><a href="{up}matters/index.html">Tracked matters</a></li>
 <li><a href="{up}meetings/index.html">Meetings</a></li>
 <li><a href="{up}about.html">About the records</a></li>
@@ -109,7 +115,7 @@ def page(title, body, depth, meta):
 <footer>
 <p>Agenda records generated from the public-records archive at commit
 <a href="{ARCHIVE}/tree/{esc(commit)}"><code>{esc(commit[:12])}</code></a>, using the City meeting listing
-retrieved {esc(fmt_date(src['catalog_retrieved']))}.</p>
+retrieved {esc(fmt_date(src['catalog_retrieved']))}.{extra}</p>
 <p>For analysis of the issues behind tracked matters, read the <a href="{BDP}">Berkeley Decision Project</a>
 and subscribe on <a href="{SUBSTACK}">Substack</a>.</p>
 <p>Original written content by Berkeley Council Watch is licensed under <a href="{CC_BY}">CC BY 4.0</a>.
@@ -156,30 +162,38 @@ SCOPE_NOTE = ("These are agenda records: what the City scheduled, with links to 
               "that the item was heard, adopted, amended, continued or completed.")
 
 
-def render_index(d):
+def render_index(d, a, t, h):
     meetings, meta = d["meetings.json"], d["meta.json"]
-    c = meta["counts"]
-    with_items = [m for m in meetings if m["item_count"]]
-    recent = [m for m in meetings if m["meeting_type"] != "canceled"][:12]
+    recent = [m for m in meetings if m["meeting_type"] in ("regular", "special")][:8]
+    cm = a.meta["counts"]
+    total = sum(a.total(x) for x in a.thread_ids())
+    top = sorted(a.thread_ids(), key=lambda x: -a.total(x))[:5]
+    cur = [tracked_mod.current_status(c)["status"] for c in t["commitments.json"]]
+    n_open = sum(1 for x in cur if x in time_site.OPEN_STATUSES)
     body = f"""<h1>{TITLE}</h1>
-<p>A public, source-linked record of what Berkeley's City Council and City government said would happen,
-what they directed, and what the public record shows afterward.</p>
-<p>{link("matters/index.html", "Tracked matters")} follow specific commitments: who made them, what was
-due, and what the record shows since, with every statement linked to its source.</p>
-<p class="note">The meeting pages hold agenda records. {SCOPE_NOTE}</p>
-<h2>What is here now</h2>
-<ul>
-<li>{c['meetings']} City Council meetings listed by the City, {c['meetings_with_archived_documents']} with archived
-records.</li>
-<li>{c['items']} agenda items from {c['meetings_with_indexed_items']} indexed agenda
-packet{'s' if c['meetings_with_indexed_items'] != 1 else ''}.</li>
-</ul>
+<p class="lede">Council Watch answers factual questions about Berkeley's City Council from the City's own records:
+meeting transcripts, annotated agendas, and the documents behind them. It does not draw conclusions. It shows what
+the record holds, with a link to every source, so you can draw your own.</p>
+{h["questions"]}
+<h2>What is the Council spending its time on?</h2>
+<p>{link("time/index.html", "Council time")} measures every non-routine item in {cm['transcripts']} meeting transcripts, from
+December 2024 on: staff and Council time, spoken public comment, and the letters the public sent, side by side by
+subject. {hours_text(total)} of non-routine business in all. The largest threads:</p>
+<ul>{"".join(f'<li>{link(time_site.thread_href(x), a.thread_info[x]["label"])}: {hours_text(a.total(x))}</li>' for x in top)}</ul>
+<h2>What has it committed to do?</h2>
+<p>{link("commitments/index.html", "Commitments")} lists {len(t['commitments.json'])} specific, checkable undertakings from
+{len(t['matters.json'])} {link("matters/index.html", "tracked matters")}, {n_open} of them still open: what was promised, by whom,
+by when, and what the record shows since.</p>
+<h2>What happened at a meeting?</h2>
+<p>Each {link("meetings/index.html", "meeting page")} links the City's agenda and the archived records, and shows how the
+meeting's time was spent.</p>
 """
-    if with_items:
-        body += meetings_table(with_items, 0, "Meetings with indexed agenda items")
-    body += meetings_table(recent, 0, "Most recent meetings")
-    body += f'<p>{link("meetings/index.html", "All meetings")}</p>'
+    body += meetings_table(recent, 0, "Most recent regular and special meetings")
     return page("Home", body, 0, meta)
+
+
+def hours_text(m):
+    return f"{m / 60:,.0f} hours"
 
 
 def render_meetings(d):
@@ -215,7 +229,7 @@ def docref_list(refs):
     return f'<ul class="links">{"".join(out)}</ul>'
 
 
-def render_meeting(m, items, meta):
+def render_meeting(m, items, meta, a=None, h=None):
     title = f"{TYPE_LABELS.get(m['meeting_type'], m['meeting_type'])} meeting, {fmt_date(m['meeting_date'])}"
     body = [f"<h1>{esc(title)}</h1>",
             f"<p class=\"muted\">{esc(m['name'])} · last checked {esc(fmt_date(m['last_checked_at']))}</p>",
@@ -228,6 +242,10 @@ def render_meeting(m, items, meta):
                 body.append(f"<h3>{ROLE_LABELS[role]}</h3>{docref_list(m['archived'][role])}")
     else:
         body.append("<p>No records for this meeting are archived yet.</p>")
+    if a is not None:
+        block = time_site.meeting_block(a, m, h)
+        if block:
+            body.append(block)
     body.append("<h2>Agenda items</h2>")
     if items:
         body.append(f'<p class="note">{esc(SCOPE_NOTE)}</p>')
@@ -249,7 +267,7 @@ def render_meeting(m, items, meta):
     else:
         body.append("<p>No agenda items are indexed for this meeting yet. Use the City and archived "
                     "records above.</p>")
-    return page(title, "\n".join(body), 1, meta)
+    return page(title, "\n".join(body), 1, meta, extra=(h or {}).get("time_footer", "") if a is not None and a.by_meeting.get(m["meeting_id"]) else "")
 
 
 def render_about(d):
@@ -279,6 +297,35 @@ record states. Not yet assigned to any item.</dd>
 <p>It does not say what a Councilmember meant, why an item was handled as it was, whether a promise was
 made or kept, or whether a policy worked. Those records need review, and will appear as reviewed tracker
 entries with their sources.</p>
+<h2 id="council-time">Council time</h2>
+<p>The {link("time/index.html", "Council time")} pages measure how the Council's meeting time and the public's
+correspondence divided among subjects. They are computed from the archive, and the classification behind them is
+published and reviewed.</p>
+<ul>
+<li><strong>Where the minutes come from.</strong> The archive divides each caption transcript into agenda items and
+procedural blocks, with each item's public-comment span. A timestamped (Zoom) transcript gives caption time. Most
+2025 transcripts were made by a court reporter and have no timestamps: an item's minutes are its share of the
+transcript's words times the meeting's length, from the call to order, adjournment and recesses. Tested on the
+timestamped transcripts, that estimate's median ratio to caption time is 1.01, with the middle half between 0.98
+and 1.05. Estimated minutes are marked.</li>
+<li><strong>What is counted.</strong> Staff and Council time is everything in an item outside its public comment:
+presentations, questions, deliberation, motions and votes. Routine business is not counted: ceremony, the consent
+calendar as a block, Council and City Manager comments, general public comment and adjournment. The exception is
+Gaza, which had one agenda item; speaker turns about it in general and consent public comment are counted, and turns
+that mainly concerned something else are not.</li>
+<li><strong>Letters.</strong> The Clerk's count of correspondence in each annotated agenda: one per listed entry,
+the number printed after a name, or the number of similarly worded form letters. Submissions from Councilmembers,
+the Mayor, staff and commissions are left out. Letters filed under a heard item take that item's thread; letters
+under a subject heading take the heading's.</li>
+<li><strong>Threads are this site's classification.</strong> A thread groups items by subject so their time can be
+read side by side. It says nothing about any item's merit. An audit is filed under its subject; City Auditor items
+are also listed together.</li>
+<li><strong>Boundaries are not authoritative.</strong> Where an item begins and ends was read from the transcript and
+has not been checked against video. Each segment carries the words where it begins and its place in the transcript,
+so anyone can check it.</li>
+</ul>
+<p>The full method, the classification files and how to propose a change are in the
+<a href="{REPO}/blob/main/docs/COUNCIL_TIME.md">source repository</a>.</p>
 <h2>Corrections</h2>
 <p>Report an error or a missing record as an <a href="{REPO}/issues">issue</a>, with the source and the page or
 timestamp that supports it.</p>
@@ -296,6 +343,15 @@ def render_data(d):
 <li>{link('agenda-intake/meetings.json', 'meetings.json')}: {c['meetings']} meeting records</li>
 <li>{link('agenda-intake/items.json', 'items.json')}: {c['items']} agenda item records</li>
 <li>{link('agenda-intake/meta.json', 'meta.json')}: the archive commit used, counts and exceptions</li>
+</ul>
+<h2>Council time</h2>
+<ul>
+<li>{link('council-time/segments.json', 'segments.json')}: minutes for every part of every transcribed meeting</li>
+<li>{link('council-time/correspondence.json', 'correspondence.json')}: letters by Clerk heading</li>
+<li>{link('council-time/items.json', 'items.json')}: agenda items from the annotated agendas, with final votes</li>
+<li>{link('council-time/turns.json', 'turns.json')}: public-comment turns on a thread outside its agenda item</li>
+<li>{link('council-time/meta.json', 'meta.json')}: the archive commit used, counts and exceptions</li>
+<li>The reviewed classification: <a href="{REPO}/tree/main/data/review/council-time">data/review/council-time</a></li>
 </ul>
 """
     return page("Data", body, 1, meta)
@@ -347,7 +403,7 @@ def render_matters_index(t, meta):
     return page("Tracked matters", body, 1, meta)
 
 
-def render_matter(m, t, meta, meetings):
+def render_matter(m, t, meta, meetings, att=None, h=None):
     sources = {s["id"]: s for s in t["sources.json"]}
     recs = {r["id"]: r for r in t["recommendations.json"]}
     cs = [c for c in t["commitments.json"] if c["matter_id"] == m["id"]]
@@ -368,6 +424,8 @@ def render_matter(m, t, meta, meetings):
     if m["qualifications"]:
         body.append(f'<div class="note"><strong>Qualification in the source.</strong> {cites(m["qualifications"], sources)}</div>')
 
+    if att is not None:
+        body.append(time_site.matter_block(att, m, h))
     body.append("<h2>Commitments and status</h2>")
     rows = []
     for c in cs:
@@ -431,33 +489,49 @@ def render_matter(m, t, meta, meetings):
     return page(m["title"], "\n".join(body), 1, meta)
 
 
-def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None):
+def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, review_dir=None):
     d = load_dataset(data_dir)
+    time_dir = time_dir or time_site.ct.OUT_DIR
+    a = time_site.Attention(time_site.load(time_dir, review_dir or time_site.ct.REVIEW_DIR))
+    t = tracked_mod.load(tracked_dir or tracked_mod.TRACKED_DIR)
+    commit = a.meta["source"]["archive_commit"]
+    h = {"esc": esc, "link": link, "page": page, "fmt_date": fmt_date, "meta": d["meta.json"], "repo": REPO,
+         "status_labels": COMMITMENT_STATUS, "meeting_ids": {m["meeting_id"] for m in d["meetings.json"]},
+         "time_footer": f' Council time computed from the archive at commit <a href="{ARCHIVE}/tree/{esc(commit)}">'
+                        f'<code>{esc(commit[:12])}</code></a>.'}
     if os.path.isdir(out):
         shutil.rmtree(out)
-    os.makedirs(os.path.join(out, "meetings"))
-    os.makedirs(os.path.join(out, "matters"))
-    os.makedirs(os.path.join(out, "assets"))
+    for sub in ("meetings", "matters", "assets", "time", "commitments"):
+        os.makedirs(os.path.join(out, sub))
     shutil.copytree(data_dir, os.path.join(out, "data", "agenda-intake"))
+    shutil.copytree(time_dir, os.path.join(out, "data", "council-time"))
     files = {
-        "index.html": render_index(d),
         "about.html": render_about(d),
         "meetings/index.html": render_meetings(d),
         "data/index.html": render_data(d),
-        "assets/site.css": CSS,
+        "time/index.html": time_site.render_time_index(a, h),
+        "commitments/index.html": time_site.render_commitments(a, t, h),
         ".nojekyll": "",
     }
+    for th in a.thread_ids():
+        files[f"time/{th}.html"] = time_site.render_thread(a, th, h)
     by_meeting = {}
     for it in d["items.json"]:
         by_meeting.setdefault(it["meeting_id"], []).append(it)
     for m in d["meetings.json"]:
-        files[f"meetings/{m['meeting_id']}.html"] = render_meeting(m, by_meeting.get(m["meeting_id"], []), d["meta.json"])
-    t = tracked_mod.load(tracked_dir or tracked_mod.TRACKED_DIR)
+        files[f"meetings/{m['meeting_id']}.html"] = render_meeting(m, by_meeting.get(m["meeting_id"], []), d["meta.json"], a, h)
     meetings = {m["meeting_id"]: m for m in d["meetings.json"]}
     files["matters/index.html"] = render_matters_index(t, d["meta.json"])
     for m in t["matters.json"]:
-        files[f"matters/{m['id']}.html"] = render_matter(m, t, d["meta.json"], meetings)
+        files[f"matters/{m['id']}.html"] = render_matter(m, t, d["meta.json"], meetings, a, h)
     shutil.copytree(tracked_dir or tracked_mod.TRACKED_DIR, os.path.join(out, "data", "tracked"))
+
+    def available(href):
+        path, _, anchor = href.partition("#")
+        return path in files and (not anchor or f'id="{anchor}"' in files[path])
+    h["questions"] = time_site.questions_block(h, available)
+    files["index.html"] = render_index(d, a, t, h)
+    files["assets/site.css"] = CSS + time_site.css(sum(1 for _, href in time_site.QUESTIONS if available(href)))
     for name, text in files.items():
         with open(os.path.join(out, name), "w", encoding="utf-8") as f:
             f.write(text)

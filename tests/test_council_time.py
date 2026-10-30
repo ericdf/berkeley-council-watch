@@ -34,7 +34,11 @@ CATALOG = {"source": {"url": "https://berkeleyca.gov/x", "listing_sha256": "0" *
                        {"meeting": "city-council-2025-03-11", "date": "2025-03-11", "label": "regular"}]}
 MAP = {"meetings": [{"meeting": "city-council-2026-10-13", "archived": {"annotated_agenda": ["bcc-2026-10-13-regular-annotated-agenda"]},
                      "listed": {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda"}}], "unmatched": []}
-RECORD = {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda", "communications": [
+RECORD = {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda", "items": [
+    {"item": "18", "section": "Action Calendar", "heading": "Street Paving", "from": "City Manager", "speakers": 4,
+     "lines": [10, 20], "motions": [{"final": True, "kind": "main", "disposition": "carried", "vote": {
+         "all_ayes": False, "ayes": [{}] * 7, "noes": [{}] * 2, "abstain": [], "absent": [], "recused": []}}]}],
+  "communications": [
     {"section": "Communications", "heading": "Item #18: Street Paving", "line": 40, "items": ["18"], "entries": [
         {"as_printed": "Jane Doe", "count": 1, "count_basis": "one entry"},
         {"as_printed": "37 similarly worded form letters", "count": 37, "count_basis": "similarly worded or form letters"},
@@ -140,6 +144,11 @@ class Generate(Base):
         first = next(x for x in c if x["heading"].startswith("Item #18"))
         self.assertEqual((first["letters_public"], first["form_letters"], first["letters_official"]), (38, 37, 1))
         self.assertEqual(first["record_ids"], ["city-council-2026-10-13--item-18"])
+
+    def test_agenda_items_and_final_vote(self):
+        it = self.gen()["items.json"][0]
+        self.assertEqual(it["record_id"], "city-council-2026-10-13--item-18")
+        self.assertEqual(it["final_motion"]["vote"], {"all_ayes": False, "ayes": 7, "noes": 2, "abstain": 0, "absent": 0, "recused": 0})
 
     def test_turn_minutes_and_quote(self):
         d = self.gen()

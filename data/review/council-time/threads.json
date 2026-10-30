@@ -1657,6 +1657,360 @@
    "thread": "zoning"
   }
  ],
+ "decisions": [
+  {
+   "item": "1",
+   "label": "“Reaffirming Berkeley’s Commitment to Peace” adopted",
+   "meeting_id": "city-council-2025-04-28",
+   "thread": "gaza"
+  },
+  {
+   "item": "24",
+   "label": "FY 2026 budget update adopted",
+   "meeting_id": "city-council-2025-06-24",
+   "thread": "budget"
+  },
+  {
+   "item": "1",
+   "label": "FY 2027–28 budget adopted",
+   "meeting_id": "city-council-2026-06-23",
+   "thread": "budget"
+  },
+  {
+   "item": "17",
+   "label": "Condor camera report accepted",
+   "meeting_id": "city-council-2025-07-22",
+   "thread": "flock"
+  },
+  {
+   "item": "26",
+   "label": "Continued to a special meeting",
+   "meeting_id": "city-council-2026-03-24",
+   "thread": "flock"
+  },
+  {
+   "item": "1a",
+   "label": "Severed portions approved",
+   "meeting_id": "city-council-2026-05-07",
+   "thread": "flock"
+  },
+  {
+   "item": "21",
+   "label": "Equipment ordinance, first reading",
+   "meeting_id": "city-council-2026-01-27",
+   "thread": "tactics"
+  },
+  {
+   "item": "1a",
+   "label": "Tear gas reinstatement failed",
+   "meeting_id": "city-council-2026-09-29-0",
+   "thread": "tactics"
+  },
+  {
+   "item": "27",
+   "label": "Paving referral adopted",
+   "meeting_id": "city-council-2026-07-28",
+   "thread": "hopkins"
+  },
+  {
+   "item": "43a",
+   "label": "Fire code amendments adopted",
+   "meeting_id": "city-council-2025-06-17",
+   "thread": "fire"
+  },
+  {
+   "item": "1",
+   "label": "Middle housing ordinance, first reading",
+   "meeting_id": "city-council-2025-06-26",
+   "thread": "zoning"
+  },
+  {
+   "item": "34",
+   "label": "San Pablo Avenue Specific Plan adopted",
+   "meeting_id": "city-council-2026-09-29",
+   "thread": "zoning"
+  },
+  {
+   "item": "4",
+   "label": "Marina fee increases adopted",
+   "meeting_id": "city-council-2025-06-24-0",
+   "thread": "waterfront"
+  },
+  {
+   "item": "9",
+   "label": "Specific Plan environmental review authorized, on consent",
+   "meeting_id": "city-council-2026-07-07",
+   "thread": "waterfront"
+  },
+  {
+   "item": "8",
+   "label": "Large-vehicle parking rules adopted",
+   "meeting_id": "city-council-2026-07-07",
+   "thread": "homeless"
+  },
+  {
+   "item": "6",
+   "label": "Contracts audit presented",
+   "meeting_id": "city-council-2026-03-10",
+   "thread": "finaudit"
+  },
+  {
+   "item": "9",
+   "label": "Financial Condition audit presented",
+   "meeting_id": "city-council-2026-04-28",
+   "thread": "finaudit"
+  },
+  {
+   "item": "1",
+   "label": "Vision 2050 Task Force report",
+   "meeting_id": "city-council-2025-12-02-0",
+   "thread": "measures_both"
+  },
+  {
+   "item": "1",
+   "label": "First community survey",
+   "meeting_id": "city-council-2026-03-17",
+   "thread": "measures_both"
+  },
+  {
+   "item": "1",
+   "label": "Second survey; both measures affirmed",
+   "meeting_id": "city-council-2026-05-19-0",
+   "thread": "measures_both"
+  },
+  {
+   "item": "22",
+   "label": "Subcommittee report received and filed",
+   "meeting_id": "city-council-2026-04-14",
+   "thread": "bond"
+  },
+  {
+   "item": "38",
+   "label": "GO bond placed on the ballot",
+   "meeting_id": "city-council-2026-06-16",
+   "thread": "bond"
+  },
+  {
+   "item": "39",
+   "label": "Sales tax placed on the ballot",
+   "meeting_id": "city-council-2026-06-16",
+   "thread": "salestax"
+  }
+ ],
+ "matters": [
+  {
+   "matter": "contracts-audit-2026",
+   "thread": "finaudit"
+  },
+  {
+   "matter": "berkeley-high-school-staff-parking-permits-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "neighborhood-scale-commercial-2024",
+   "thread": "zoning"
+  },
+  {
+   "matter": "crime-prevention-women-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "west-berkeley-service-center-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "group-class-instruction-noise-2024",
+   "thread": "zoning"
+  },
+  {
+   "matter": "long-term-care-facility-oversight-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "age-friendly-action-plan-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "bicycle-boulevards-vision-zero-2024",
+   "thread": "streets"
+  },
+  {
+   "matter": "voluntary-design-guidelines-2024",
+   "thread": "zoning"
+  },
+  {
+   "matter": "referral-prioritization-rrv-2024",
+   "thread": "governance"
+  },
+  {
+   "matter": "smi-care-team-pilot-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "community-agency-annual-financial-reports-2024",
+   "thread": "finaudit"
+  },
+  {
+   "matter": "food-assistance-provider-rfp-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "short-term-rental-amendments-2024",
+   "thread": "zoning"
+  },
+  {
+   "matter": "curb-management-plan-2024",
+   "thread": "streets"
+  },
+  {
+   "matter": "ashby-bart-eifd-2024",
+   "thread": "budget"
+  },
+  {
+   "matter": "restaurant-inspections-audit-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "community-opportunity-to-purchase-2024",
+   "thread": "zoning"
+  },
+  {
+   "matter": "waterfront-specific-plan-2024",
+   "thread": "waterfront"
+  },
+  {
+   "matter": "equity-for-black-berkeley-2024",
+   "thread": "other"
+  },
+  {
+   "matter": "ab-812-artist-housing-2024",
+   "thread": "zoning"
+  },
+  {
+   "matter": "middle-income-homeownership-2025",
+   "thread": "zoning"
+  },
+  {
+   "matter": "traffic-diverter-intersections-nacto-2025",
+   "thread": "streets"
+  },
+  {
+   "matter": "leases-audit-follow-up-2025",
+   "thread": "finaudit"
+  },
+  {
+   "matter": "beso-amendments-2025",
+   "thread": "other"
+  },
+  {
+   "matter": "ember-building-code-2025",
+   "thread": "fire"
+  },
+  {
+   "matter": "ember-leave-early-2025",
+   "thread": "fire"
+  },
+  {
+   "matter": "ember-safe-passages-2025",
+   "thread": "fire"
+  },
+  {
+   "matter": "affordable-housing-transfer-tax-exemption-2025",
+   "thread": "zoning"
+  },
+  {
+   "matter": "sanctuary-city-ordinance-2025",
+   "thread": "other"
+  },
+  {
+   "matter": "cbo-emergency-funding-process-2025",
+   "thread": "finaudit"
+  },
+  {
+   "matter": "shelter-sites-and-homelessness-report-2025",
+   "thread": "homeless"
+  },
+  {
+   "matter": "oxford-street-safety-2025",
+   "thread": "streets"
+  },
+  {
+   "matter": "fire-facility-revenue-measures-2025",
+   "thread": "ballot"
+  },
+  {
+   "matter": "ember-implementation-plan-2025",
+   "thread": "fire"
+  },
+  {
+   "matter": "flock-camera-safeguards-2025",
+   "thread": "flock"
+  },
+  {
+   "matter": "green-workforce-development-2025",
+   "thread": "other"
+  },
+  {
+   "matter": "telegraph-alcohol-retail-2025",
+   "thread": "zoning"
+  },
+  {
+   "matter": "homeless-response-team-audit-2025",
+   "thread": "homeless"
+  },
+  {
+   "matter": "recreation-facility-revenue-measures-2025",
+   "thread": "ballot"
+  },
+  {
+   "matter": "micromobility-fees-2025",
+   "thread": "fees"
+  },
+  {
+   "matter": "personnel-investigation-communications-2025",
+   "thread": "oversight"
+  },
+  {
+   "matter": "motion-activated-sound-devices-2025",
+   "thread": "other"
+  },
+  {
+   "matter": "virginia-street-bikeway-2025",
+   "thread": "streets"
+  },
+  {
+   "matter": "turtle-island-monument-2025",
+   "thread": "other"
+  },
+  {
+   "matter": "landmarks-designation-procedure-2025",
+   "thread": "zoning"
+  },
+  {
+   "matter": "bond-issuance-and-investment-policy-2025",
+   "thread": "budget"
+  },
+  {
+   "matter": "mills-act-non-renewal-2025",
+   "thread": "other"
+  },
+  {
+   "matter": "police-drones-2025",
+   "thread": "flock"
+  },
+  {
+   "matter": "vibrant-storefront-policy-2025",
+   "thread": "other"
+  },
+  {
+   "matter": "infrastructure-project-notification-2025",
+   "thread": "streets"
+  },
+  {
+   "matter": "wui-code-follow-up-2025",
+   "thread": "fire"
+  }
+ ],
  "segments": [
   {
    "auditor": false,

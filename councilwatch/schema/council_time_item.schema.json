@@ -1,0 +1,153 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: one agenda item in an annotated agenda's L2 record",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "record_id",
+  "meeting_id",
+  "meeting_date",
+  "item",
+  "section",
+  "heading",
+  "from",
+  "speakers",
+  "lines",
+  "record_archive_id",
+  "final_motion",
+  "archive_url"
+ ],
+ "properties": {
+  "record_id": {
+   "type": "string",
+   "pattern": "^city-council-[0-9-]+--item-"
+  },
+  "meeting_id": {
+   "type": "string"
+  },
+  "meeting_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "item": {
+   "type": "string"
+  },
+  "section": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "heading": {
+   "type": "string"
+  },
+  "from": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "speakers": {
+   "type": [
+    "integer",
+    "null"
+   ],
+   "minimum": 0
+  },
+  "lines": {
+   "type": "array",
+   "minItems": 2,
+   "maxItems": 2,
+   "items": {
+    "type": "integer",
+    "minimum": 1
+   }
+  },
+  "record_archive_id": {
+   "type": "string"
+  },
+  "final_motion": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "additionalProperties": false,
+   "required": [
+    "kind",
+    "disposition",
+    "vote"
+   ],
+   "properties": {
+    "kind": {
+     "type": "string"
+    },
+    "disposition": {
+     "enum": [
+      "carried",
+      "failed",
+      "unknown"
+     ]
+    },
+    "vote": {
+     "type": [
+      "object",
+      "null"
+     ],
+     "additionalProperties": false,
+     "required": [
+      "all_ayes",
+      "ayes",
+      "noes",
+      "abstain",
+      "absent",
+      "recused"
+     ],
+     "properties": {
+      "all_ayes": {
+       "type": "boolean"
+      },
+      "ayes": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "minimum": 0
+      },
+      "noes": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "minimum": 0
+      },
+      "abstain": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "minimum": 0
+      },
+      "absent": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "minimum": 0
+      },
+      "recused": {
+       "type": [
+        "integer",
+        "null"
+       ],
+       "minimum": 0
+      }
+     }
+    }
+   }
+  },
+  "archive_url": {
+   "type": "string",
+   "pattern": "^https://"
+  }
+ }
+}
