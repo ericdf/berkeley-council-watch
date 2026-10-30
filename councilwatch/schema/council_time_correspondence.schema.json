@@ -1,0 +1,71 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: one correspondence heading in an annotated agenda",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "meeting_id",
+  "meeting_date",
+  "record_archive_id",
+  "section",
+  "heading",
+  "line",
+  "record_ids",
+  "entries",
+  "letters_public",
+  "form_letters",
+  "letters_official",
+  "archive_url"
+ ],
+ "properties": {
+  "meeting_id": {
+   "type": "string"
+  },
+  "meeting_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "record_archive_id": {
+   "type": "string"
+  },
+  "section": {
+   "type": "string"
+  },
+  "heading": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "line": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "record_ids": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "entries": {
+   "type": "integer",
+   "minimum": 1
+  },
+  "letters_public": {
+   "type": "integer",
+   "minimum": 0
+  },
+  "form_letters": {
+   "type": "integer",
+   "minimum": 0
+  },
+  "letters_official": {
+   "type": "integer",
+   "minimum": 0
+  },
+  "archive_url": {
+   "type": "string",
+   "pattern": "^https://"
+  }
+ }
+}

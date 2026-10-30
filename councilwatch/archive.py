@@ -30,7 +30,7 @@ class Archive:
         if not os.path.isfile(os.path.join(self.root, "catalog", "city-council-agendas", "meetings.json")):
             raise ArchiveError(f"{self.root} is not a berkeley-public-records checkout")
         self.commit = _git(self.root, "rev-parse", "HEAD")
-        if not allow_dirty and _git(self.root, "status", "--porcelain", "--", "catalog", "manifest", "L2", "tools"):
+        if not allow_dirty and _git(self.root, "status", "--porcelain", "--", "catalog", "manifest", "L1", "L2", "L3", "tools"):
             raise ArchiveError(f"{self.root} has uncommitted changes; generate from a clean commit")
         self._manifest = {}
 

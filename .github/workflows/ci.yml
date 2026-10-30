@@ -35,6 +35,14 @@ jobs:
           git -C "$RUNNER_TEMP/archive" checkout --quiet "$commit"
           python3 -m councilwatch reproduce --archive "$RUNNER_TEMP/archive"
 
+      - name: Reproduce council time from its pinned archive commit
+        run: |
+          commit=$(python3 -c "import json; print(json.load(open('data/generated/council-time/meta.json'))['source']['archive_commit'])")
+          git clone --quiet --filter=blob:none --no-checkout https://github.com/ericdf/berkeley-public-records "$RUNNER_TEMP/archive-time"
+          git -C "$RUNNER_TEMP/archive-time" sparse-checkout set catalog manifest tools L1/council-captions L2/annotated-agendas L3
+          git -C "$RUNNER_TEMP/archive-time" checkout --quiet "$commit"
+          python3 -m councilwatch reproduce-council-time --archive "$RUNNER_TEMP/archive-time"
+
       - name: Backfill replay fixture (AUTOMATION_SPEC §12)
         run: |
           sudo apt-get install -y -qq poppler-utils >/dev/null
