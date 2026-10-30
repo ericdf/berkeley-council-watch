@@ -42,7 +42,7 @@ class TrackedTests(unittest.TestCase):
 
     def test_seed_shape(self):
         d = tracked.load(SEED)
-        self.assertEqual(len(d["recommendations.json"]), 13)
+        self.assertEqual(len([r for r in d["recommendations.json"] if r["id"].startswith(f"{MATTER}-")]), 13)
         # Recommendation 1.2 has no commitment: management's response, date and plan are all to be determined.
         recs_with_commitments = {c["recommendation_id"] for c in d["commitments.json"]}
         self.assertNotIn(f"{MATTER}-rec-1.2", recs_with_commitments)
@@ -118,6 +118,20 @@ class TrackedTests(unittest.TestCase):
         self.assertIn("Searched:", page)
         self.assertIn("We have not yet confirmed to what extent", page)
         self.assertIn('id="rec-2.7"', page)
+
+    def test_unrecorded_management_response(self):
+        # The Rocky Road audit report is not archived: its recommendations come from the City's status
+        # reports, which do not print management's original responses.
+        d = tracked.load(SEED)
+        rr = [r for r in d["recommendations.json"] if r["id"].startswith("rocky-road-audit-2020-")]
+        self.assertEqual(len(rr), 5)
+        self.assertTrue(all(v is None for r in rr for v in r["management_response"].values()))
+        out = os.path.join(self.tmp, "site")
+        site.build(AGENDA, out, self.dir)
+        with open(os.path.join(out, "matters", "rocky-road-audit-2020.html"), encoding="utf-8") as f:
+            page = f.read()
+        self.assertIn("not in the sources cited", page)
+        self.assertNotIn("Completion verified", page)
 
 
 if __name__ == "__main__":

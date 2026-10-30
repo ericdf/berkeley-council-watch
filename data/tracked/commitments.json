@@ -2173,5 +2173,400 @@
    }
   ],
   "success_measure": null
+ },
+ {
+  "actor": "City Manager",
+  "citation": {
+   "locator": "Consent Calendar, Item 27 (PDF p. 12)",
+   "source_id": "src-bcc-2020-12-15-regular-annotated-agenda-v2"
+  },
+  "due": {
+   "as_stated": "June 15, 2021, and every six months thereafter",
+   "is_date": true
+  },
+  "id": "rocky-road-audit-2020-report-back",
+  "kind": "report_back",
+  "label": "City Manager report back on the audit recommendations",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_id": null,
+  "statement": "We recommend City Council request that the City Manager report back by June 15, 2021, and every six months thereafter, regarding the status of our audit recommendations until reported fully implemented by the Public Works Department.",
+  "status_history": [
+   {
+    "as_of": "2020-12-15",
+    "basis": "The Council approved the recommendation on December 15, 2020.",
+    "citations": [
+     {
+      "locator": "Consent Calendar, Item 27 (PDF p. 12)",
+      "quote": "Action: Approved recommendation.",
+      "source_id": "src-bcc-2020-12-15-regular-annotated-agenda-v2"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2021-06-15",
+    "basis": "June 15, 2021 is the date the recommendation set for the first report back. No status report on this audit was located in the records searched.",
+    "citations": [],
+    "searched": "The annotated agendas in the public-records archive of every City Council meeting from December 15, 2020 through June 15, 2021, for the audit's title and for any street or paving audit status report.",
+    "status": "unknown_no_update_located"
+   },
+   {
+    "as_of": "2022-11-03",
+    "basis": "The City Manager submitted a status report on this audit and the Fleet Replacement Fund audit, which the Council referred to the Facilities, Infrastructure, Transportation, Environment & Sustainability Committee. The October 28, 2025 status report lists November 3, 2022 as the first of its previous reports.",
+    "citations": [
+     {
+      "locator": "Information Reports, Item 44 (PDF p. 17)",
+      "source_id": "src-bcc-2022-11-03-regular-annotated-agenda"
+     },
+     {
+      "locator": "PDF p. 1",
+      "quote": "Previous reports were issued on November 3, 2022, March 19, 2024, and December 10, 2024.",
+      "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+     }
+    ],
+    "status": "in_progress_reported"
+   },
+   {
+    "as_of": "2024-03-19",
+    "basis": "The City Manager submitted the second status report. The Council received and filed it.",
+    "citations": [
+     {
+      "locator": "Information Reports, Item 13 (PDF p. 6)",
+      "quote": "Action: Received and filed.",
+      "source_id": "src-bcc-2024-03-19-regular-annotated-agenda"
+     }
+    ],
+    "status": "in_progress_reported"
+   },
+   {
+    "as_of": "2024-12-10",
+    "basis": "The City Manager submitted the third status report, which reports three recommendations implemented and two partly implemented. The Council received and filed it.",
+    "citations": [
+     {
+      "locator": "Information Reports, Item 24 (PDF p. 11)",
+      "quote": "Action: Received and filed.",
+      "source_id": "src-bcc-2024-12-10-regular-annotated-agenda"
+     },
+     {
+      "locator": "PDF p. 1",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "in_progress_reported"
+   },
+   {
+    "as_of": "2025-10-28",
+    "basis": "The City Manager submitted the fourth status report, which reports all five recommendations implemented and says the next status report is expected in Fall 2026. The Council received and filed it.",
+    "citations": [
+     {
+      "locator": "Information Reports, Item 35 (PDF p. 14)",
+      "quote": "Action: Received and filed.",
+      "source_id": "src-bcc-2025-10-28-regular-annotated-agenda"
+     },
+     {
+      "locator": "PDF p. 2",
+      "quote": "The next status report for the fleet and street paving audits are expected to be presented in Fall 2026.",
+      "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+     }
+    ],
+    "status": "in_progress_reported"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Public Works",
+  "citation": {
+   "locator": "PDF p. 10, Attachment 2",
+   "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "rocky-road-audit-2020-impl-1.1",
+  "kind": "corrective_action",
+  "label": "Implementation of Recommendation 1.1",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_id": "rocky-road-audit-2020-rec-1.1",
+  "statement": "Annually, conduct a budget analysis, based on the deferred maintenance needs at that point in time, to determine what level of funding is necessary to achieve the desired goals of the Street Rehabilitation Program. Report findings to City Council. This information will be helpful during updates to the Five-Year Street Rehabilitation Plan and during the budgeting process.",
+  "status_history": [
+   {
+    "as_of": "2024-03-19",
+    "basis": "The December 10, 2024 status report gives Public Works' previous status as \"Partly Implemented\". The previous report it lists is the one of March 19, 2024, which is not in the public-records archive.",
+    "citations": [
+     {
+      "locator": "PDF p. 10, Attachment 2",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     },
+     {
+      "locator": "PDF p. 1",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "in_progress_reported"
+   },
+   {
+    "as_of": "2024-12-10",
+    "basis": "Public Works reported the status as \"Partly Implemented\" in the December 10, 2024 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 10, Attachment 2",
+      "quote": "The City has not yet met the requirement for an annual analysis and reporting.",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "in_progress_reported"
+   },
+   {
+    "as_of": "2025-10-28",
+    "basis": "Public Works reported the status as \"Implemented\" in the October 28, 2025 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 8, Attachment 2",
+      "quote": "Public Works staff has presented updated revenue and PCI projections to City Council in 2023 and 2024.",
+      "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Public Works",
+  "citation": {
+   "locator": "PDF p. 11, Attachment 2",
+   "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "rocky-road-audit-2020-impl-1.2",
+  "kind": "corrective_action",
+  "label": "Implementation of Recommendation 1.2",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_id": "rocky-road-audit-2020-rec-1.2",
+  "statement": "Identify funding sources to achieve and maintain the goals of the Street Rehabilitation Program.",
+  "status_history": [
+   {
+    "as_of": "2024-03-19",
+    "basis": "The December 10, 2024 status report gives Public Works' previous status as \"Partly Implemented\". The previous report it lists is the one of March 19, 2024, which is not in the public-records archive.",
+    "citations": [
+     {
+      "locator": "PDF p. 11, Attachment 2",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     },
+     {
+      "locator": "PDF p. 1",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "in_progress_reported"
+   },
+   {
+    "as_of": "2024-12-10",
+    "basis": "Public Works reported the status as \"Partly Implemented\" in the December 10, 2024 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 11, Attachment 2",
+      "quote": "Achieving an average Pavement Condition Index (PCI) of 70 requires an estimated $42 million annually over the next 12 years.",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "in_progress_reported"
+   },
+   {
+    "as_of": "2025-10-28",
+    "basis": "Public Works reported the status as \"Implemented\" in the October 28, 2025 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 8, Attachment 2",
+      "quote": "In November 2024, voters approved Measure FF, a parcel tax expected to generate $15M annually for 14 years, with about 45% (~$6.5M/year) dedicated to street paving.",
+      "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Public Works",
+  "citation": {
+   "locator": "PDF p. 11, Attachment 2",
+   "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "rocky-road-audit-2020-impl-2.1",
+  "kind": "corrective_action",
+  "label": "Implementation of Recommendation 2.1",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_id": "rocky-road-audit-2020-rec-2.1",
+  "statement": "Update the Street Rehabilitation and Repair Policy annually and define who is responsible for ensuring the Policy is updated, as stated in the Policy.",
+  "status_history": [
+   {
+    "as_of": "2024-03-19",
+    "basis": "The December 10, 2024 status report gives Public Works' previous status as \"Implemented\". The previous report it lists is the one of March 19, 2024, which is not in the public-records archive.",
+    "citations": [
+     {
+      "locator": "PDF p. 11, Attachment 2",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     },
+     {
+      "locator": "PDF p. 1",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   },
+   {
+    "as_of": "2024-12-10",
+    "basis": "Public Works reported the status as \"Implemented\" in the December 10, 2024 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 11, Attachment 2",
+      "quote": "Public Works Commission approved a Street Rehabilitation and Repair Policy March, 2021, which was received and revised after consideration at the FITES Commission in May 2021, and ultimately adopted by City Council on January 25, 2022.",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   },
+   {
+    "as_of": "2025-10-28",
+    "basis": "Public Works reported the status as \"Implemented\" in the October 28, 2025 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 9, Attachment 2",
+      "quote": "Public Works Commission approved a Street Rehabilitation and Repair Policy March, 2021, which was received and revised after consideration at the FITES Commission in May 2021, and ultimately adopted by City Council on January 25, 2022.",
+      "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Public Works",
+  "citation": {
+   "locator": "PDF p. 12, Attachment 2",
+   "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "rocky-road-audit-2020-impl-2.2",
+  "kind": "corrective_action",
+  "label": "Implementation of Recommendation 2.2",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_id": "rocky-road-audit-2020-rec-2.2",
+  "statement": "When updating the Street Rehabilitation and Repair Policy, incorporate equity to align with Vision 2050 and clearly define how it will be applied to the street maintenance and rehabilitation planning process.",
+  "status_history": [
+   {
+    "as_of": "2024-03-19",
+    "basis": "The December 10, 2024 status report gives Public Works' previous status as \"Implemented\". The previous report it lists is the one of March 19, 2024, which is not in the public-records archive.",
+    "citations": [
+     {
+      "locator": "PDF p. 12, Attachment 2",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     },
+     {
+      "locator": "PDF p. 1",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   },
+   {
+    "as_of": "2024-12-10",
+    "basis": "Public Works reported the status as \"Implemented\" in the December 10, 2024 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 12, Attachment 2",
+      "quote": "The updated Street Rehabilitation and Repair Policy was adopted with clear language placing Equity as an objective.",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   },
+   {
+    "as_of": "2025-10-28",
+    "basis": "Public Works reported the status as \"Implemented\" in the October 28, 2025 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 9, Attachment 2",
+      "quote": "The updated Street Rehabilitation and Repair Policy was adopted with clear language placing Equity as an objective.",
+      "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Public Works",
+  "citation": {
+   "locator": "PDF p. 12, Attachment 2",
+   "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "rocky-road-audit-2020-impl-2.3",
+  "kind": "corrective_action",
+  "label": "Implementation of Recommendation 2.3",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_id": "rocky-road-audit-2020-rec-2.3",
+  "statement": "Define goals and performance measures to guide the Street Rehabilitation and Repair Policy and Street Rehabilitation Program that align with other plans and policies relevant to street paving (e.g., Complete Streets Policy, Vision 2050, etc.). Regularly report to Council on performance measures.",
+  "status_history": [
+   {
+    "as_of": "2024-03-19",
+    "basis": "The December 10, 2024 status report gives Public Works' previous status as \"Implemented\". The previous report it lists is the one of March 19, 2024, which is not in the public-records archive.",
+    "citations": [
+     {
+      "locator": "PDF p. 12, Attachment 2",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     },
+     {
+      "locator": "PDF p. 1",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   },
+   {
+    "as_of": "2024-12-10",
+    "basis": "Public Works reported the status as \"Implemented\" in the December 10, 2024 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 12, Attachment 2",
+      "quote": "Performance Metrics are included as a major part of the adopted Specific Policy.",
+      "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   },
+   {
+    "as_of": "2025-10-28",
+    "basis": "Public Works reported the status as \"Implemented\" in the October 28, 2025 status report.",
+    "citations": [
+     {
+      "locator": "PDF p. 9, Attachment 2",
+      "quote": "Performance Metrics are included as a major part of the adopted Specific Policy.",
+      "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
  }
 ]

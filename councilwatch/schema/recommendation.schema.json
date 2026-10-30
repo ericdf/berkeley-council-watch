@@ -47,15 +47,24 @@
    ],
    "properties": {
     "position": {
-     "type": "string",
+     "type": [
+      "string",
+      "null"
+     ],
      "minLength": 1
     },
     "implementation_date": {
-     "type": "string",
+     "type": [
+      "string",
+      "null"
+     ],
      "minLength": 1
     },
     "corrective_action_plan": {
-     "type": "string",
+     "type": [
+      "string",
+      "null"
+     ],
      "minLength": 1
     }
    }

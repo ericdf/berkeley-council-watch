@@ -799,5 +799,51 @@
   "opened": "2025-12-02",
   "qualifications": [],
   "title": "Wildland-Urban Interface Code follow-up"
+ },
+ {
+  "agenda_items": [
+   {
+    "item": "31",
+    "meeting_id": "city-council-2021-05-11"
+   },
+   {
+    "item": "44",
+    "meeting_id": "city-council-2022-11-03"
+   },
+   {
+    "item": "26",
+    "meeting_id": "city-council-2023-05-23"
+   },
+   {
+    "item": "13",
+    "meeting_id": "city-council-2024-03-19"
+   },
+   {
+    "item": "24",
+    "meeting_id": "city-council-2024-12-10"
+   },
+   {
+    "item": "35",
+    "meeting_id": "city-council-2025-10-28"
+   }
+  ],
+  "description": "The City Auditor's audit Rocky Road: Berkeley Streets at Risk and Significantly Underfunded, published November 19, 2020, with two findings and five recommendations for Public Works, and the City Manager's status reports to the Council on them. On December 15, 2020 the Council approved the Auditor's recommendation that the City Manager report back by June 15, 2021, and every six months thereafter. The City lists four status reports: November 3, 2022, March 19, 2024, December 10, 2024 and October 28, 2025. The October 2025 report says the next status report is expected in Fall 2026. The audit report itself is not in the public-records archive, so its findings and recommendations are recorded here as the status reports print them, and management's original responses are not recorded.",
+  "id": "rocky-road-audit-2020",
+  "kind": "audit",
+  "last_reviewed": "2026-10-30",
+  "opened": "2020-11-19",
+  "qualifications": [
+   {
+    "locator": "PDF p. 3, Possible Future Action",
+    "quote": "Public Works will continue to address the remaining two partly implemented recommendations in the street paving audit and the remaining eleven partly implemented recommendations in the fleet audit.",
+    "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+   },
+   {
+    "locator": "PDF p. 8, Attachment 2, Recommendation 1.2",
+    "quote": "However, this amount is still less than the estimated $42 million annually needed to achieve the target of an average Pavement Condition Index (PCI) of 70.",
+    "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+   }
+  ],
+  "title": "Rocky Road streets audit (City Auditor, November 2020)"
  }
 ]

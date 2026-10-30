@@ -14,7 +14,7 @@ The schemas are in `councilwatch/schema/`.
 | `sources.json` | Source document: issuer, title, date, kind, City URL, archive id and link when archived, fingerprint |
 | `matters.json` | Tracked matter: title, the agenda items it appeared on, qualifications stated by the source, last-reviewed date |
 | `findings.json` | Audit finding, with the heading as printed |
-| `recommendations.json` | Audit recommendation: the text as printed, who it is addressed to, and management's response (position, implementation date and corrective action plan, all as printed) |
+| `recommendations.json` | Audit recommendation: the text as printed, who it is addressed to, and management's response (position, implementation date and corrective action plan, all as printed; `null` when no cited source prints them) |
 | `commitments.json` | Specific, checkable future action: the source's words (`statement`), who is responsible, the date as stated, and a dated status history |
 | `events.json` | Dated action, report or decision, linked to the commitments and recommendations it bears on |
 
@@ -71,3 +71,18 @@ Non-Competitive Contracts* (February 19, 2026; Council Consent Item 6, March 10,
 
 The audit report itself is not yet in the public-records archive, so it is cited by its City URL and
 fingerprint. Archiving it and switching the citation to the archive id is a follow-up.
+
+## Rocky Road streets audit
+
+`rocky-road-audit-2020` covers the City Auditor's *Rocky Road: Berkeley Streets at Risk and Significantly
+Underfunded* (November 19, 2020) and the City Manager's status reports on it.
+- **The audit report is not in the public-records archive.** Its two findings and five recommendations are
+  recorded as the December 10, 2024 status report prints them. That report does not print management's
+  original responses, so those fields are `null` and the page says they are not in the sources cited.
+- **Commitments:** the Council-approved City Manager report-back (December 15, 2020: by June 15, 2021, and
+  every six months thereafter), and one per recommendation.
+- **Statuses:** as Public Works reports them. "Partly Implemented" is `in_progress_reported`, "Implemented" is
+  `reported_complete`. The March 19, 2024 status is the "Previous status update" column of the December 2024
+  report; the November 3, 2022 and March 19, 2024 staff reports themselves are not archived. Nothing is
+  `completion_verified`.
+- The October 28, 2025 report expects the next status report in Fall 2026. No status is recorded for it.

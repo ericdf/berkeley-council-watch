@@ -560,13 +560,14 @@ def render_matter(m, t, meta, meetings, att=None, h=None):
             body.append(f"<h3>Finding {esc(f['number'])}</h3><p>{esc(f['heading'])}<br>"
                         f"<span class=\"muted\">Source: {source_link(sources[f['citation']['source_id']], f['citation']['locator'])}</span></p>")
             for r in (x for x in t["recommendations.json"] if x["finding_id"] == f["id"]):
-                mr = r["management_response"]
+                mr = {k: esc(v) if v is not None else '<span class="muted">not in the sources cited</span>'
+                      for k, v in r["management_response"].items()}
                 body.append(f'<h4 id="rec-{esc(r["number"])}">Recommendation {esc(r["number"])}</h4>'
                             f"<blockquote>{esc(r['text'])}</blockquote><dl>"
                             f"<dt>Addressed to</dt><dd>{esc(', '.join(r['addressed_to']))}</dd>"
-                            f"<dt>Management response</dt><dd>{esc(mr['position'])}</dd>"
-                            f"<dt>Implementation date</dt><dd>{esc(mr['implementation_date'])}</dd>"
-                            f"<dt>Corrective action plan</dt><dd>{esc(mr['corrective_action_plan'])}</dd></dl>"
+                            f"<dt>Management response</dt><dd>{mr['position']}</dd>"
+                            f"<dt>Implementation date</dt><dd>{mr['implementation_date']}</dd>"
+                            f"<dt>Corrective action plan</dt><dd>{mr['corrective_action_plan']}</dd></dl>"
                             f"<p class=\"muted\">Source: {source_link(sources[r['citation']['source_id']], r['citation']['locator'])}</p>")
 
     body.append("<h2>Sources</h2><ul>")
