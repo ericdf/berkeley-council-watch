@@ -230,6 +230,12 @@ LEGEND = """<p class="legend"><span class="key staff"></span> Staff and Council 
 <span class="key pc"></span> Spoken public comment <span class="key est"></span> Estimated (court-reporter transcript)
 <span class="key letters"></span> Letters (circle area) <span class="key dec">▼</span> Decision, listed below the chart</p>"""
 
+ANALYSIS = """<aside class="analysis"><h2>Analysis elsewhere</h2>
+<p>These pages show how the Council's attention is allocated; they do not judge it. The Berkeley Decision Project argues that
+Council and staff attention is a finite public resource, in <a href="{bdp}governance-by-exhaustion.html">Governance by
+Exhaustion</a>, and that what goes on the consent calendar does not track the size of the commitment, in
+<a href="{bdp}consent-drip.html">Two Calendars</a>.</p></aside>"""
+
 TIME_NOTE = ("Minutes come from the Council's caption transcripts. Item boundaries were read from each transcript and "
              "have not been checked against video. Most 2025 transcripts have no timestamps, so their minutes are "
              "estimates from each item's share of the words, shown hatched. Which thread an item belongs to is this "
@@ -255,6 +261,7 @@ def render_time_index(a, h):
             "rows can be compared directly.</p>",
             f'<p class="note">{esc(TIME_NOTE)} The method is described in '
             f'{link("../about.html#council-time", "About the records")}.</p>',
+            ANALYSIS.format(bdp=h["bdp"]),
             LEGEND,
             '<p class="muted">Jump to: <a href="#totals">totals by thread</a> · <a href="#ranking">items ranked by time</a> · '
             '<a href="#auditor">City Auditor items</a> · <a href="#connections">connections between threads</a></p>',
@@ -504,6 +511,9 @@ QUESTIONS = [
     ("Which commitments have no due date stated?", "commitments/index.html#status"),
     ("How much meeting time went to Gaza, and how much of it was public comment?", "time/gaza.html"),
     ("When did the Council hear Hopkins Street, and what did it decide?", "time/hopkins.html"),
+    ("How many items has Councilmember Bartlett authored, and on what subjects?", "members/bartlett.html#items"),
+    ("Where has the Council split, and how did each member vote?", "members/index.html#divided"),
+    ("Who moved substitute motions, and how did they fare?", "members/index.html#motions"),
 ]
 
 
@@ -538,6 +548,8 @@ ul.decisions{margin:0 0 6px;padding-left:20px;font-size:.9rem;color:var(--muted)
 .key.letters{border:1.5px solid var(--c-letters);border-radius:50%}
 .key.dec{width:auto;height:auto;font-size:.8rem}
 td.barcell{width:30%}.bar{display:block;height:10px;background:var(--c-staff)}
+.analysis{border:1px solid var(--line);border-radius:6px;padding:4px 14px;margin:14px 0;font-size:.95rem}
+.analysis h2{font-size:.95rem;margin:8px 0 4px;color:var(--muted)}
 .ask{background:var(--soft);padding:16px 18px;margin:20px 0;border-radius:6px}
 .ask h2{margin:0 0 8px;font-size:1rem;color:var(--muted);font-weight:600}
 .rotator{list-style:none;margin:0;padding:0}

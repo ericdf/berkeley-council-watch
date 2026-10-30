@@ -1,0 +1,64 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: attendance at one meeting, as the annotated agenda records it",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "meeting_id",
+  "meeting_date",
+  "record_archive_id",
+  "roll_call_time",
+  "present",
+  "absent",
+  "arrived_late"
+ ],
+ "properties": {
+  "meeting_id": {
+   "type": "string"
+  },
+  "meeting_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "record_archive_id": {
+   "type": "string"
+  },
+  "roll_call_time": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "present": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "absent": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "arrived_late": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "member",
+     "time"
+    ],
+    "properties": {
+     "member": {
+      "type": "string"
+     },
+     "time": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

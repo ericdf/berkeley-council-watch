@@ -1,0 +1,92 @@
+{
+ "motions": [
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-ishii",
+    "off-lunaparra"
+   ],
+   "quote": "ON THE SUBSTITUTE MOTION, COUNCILMEMBER KESARWANI?",
+   "record_id": "city-council-2025-01-21--item-22",
+   "seq": 0,
+   "transcript": "bcc-2025-01-21-regular-captions-text"
+  },
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-lunaparra",
+    "off-tregub"
+   ],
+   "quote": "ON THE SUBSTITUTE MOTION, COUNCILMEMBER KESARWANI?",
+   "record_id": "city-council-2025-03-18--item-11",
+   "seq": 0,
+   "transcript": "bcc-2025-03-18-regular-captions-text"
+  },
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-ishii",
+    "off-blackaby"
+   ],
+   "quote": "CALLING THE ROLL ON THE SUBSTITUTE MOTION",
+   "record_id": "city-council-2025-04-28--item-1",
+   "seq": 3,
+   "transcript": "bcc-2025-04-28-special-captions-text"
+  },
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-tregub",
+    "off-okeefe"
+   ],
+   "quote": "ON THE SUBSTITUTE MOTION, COUNCILMEMBER KESARWANI?",
+   "record_id": "city-council-2025-05-20--item-32",
+   "seq": 0,
+   "transcript": "bcc-2025-05-20-regular-captions-text"
+  },
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-lunaparra",
+    "off-bartlett"
+   ],
+   "quote": "I think we should take the roll. The substitute motion … Vice Mayor Lunapara.",
+   "record_id": "city-council-2026-01-20--item-21",
+   "seq": 1,
+   "transcript": "bcc-2026-01-20-regular-captions-text"
+  },
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-kesarwani",
+    "off-blackaby"
+   ],
+   "quote": "so we're voting on the substitute motion",
+   "record_id": "city-council-2026-06-23--item-1",
+   "seq": 1,
+   "transcript": "bcc-2026-06-23-special-captions-text"
+  },
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-okeefe",
+    "off-blackaby"
+   ],
+   "quote": "the substitute motion from Councilmember O'Keefe, Councilmember Kesarwani?",
+   "record_id": "city-council-2026-07-28--item-27",
+   "seq": 3,
+   "transcript": "bcc-2026-07-28-regular-captions-text"
+  },
+  {
+   "kind": "substitute",
+   "movers": [
+    "off-blackaby",
+    "off-okeefe"
+   ],
+   "quote": "I'd like to offer another substitute.",
+   "record_id": "city-council-2026-07-28--item-27",
+   "seq": 4,
+   "transcript": "bcc-2026-07-28-regular-captions-text"
+  }
+ ]
+}

@@ -227,6 +227,122 @@
      }
     }
    }
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "record_id",
+     "thread"
+    ],
+    "properties": {
+     "record_id": {
+      "type": "string",
+      "pattern": "^city-council-"
+     },
+     "thread": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "motions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "record_id",
+     "seq",
+     "movers",
+     "kind",
+     "transcript",
+     "quote"
+    ],
+    "properties": {
+     "record_id": {
+      "type": "string"
+     },
+     "seq": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "movers": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+       "type": "string"
+      }
+     },
+     "kind": {
+      "enum": [
+       "substitute"
+      ]
+     },
+     "transcript": {
+      "type": "string"
+     },
+     "quote": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
+  },
+  "additions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "record_id",
+     "member",
+     "finding",
+     "transcript",
+     "quote"
+    ],
+    "properties": {
+     "record_id": {
+      "type": "string"
+     },
+     "member": {
+      "type": "string"
+     },
+     "finding": {
+      "enum": [
+       "at_meeting",
+       "thanked_only",
+       "not_found"
+      ]
+     },
+     "transcript": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "start": {
+      "type": "string",
+      "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+     },
+     "line": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "quote": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "reason": {
+      "type": "string"
+     }
+    }
+   }
   }
  }
 }

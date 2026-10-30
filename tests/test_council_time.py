@@ -34,10 +34,17 @@ CATALOG = {"source": {"url": "https://berkeleyca.gov/x", "listing_sha256": "0" *
                        {"meeting": "city-council-2025-03-11", "date": "2025-03-11", "label": "regular"}]}
 MAP = {"meetings": [{"meeting": "city-council-2026-10-13", "archived": {"annotated_agenda": ["bcc-2026-10-13-regular-annotated-agenda"]},
                      "listed": {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda"}}], "unmatched": []}
-RECORD = {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda", "items": [
-    {"item": "18", "section": "Action Calendar", "heading": "Street Paving", "from": "City Manager", "speakers": 4,
-     "lines": [10, 20], "motions": [{"final": True, "kind": "main", "disposition": "carried", "vote": {
-         "all_ayes": False, "ayes": [{}] * 7, "noes": [{}] * 2, "abstain": [], "absent": [], "recused": []}}]}],
+P = lambda m: {"member": m, "as_printed": m[4:].title()}
+RECORD = {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda",
+  "attendance": {"roll_call_time": "6:05 p.m.", "present": [P("off-taplin")], "absent": [P("off-tregub")],
+                 "arrived_late": [dict(P("off-tregub"), time="6:30 p.m.")]},
+  "items": [
+    {"item": "18", "section": "Action Calendar", "heading": "Street Paving", "from": "Councilmember Taplin (Author)",
+     "contact": "Terry Taplin, Councilmember", "speakers": 4, "lines": [10, 20],
+     "attribution": [dict(P("off-taplin"), role="author", order=1)], "added_cosponsors": [P("off-tregub")],
+     "motions": [{"seq": 0, "final": True, "kind": "main", "disposition": "carried", "severed": False, "vote_label": "vote",
+                  "movers": [P("off-taplin"), P("off-tregub")], "vote": {
+         "all_ayes": False, "ayes": [P("off-taplin")] * 7, "noes": [P("off-tregub")] * 2, "abstain": [], "absent": [], "recused": []}}]}],
   "communications": [
     {"section": "Communications", "heading": "Item #18: Street Paving", "line": 40, "items": ["18"], "entries": [
         {"as_printed": "Jane Doe", "count": 1, "count_basis": "one entry"},
@@ -59,6 +66,8 @@ class Base(unittest.TestCase):
         a = self.archive = os.path.join(self.tmp, "archive")
         files = {
             "catalog/city-council-agendas/meetings.json": json.dumps(CATALOG),
+            "registry/speakers.json": json.dumps({"officeholders": [{"id": "off-taplin", "name": "Terry Taplin", "office": "Councilmember", "district": 2},
+                                                                   {"id": "off-tregub", "name": "Igor Tregub", "office": "Councilmember", "district": 4}]}),
             "tools/meeting_map.py": "import json, sys\nprint(json.dumps(%s))\n" % json.dumps(MAP),
             "L1/council-captions/v.txt": VTT, "L1/council-captions/c.txt": CART,
             "L2/annotated-agendas/r.json": json.dumps(RECORD),
@@ -149,6 +158,11 @@ class Generate(Base):
         it = self.gen()["items.json"][0]
         self.assertEqual(it["record_id"], "city-council-2026-10-13--item-18")
         self.assertEqual(it["final_motion"]["vote"], {"all_ayes": False, "ayes": 7, "noes": 2, "abstain": 0, "absent": 0, "recused": 0})
+        self.assertEqual(it["attribution"][0]["member"], "off-taplin")
+        self.assertEqual(it["motions"][0]["movers"], ["off-taplin", "off-tregub"])
+        d = self.gen()
+        self.assertEqual(d["attendance.json"][0]["arrived_late"], [{"member": "off-tregub", "time": "6:30 p.m."}])
+        self.assertEqual([m["member"] for m in d["members.json"]], ["off-taplin", "off-tregub"])
 
     def test_turn_minutes_and_quote(self):
         d = self.gen()

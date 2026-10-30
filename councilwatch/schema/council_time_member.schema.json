@@ -1,0 +1,30 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: an officeholder in the archive's speaker registry",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "member",
+  "name",
+  "office",
+  "district"
+ ],
+ "properties": {
+  "member": {
+   "type": "string",
+   "pattern": "^off-"
+  },
+  "name": {
+   "type": "string"
+  },
+  "office": {
+   "type": "string"
+  },
+  "district": {
+   "type": [
+    "integer",
+    "null"
+   ]
+  }
+ }
+}

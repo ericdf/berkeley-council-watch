@@ -15,7 +15,11 @@
   "lines",
   "record_archive_id",
   "final_motion",
-  "archive_url"
+  "archive_url",
+  "contact",
+  "attribution",
+  "added_cosponsors",
+  "motions"
  ],
  "properties": {
   "record_id": {
@@ -148,6 +152,176 @@
   "archive_url": {
    "type": "string",
    "pattern": "^https://"
+  },
+  "contact": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "attribution": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "member",
+     "as_printed",
+     "role",
+     "order"
+    ],
+    "properties": {
+     "member": {
+      "type": "string"
+     },
+     "as_printed": {
+      "type": "string"
+     },
+     "role": {
+      "enum": [
+       "author",
+       "co-author",
+       "co-sponsor",
+       null
+      ]
+     },
+     "order": {
+      "type": "integer",
+      "minimum": 1
+     }
+    }
+   }
+  },
+  "added_cosponsors": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "member",
+     "as_printed"
+    ],
+    "properties": {
+     "member": {
+      "type": "string"
+     },
+     "as_printed": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "motions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "seq",
+     "kind",
+     "disposition",
+     "final",
+     "severed",
+     "movers",
+     "vote_label",
+     "vote"
+    ],
+    "properties": {
+     "seq": {
+      "type": "integer",
+      "minimum": 0
+     },
+     "kind": {
+      "enum": [
+       "procedural",
+       "amendment",
+       "substitute",
+       "main",
+       "competing",
+       "action",
+       "unattributed"
+      ]
+     },
+     "disposition": {
+      "enum": [
+       "carried",
+       "failed",
+       "unknown"
+      ]
+     },
+     "final": {
+      "type": "boolean"
+     },
+     "severed": {
+      "type": "boolean"
+     },
+     "movers": {
+      "type": [
+       "array",
+       "null"
+      ],
+      "items": {
+       "type": "string"
+      }
+     },
+     "vote_label": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "vote": {
+      "type": [
+       "object",
+       "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+       "all_ayes",
+       "ayes",
+       "noes",
+       "abstain",
+       "absent",
+       "recused"
+      ],
+      "properties": {
+       "all_ayes": {
+        "type": "boolean"
+       },
+       "ayes": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "noes": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "abstain": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "absent": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "recused": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       }
+      }
+     }
+    }
+   }
   }
  }
 }

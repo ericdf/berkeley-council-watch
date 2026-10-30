@@ -81,6 +81,9 @@ which it counts. A turn records its words (`quote`), not who spoke: the locator 
 changes what the pages show, so it is reviewed like any tracked record. `python3 -m councilwatch
 validate` checks every thread id and requires every generated segment to be classified.
 
+Member pages, and the reviewed files they use (`motions.json`, `cosponsors.json`, and the
+`items` in `threads.json`), are described in [MEMBERS.md](MEMBERS.md).
+
 ## Pages
 
 - `time/index.html`: one row per thread on a shared date axis and minutes scale, City finances first

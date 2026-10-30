@@ -1797,6 +1797,804 @@
    "thread": "salestax"
   }
  ],
+ "items": [
+  {
+   "record_id": "city-council-2024-12-10--item-19",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2024-12-10--item-E",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2024-12-10--item-urgent-1",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-01-21--item-26",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-01-21--item-27",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-01-21--item-28",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-02-11-0--item-6",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-02-11-0--item-7",
+   "thread": "streets"
+  },
+  {
+   "record_id": "city-council-2025-02-25--item-13",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-02-25--item-urgent-1",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-03-11--item-14",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-03-11--item-15",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-03-11--item-16",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-03-11--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-03-18--item-8",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-12",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-13",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-14",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-15",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-16",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-17",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-18",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-19",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-20",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-21",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-15--item-urgent-1",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-15",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-16",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-17",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-18",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-19",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-20",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-21",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-23",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-24",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-25",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-26",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-27",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-04-29--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-05-20--item-1",
+   "thread": "streets"
+  },
+  {
+   "record_id": "city-council-2025-05-20--item-26",
+   "thread": "homeless"
+  },
+  {
+   "record_id": "city-council-2025-05-20--item-27",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-05-20--item-28",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-05-20--item-29",
+   "thread": "homeless"
+  },
+  {
+   "record_id": "city-council-2025-05-20--item-urgent-1",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-19",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-20",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-21",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-22",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-23",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-24",
+   "thread": "streets"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-25",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-03--item-urgent-1",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-25",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-26",
+   "thread": "streets"
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-27",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-28",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-29",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-30",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-31",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-24--item-22",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-06-24--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-07-08--item-24",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-07-08--item-25",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-07-22--item-14",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-07-29--item-24",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-07-29--item-25",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-07-29--item-26",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-07-29--item-27",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-09-09--item-22",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-09-09--item-23",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-09-09--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-09-09--item-urgent-2",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-09-16-1--item-11",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-09-16-1--item-12",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2025-09-16-1--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-09-30--item-11",
+   "thread": "ballot"
+  },
+  {
+   "record_id": "city-council-2025-09-30--item-12",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-09-30--item-13",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-09-30--item-14",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-09-30--item-15",
+   "thread": "fees"
+  },
+  {
+   "record_id": "city-council-2025-10-14--item-12",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-10-14--item-13",
+   "thread": "oversight"
+  },
+  {
+   "record_id": "city-council-2025-10-28--item-31",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-10-28--item-urgent-1",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-11-10--item-6",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-11-10--item-7",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-11-10--item-8",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-11-18--item-26",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-11-18--item-27",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-28",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-29",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-3",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-30",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-31",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-32",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-33",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-34",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-35",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-36",
+   "thread": "streets"
+  },
+  {
+   "record_id": "city-council-2025-12-02--item-37",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-01-20--item-17",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-01-20--item-18",
+   "thread": "streets"
+  },
+  {
+   "record_id": "city-council-2026-01-20--item-19",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-01-20--item-20",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-01-27--item-16",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-01-27--item-17",
+   "thread": "measures_both"
+  },
+  {
+   "record_id": "city-council-2026-01-27--item-22",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2026-01-27--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-02-10--item-5",
+   "thread": "tactics"
+  },
+  {
+   "record_id": "city-council-2026-02-24--item-16",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-02-24--item-17",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-02-24--item-18",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-02-24--item-19",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-10",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-11",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-12",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-13",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-18",
+   "thread": "governance"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-7",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-8",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-9",
+   "thread": "streets"
+  },
+  {
+   "record_id": "city-council-2026-03-10--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-03-24--item-19",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-03-24--item-20",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-03-24--item-21",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-03-24--item-22",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-03-24--item-23",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-03-24--item-24",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-03-24--item-urgent-1",
+   "thread": "waterfront"
+  },
+  {
+   "record_id": "city-council-2026-04-14--item-12",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-04-14--item-13",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-04-14--item-14",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-04-14--item-15",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-04-14--item-16",
+   "thread": "waterfront"
+  },
+  {
+   "record_id": "city-council-2026-04-14--item-17",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-04-21--item-14",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-04-21--item-15",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-04-21--item-16",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-04-21--item-17",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-04-28--item-10",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-04-28--item-11",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-05-12--item-16",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-05-19--item-15",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2026-05-19--item-16",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-05-19--item-17",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-05-19--item-18",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-05-19--item-19",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-09--item-19",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-09--item-20",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-09--item-21",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-09--item-22",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-06-16--item-31",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-16--item-32",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-06-16--item-33",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-16--item-40b",
+   "thread": "budget"
+  },
+  {
+   "record_id": "city-council-2026-06-30--item-37",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-30--item-38",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-30--item-39",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-30--item-40",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-06-30--item-41",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-06-30--item-42",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-07-07--item-9",
+   "thread": "waterfront"
+  },
+  {
+   "record_id": "city-council-2026-07-14--item-18",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-07-14--item-19",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-07-14--item-20",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-20",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-21",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-22",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-23",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-24",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-25",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-28",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-07-28--item-urgent-1",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-09-15--item-15",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-09-15--item-16",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-09-15--item-17",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-09-15--item-18",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-09-15--item-19",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-09-15--item-20",
+   "thread": "other"
+  },
+  {
+   "record_id": "city-council-2026-09-15--item-urgent-1",
+   "thread": "fire"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-26",
+   "thread": "bond"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-27",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-28",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-29",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-30",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-31",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-32",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-urgent-1",
+   "thread": "zoning"
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-urgent-2",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-10-13--item-10",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-10-13--item-11",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-10-13--item-12",
+   "thread": "external"
+  },
+  {
+   "record_id": "city-council-2026-10-27--item-25",
+   "thread": "finaudit"
+  },
+  {
+   "record_id": "city-council-2026-10-27--item-26",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-10-27--item-27",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-10-27--item-28",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-10-27--item-29",
+   "thread": "routine"
+  },
+  {
+   "record_id": "city-council-2026-10-27--item-urgent-1",
+   "thread": "external"
+  }
+ ],
  "matters": [
   {
    "matter": "contracts-audit-2026",
@@ -5789,6 +6587,11 @@
    "group": null,
    "id": "ballot",
    "label": "Other 2026 ballot measures"
+  },
+  {
+   "group": null,
+   "id": "external",
+   "label": "State, federal & international positions"
   },
   {
    "group": null,
