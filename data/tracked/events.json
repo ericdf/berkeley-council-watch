@@ -182,13 +182,13 @@
    }
   ],
   "commitment_ids": [
-   "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024--2024-02-27--item-16"
+   "group-class-instruction-noise-2024--2024-02-27--item-16"
   ],
   "date": "2024-02-27",
   "description": "Item 16, \"Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23\", was on the agenda, with the recorded action quoted.",
-  "id": "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024--2024-02-27--item-16--action",
+  "id": "group-class-instruction-noise-2024--2024-02-27--item-16--action",
   "kind": "council_action",
-  "matter_id": "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024",
+  "matter_id": "group-class-instruction-noise-2024",
   "recommendation_ids": []
  },
  {
@@ -258,13 +258,13 @@
    }
   ],
   "commitment_ids": [
-   "budget-referral-for-development-of-voluntary-design-guidelin-2024--2024-05-07-0--item-51"
+   "voluntary-design-guidelines-2024--2024-05-07-0--item-51"
   ],
   "date": "2024-05-07",
   "description": "Item 51, \"Budget Referral for Development of Voluntary Design Guidelines\", was on the agenda, with the recorded action quoted.",
-  "id": "budget-referral-for-development-of-voluntary-design-guidelin-2024--2024-05-07-0--item-51--action",
+  "id": "voluntary-design-guidelines-2024--2024-05-07-0--item-51--action",
   "kind": "council_action",
-  "matter_id": "budget-referral-for-development-of-voluntary-design-guidelin-2024",
+  "matter_id": "voluntary-design-guidelines-2024",
   "recommendation_ids": []
  },
  {
@@ -296,13 +296,13 @@
    }
   ],
   "commitment_ids": [
-   "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024--2024-05-21--item-14"
+   "smi-care-team-pilot-2024--2024-05-21--item-14"
   ],
   "date": "2024-05-21",
   "description": "Item 14, \"Develop a pilot program for 5-10 Seriously Mentally Ill (SMI) persons who have required frequent interventions\", was on the agenda, with the recorded action quoted.",
-  "id": "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024--2024-05-21--item-14--action",
+  "id": "smi-care-team-pilot-2024--2024-05-21--item-14--action",
   "kind": "council_action",
-  "matter_id": "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024",
+  "matter_id": "smi-care-team-pilot-2024",
   "recommendation_ids": []
  },
  {
@@ -315,13 +315,13 @@
    }
   ],
   "commitment_ids": [
-   "audit-recommendation-status-berkeley-police-2024--2024-06-25-0--item-33"
+   "berkeley-police-overtime-audit-2024--2024-06-25-0--item-33"
   ],
   "date": "2024-06-25",
   "description": "Item 33, \"Audit Recommendation Status - Berkeley Police: Improvements Needed to Manage Overtime and Security Work for Outside Entities (Reviewed by the Budget & Finance Committee)\", was on the agenda, with the recorded action quoted.",
-  "id": "audit-recommendation-status-berkeley-police-2024--2024-06-25-0--item-33--action",
+  "id": "berkeley-police-overtime-audit-2024--2024-06-25-0--item-33--action",
   "kind": "council_action",
-  "matter_id": "audit-recommendation-status-berkeley-police-2024",
+  "matter_id": "berkeley-police-overtime-audit-2024",
   "recommendation_ids": []
  },
  {
@@ -429,13 +429,13 @@
    }
   ],
   "commitment_ids": [
-   "berkeley-restaurant-inspections-2024--2024-07-30--item-18"
+   "restaurant-inspections-audit-2024--2024-07-30--item-18"
   ],
   "date": "2024-07-30",
   "description": "Item 18, \"Berkeley Restaurant Inspections: Chronically Understaffed Program Did Not Meet Targets\", was on the agenda, with the recorded action quoted.",
-  "id": "berkeley-restaurant-inspections-2024--2024-07-30--item-18--action",
+  "id": "restaurant-inspections-audit-2024--2024-07-30--item-18--action",
   "kind": "council_action",
-  "matter_id": "berkeley-restaurant-inspections-2024",
+  "matter_id": "restaurant-inspections-audit-2024",
   "recommendation_ids": []
  },
  {
@@ -448,13 +448,13 @@
    }
   ],
   "commitment_ids": [
-   "berkeley-restaurant-inspections-2024--2024-07-30--item-18"
+   "restaurant-inspections-audit-2024--2024-07-30--item-18"
   ],
   "date": "2024-12-10",
   "description": "Item 22, \"Restaurant Inspection Audit Status Report\", was on the agenda, with the recorded action quoted.",
-  "id": "berkeley-restaurant-inspections-2024--2024-07-30--item-18--follow-up-2024-12-10-item-22",
+  "id": "restaurant-inspections-audit-2024--2024-07-30--item-18--follow-up-2024-12-10-item-22",
   "kind": "staff_report",
-  "matter_id": "berkeley-restaurant-inspections-2024",
+  "matter_id": "restaurant-inspections-audit-2024",
   "recommendation_ids": []
  },
  {

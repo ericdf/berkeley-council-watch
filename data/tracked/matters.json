@@ -87,13 +87,13 @@
     "meeting_id": "city-council-2024-02-27"
    }
   ],
-  "description": "City Council, 2024-02-27, Item 16: Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23.",
-  "id": "zoning-amendments-for-berkeley-business-amending-berkeley-mu-2024",
+  "description": "City Council, 2024-02-27, Item 16: Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23. The Council adopted the ordinance on first reading and referred to the City Manager a request to develop regulations and performance standards to mitigate noise impacts for Group Class Instruction uses.",
+  "id": "group-class-instruction-noise-2024",
   "kind": "council_referral",
   "last_reviewed": "2026-10-30",
   "opened": "2024-02-27",
   "qualifications": [],
-  "title": "Zoning Amendments for Berkeley Business; Amending Berkeley Municipal Code Title 23"
+  "title": "Noise standards for Group Class Instruction uses"
  },
  {
   "agenda_items": [
@@ -148,12 +148,12 @@
    }
   ],
   "description": "City Council, 2024-05-07, Item 51: Budget Referral for Development of Voluntary Design Guidelines.",
-  "id": "budget-referral-for-development-of-voluntary-design-guidelin-2024",
+  "id": "voluntary-design-guidelines-2024",
   "kind": "council_referral",
   "last_reviewed": "2026-10-30",
   "opened": "2024-05-07",
   "qualifications": [],
-  "title": "Budget Referral for Development of Voluntary Design Guidelines"
+  "title": "Voluntary Design Guidelines"
  },
  {
   "agenda_items": [
@@ -178,12 +178,12 @@
    }
   ],
   "description": "City Council, 2024-05-21, Item 14: Develop a pilot program for 5-10 Seriously Mentally Ill (SMI) persons who have required frequent interventions.",
-  "id": "develop-a-pilot-program-for-5-10-seriously-mentally-ill-smi--2024",
+  "id": "smi-care-team-pilot-2024",
   "kind": "council_referral",
   "last_reviewed": "2026-10-30",
   "opened": "2024-05-21",
   "qualifications": [],
-  "title": "Develop a pilot program for 5-10 Seriously Mentally Ill (SMI) persons who have required frequent interventions"
+  "title": "Care-team pilot for frequently served seriously mentally ill residents"
  },
  {
   "agenda_items": [
@@ -193,12 +193,12 @@
    }
   ],
   "description": "City Council, 2024-06-25, Item 33: Audit Recommendation Status - Berkeley Police: Improvements Needed to Manage Overtime and Security Work for Outside Entities.",
-  "id": "audit-recommendation-status-berkeley-police-2024",
+  "id": "berkeley-police-overtime-audit-2024",
   "kind": "council_referral",
   "last_reviewed": "2026-10-30",
   "opened": "2024-06-25",
   "qualifications": [],
-  "title": "Audit Recommendation Status - Berkeley Police"
+  "title": "Berkeley Police overtime and outside security work audit"
  },
  {
   "agenda_items": [
@@ -283,12 +283,12 @@
    }
   ],
   "description": "City Council, 2024-07-30, Item 18: Berkeley Restaurant Inspections: Chronically Understaffed Program Did Not Meet Targets.",
-  "id": "berkeley-restaurant-inspections-2024",
+  "id": "restaurant-inspections-audit-2024",
   "kind": "audit",
   "last_reviewed": "2026-10-30",
   "opened": "2024-07-30",
   "qualifications": [],
-  "title": "Berkeley Restaurant Inspections"
+  "title": "Restaurant inspections audit (City Auditor, 2024)"
  },
  {
   "agenda_items": [
