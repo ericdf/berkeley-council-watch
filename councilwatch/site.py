@@ -49,7 +49,8 @@ header .name{font-size:1.25rem;font-weight:700;text-decoration:none;color:var(--
 header .tagline{margin:2px 0 8px;color:var(--muted)}
 .lede{font-size:1.1rem}
 ol.toc{columns:2;padding-left:20px;font-size:.95rem}
-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:16px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.95rem}
+@media (max-width:600px){nav ul{gap:4px 12px;font-size:.88rem}header .tagline{font-size:.9rem;margin-bottom:6px}}
 h1{font-size:1.6rem;line-height:1.25;margin:24px 0 8px}
 h2{font-size:1.2rem;margin:28px 0 8px}
 .note{background:var(--soft);border-left:4px solid var(--accent);padding:10px 14px;margin:16px 0}
@@ -174,9 +175,10 @@ def render_index(d, a, t, h):
     cur = [tracked_mod.current_status(c)["status"] for c in t["commitments.json"]]
     n_open = sum(1 for x in cur if x in time_site.OPEN_STATUSES)
     body = f"""<h1>{TITLE}</h1>
-<p class="lede">Council Watch answers factual questions about Berkeley's City Council from the City's own records:
-meeting transcripts, annotated agendas, and the documents behind them. It does not draw conclusions. It shows what
-the record holds, with a link to every source, so you can draw your own.</p>
+<p class="lede">Berkeley's City Council decides how the City spends its money and its attention. Council Watch keeps a
+plain record of both: what the Council spends its meeting time on, what it and City management commit to do, and what
+each member brings, moves and votes. Everything comes from the City's own records, linked at every step. The site does
+not draw conclusions; it shows what the record holds, so you can draw your own.</p>
 {h["questions"]}
 <h2>What is the Council spending its time on?</h2>
 <p>{link("time/index.html", "Council time")} measures meeting time on every non-routine item in {cm['transcripts']} meeting
@@ -489,13 +491,19 @@ def render_matters_index(t, meta):
     rows = []
     for m in t["matters.json"]:
         cs = [c for c in t["commitments.json"] if c["matter_id"] == m["id"]]
+        summary = time_site.status_counts(cs, COMMITMENT_STATUS) or '<span class="muted">none</span>'
         rows.append(f"<tr><td>{link(m['id'] + '.html', m['title'])}</td><td>{esc(fmt_date(m['opened']))}</td>"
-                    f"<td>{len(cs)}</td><td>{esc(fmt_date(m['last_reviewed']))}</td></tr>")
+                    f"<td class=\"num\">{len(cs)}</td><td>{summary}</td><td>{esc(fmt_date(m['last_reviewed']))}</td></tr>")
     body = ("<h1>Tracked matters</h1>"
             "<p>Public commitments and what the record shows afterward. Each entry is reviewed before it is "
             "published, and every statement links to its source.</p>"
+            '<p class="muted">Where things stand counts each matter\'s commitments by the status the evidence supports '
+            'as of the last review. "Reported" means the responsible party says so; "verified" needs independent '
+            'evidence; "no update located" is a gap in the public record, not proof that no work occurred. See '
+            '<a href="../commitments/index.html#by-status">commitments by status</a>.</p>'
             '<div class="table-wrap"><table><caption>Tracked matters</caption><thead><tr>'
             '<th scope="col">Matter</th><th scope="col">Opened</th><th scope="col">Commitments</th>'
+            '<th scope="col">Where things stand</th>'
             f'<th scope="col">Last reviewed</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
     return page("Tracked matters", body, 1, meta)
 
@@ -601,6 +609,8 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     a = time_site.Attention(td)
     mem = member_site.Members(a, td)
     item_roles = mem.item_roles()
+    timed = sorted((x["meeting_date"], x["meeting_id"]) for x in td["segments.json"] if x["meeting_id"])
+    latest_meeting = f"meetings/{timed[-1][1]}.html#council-time" if timed else None
     contacts = {it["record_id"]: it.get("contact") for it in td["items.json"]}
     items_by_meeting = {}
     for it in td["items.json"]:
@@ -609,7 +619,7 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     commit = a.meta["source"]["archive_commit"]
     h = {"esc": esc, "link": link, "page": page, "fmt_date": fmt_date, "meta": d["meta.json"], "repo": REPO,
          "status_labels": COMMITMENT_STATUS, "meeting_ids": {m["meeting_id"] for m in d["meetings.json"]},
-         "mlink": time_site.mlink, "item_roles": item_roles, "items_by_meeting": items_by_meeting,
+         "mlink": time_site.mlink, "latest_meeting": latest_meeting, "item_roles": item_roles, "items_by_meeting": items_by_meeting,
          "item_thread": mem.item_thread,
          "roles_html": lambda rid: member_site.roles_html(item_roles.get(rid, []), mem.name, link,
                                                           contact=contacts.get(rid)), "bdp": BDP.rsplit("/", 1)[0] + "/",
@@ -651,7 +661,8 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
         return path in files and (not anchor or f'id="{anchor}"' in files[path])
     h["questions"] = time_site.questions_block(h, available)
     files["index.html"] = render_index(d, a, t, h)
-    files["assets/site.css"] = CSS + member_site.CSS + time_site.css(sum(1 for _, href in time_site.QUESTIONS if available(href)))
+    nq = len(time_site.questions(h, available))
+    files["assets/site.css"] = CSS + member_site.CSS + time_site.css(-(-nq // time_site.GROUP))
     for name, text in files.items():
         with open(os.path.join(out, name), "w", encoding="utf-8") as f:
             f.write(text)
