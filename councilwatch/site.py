@@ -10,7 +10,7 @@ import html
 import os
 import shutil
 
-from . import time_site
+from . import member_site, time_site
 from . import tracked as tracked_mod
 from .generate import OUT_DIR
 from .validate import load_dataset
@@ -103,6 +103,7 @@ def page(title, body, depth, meta, extra=""):
 <li><a href="{up}index.html">Home</a></li>
 <li><a href="{up}time/index.html">Council time</a></li>
 <li><a href="{up}commitments/index.html">Commitments</a></li>
+<li><a href="{up}members/index.html">Members</a></li>
 <li><a href="{up}matters/index.html">Tracked matters</a></li>
 <li><a href="{up}meetings/index.html">Meetings</a></li>
 <li><a href="{up}about.html">About the records</a></li>
@@ -184,6 +185,11 @@ subject. {hours_text(total)} of non-routine business in all. The largest threads
 <p>{link("commitments/index.html", "Commitments")} lists {len(t['commitments.json'])} specific, checkable undertakings from
 {len(t['matters.json'])} {link("matters/index.html", "tracked matters")}, {n_open} of them still open: what was promised, by whom,
 by when, and what the record shows since.</p>
+<h2>What has each member brought, moved and voted?</h2>
+<p>Each {link("members/index.html", "member page")} lists the items the member brought to the Council, by role (lead author,
+joint author, co-sponsor, or added later as a co-sponsor), their vote on every item's final motion, the motions they made,
+and their roll-call attendance, each beside the range across the Council. The {link("members/index.html#divided", "divided votes")}
+show every motion on which the Council split, member by member.</p>
 <h2>What happened at a meeting?</h2>
 <p>Each {link("meetings/index.html", "meeting page")} links the City's agenda and the archived records, and shows how the
 meeting's time was spent.</p>
@@ -492,16 +498,19 @@ def render_matter(m, t, meta, meetings, att=None, h=None):
 def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, review_dir=None):
     d = load_dataset(data_dir)
     time_dir = time_dir or time_site.ct.OUT_DIR
-    a = time_site.Attention(time_site.load(time_dir, review_dir or time_site.ct.REVIEW_DIR))
+    td = time_site.load(time_dir, review_dir or time_site.ct.REVIEW_DIR)
+    a = time_site.Attention(td)
+    mem = member_site.Members(a, td)
     t = tracked_mod.load(tracked_dir or tracked_mod.TRACKED_DIR)
     commit = a.meta["source"]["archive_commit"]
     h = {"esc": esc, "link": link, "page": page, "fmt_date": fmt_date, "meta": d["meta.json"], "repo": REPO,
          "status_labels": COMMITMENT_STATUS, "meeting_ids": {m["meeting_id"] for m in d["meetings.json"]},
+         "mlink": time_site.mlink, "bdp": BDP.rsplit("/", 1)[0] + "/",
          "time_footer": f' Council time computed from the archive at commit <a href="{ARCHIVE}/tree/{esc(commit)}">'
                         f'<code>{esc(commit[:12])}</code></a>.'}
     if os.path.isdir(out):
         shutil.rmtree(out)
-    for sub in ("meetings", "matters", "assets", "time", "commitments"):
+    for sub in ("meetings", "matters", "assets", "time", "commitments", "members"):
         os.makedirs(os.path.join(out, sub))
     shutil.copytree(data_dir, os.path.join(out, "data", "agenda-intake"))
     shutil.copytree(time_dir, os.path.join(out, "data", "council-time"))
@@ -511,10 +520,13 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
         "data/index.html": render_data(d),
         "time/index.html": time_site.render_time_index(a, h),
         "commitments/index.html": time_site.render_commitments(a, t, h),
+        "members/index.html": member_site.index_page(mem, h),
         ".nojekyll": "",
     }
     for th in a.thread_ids():
         files[f"time/{th}.html"] = time_site.render_thread(a, th, h)
+    for x in mem.ids():
+        files[f"members/{member_site.slug(x)}.html"] = member_site.member_page(mem, x, h)
     by_meeting = {}
     for it in d["items.json"]:
         by_meeting.setdefault(it["meeting_id"], []).append(it)
@@ -531,7 +543,7 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
         return path in files and (not anchor or f'id="{anchor}"' in files[path])
     h["questions"] = time_site.questions_block(h, available)
     files["index.html"] = render_index(d, a, t, h)
-    files["assets/site.css"] = CSS + time_site.css(sum(1 for _, href in time_site.QUESTIONS if available(href)))
+    files["assets/site.css"] = CSS + member_site.CSS + time_site.css(sum(1 for _, href in time_site.QUESTIONS if available(href)))
     for name, text in files.items():
         with open(os.path.join(out, name), "w", encoding="utf-8") as f:
             f.write(text)

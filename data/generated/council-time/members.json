@@ -1,0 +1,56 @@
+[
+ {
+  "district": null,
+  "member": "off-ishii",
+  "name": "Adena Ishii",
+  "office": "Mayor"
+ },
+ {
+  "district": 1,
+  "member": "off-kesarwani",
+  "name": "Rashi Kesarwani",
+  "office": "Councilmember"
+ },
+ {
+  "district": 2,
+  "member": "off-taplin",
+  "name": "Terry Taplin",
+  "office": "Councilmember"
+ },
+ {
+  "district": 3,
+  "member": "off-bartlett",
+  "name": "Ben Bartlett",
+  "office": "Councilmember"
+ },
+ {
+  "district": 4,
+  "member": "off-tregub",
+  "name": "Igor Tregub",
+  "office": "Councilmember"
+ },
+ {
+  "district": 5,
+  "member": "off-okeefe",
+  "name": "Shoshana O'Keefe",
+  "office": "Councilmember"
+ },
+ {
+  "district": 6,
+  "member": "off-blackaby",
+  "name": "Brent Blackaby",
+  "office": "Councilmember"
+ },
+ {
+  "district": 7,
+  "member": "off-lunaparra",
+  "name": "Cecilia Lunaparra",
+  "office": "Councilmember"
+ },
+ {
+  "district": 8,
+  "member": "off-humbert",
+  "name": "Mark Humbert",
+  "office": "Councilmember"
+ }
+]

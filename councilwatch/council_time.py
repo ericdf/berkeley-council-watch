@@ -6,7 +6,11 @@ Output, under data/generated/council-time/:
                        minutes and the minutes of public comment within it
   correspondence.json  one record per correspondence heading in each annotated agenda's L2 record
   items.json           one record per agenda item in each meeting's L2 annotated-agenda record: its
-                       heading, From line, speakers, and the result and tally of its final motion
+                       heading, From and Contact lines, who the From line names and in what role,
+                       co-sponsors the Action records as added, speakers, every motion with its
+                       movers and the members recorded under each vote, and the final motion's tally
+  attendance.json      roll call, absences and late arrivals per meeting, as the annotated agenda records them
+  members.json         the officeholders in the archive's speaker registry
   turns.json           minutes of each reviewed speaker turn on a thread during general or consent
                        public comment (data/review/council-time/turns.json)
   meta.json            the pinned archive commit, counts, method constants, and exceptions
@@ -75,9 +79,13 @@ def expand_items(item):
 
 def load_review(review_dir=REVIEW_DIR):
     out = {}
-    for name in ("clock.json", "threads.json", "turns.json", "links.json"):
-        with open(os.path.join(review_dir, name), encoding="utf-8") as f:
-            out[name] = json.load(f)
+    for name in ("clock.json", "threads.json", "turns.json", "links.json", "motions.json", "cosponsors.json"):
+        path = os.path.join(review_dir, name)
+        if os.path.exists(path) or name not in ("motions.json", "cosponsors.json"):
+            with open(path, encoding="utf-8") as f:
+                out[name] = json.load(f)
+        else:
+            out[name] = {"motions": []} if name == "motions.json" else {"additions": []}
     return out
 
 
@@ -200,6 +208,11 @@ def quote_found(quote, text, span):
     return bool(_norm(quote))
 
 
+def _plus(hms, seconds):
+    t = secs(hms) + seconds
+    return f"{t // 3600:02d}:{t % 3600 // 60:02d}:{t % 60:02d}"
+
+
 def turn_records(archive, review, exceptions):
     """Minutes for each reviewed turn, computed as its transcript's segments are."""
     clocks = review["clock.json"]["transcripts"]
@@ -267,6 +280,42 @@ def tally(vote):
     return {"all_ayes": False, **{k: len(vote[k]) for k in ("ayes", "noes", "abstain", "absent", "recused")}}
 
 
+def who(p):
+    """A member's registry id, or the name as printed for anyone the registry does not hold."""
+    return p["member"] or p["as_printed"]
+
+
+def member_vote(vote):
+    if vote is None:
+        return None
+    return {"all_ayes": vote["all_ayes"], **{k: [who(p) for p in vote[k]] for k in ("ayes", "noes", "abstain", "absent", "recused")}}
+
+
+def motion_record(m):
+    return {"seq": m["seq"], "kind": m["kind"], "disposition": m["disposition"], "final": m["final"], "severed": m["severed"],
+            "movers": [who(p) for p in m["movers"]] if m["movers"] else None, "vote_label": m["vote_label"],
+            "vote": member_vote(m["vote"])}
+
+
+def attendance_records(archive):
+    out = []
+    for mid, rid in sorted(pick_records(archive).items()):
+        rec = archive.load(archive.entry(rid)["file"])
+        a = rec["attendance"]
+        out.append({"meeting_id": mid, "meeting_date": archive.entry(rec["annotated_agenda"]).get("meeting_date"),
+                    "record_archive_id": rid, "roll_call_time": a["roll_call_time"],
+                    "present": [who(p) for p in a["present"]], "absent": [who(p) for p in a["absent"]],
+                    "arrived_late": [{"member": who(p), "time": p["time"]} for p in a["arrived_late"]]})
+    return out
+
+
+def member_records(archive):
+    with open(archive.path("registry", "speakers.json"), encoding="utf-8") as f:
+        reg = json.load(f)
+    return [{"member": o["id"], "name": o["name"], "office": o["office"], "district": o.get("district")}
+            for o in reg["officeholders"]]
+
+
 def agenda_item_records(archive):
     out = []
     for mid, rid in sorted(pick_records(archive).items()):
@@ -276,6 +325,11 @@ def agenda_item_records(archive):
         for it in rec["items"]:
             final = next((m for m in it["motions"] if m["final"]), None)
             out.append({
+                "contact": it.get("contact"),
+                "attribution": [{"member": who(x), "as_printed": x["as_printed"], "role": x["role"], "order": x["order"]}
+                                for x in it.get("attribution", [])],
+                "added_cosponsors": [{"member": who(x), "as_printed": x["as_printed"]} for x in it.get("added_cosponsors", [])],
+                "motions": [motion_record(m) for m in it["motions"]],
                 "record_id": f"{mid}--item-{it['item']}", "meeting_id": mid, "meeting_date": date,
                 "item": it["item"], "section": it["section"], "heading": it["heading"], "from": it["from"],
                 "speakers": it["speakers"], "lines": it["lines"], "record_archive_id": rid,
@@ -292,6 +346,31 @@ def generate(archive, review):
     corr = correspondence_records(archive)
     turns = turn_records(archive, review, exceptions)
     items = agenda_item_records(archive)
+    attendance = attendance_records(archive)
+    by_rid = {i["record_id"]: i for i in items}
+    texts = {}
+
+    def text_of(tid):
+        if tid not in texts:
+            with open(archive.path(archive.entry(tid)["file"]), encoding="utf-8") as f:
+                texts[tid] = f.read()
+        return texts[tid]
+    for m in review["motions.json"]["motions"]:
+        it = by_rid.get(m["record_id"])
+        mo = next((x for x in (it or {}).get("motions", []) if x["seq"] == m["seq"]), None)
+        if not mo or mo["movers"] != m["movers"] or mo["kind"] not in ("competing", "main", "substitute"):
+            exceptions.append({"kind": "reviewed_motion_not_found", "record_id": m["record_id"], "seq": m["seq"]})
+        elif not quote_found(m["quote"], text_of(m["transcript"]), {"start_line": 1, "end_line": 10**9}):
+            exceptions.append({"kind": "motion_quote_not_found", "record_id": m["record_id"], "seq": m["seq"]})
+    for c in review["cosponsors.json"]["additions"]:
+        it = by_rid.get(c["record_id"])
+        if not it or c["member"] not in {a["member"] for a in it["added_cosponsors"]}:
+            exceptions.append({"kind": "reviewed_cosponsor_not_found", "record_id": c["record_id"], "member": c["member"]})
+        elif c.get("quote"):
+            span = {"start": c["start"], "end": _plus(c["start"], 30)} if "start" in c else {"start_line": c["line"], "end_line": c["line"] + 30}
+            if not quote_found(c["quote"], text_of(c["transcript"]), span):
+                exceptions.append({"kind": "cosponsor_quote_not_found", "record_id": c["record_id"], "member": c["member"]})
+    members = member_records(archive)
     rids = {i["record_id"] for i in items}
     for d in review["threads.json"].get("decisions", []):
         if f"{d['meeting_id']}--item-{d['item']}" not in rids:
@@ -316,6 +395,7 @@ def generate(archive, review):
             "correspondence_headings": len(corr),
             "turns": len(turns),
             "items": len(items),
+            "meetings_with_attendance": len(attendance),
             "meetings_with_correspondence": len({c["meeting_id"] for c in corr}),
         },
         "exceptions": exceptions,
@@ -323,7 +403,9 @@ def generate(archive, review):
     segs.sort(key=lambda s: (s["meeting_date"], s["structure_archive_id"], int(s["segment_id"].rsplit("#", 1)[1])))
     corr.sort(key=lambda c: (c["meeting_date"], c["meeting_id"], c["section"], c["line"]))
     items.sort(key=lambda i: (i["meeting_date"], i["meeting_id"], _item_key(i["item"])))
-    return {"segments.json": segs, "correspondence.json": corr, "turns.json": turns, "items.json": items, "meta.json": meta}
+    return {"segments.json": segs, "correspondence.json": corr, "turns.json": turns, "items.json": items,
+            "attendance.json": sorted(attendance, key=lambda a: (a["meeting_date"], a["meeting_id"])),
+            "members.json": members, "meta.json": meta}
 
 
 def _item_key(n):
@@ -350,8 +432,9 @@ def run(archive_root, out_dir=OUT_DIR, review_dir=REVIEW_DIR, allow_dirty=False)
 
 # Exceptions the generator records that must be resolved before the data can merge.
 BLOCKING = ("no_meeting_clock", "unclassified_segment", "classified_segment_not_in_archive", "turn_quote_not_found",
-            "decision_item_not_found")
-NAMES = ("segments.json", "correspondence.json", "turns.json", "items.json", "meta.json")
+            "decision_item_not_found", "reviewed_motion_not_found", "motion_quote_not_found",
+            "reviewed_cosponsor_not_found", "cosponsor_quote_not_found")
+NAMES = ("segments.json", "correspondence.json", "turns.json", "items.json", "attendance.json", "members.json", "meta.json")
 
 
 def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None, matter_ids=None):
@@ -365,20 +448,23 @@ def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None, matter_i
         raw += text
         data[name] = json.loads(text)
     review = load_review(review_dir)
-    for name in ("threads.json", "turns.json", "links.json"):
-        with open(os.path.join(review_dir, name), encoding="utf-8") as f:
-            raw += f.read()
+    for name in ("threads.json", "turns.json", "links.json", "motions.json", "cosponsors.json"):
+        if os.path.exists(os.path.join(review_dir, name)):
+            with open(os.path.join(review_dir, name), encoding="utf-8") as f:
+                raw += f.read()
     for m in FORBIDDEN.finditer(raw):
         errors.append(f"forbidden text in council-time data: {m.group(0)!r}")
     for name, schema, key in (("segments.json", "council_time_segment.schema.json", "segment_id"),
                               ("correspondence.json", "council_time_correspondence.schema.json", "heading"),
                               ("turns.json", "council_time_turn.schema.json", "turn_id"),
-                              ("items.json", "council_time_item.schema.json", "record_id")):
+                              ("items.json", "council_time_item.schema.json", "record_id"),
+                              ("attendance.json", "council_time_attendance.schema.json", "meeting_id"),
+                              ("members.json", "council_time_member.schema.json", "member")):
         sc = load_schema(schema)
         for r in data[name]:
             check_schema(r, sc, f"council-time/{name}[{r.get(key)}]", errors)
     rs = load_schema("council_time_review.schema.json")
-    for name in ("threads.json", "turns.json", "links.json"):
+    for name in ("threads.json", "turns.json", "links.json", "motions.json", "cosponsors.json"):
         check_schema(review[name], rs, f"review/council-time/{name}", errors)
     cs = load_schema("council_time_clock.schema.json")
     for tid, c in review["clock.json"]["transcripts"].items():
@@ -393,6 +479,9 @@ def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None, matter_i
     for dup in sorted({t for t in threads if threads.count(t) > 1}):
         errors.append(f"review/council-time/threads.json: duplicate thread {dup}")
     known = set(threads)
+    for x in review["threads.json"].get("items", []):
+        if x["thread"] not in known:
+            errors.append(f"review/council-time/threads.json: item {x['record_id']} has unknown thread {x['thread']}")
     seen = []
     for a in review["threads.json"]["segments"]:
         seen.append(a["segment"])

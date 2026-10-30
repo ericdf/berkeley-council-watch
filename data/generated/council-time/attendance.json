@@ -1,0 +1,2025 @@
+[
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2024-12-10",
+  "meeting_id": "city-council-2024-12-10",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2024-12-10-regular-annotated-agenda-record",
+  "roll_call_time": "6:05 p.m."
+ },
+ {
+  "absent": [
+   "None Consent Calendar Public Comment on Consent Calendar",
+   "Information Items Only: 1 speaker"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2024-12-10",
+  "meeting_id": "city-council-2024-12-10-0",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2024-12-10-special-annotated-agenda-record",
+  "roll_call_time": "5:39 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-01-21",
+  "meeting_id": "city-council-2025-01-21",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-01-21-regular-annotated-agenda-record",
+  "roll_call_time": "6:16 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2025-02-11",
+  "meeting_id": "city-council-2025-02-11-0",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-02-11-regular-annotated-agenda-record",
+  "roll_call_time": "6:50 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "4:19 p.m."
+   },
+   {
+    "member": "off-kesarwani",
+    "time": "4:20 p.m."
+   }
+  ],
+  "meeting_date": "2025-02-11",
+  "meeting_id": "city-council-2025-02-11-1",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-02-11-special-annotated-agenda-record",
+  "roll_call_time": "4:08 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2025-02-25",
+  "meeting_id": "city-council-2025-02-25",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-02-25-regular-annotated-agenda-v2-record",
+  "roll_call_time": "6:02 p.m."
+ },
+ {
+  "absent": [
+   "Kesarwani Worksession 1. Berkeley Economic Dashboards Update From: City Manager Contact: Eleanor Hollander",
+   "Economic Development",
+   "(510) 981-7530"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-02-25",
+  "meeting_id": "city-council-2025-02-25-0",
+  "present": [
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-02-25-special-annotated-agenda-v2-record",
+  "roll_call_time": "4:17 p.m."
+ },
+ {
+  "absent": [
+   "None Councilmember Humbert participated the meeting remotely under the just cause exception in the Brown Act"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-03-11",
+  "meeting_id": "city-council-2025-03-11",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-03-11-regular-annotated-agenda-record",
+  "roll_call_time": "6:38 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "5:09 p.m."
+   }
+  ],
+  "meeting_date": "2025-03-11",
+  "meeting_id": "city-council-2025-03-11-0",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-03-11-special-annotated-agenda-record",
+  "roll_call_time": "5:07 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:30 p.m."
+   }
+  ],
+  "meeting_date": "2025-03-18",
+  "meeting_id": "city-council-2025-03-18",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-03-18-regular-annotated-agenda-record",
+  "roll_call_time": "6:19 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "4:20 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "5:28 p.m."
+   }
+  ],
+  "meeting_date": "2025-03-18",
+  "meeting_id": "city-council-2025-03-18-0",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-03-18-special-annotated-agenda-record",
+  "roll_call_time": "4:07 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2025-03-25",
+  "meeting_id": "city-council-2025-03-25",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-03-25-regular-annotated-agenda-record",
+  "roll_call_time": "6:49 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "4:14 p.m."
+   },
+   {
+    "member": "off-kesarwani",
+    "time": "4:16 p.m."
+   }
+  ],
+  "meeting_date": "2025-03-25",
+  "meeting_id": "city-council-2025-03-25-0",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-03-25-special-annotated-agenda-record",
+  "roll_call_time": "4:09 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "7:33 p.m."
+   }
+  ],
+  "meeting_date": "2025-04-15",
+  "meeting_id": "city-council-2025-04-15",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-04-15-regular-annotated-agenda-record",
+  "roll_call_time": "7:05 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "4:09 p.m."
+   },
+   {
+    "member": "off-taplin",
+    "time": "4:09 p.m."
+   },
+   {
+    "member": "off-tregub",
+    "time": "4:10 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:10 p.m."
+   }
+  ],
+  "meeting_date": "2025-04-15",
+  "meeting_id": "city-council-2025-04-15-0",
+  "present": [
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-04-15-special-annotated-agenda-record",
+  "roll_call_time": "4:06 p.m."
+ },
+ {
+  "absent": [
+   "Bartlett Councilmember Taplin recused for potential conflict of interest at 6:14 p.m"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:17 p.m."
+   }
+  ],
+  "meeting_date": "2025-04-22",
+  "meeting_id": "city-council-2025-04-22",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-04-22-special-annotated-agenda-record",
+  "roll_call_time": "6:04 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "Bartlett Public Comment – 1 speaker Council Discussion 1.a. Introduction 1.b. Values",
+   "Group Agreements 1.c. City Council Norms",
+   "Procedures Break 1.d. Team Building Activity 1.e. Discussion of Council Priorities"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-04-25",
+  "meeting_id": "city-council-2025-04-25",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-04-25-special-annotated-agenda-record",
+  "roll_call_time": "10:08 a.m."
+ },
+ {
+  "absent": [
+   "None Councilmember Taplin participated in the meeting remotely under the just cause exception in the Brown Act. Action Calendar Special City Council Meeting: Possible Ceasefire Resolution for Gaza Conflict",
+   "the Impact",
+   "Effects of the Conflict on the Berkeley Community",
+   "Abroad 1. Resolution for an Immediate",
+   "Permanent Ceasefire in Gaza",
+   "an End to U.S. Military Aid to Israel",
+   "Support for Palestinian Self-Determination From: Peace",
+   "Justice Commission Recommendation: 1. The City of Berkeley Council adopt a resolution for a ceasefire in Gaza",
+   "an end to U.S. military aid to Israel",
+   "support for Palestinian self-determination. 2. Send a copy of the resolution to President Joseph R. Biden",
+   "Secretary of State Antony Blinken",
+   "Vice President Kamala Harris",
+   "Representative Barbara Lee",
+   "Senator Alex Padilla",
+   "Senator Laphonza R. Butler",
+   "Representative Cori Bush",
+   "Representative Rashida Tlaib. Financial Implications: None Contact: Rex Brown",
+   "Commission Secretary",
+   "(510) 981-7000"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-04-28",
+  "meeting_id": "city-council-2025-04-28",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-04-28-special-annotated-agenda-record",
+  "roll_call_time": "5:04 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "6:14 p.m."
+   }
+  ],
+  "meeting_date": "2025-04-29",
+  "meeting_id": "city-council-2025-04-29",
+  "present": [
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-04-29-regular-annotated-agenda-record",
+  "roll_call_time": "6:08 p.m."
+ },
+ {
+  "absent": [
+   "None Report from Closed Session: The City Council directed the City Attorney to initiate an action. Once formally commenced",
+   "the action",
+   "defendants",
+   "other particulars shall be disclosed to any person upon inquiry",
+   "unless to do so would jeopardize the City's ability to effectuate service of process on one or more unserved parties",
+   "or jeopardize the City’s ability to conclude existing settlement negotiations to its advantage"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-05-06",
+  "meeting_id": "city-council-2025-05-06",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-05-06-regular-annotated-agenda-record",
+  "roll_call_time": "6:09 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-humbert"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-taplin",
+    "time": "5:09 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "5:12 p.m."
+   }
+  ],
+  "meeting_date": "2025-05-06",
+  "meeting_id": "city-council-2025-05-06-0",
+  "present": [
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-05-06-special-annotated-agenda-record",
+  "roll_call_time": "4:37 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-05-20",
+  "meeting_id": "city-council-2025-05-20",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-05-20-regular-annotated-agenda-record",
+  "roll_call_time": "6:08 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett",
+   "off-blackaby"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "4:41 p.m."
+   }
+  ],
+  "meeting_date": "2025-05-20",
+  "meeting_id": "city-council-2025-05-20-0",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-05-20-special-annotated-agenda-record",
+  "roll_call_time": "4:36 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-06-03",
+  "meeting_id": "city-council-2025-06-03",
+  "present": [
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-06-03-regular-annotated-agenda-record",
+  "roll_call_time": "6:06 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "6:08 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "6:12 p.m."
+   }
+  ],
+  "meeting_date": "2025-06-17",
+  "meeting_id": "city-council-2025-06-17",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-06-17-regular-annotated-agenda-v2-record",
+  "roll_call_time": "6:02 p.m."
+ },
+ {
+  "absent": [
+   "None Report from Closed Session: The City Council met in closed session on May 27",
+   "2025",
+   "off-ishii",
+   "off-humbert",
+   "Councilmember Lunaparra to oversee the evaluation process of the non-elected Charter Officers: City Manager",
+   "City Attorney",
+   "Director of Police Accountability"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-06-24",
+  "meeting_id": "city-council-2025-06-24",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-06-24-regular-annotated-agenda-record",
+  "roll_call_time": "7:06 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "4:13 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:41 p.m."
+   }
+  ],
+  "meeting_date": "2025-06-24",
+  "meeting_id": "city-council-2025-06-24-0",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-06-24-special-annotated-agenda-record",
+  "roll_call_time": "4:09 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:13 p.m."
+   }
+  ],
+  "meeting_date": "2025-06-26",
+  "meeting_id": "city-council-2025-06-26",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-06-26-special-annotated-agenda-record",
+  "roll_call_time": "6:11 p.m."
+ },
+ {
+  "absent": [
+   "off-blackaby"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-blackaby",
+    "time": "7:04 p.m."
+   }
+  ],
+  "meeting_date": "2025-07-08",
+  "meeting_id": "city-council-2025-07-08",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-07-08-regular-annotated-agenda-record",
+  "roll_call_time": "6:06 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:45 p.m."
+   }
+  ],
+  "meeting_date": "2025-07-22",
+  "meeting_id": "city-council-2025-07-22",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-07-22-regular-annotated-agenda-record",
+  "roll_call_time": "6:37 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett",
+   "off-okeefe"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:10 p.m."
+   }
+  ],
+  "meeting_date": "2025-07-23",
+  "meeting_id": "city-council-2025-07-23",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-07-23-regular-annotated-agenda-record",
+  "roll_call_time": "6:07 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:11 p.m."
+   }
+  ],
+  "meeting_date": "2025-07-29",
+  "meeting_id": "city-council-2025-07-29",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-07-29-regular-annotated-agenda-record",
+  "roll_call_time": "6:06 p.m."
+ },
+ {
+  "absent": [
+   "Bartlett Consent Calendar Public Comment on Consent Calendar",
+   "Information Items Only: 2 speakers"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2025-07-29",
+  "meeting_id": "city-council-2025-07-29-1",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-07-29-special-annotated-agenda-record",
+  "roll_call_time": "4:14 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:09 p.m."
+   }
+  ],
+  "meeting_date": "2025-09-09",
+  "meeting_id": "city-council-2025-09-09",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-09-09-regular-annotated-agenda-v2-record",
+  "roll_call_time": "6:07 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "6:44 p.m."
+   }
+  ],
+  "meeting_date": "2025-09-16",
+  "meeting_id": "city-council-2025-09-16-1",
+  "present": [
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-09-16-regular-annotated-agenda-record",
+  "roll_call_time": "6:42 p.m."
+ },
+ {
+  "absent": [
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "4:08 p.m."
+   },
+   {
+    "member": "off-taplin",
+    "time": "4:21 p.m."
+   }
+  ],
+  "meeting_date": "2025-09-16",
+  "meeting_id": "city-council-2025-09-16-3",
+  "present": [
+   "off-kesarwani",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-09-16-special-annotated-agenda-record",
+  "roll_call_time": "4:06 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2025-09-30",
+  "meeting_id": "city-council-2025-09-30",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-09-30-regular-annotated-agenda-record",
+  "roll_call_time": "6:05 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett",
+   "off-okeefe"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-okeefe",
+    "time": "4:08 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:21 p.m."
+   }
+  ],
+  "meeting_date": "2025-09-30",
+  "meeting_id": "city-council-2025-09-30-0",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-09-30-special-annotated-agenda-record",
+  "roll_call_time": "4:06 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:09 p.m."
+   }
+  ],
+  "meeting_date": "2025-10-14",
+  "meeting_id": "city-council-2025-10-14",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-10-14-regular-annotated-agenda-record",
+  "roll_call_time": "6:07 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2025-10-28",
+  "meeting_id": "city-council-2025-10-28",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-10-28-regular-annotated-agenda-record",
+  "roll_call_time": "6:27 p.m."
+ },
+ {
+  "absent": [
+   "off-blackaby"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-blackaby",
+    "time": "4:17 p.m."
+   }
+  ],
+  "meeting_date": "2025-10-28",
+  "meeting_id": "city-council-2025-10-28-0",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-10-28-special-annotated-agenda-record",
+  "roll_call_time": "4:08 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "6:10p.m."
+   }
+  ],
+  "meeting_date": "2025-11-06",
+  "meeting_id": "city-council-2025-11-06",
+  "present": [
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-11-06-special-annotated-agenda-record",
+  "roll_call_time": "6:06 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2025-11-10",
+  "meeting_id": "city-council-2025-11-10",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-11-10-regular-annotated-agenda-record",
+  "roll_call_time": "6:04 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2025-11-18",
+  "meeting_id": "city-council-2025-11-18",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-11-18-regular-annotated-agenda-record",
+  "roll_call_time": "6:44 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "4:17 p.m."
+   },
+   {
+    "member": "off-taplin",
+    "time": "4:30 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:43 p.m."
+   }
+  ],
+  "meeting_date": "2025-11-18",
+  "meeting_id": "city-council-2025-11-18-0",
+  "present": [
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-11-18-special-annotated-agenda-record",
+  "roll_call_time": "4:01 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett",
+   "off-tregub",
+   "off-lunaparra"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-lunaparra",
+    "time": "6:37 p.m."
+   },
+   {
+    "member": "off-tregub",
+    "time": "6:37 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "6:38 p.m."
+   }
+  ],
+  "meeting_date": "2025-12-02",
+  "meeting_id": "city-council-2025-12-02",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-okeefe",
+   "off-blackaby",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-12-02-regular-annotated-agenda-record",
+  "roll_call_time": "6:36 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett",
+   "off-lunaparra"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-lunaparra",
+    "time": "4:07 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "5:06 p.m."
+   }
+  ],
+  "meeting_date": "2025-12-02",
+  "meeting_id": "city-council-2025-12-02-0",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2025-12-02-special-annotated-agenda-record",
+  "roll_call_time": "4:06 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2026-01-20",
+  "meeting_id": "city-council-2026-01-20",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-01-20-regular-annotated-agenda-record",
+  "roll_call_time": "6:13 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2026-01-27",
+  "meeting_id": "city-council-2026-01-27",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-01-27-regular-annotated-agenda-record",
+  "roll_call_time": "6:00 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "4:14 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:33 p.m."
+   }
+  ],
+  "meeting_date": "2026-01-27",
+  "meeting_id": "city-council-2026-01-27-0",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-01-27-special-annotated-agenda-record",
+  "roll_call_time": "4:09 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2026-02-10",
+  "meeting_id": "city-council-2026-02-10",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-02-10-regular-annotated-agenda-record",
+  "roll_call_time": "6:09 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett",
+   "Blackaby Action Calendar – New Business 1. 2026 City Council Referral Prioritization Results Using Re-Weighted Range Voting (RRV) From: City Manager Recommendation: Review the completed Re-Weighted Range Voting (RRV) rankings for all outstanding City Council referrals",
+   "adopt a Resolution approving the list of prioritized referrals to city staff. Financial Implications: None Contact: Mark Numainville",
+   "City Clerk",
+   "(510) 981-6900"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2026-02-10",
+  "meeting_id": "city-council-2026-02-10-0",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-02-10-special-annotated-agenda-record",
+  "roll_call_time": "5:02 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:07 p.m."
+   }
+  ],
+  "meeting_date": "2026-02-23",
+  "meeting_id": "city-council-2026-02-23",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-02-23-special-annotated-agenda-record",
+  "roll_call_time": "6:07 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "6:17 p.m."
+   }
+  ],
+  "meeting_date": "2026-02-24",
+  "meeting_id": "city-council-2026-02-24",
+  "present": [
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-02-24-regular-annotated-agenda-record",
+  "roll_call_time": "6:03 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-taplin",
+    "time": "4:21 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:24 p.m."
+   }
+  ],
+  "meeting_date": "2026-02-24",
+  "meeting_id": "city-council-2026-02-24-0",
+  "present": [
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-02-24-special-annotated-agenda-record",
+  "roll_call_time": "4:07 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2026-03-10",
+  "meeting_id": "city-council-2026-03-10",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-03-10-regular-annotated-agenda-record",
+  "roll_call_time": "6:05 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-taplin",
+    "time": "4:09 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "5:13 p.m."
+   }
+  ],
+  "meeting_date": "2026-03-10",
+  "meeting_id": "city-council-2026-03-10-0",
+  "present": [
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-03-10-special-annotated-agenda-record",
+  "roll_call_time": "4:07 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:24 p.m."
+   }
+  ],
+  "meeting_date": "2026-03-17",
+  "meeting_id": "city-council-2026-03-17",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-03-17-special-annotated-agenda-record",
+  "roll_call_time": "6:07 p.m."
+ },
+ {
+  "absent": [
+   "None Report on Litigation With respect to Information Item Number 27 regarding the settlement between Berkeley People’s Alliance",
+   "the City in Alameda County Superior Court Case No. 24CV064980",
+   "Cal. Court of Appeal Case No. A172245",
+   "the City Council hereby commits",
+   "consistent with the Court of Appeal’s ruling",
+   "to no longer invoke Government Code Section 54957.9",
+   "as it is currently drafted",
+   "to recess a meeting",
+   "reconvene it in a different room or otherwise relocate the meeting. Report from Closed Session The City Council met in closed session on March 16",
+   "2026",
+   "Pursuant to Government Code Section 54956.9(d)",
+   "provided directions to outside counsel",
+   "approved a settlement by Compromise",
+   "Release with open future medical care",
+   "as to a workers’ compensation matter assigned claim number BER2300091",
+   "WCAB case number ADJ17101925. The City Council met in closed session on March 16",
+   "2026",
+   "Pursuant to Government Code Section 54956.9(d)",
+   "provided directions to outside counsel",
+   "approved a settlement by Compromise",
+   "Release with a release of future medical care",
+   "or in the alternative",
+   "by Stipulations with Request for Award with open future medical care",
+   "as to a workers’ compensation matter assigned claim number BER2400044",
+   "WCAB case number ADJ18386036"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2026-03-24",
+  "meeting_id": "city-council-2026-03-24",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-03-24-regular-annotated-agenda-record",
+  "roll_call_time": "6:24 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "4:12 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:22 p.m."
+   },
+   {
+    "member": "off-taplin",
+    "time": "4:46 p.m."
+   }
+  ],
+  "meeting_date": "2026-03-24",
+  "meeting_id": "city-council-2026-03-24-0",
+  "present": [
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-03-24-special-annotated-agenda-record",
+  "roll_call_time": "4:04 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:13 p.m."
+   }
+  ],
+  "meeting_date": "2026-04-14",
+  "meeting_id": "city-council-2026-04-14",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-04-14-regular-annotated-agenda-record",
+  "roll_call_time": "6:05 p.m."
+ },
+ {
+  "absent": [
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:16 p.m."
+   },
+   {
+    "member": "off-taplin",
+    "time": "6:38 p.m."
+   }
+  ],
+  "meeting_date": "2026-04-21",
+  "meeting_id": "city-council-2026-04-21",
+  "present": [
+   "off-kesarwani",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-04-21-regular-annotated-agenda-record",
+  "roll_call_time": "6:09 p.m."
+ },
+ {
+  "absent": [
+   "None Councilmember Bartlett participated in the meeting remotely under the “just cause” exception in the Brown Act due to a need related to a physical condition"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2026-04-28",
+  "meeting_id": "city-council-2026-04-28",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-04-28-regular-annotated-agenda-record",
+  "roll_call_time": "6:03 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "5:17 p.m."
+   }
+  ],
+  "meeting_date": "2026-05-07",
+  "meeting_id": "city-council-2026-05-07",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-05-07-regular-annotated-agenda-v2-record",
+  "roll_call_time": "5:09 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:25 p.m."
+   }
+  ],
+  "meeting_date": "2026-05-12",
+  "meeting_id": "city-council-2026-05-12",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-05-12-regular-annotated-agenda-record",
+  "roll_call_time": "6:08 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2026-05-19",
+  "meeting_id": "city-council-2026-05-19",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-05-19-regular-annotated-agenda-record",
+  "roll_call_time": "6:26 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-taplin",
+    "time": "4:09 p.m."
+   },
+   {
+    "member": "off-kesarwani",
+    "time": "4:16 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:42 p.m."
+   }
+  ],
+  "meeting_date": "2026-05-19",
+  "meeting_id": "city-council-2026-05-19-0",
+  "present": [
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-05-19-special-annotated-agenda-record",
+  "roll_call_time": "4:03 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:17 p.m."
+   }
+  ],
+  "meeting_date": "2026-06-09",
+  "meeting_id": "city-council-2026-06-09",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-06-09-regular-annotated-agenda-record",
+  "roll_call_time": "6:09 p.m."
+ },
+ {
+  "absent": [
+   "None Councilmember Kesarwani participated in the meeting remotely under the “just cause” exception in the Brown Act due to a child caregiving need"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2026-06-16",
+  "meeting_id": "city-council-2026-06-16",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-06-16-regular-annotated-agenda-v2-record",
+  "roll_call_time": "6:03 p.m."
+ },
+ {
+  "absent": [
+   "None Councilmember Bartlett participated in the meeting remotely under the “just cause” exception in the Brown Act due to a caregiving need. Action Calendar 1. Adoption of Fiscal Years 2027",
+   "2028 Biennial Budget",
+   "Fiscal Years 2027 – 2031 Capital Improvement Program From: City Manager Recommendation: Adopt a Resolution: 1. Adopting the Fiscal Years 2027 & 2028 (“FY27",
+   "FY28”) Biennial Budget",
+   "the Fiscal Years 2027 – 2031 Capital Improvement Program (Five-Year CIP) as contained in the City Manager’s FY27 & FY28 Proposed Biennial Budget",
+   "as amended by subsequent Council action. 2. Authorizing the City Manager to provide applicable advances to community agencies receiving City funds in FY27",
+   "as reflected in Attachment 2 to the report",
+   "as amended by subsequent Council action. Financial Implications: See report Contact: Maricar Dupaya",
+   "Budget Manager",
+   "(510) 981-7000"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2026-06-23",
+  "meeting_id": "city-council-2026-06-23",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-06-23-regular-annotated-agenda-record",
+  "roll_call_time": "6:19 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "6:09 p.m."
+   }
+  ],
+  "meeting_date": "2026-06-30",
+  "meeting_id": "city-council-2026-06-30",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-06-30-regular-annotated-agenda-record",
+  "roll_call_time": "6:05 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:12 p.m."
+   }
+  ],
+  "meeting_date": "2026-07-07",
+  "meeting_id": "city-council-2026-07-07",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-07-07-regular-annotated-agenda-record",
+  "roll_call_time": "6:05 p.m."
+ },
+ {
+  "absent": [],
+  "arrived_late": [],
+  "meeting_date": "2026-07-14",
+  "meeting_id": "city-council-2026-07-14",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-07-14-regular-annotated-agenda-record",
+  "roll_call_time": "6:11 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "Bartlett Worksession 1. 2025 Police Accountability Board (PAB) & Office of the Director of Police Accountability (ODPA) Annual Report From: Police Accountability Board",
+   "Director of Police Accountability Contact: Kathy Lee",
+   "Office of Director of Police Accountability",
+   "(510) 981-4950"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2026-07-14",
+  "meeting_id": "city-council-2026-07-14-0",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-07-14-special-annotated-agenda-record",
+  "roll_call_time": "4:03 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:16 p.m."
+   },
+   {
+    "member": "off-kesarwani",
+    "time": "6:17 p.m."
+   }
+  ],
+  "meeting_date": "2026-07-28",
+  "meeting_id": "city-council-2026-07-28",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-07-28-regular-annotated-agenda-v2-record",
+  "roll_call_time": "6:03 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-kesarwani",
+    "time": "6:03 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "6:11 p.m."
+   }
+  ],
+  "meeting_date": "2026-09-15",
+  "meeting_id": "city-council-2026-09-15",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-09-15-regular-annotated-agenda-record",
+  "roll_call_time": "6:02 p.m."
+ },
+ {
+  "absent": [
+   "None Councilmember Humbert participated in the meeting remotely under the “just cause” exception in the Brown Act due to illness. Councilmember Lunaparra exited the meeting location at 9:44 p.m",
+   "participated in the remainder of the meeting remotely under the “just cause” exception in the Brown Act due to illness"
+  ],
+  "arrived_late": [],
+  "meeting_date": "2026-09-29",
+  "meeting_id": "city-council-2026-09-29",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-bartlett",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-09-29-regular-annotated-agenda-record",
+  "roll_call_time": "6:05 p.m."
+ },
+ {
+  "absent": [
+   "off-taplin",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-taplin",
+    "time": "4:20 p.m."
+   },
+   {
+    "member": "off-bartlett",
+    "time": "4:33 p.m."
+   }
+  ],
+  "meeting_date": "2026-09-29",
+  "meeting_id": "city-council-2026-09-29-0",
+  "present": [
+   "off-kesarwani",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-09-29-special-annotated-agenda-record",
+  "roll_call_time": "4:09 p.m."
+ },
+ {
+  "absent": [
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:13 p.m."
+   }
+  ],
+  "meeting_date": "2026-10-13",
+  "meeting_id": "city-council-2026-10-13",
+  "present": [
+   "off-kesarwani",
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-10-13-regular-annotated-agenda-record",
+  "roll_call_time": "6:06 p.m."
+ },
+ {
+  "absent": [
+   "off-kesarwani",
+   "off-bartlett"
+  ],
+  "arrived_late": [
+   {
+    "member": "off-bartlett",
+    "time": "6:04 p.m."
+   },
+   {
+    "member": "off-kesarwani",
+    "time": "6:04 p.m."
+   }
+  ],
+  "meeting_date": "2026-10-27",
+  "meeting_id": "city-council-2026-10-27",
+  "present": [
+   "off-taplin",
+   "off-tregub",
+   "off-okeefe",
+   "off-blackaby",
+   "off-lunaparra",
+   "off-humbert",
+   "off-ishii"
+  ],
+  "record_archive_id": "bcc-2026-10-27-regular-annotated-agenda-record",
+  "roll_call_time": "6:01 p.m."
+ }
+]

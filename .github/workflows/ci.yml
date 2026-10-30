@@ -39,7 +39,7 @@ jobs:
         run: |
           commit=$(python3 -c "import json; print(json.load(open('data/generated/council-time/meta.json'))['source']['archive_commit'])")
           git clone --quiet --filter=blob:none --no-checkout https://github.com/ericdf/berkeley-public-records "$RUNNER_TEMP/archive-time"
-          git -C "$RUNNER_TEMP/archive-time" sparse-checkout set catalog manifest tools L1/council-captions L2/annotated-agendas L3
+          git -C "$RUNNER_TEMP/archive-time" sparse-checkout set catalog manifest registry tools L1/council-captions L2/annotated-agendas L3
           git -C "$RUNNER_TEMP/archive-time" checkout --quiet "$commit"
           python3 -m councilwatch reproduce-council-time --archive "$RUNNER_TEMP/archive-time"
 
