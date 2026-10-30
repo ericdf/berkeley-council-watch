@@ -12,7 +12,7 @@ The schemas are in `councilwatch/schema/`.
 | File | One record per |
 |---|---|
 | `sources.json` | Source document: issuer, title, date, kind, City URL, archive id and link when archived, fingerprint |
-| `matters.json` | Tracked matter: title, the agenda items it appeared on, qualifications stated by the source, last-reviewed date |
+| `matters.json` | Tracked matter: title, the agenda items it appeared on, qualifications stated by the source (each may add an `unresolved` note: what the record cannot yet establish and which record would resolve it), last-reviewed date |
 | `findings.json` | Audit finding, with the heading as printed |
 | `recommendations.json` | Audit recommendation: the text as printed, who it is addressed to, and management's response (position, implementation date and corrective action plan, all as printed; `null` when no cited source prints them) |
 | `commitments.json` | Specific, checkable future action: the source's words (`statement`), who is responsible, the date as stated, and a dated status history |
@@ -23,8 +23,8 @@ item or section), and a `quote` where the wording matters. A quote is copied exa
 rejects line-wrap artifacts such as a broken hyphen.
 
 **Source words and project words are kept apart.** `statement`, `text`, `heading`, `quote` and the
-management-response fields are the source's words. `label`, `description` and `basis` are the
-project's, written as plain description, never characterization.
+management-response fields are the source's words. `label`, `description`, `basis` and a
+qualification's `unresolved` note are the project's, written as plain description, never characterization.
 
 ## Statuses
 
@@ -86,3 +86,23 @@ Underfunded* (November 19, 2020) and the City Manager's status reports on it.
   report; the November 3, 2022 and March 19, 2024 staff reports themselves are not archived. Nothing is
   `completion_verified`.
 - The October 28, 2025 report expects the next status report in Fall 2026. No status is recorded for it.
+
+## Proposition 64 youth grant
+
+`prop64-youth-cannabis-grant-2021` covers the City's Proposition 64 Public Health and Safety grant from the
+Board of State and Community Corrections (Cohort 2), the Council's authorizations of May 25, 2021 (grant),
+October 12, 2021 (evaluation contract amendment) and February 22, 2022 (Berkeley Youth Alternatives contract),
+and the Final Evaluation Report of April 30, 2025.
+- **Commitments:** the objectives in the City's Local Evaluation Plan (November 10, 2021), the evaluation the
+  October 2021 contract amendment provides for, and the evaluator's recommendation to the City.
+- **Statuses:** as the Final Evaluation Report states them. It is City-submitted, written by the Alameda
+  County Public Health Department's evaluation unit under the City's contract, so nothing is above
+  `reported_complete`. Objectives the report records as revised, discontinued or redirected are
+  `cancelled_or_superseded`, with the reported result in the basis. The status list has no value for "the
+  responsible party reports the work was not done"; where the report says only that, the basis says so.
+- **Follow-up:** no Council item on the report or its recommendations was located in the annotated agendas
+  and caption transcripts searched through October 27, 2026.
+- **Unresolved:** the executed BYA contract and amendments, any subcontract, the amounts paid, the City's
+  reports to and close-out with the Board, and when the City received the final report. Each qualification
+  names the record that would resolve it.
+- The June 17, 2025 Healthy Berkeley grant to BYA is recorded as a separate, separately funded action.

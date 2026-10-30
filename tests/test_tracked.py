@@ -136,3 +136,20 @@ class TrackedTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_unresolved_qualification(self):
+        # A qualification may say what the record cannot establish and which record would resolve it.
+        d = tracked.load(SEED)
+        m = next(x for x in d["matters.json"] if x["id"] == "prop64-youth-cannabis-grant-2021")
+        self.assertTrue(all(q.get("unresolved") for q in m["qualifications"]))
+        out = os.path.join(self.tmp, "site")
+        site.build(AGENDA, out, self.dir)
+        with open(os.path.join(out, "matters", "prop64-youth-cannabis-grant-2021.html"), encoding="utf-8") as f:
+            page = f.read()
+        self.assertIn("<strong>Unresolved.</strong>", page)
+        self.assertIn("No update located", page)
+        self.assertNotIn("Completion verified", page)
+
+    def test_unresolved_must_be_text(self):
+        self.edit("matters.json", lambda d: d[0]["qualifications"][0].update(unresolved=""))
+        self.assertError("shorter than 1")
