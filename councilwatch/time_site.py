@@ -8,7 +8,7 @@ import datetime
 import json
 import math
 import os
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 from . import council_time as ct
 from . import tracked as tracked_mod
@@ -111,11 +111,13 @@ class Attention:
             if lab not in r["labels"]:
                 r["labels"].append(lab)
         self.unassigned_letters = defaultdict(lambda: [0, set()])
+        self.letters_by_meeting = defaultdict(Counter)   # meeting_id -> topic (None: not assigned) -> letters
         for c in d["correspondence.json"]:
             if not c["letters_public"]:
                 continue
             th = next((self.record_thread[r] for r in c["record_ids"] if r in self.record_thread), None)
             th = th or heading_thread.get(c["heading"])
+            self.letters_by_meeting[c["meeting_id"]][th] += c["letters_public"]
             if not th:
                 if c["letters_public"]:
                     u = self.unassigned_letters[c["heading"] or "(no heading)"]
@@ -533,13 +535,56 @@ def segments_table(segs, a, h, caption, up="../"):
 
 
 def meeting_block(a, m, h):
+    """How the meeting's time and letters divided by topic, then every part of the meeting in order."""
+    esc, link = h["esc"], h["link"]
     segs = a.by_meeting.get(m["meeting_id"], [])
-    if not segs:
+    letters = a.letters_by_meeting.get(m["meeting_id"], Counter())
+    if not segs and not letters:
         return ""
+    by = defaultdict(lambda: {"disc": 0.0, "pc": 0.0, "labels": [], "est": False})
+    for s in segs:
+        t = a.seg_class[s["segment_id"]]["thread"]
+        r = by[t]
+        r["disc"] += (s["minutes"] or 0) - (s["public_comment_minutes"] or 0)
+        r["pc"] += s["public_comment_minutes"] or 0
+        r["est"] |= s["estimated"]
+        if t != "routine":
+            lab = a.label(s)
+            if lab not in r["labels"]:
+                r["labels"].append(lab)
+    topics = [t for t in a.thread_ids() if t in by or letters.get(t)]
+    rows = []
+    for t in topics:
+        r = by.get(t, {"disc": 0, "pc": 0, "labels": [], "est": False})
+        what = "<br>".join(esc(x) for x in r["labels"]) or '<span class="muted">letters only</span>'
+        rows.append(f"<tr><th scope=\"row\">{link('../time/' + t + '.html', a.thread_info[t]['label'])}</th><td>{what}</td>"
+                    f"<td class=\"num\">{minutes(r['disc']) if r['labels'] else ''}</td><td class=\"num\">{minutes(r['pc']) if r['labels'] else ''}</td>"
+                    f"<td class=\"num\">{letters.get(t, 0) or ''}</td></tr>")
+    if "routine" in by:
+        r = by["routine"]
+        n = sum(1 for s in segs if a.seg_class[s["segment_id"]]["thread"] == "routine")
+        rows.append(f"<tr class=\"routine\"><th scope=\"row\">Routine business</th><td class=\"muted\">{n} parts: ceremonies, the consent "
+                    f"calendar as a block, comments, general public comment, recesses, adjournment</td>"
+                    f"<td class=\"num\">{minutes(r['disc'])}</td><td class=\"num\">{minutes(r['pc'])}</td><td class=\"num\"></td></tr>")
+    if letters.get(None):
+        rows.append(f"<tr class=\"routine\"><th scope=\"row\">Letters on no topic</th><td class=\"muted\">filed under headings this site "
+                    f"has not assigned to a topic</td><td></td><td></td><td class=\"num\">{letters[None]}</td></tr>")
     total = sum(s["minutes"] or 0 for s in segs)
-    return ("<h2 id=\"council-time\">Council time at this meeting</h2>"
-            f"<p>{hours(total)} hours of this meeting are in the transcript, divided as below.</p>" + METHOD_LINK
-            + segments_table(segs, a, h, "Parts of the meeting, in order"))
+    est = any(s["estimated"] for s in segs)
+    out = ["<h2 id=\"council-time\">This meeting at a glance</h2>",
+           f"<p>{hours(total)} hours in the transcript{' (estimated)' if est else ''}, and "
+           f"{sum(letters.values()):,} letters from the public, by topic.</p>" + METHOD_LINK,
+           '<div class="table-wrap"><table><caption>Time and letters by topic</caption><thead><tr><th scope="col">Topic</th>'
+           '<th scope="col">What was heard</th><th scope="col">Staff and Council (min)</th><th scope="col">Public comment (min)</th>'
+           f'<th scope="col">Letters</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>']
+    rec = m.get("city_links", {}).get("video")
+    if rec:
+        out.append(f'<p>{link(rec, "Watch the City\'s recording")}. <span class="muted">Times in the table below are from the '
+                   'Zoom captions; the City\'s video can run later, because it keeps recording through recesses.</span></p>')
+    if segs:
+        out.append(f"<details><summary>Every part of the meeting, in order ({len(segs)})</summary>"
+                   + segments_table(segs, a, h, "Parts of the meeting, in order") + "</details>")
+    return "".join(out)
 
 
 def matter_block(a, m, h):
@@ -663,6 +708,7 @@ td.barcell{width:30%}.bar{display:block;height:10px;background:var(--c-staff)}
 svg.row a.bar:focus-visible rect:first-child{fill:var(--soft);stroke:var(--accent);stroke-width:2}
 svg.row a.bar:hover rect:first-child{fill:var(--soft)}
 tr:target td{background:var(--soft)}
+tr.routine th,tr.routine td{color:var(--muted);font-weight:400}
 tr:target td:first-child{box-shadow:inset 4px 0 0 var(--accent)}
 .decision{font-weight:600}
 html{scroll-behavior:smooth}

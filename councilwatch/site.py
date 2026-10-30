@@ -243,6 +243,7 @@ def render_meeting(m, items, meta, a=None, h=None):
     title = f"{TYPE_LABELS.get(m['meeting_type'], m['meeting_type'])} meeting, {fmt_date(m['meeting_date'])}"
     body = [f"<h1>{esc(title)}</h1>",
             f"<p class=\"muted\">{esc(m['name'])} · last checked {esc(fmt_date(m['last_checked_at']))}</p>",
+            time_site.meeting_block(a, m, h) if a is not None else "",
             "<h2>City records</h2>",
             f"<p>{link(m['city_page_url'], 'City meeting page')} · {city_links(m)}</p>",
             "<h2>Archived records</h2>"]
@@ -252,10 +253,6 @@ def render_meeting(m, items, meta, a=None, h=None):
                 body.append(f"<h3>{ROLE_LABELS[role]}</h3>{docref_list(m['archived'][role])}")
     else:
         body.append("<p>No records for this meeting are archived yet.</p>")
-    if a is not None:
-        block = time_site.meeting_block(a, m, h)
-        if block:
-            body.append(block)
     body.append("<h2>Agenda items</h2>")
     if items:
         body.append(f'<p class="note">{esc(SCOPE_NOTE)}</p>')
