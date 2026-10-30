@@ -53,6 +53,11 @@ Council meetings.
 | `turns.json` | Speaker turns on a thread outside its own agenda item, with a quotation the generator must find in the transcript at that turn |
 | `links.json` | Where a speaker or a recorded action tied two threads together, with the quotation or action and its timestamp |
 
+`threads.json` also holds `matters`, the thread of each tracked matter (the commitments page groups
+by it, and validation requires one for every matter), and `decisions`, the agenda items marked on a
+thread's chart. A decision names its meeting and item and a short label; the page takes the final
+vote from the annotated agenda's L2 record, never from the label.
+
 **What a thread is.** A subject grouping of heard items, so their time can be read side by side. It
 is a classification, not a finding about any item. An audit is filed under its subject, and the
 Auditor tag marks it across threads. Routine business (ceremony, the consent calendar as a block,
@@ -75,6 +80,27 @@ which it counts. A turn records its words (`quote`), not who spoke: the locator 
 **Changing a classification.** Edit the file in a pull request and say why. A reclassification
 changes what the pages show, so it is reviewed like any tracked record. `python3 -m councilwatch
 validate` checks every thread id and requires every generated segment to be classified.
+
+## Pages
+
+- `time/index.html`: one row per thread on a shared date axis and minutes scale, City finances first
+  as five rows of their own; totals by thread; every heard item ranked by minutes; City Auditor
+  items; connections; and the largest correspondence headings not counted toward any thread.
+- `time/<thread>.html`: the thread's chart, its decisions with their final votes, and a table of
+  every meeting with what was heard, minutes and letters.
+- `commitments/index.html`: every commitment, grouped by its matter's thread, open first.
+- Meeting pages show how the meeting's time divided; matter pages show the time on their items.
+
+Charts are SVG written at build time. Every figure a chart shows is also in a table on the same
+page. **Gaza turns count only when `extent` is `whole`;** the Gaza page states how many partial turns
+were left out and their minutes.
+
+**The home page leads with questions.** Each is a factual question the site answers, linking to the
+view that answers it (`time_site.QUESTIONS`). A question states no conclusion and implies none: it
+asks how much, how many, when, or what the record shows. A question is shown only when the page and
+anchor it links to exist. The questions appear one at a time by CSS alone, pausing on hover or
+focus, and as a plain list when the reader chooses "Show all questions", when motion is reduced, or
+when CSS is off.
 
 ## Where this came from
 

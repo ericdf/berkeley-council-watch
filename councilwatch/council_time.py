@@ -5,6 +5,8 @@ Output, under data/generated/council-time/:
   segments.json        one record per segment of each caption transcript's L3 structure, with its
                        minutes and the minutes of public comment within it
   correspondence.json  one record per correspondence heading in each annotated agenda's L2 record
+  items.json           one record per agenda item in each meeting's L2 annotated-agenda record: its
+                       heading, From line, speakers, and the result and tally of its final motion
   turns.json           minutes of each reviewed speaker turn on a thread during general or consent
                        public comment (data/review/council-time/turns.json)
   meta.json            the pinned archive commit, counts, method constants, and exceptions
@@ -257,11 +259,43 @@ def correspondence_records(archive):
     return out
 
 
+def tally(vote):
+    if vote is None:
+        return None
+    if vote["all_ayes"]:
+        return {"all_ayes": True, "ayes": None, "noes": 0, "abstain": 0, "absent": len(vote["absent"]), "recused": len(vote["recused"])}
+    return {"all_ayes": False, **{k: len(vote[k]) for k in ("ayes", "noes", "abstain", "absent", "recused")}}
+
+
+def agenda_item_records(archive):
+    out = []
+    for mid, rid in sorted(pick_records(archive).items()):
+        e = archive.entry(rid)
+        rec = archive.load(e["file"])
+        date = archive.entry(rec["annotated_agenda"]).get("meeting_date")
+        for it in rec["items"]:
+            final = next((m for m in it["motions"] if m["final"]), None)
+            out.append({
+                "record_id": f"{mid}--item-{it['item']}", "meeting_id": mid, "meeting_date": date,
+                "item": it["item"], "section": it["section"], "heading": it["heading"], "from": it["from"],
+                "speakers": it["speakers"], "lines": it["lines"], "record_archive_id": rid,
+                "final_motion": None if final is None else {"kind": final["kind"], "disposition": final["disposition"],
+                                                            "vote": tally(final["vote"])},
+                "archive_url": archive.archive_url(e),
+            })
+    return out
+
+
 def generate(archive, review):
     exceptions = []
     segs = segment_records(archive, review, exceptions)
     corr = correspondence_records(archive)
     turns = turn_records(archive, review, exceptions)
+    items = agenda_item_records(archive)
+    rids = {i["record_id"] for i in items}
+    for d in review["threads.json"].get("decisions", []):
+        if f"{d['meeting_id']}--item-{d['item']}" not in rids:
+            exceptions.append({"kind": "decision_item_not_found", "record_id": f"{d['meeting_id']}--item-{d['item']}"})
     known = {s["segment_id"] for s in segs}
     for a in review["threads.json"]["segments"]:
         if a["segment"] not in known:
@@ -281,13 +315,20 @@ def generate(archive, review):
             "segments": len(segs),
             "correspondence_headings": len(corr),
             "turns": len(turns),
+            "items": len(items),
             "meetings_with_correspondence": len({c["meeting_id"] for c in corr}),
         },
         "exceptions": exceptions,
     }
     segs.sort(key=lambda s: (s["meeting_date"], s["structure_archive_id"], int(s["segment_id"].rsplit("#", 1)[1])))
     corr.sort(key=lambda c: (c["meeting_date"], c["meeting_id"], c["section"], c["line"]))
-    return {"segments.json": segs, "correspondence.json": corr, "turns.json": turns, "meta.json": meta}
+    items.sort(key=lambda i: (i["meeting_date"], i["meeting_id"], _item_key(i["item"])))
+    return {"segments.json": segs, "correspondence.json": corr, "turns.json": turns, "items.json": items, "meta.json": meta}
+
+
+def _item_key(n):
+    digits = "".join(ch for ch in n if ch.isdigit())
+    return (int(digits) if digits else 10**6, n)
 
 
 def dump(obj):
@@ -308,11 +349,12 @@ def run(archive_root, out_dir=OUT_DIR, review_dir=REVIEW_DIR, allow_dirty=False)
 
 
 # Exceptions the generator records that must be resolved before the data can merge.
-BLOCKING = ("no_meeting_clock", "unclassified_segment", "classified_segment_not_in_archive", "turn_quote_not_found")
-NAMES = ("segments.json", "correspondence.json", "turns.json", "meta.json")
+BLOCKING = ("no_meeting_clock", "unclassified_segment", "classified_segment_not_in_archive", "turn_quote_not_found",
+            "decision_item_not_found")
+NAMES = ("segments.json", "correspondence.json", "turns.json", "items.json", "meta.json")
 
 
-def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None):
+def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None, matter_ids=None):
     """Errors in the generated council-time data and its reviewed inputs, as a list of messages."""
     from .validate import FORBIDDEN, check_schema, load_schema
     errors = []
@@ -330,7 +372,8 @@ def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None):
         errors.append(f"forbidden text in council-time data: {m.group(0)!r}")
     for name, schema, key in (("segments.json", "council_time_segment.schema.json", "segment_id"),
                               ("correspondence.json", "council_time_correspondence.schema.json", "heading"),
-                              ("turns.json", "council_time_turn.schema.json", "turn_id")):
+                              ("turns.json", "council_time_turn.schema.json", "turn_id"),
+                              ("items.json", "council_time_item.schema.json", "record_id")):
         sc = load_schema(schema)
         for r in data[name]:
             check_schema(r, sc, f"council-time/{name}[{r.get(key)}]", errors)
@@ -365,6 +408,18 @@ def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None):
             errors.append(f"review/council-time/turns.json: turn in {t['transcript']} has thread {t['thread']}")
         if ("start" in t) == ("start_line" in t):
             errors.append(f"review/council-time/turns.json: turn in {t['transcript']} needs start/end or start_line/end_line")
+    for d in review["threads.json"].get("decisions", []):
+        if d["thread"] not in known:
+            errors.append(f"review/council-time/threads.json: decision at {d['meeting_id']} has unknown thread {d['thread']}")
+    mts = [m["matter"] for m in review["threads.json"].get("matters", [])]
+    for m in review["threads.json"].get("matters", []):
+        if m["thread"] not in known or m["thread"] == "routine":
+            errors.append(f"review/council-time/threads.json: matter {m['matter']} has thread {m['thread']}")
+    if matter_ids is not None:
+        for missing in sorted(set(matter_ids) - set(mts)):
+            errors.append(f"review/council-time/threads.json: tracked matter {missing} has no thread")
+        for extra in sorted(set(mts) - set(matter_ids)):
+            errors.append(f"review/council-time/threads.json: matter {extra} is not in data/tracked/matters.json")
     for ln in review["links.json"]["links"]:
         for k in ("from", "to"):
             if ln[k] not in known:
@@ -385,7 +440,7 @@ def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None):
         if x["kind"] in BLOCKING:
             errors.append(f"council-time/meta.json: unresolved exception {x}")
     for k, v in (("segments", len(data["segments.json"])), ("correspondence_headings", len(data["correspondence.json"])),
-                 ("turns", len(data["turns.json"]))):
+                 ("turns", len(data["turns.json"])), ("items", len(data["items.json"]))):
         if meta.get("counts", {}).get(k) != v:
             errors.append(f"council-time/meta.json: counts.{k} is {meta.get('counts', {}).get(k)}, data has {v}")
     if not re.fullmatch(r"[0-9a-f]{40}", meta.get("source", {}).get("archive_commit") or ""):

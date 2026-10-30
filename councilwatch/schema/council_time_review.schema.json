@@ -179,6 +179,54 @@
      }
     }
    }
+  },
+  "matters": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "matter",
+     "thread"
+    ],
+    "properties": {
+     "matter": {
+      "type": "string"
+     },
+     "thread": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "decisions": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "thread",
+     "meeting_id",
+     "item",
+     "label"
+    ],
+    "properties": {
+     "thread": {
+      "type": "string"
+     },
+     "meeting_id": {
+      "type": "string",
+      "pattern": "^city-council-"
+     },
+     "item": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
+   }
   }
  }
 }
