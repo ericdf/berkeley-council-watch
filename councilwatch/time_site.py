@@ -126,6 +126,16 @@ class Attention:
             r["letters"] += c["letters_public"]
             r["form"] += c["form_letters"]
             r["meeting_ids"].add(c["meeting_id"])
+        # Items a Council member authored, by thread, whether or not the Council heard them. Writing an item
+        # and moving it through agenda review takes Council and staff time that no transcript measures.
+        item_thread = {x["record_id"]: x["thread"] for x in rv.get("items", [])}
+        self.authored = defaultdict(list)
+        for it in d["items.json"]:
+            if it["meeting_date"] < "2024-12-10" or not any(x["role"] in ("author", "co-author") for x in it["attribution"]):
+                continue
+            th = self.record_thread.get(it["record_id"]) or item_thread.get(it["record_id"])
+            if th and th != "routine":
+                self.authored[th].append((it, it["record_id"] in self.record_thread))
         self.max_minutes = max((r["disc"] + r["pc"] for t in self.rows.values() for r in t.values()), default=1)
 
     def label(self, s):
@@ -142,7 +152,7 @@ class Attention:
 
     def thread_ids(self):
         """City finances first, in their own order; then the rest by total time; then Other."""
-        ids = [t["id"] for t in self.thread_info.values() if t["id"] != "routine" and t["id"] in self.rows]
+        ids = [t["id"] for t in self.thread_info.values() if t["id"] != "routine" and (t["id"] in self.rows or t["id"] in self.authored)]
         fin = [t for t in ids if self.thread_info[t]["group"] == FINANCES]
         rest = sorted((t for t in ids if t not in fin and t != "other"), key=lambda t: -self.total(t))
         return fin + rest + (["other"] if "other" in ids else [])
@@ -236,10 +246,14 @@ Council and staff attention is a finite public resource, in <a href="{bdp}govern
 Exhaustion</a>, and that what goes on the consent calendar does not track the size of the commitment, in
 <a href="{bdp}consent-drip.html">Two Calendars</a>.</p></aside>"""
 
-TIME_NOTE = ("Minutes come from the Council's caption transcripts. Item boundaries were read from each transcript and "
+TIME_NOTE = ("Minutes measure meeting time only. Writing an item and moving it through agenda review, staff and legal "
+             "review take Council and staff time before any meeting, and no record measures that in minutes; so these "
+             "pages also count the items Council members wrote on each subject, including those adopted on the consent "
+             "calendar without discussion. Minutes come from the Council's caption transcripts. Item boundaries were read from each transcript and "
              "have not been checked against video. Most 2025 transcripts have no timestamps, so their minutes are "
              "estimates from each item's share of the words, shown hatched. Which thread an item belongs to is this "
-             "site's classification, not the City's. Routine business, including the consent calendar, is not counted.")
+             "site's classification, not the City's. Routine meeting business, including the consent calendar as a block, is "
+             "not counted in minutes.")
 
 
 def mlink(h, mid, text):
@@ -287,17 +301,22 @@ def render_time_index(a, h):
                     + (f'<ul class="decisions">{dl}</ul>' if dl else "") + "</section>")
     body.append(axis_svg())
 
-    body.append('<h2 id="totals">Totals by thread</h2>')
+    body.append('<h2 id="totals">Totals by thread</h2><p>Meeting time and letters, and the items Council members wrote on '
+                'each subject. An item not heard was adopted without discussion, usually on the consent calendar, or has not '
+                'yet come to a vote; it took no meeting time but did take the time of whoever wrote it and the staff who '
+                'reviewed it.</p>')
     rows = []
-    mx = max(a.total(t) for t in a.thread_ids())
+    mx = max(a.total(t) for t in a.thread_ids()) or 1
     for t in a.thread_ids():
         w = a.total(t) / mx * 100
         rows.append(f"<tr><td>{link(t + '.html', a.thread_info[t]['label'])}</td><td class=\"num\">{hours(a.total(t, 'disc'))}</td>"
                     f"<td class=\"num\">{hours(a.total(t, 'pc'))}</td><td class=\"num\">{a.total(t, 'letters'):,}</td>"
-                    f"<td class=\"num\">{len(a.rows[t])}</td><td class=\"barcell\"><span class=\"bar\" style=\"width:{w:.1f}%\"></span></td></tr>")
+                    f"<td class=\"num\">{len(a.rows[t])}</td><td class=\"num\">{len(a.authored[t])}</td>"
+                    f"<td class=\"num\">{sum(1 for _, heard in a.authored[t] if not heard)}</td><td class=\"barcell\"><span class=\"bar\" style=\"width:{w:.1f}%\"></span></td></tr>")
     body.append('<div class="table-wrap"><table><caption>Hours and letters by thread, across the transcript record</caption>'
                 '<thead><tr><th scope="col">Thread</th><th scope="col">Staff and Council (h)</th><th scope="col">Spoken public comment (h)</th>'
-                '<th scope="col">Letters</th><th scope="col">Meetings</th><th scope="col"><span class="sr-only">Total, as a bar</span></th></tr></thead>'
+                '<th scope="col">Letters</th><th scope="col">Meetings</th><th scope="col">Items members wrote</th>'
+                '<th scope="col">Of those, not heard</th><th scope="col"><span class="sr-only">Meeting time, as a bar</span></th></tr></thead>'
                 f'<tbody>{"".join(rows)}</tbody></table></div>')
 
     body.append('<h2 id="ranking">Items ranked by time</h2>'
@@ -388,6 +407,20 @@ def render_thread(a, t, h):
                 '<th scope="col">Meeting</th><th scope="col">What was heard</th><th scope="col">Staff and Council (min)</th>'
                 '<th scope="col">Public comment (min)</th><th scope="col">Letters</th><th scope="col">Estimate?</th></tr></thead>'
                 f'<tbody>{"".join(rows)}</tbody></table></div>')
+    if a.authored[t]:
+        rows = []
+        for it, heard in sorted(a.authored[t], key=lambda x: x[0]["meeting_date"]):
+            authors = ", ".join(x["as_printed"] for x in it["attribution"] if x["role"] in ("author", "co-author"))
+            rows.append(f"<tr><td class=\"num\">{mlink(h, it['meeting_id'], fd(it['meeting_date']))}</td>"
+                        f"<td>Item {esc(it['item'])}: {esc(it['heading'])}<br><span class=\"muted\">{esc(authors)}</span></td>"
+                        f"<td>{esc(it['section'] or '')}</td><td>{'Heard' if heard else 'Not heard'}</td></tr>")
+        n_not = sum(1 for _, heard in a.authored[t] if not heard)
+        body.append(f'<h2 id="authored">Items Council members wrote</h2><p>{len(a.authored[t])} items, {n_not} of them adopted '
+                    'or acted on without being heard. Those took no meeting time, but each was written, placed on an agenda '
+                    'and reviewed by staff.</p><div class="table-wrap"><table><caption>Member-authored items on this subject</caption>'
+                    '<thead><tr><th scope="col">Meeting</th><th scope="col">Item and authors, as printed</th>'
+                    '<th scope="col">Agenda section</th><th scope="col">In the transcript</th></tr></thead>'
+                    f'<tbody>{"".join(rows)}</tbody></table></div>')
     if t == "gaza":
         body.append("<h2>Public comment outside the agenda item</h2><p>Turns about Gaza, Israel or Palestine during "
                     "general and consent public comment are counted above when the turn was about that subject. "
@@ -514,6 +547,7 @@ QUESTIONS = [
     ("How many items has Councilmember Bartlett authored, and on what subjects?", "members/bartlett.html#items"),
     ("Where has the Council split, and how did each member vote?", "members/index.html#divided"),
     ("Who moved substitute motions, and how did they fare?", "members/index.html#motions"),
+    ("How many positions on state, federal and international matters have Council members written?", "time/external.html#authored"),
 ]
 
 
