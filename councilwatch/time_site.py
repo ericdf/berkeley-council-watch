@@ -257,17 +257,18 @@ def row_svg(a, t, height=56, width=900, esc=None):
 
 
 LEGEND = """<p class="legend"><span class="key staff"></span> Staff and Council time
-<span class="key pc"></span> Spoken public comment <span class="key est"></span> Estimated (court-reporter transcript)
-<span class="key letters"></span> Letters (circle area) <span class="key dec">▼</span> Decision, listed below the chart
-<br><span class="key consent"></span> Consent calendar items at a meeting: filled when the agenda shows an ordinance, member
-authorship, a move from the action calendar, revision at adoption, speakers or letters; height is the largest such
-amount, $1,000 to $1 billion on a log scale; a numeral counts the items. They are listed on each subject's page.</p>"""
+<span class="key pc"></span> Spoken public comment <span class="key est"></span> Estimate
+<span class="key letters"></span> Letters <span class="key dec">▼</span> Decision (listed below)
+<span class="key consent"></span> Consent calendar items (filled: more than routine; taller: larger amount)</p>"""
 
 ANALYSIS = """<aside class="analysis"><h2>Analysis elsewhere</h2>
 <p>These pages show how the Council's attention is allocated; they do not judge it. The Berkeley Decision Project argues that
 Council and staff attention is a finite public resource, in <a href="{bdp}governance-by-exhaustion.html">Governance by
 Exhaustion</a>, and that what goes on the consent calendar does not track the size of the commitment, in
 <a href="{bdp}consent-drip.html">Two Calendars</a>.</p></aside>"""
+
+METHOD_LINK = ('<p class="muted">Minutes are meeting time, from the Council\'s transcripts; hatched bars are estimates. '
+               'Topics are this site\'s grouping. <a href="../method.html">How this data is derived</a></p>')
 
 TIME_NOTE = ("Minutes measure meeting time only. Writing an item and moving it through agenda review, staff and legal "
              "review take Council and staff time before any meeting, and no record measures that in minutes; so these "
@@ -296,12 +297,11 @@ def render_time_index(a, h):
             "<p>How much of the Council's meeting time, and how much of the public's written correspondence, went to "
             "each subject, meeting by meeting. Every row shares the same date axis and the same minutes scale, so "
             "rows can be compared directly.</p>",
-            f'<p class="note">{esc(TIME_NOTE)} The method is described in '
-            f'{link("../about.html#council-time", "About the records")}.</p>',
+            METHOD_LINK,
             ANALYSIS.format(bdp=h["bdp"]),
             LEGEND,
-            '<p class="muted">Jump to: <a href="#totals">totals by thread</a> · <a href="#ranking">items ranked by time</a> · '
-            '<a href="#auditor">City Auditor items</a> · <a href="#connections">connections between threads</a></p>',
+            '<p class="muted">Jump to: <a href="#totals">totals by topic</a> · <a href="#ranking">items ranked by time</a> · '
+            '<a href="#auditor">City Auditor items</a> · <a href="#connections">connections between topics</a></p>',
             axis_svg()]
     group = None
     for t in a.thread_ids():
@@ -314,7 +314,7 @@ def render_time_index(a, h):
                             '<p class="muted">Five rows on the same scale, so no part of the City\'s finances is hidden '
                             'inside a total.</p>' + aao_note(a, h))
             else:
-                body.append('<h2 id="other-threads">Other threads</h2>')
+                body.append('<h2 id="other-topics">Other topics</h2>')
         decs = a.decision_rows(t)
         dl = "".join(f"<li>{esc(h['fmt_date'](d))}: {esc(x['label'])}{(' (' + esc(vote_text(it)) + ')') if vote_text(it) else ''}</li>"
                      for d, x, it in decs if d)
@@ -324,7 +324,7 @@ def render_time_index(a, h):
                     + (f'<ul class="decisions">{dl}</ul>' if dl else "") + "</section>")
     body.append(axis_svg())
 
-    body.append('<h2 id="totals">Totals by thread</h2><p>Meeting time and letters, and the items Council members wrote on '
+    body.append('<h2 id="totals">Totals by topic</h2><p>Meeting time and letters, and the items Council members wrote on '
                 'each subject. An item not heard was adopted without discussion, usually on the consent calendar, or has not '
                 'yet come to a vote; it took no meeting time but did take the time of whoever wrote it and the staff who '
                 'reviewed it.</p>')
@@ -336,8 +336,8 @@ def render_time_index(a, h):
                     f"<td class=\"num\">{hours(a.total(t, 'pc'))}</td><td class=\"num\">{a.total(t, 'letters'):,}</td>"
                     f"<td class=\"num\">{len(a.rows[t])}</td><td class=\"num\">{len(a.authored[t])}</td>"
                     f"<td class=\"num\">{sum(1 for _, heard in a.authored[t] if not heard)}</td><td class=\"barcell\"><span class=\"bar\" style=\"width:{w:.1f}%\"></span></td></tr>")
-    body.append('<div class="table-wrap"><table><caption>Hours and letters by thread, across the transcript record</caption>'
-                '<thead><tr><th scope="col">Thread</th><th scope="col">Staff and Council (h)</th><th scope="col">Spoken public comment (h)</th>'
+    body.append('<div class="table-wrap"><table><caption>Hours and letters by topic, across the transcript record</caption>'
+                '<thead><tr><th scope="col">Topic</th><th scope="col">Staff and Council (h)</th><th scope="col">Spoken public comment (h)</th>'
                 '<th scope="col">Letters</th><th scope="col">Meetings</th><th scope="col">Items members wrote</th>'
                 '<th scope="col">Of those, not heard</th><th scope="col"><span class="sr-only">Meeting time, as a bar</span></th></tr></thead>'
                 f'<tbody>{"".join(rows)}</tbody></table></div>')
@@ -356,7 +356,7 @@ def render_time_index(a, h):
                        f"<td>{link(t + '.html', a.thread_info[t]['label'])}</td><td class=\"num\">{minutes(v['disc'])}</td>"
                        f"<td class=\"num\">{minutes(v['pc'])}</td><td class=\"num\">{minutes(v['disc'] + v['pc'])}{est}</td></tr>")
         return "".join(out)
-    head = ('<thead><tr><th scope="col">Rank</th><th scope="col">Meeting</th><th scope="col">Item</th><th scope="col">Thread</th>'
+    head = ('<thead><tr><th scope="col">Rank</th><th scope="col">Meeting</th><th scope="col">Item</th><th scope="col">Topic</th>'
             '<th scope="col">Staff and Council (min)</th><th scope="col">Public comment (min)</th><th scope="col">Total (min)</th></tr></thead>')
     med = sorted(v["disc"] + v["pc"] for _, v in ranked)[len(ranked) // 2] if ranked else 0
     body.append(f'<p class="muted">{len(ranked)} heard items of a minute or more; the median item took {med:.0f} minutes.</p>')
@@ -395,8 +395,8 @@ def aao_note(a, h):
 
 def connections(a, h, up):
     esc = h["esc"]
-    out = ['<h2 id="connections">Connections between threads</h2><p>Where a speaker or a recorded action tied two '
-           'threads together, in the record\'s own words.</p><ul>']
+    out = ['<h2 id="connections">Connections between topics</h2><p>Where a speaker or a recorded action tied two '
+           'topics together, in the record\'s own words.</p><ul>']
     for ln in sorted(a.links, key=lambda x: x["d"]):
         ths = " → ".join(h["link"](f"{up}{x}.html", a.thread_info[x]["label"]) for x in dict.fromkeys((ln["from"], ln["to"])))
         out.append(f"<li><strong>{esc(ln['label'])}</strong> ({ths})<br>{esc(ln['evidence'])}</li>")
@@ -408,9 +408,9 @@ def unassigned(a, h):
     esc = h["esc"]
     top = sorted(a.unassigned_letters.items(), key=lambda kv: -kv[1][0])[:12]
     rows = "".join(f"<tr><td>{esc(k)}</td><td class=\"num\">{v[0]:,}</td><td class=\"num\">{len(v[1])}</td></tr>" for k, v in top)
-    return ('<h2 id="unassigned">Letters not counted toward any thread</h2>'
+    return ('<h2 id="unassigned">Letters not counted toward any topic</h2>'
             '<p>Correspondence filed under no heard item and under a Clerk heading this site has not assigned to a '
-            'thread. The largest:</p><div class="table-wrap"><table><caption>Largest unassigned correspondence headings</caption>'
+            'topic. The largest:</p><div class="table-wrap"><table><caption>Largest unassigned correspondence headings</caption>'
             '<thead><tr><th scope="col">Clerk\'s heading</th><th scope="col">Letters</th><th scope="col">Meetings</th></tr></thead>'
             f'<tbody>{rows}</tbody></table></div>')
 
@@ -419,11 +419,11 @@ def render_thread(a, t, h):
     esc, link, page, fd = h["esc"], h["link"], h["page"], h["fmt_date"]
     info = a.thread_info[t]
     body = [DEFS, f"<h1>{esc(info['label'])}</h1>",
-            f"<p class=\"muted\">{esc(info['group'] + ' · ') if info['group'] else ''}{link('index.html', 'All threads')}</p>",
+            f"<p class=\"muted\">{esc(info['group'] + ' · ') if info['group'] else ''}{link('index.html', 'All topics')}</p>",
             f"<p>{hours(a.total(t, 'disc'))} hours of staff and Council time and {hours(a.total(t, 'pc'))} hours of spoken "
-            f"public comment, at {len(a.rows[t])} meetings, with {a.total(t, 'letters'):,} letters from the public "
-            f"({a.total(t, 'form'):,} of them form letters).</p>",
-            f'<p class="note">{esc(TIME_NOTE)}</p>', LEGEND, axis_svg(), row_svg(a, t, height=90, esc=esc)]
+            f"public comment, at {len(a.rows[t])} meetings, with {a.total(t, 'letters'):,} letters from the public"
+            + (f" ({a.total(t, 'form'):,} of them form letters)" if a.total(t, 'form') else "") + ".</p>",
+            METHOD_LINK, LEGEND, axis_svg(), row_svg(a, t, height=90, esc=esc)]
     decs = a.decision_rows(t)
     if decs:
         body.append("<h2>Decisions</h2><ul>")
@@ -488,14 +488,14 @@ def render_thread(a, t, h):
                     f"not counted; together they ran {sum(x['minutes'] or 0 for x in a.turns_partial):.0f} minutes.</p>")
     ls = [ln for ln in a.links if t in (ln["from"], ln["to"])]
     if ls:
-        body.append("<h2>Connections to other threads</h2><ul>")
+        body.append("<h2>Connections to other topics</h2><ul>")
         for ln in ls:
             other = ln["to"] if ln["from"] == t else ln["from"]
             body.append(f"<li><strong>{esc(ln['label'])}</strong> ({link(other + '.html', a.thread_info[other]['label'])})<br>{esc(ln['evidence'])}</li>")
         body.append("</ul>")
     body.append(f"<p class=\"muted\">Data: {link('../data/council-time/segments.json', 'segments.json')}, "
                 f"{link('../data/council-time/correspondence.json', 'correspondence.json')}, and the classification in "
-                f"{link(h['repo'] + '/blob/main/data/review/council-time/threads.json', 'threads.json')}.</p>")
+                f"{link(h['repo'] + '/blob/main/data/review/council-time/threads.json', 'the topic classification')}.</p>")
     return page(info["label"], "\n".join(body), 1, h["meta"], extra=h["time_footer"])
 
 
@@ -511,7 +511,7 @@ def segments_table(segs, a, h, caption, up="../"):
                     f"<td class=\"num\">{minutes(s['minutes'])}</td><td class=\"num\">{minutes(s['public_comment_minutes'])}</td>"
                     f"<td class=\"num\">{src}{' (estimated)' if s['estimated'] else ''}</td></tr>")
     return (f'<div class="table-wrap"><table><caption>{esc(caption)}</caption><thead><tr><th scope="col">Part of the meeting</th>'
-            '<th scope="col">Thread</th><th scope="col">Minutes</th><th scope="col">Public comment (min)</th>'
+            '<th scope="col">Topic</th><th scope="col">Minutes</th><th scope="col">Public comment (min)</th>'
             f'<th scope="col">Transcript</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
 
 
@@ -521,7 +521,7 @@ def meeting_block(a, m, h):
         return ""
     total = sum(s["minutes"] or 0 for s in segs)
     return ("<h2 id=\"council-time\">Council time at this meeting</h2>"
-            f"<p>{hours(total)} hours of this meeting are in the transcript, divided as below. {h['esc'](TIME_NOTE)}</p>"
+            f"<p>{hours(total)} hours of this meeting are in the transcript, divided as below.</p>" + METHOD_LINK
             + segments_table(segs, a, h, "Parts of the meeting, in order"))
 
 
@@ -564,7 +564,7 @@ def render_commitments(a, t, h):
               "reported_complete", "completion_verified", "cancelled_or_superseded"):
         if counts.get(k):
             body.append(f"<li>{esc(labels[k])}: {counts[k]}</li>")
-    body.append("</ul><p class=\"muted\">Grouped by subject, using the same threads as "
+    body.append("</ul><p class=\"muted\">Grouped by subject, using the same topics as "
                 f"{link('../time/index.html', 'Council time')}.</p>")
     for g in order:
         anchor = "city-finances" if g == FINANCES else g.lower().replace(" ", "-").replace(",", "").replace("&", "and")

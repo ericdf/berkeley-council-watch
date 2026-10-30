@@ -7,6 +7,10 @@ commitments lane. One shows what the Council spent its time on, the other what i
 The data is built in two parts, kept apart as AGENTS.md requires: computed facts, and reviewed
 classification.
 
+**Words.** The pages call a thread a *topic*; the data and code keep the name `thread`. The method
+readers see is on the site's "How this data is derived" page (`method.html`); pages link to it in
+one line rather than repeating it.
+
 ## Computed: `data/generated/council-time/`
 
 `python3 -m councilwatch council-time --archive PATH` regenerates it from a clean checkout of the
