@@ -134,5 +134,47 @@ class TrackedTests(unittest.TestCase):
         self.assertNotIn("Completion verified", page)
 
 
+    def test_unresolved_qualification(self):
+        # A qualification may say what the record cannot establish and which record would resolve it.
+        d = tracked.load(SEED)
+        m = next(x for x in d["matters.json"] if x["id"] == "prop64-youth-cannabis-grant-2021")
+        self.assertTrue(all(q.get("unresolved") for q in m["qualifications"]))
+        out = os.path.join(self.tmp, "site")
+        site.build(AGENDA, out, self.dir)
+        with open(os.path.join(out, "matters", "prop64-youth-cannabis-grant-2021.html"), encoding="utf-8") as f:
+            page = f.read()
+        self.assertIn("<strong>Unresolved.</strong>", page)
+        self.assertIn("No update located", page)
+        self.assertNotIn("Completion verified", page)
+
+    def test_unresolved_must_be_text(self):
+        self.edit("matters.json", lambda d: d[0]["qualifications"][0].update(unresolved=""))
+        self.assertError("shorter than 1")
+
+    def test_reported_not_met_validates_and_renders(self):
+        # A reporting party's statement that work was not done: like reported_complete, not verification.
+        def fn(d):
+            c = self.commitment(d, f"{MATTER}-cap-1.3")
+            c["status_history"].append({"as_of": "2027-01-02", "status": "reported_not_met",
+                                        "basis": "x", "citations": [dict(c["citation"])]})
+        self.edit("commitments.json", fn)
+        self.assertEqual(tracked.validate(self.dir), [])
+        out = os.path.join(self.tmp, "site")
+        site.build(AGENDA, out, self.dir)
+        with open(os.path.join(out, "matters", f"{MATTER}.html"), encoding="utf-8") as f:
+            self.assertIn("Reported not met", f.read())
+        with open(os.path.join(out, "matters", "prop64-youth-cannabis-grant-2021.html"), encoding="utf-8") as f:
+            page = f.read()
+        self.assertIn("Measure of success, as stated:", page)
+
+    def test_reported_not_met_needs_a_citation(self):
+        def fn(d):
+            c = self.commitment(d, f"{MATTER}-cap-1.3")
+            c["status_history"].append({"as_of": "2027-01-02", "status": "reported_not_met",
+                                        "basis": "x", "citations": []})
+        self.edit("commitments.json", fn)
+        self.assertError("reported_not_met needs a citation")
+
+
 if __name__ == "__main__":
     unittest.main()

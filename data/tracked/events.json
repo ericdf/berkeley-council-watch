@@ -1346,5 +1346,332 @@
    "rocky-road-audit-2020-rec-2.2",
    "rocky-road-audit-2020-rec-2.3"
   ]
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Consent Calendar, Item 11 (PDF p. 6)",
+    "quote": "Action: Adopted Resolution No. 69,867–N.S.",
+    "source_id": "src-bcc-2021-05-25-regular-annotated-agenda"
+   },
+   {
+    "locator": "Consent Calendar (PDF p. 3)",
+    "quote": "Action: M/S/C (Arreguin/Hahn) to adopt the Consent Calendar in one motion except as indicated. Vote: All Ayes.",
+    "source_id": "src-bcc-2021-05-25-regular-annotated-agenda"
+   },
+   {
+    "locator": "PDF p. 1, Recommendation",
+    "quote": "conduct public health promotion, protection, and prevention services for the State of California Board of State and Community Corrections revenue agreement in the projected amount of $1,000,000 for May 1, 2021 to April 30, 2024.",
+    "source_id": "src-bcc-2021-05-25-item-11-staff-report"
+   },
+   {
+    "locator": "PDF p. 3, Background",
+    "quote": "Activities funded will include recruiting and training up to 20 at-risk youth participants to become paid, peer educators in a cannabis education awareness campaign, providing wrap around services and case management for at-risk youth and their families and conducting a media campaign focused on youth and cannabis use.",
+    "source_id": "src-bcc-2021-05-25-item-11-staff-report"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2021-05-25",
+  "description": "On the Consent Calendar, the Council adopted Resolution No. 69,867–N.S., authorizing the City Manager to apply for, accept and implement the BSCC Proposition 64 Public Health and Safety grant, in the projected amount of $1,000,000 for May 1, 2021 to April 30, 2024. The Consent Calendar vote, as the annotated agenda prints it: M/S/C (Arreguin/Hahn), All Ayes. The staff report describes the activities the grant would fund.",
+  "id": "prop64-youth-cannabis-grant-2021-event-council-2021-05-25",
+  "kind": "council_action",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Consent Calendar, Item 12 (PDF p. 7)",
+    "quote": "Action: Adopted Resolution No. 70,059–N.S.",
+    "source_id": "src-bcc-2021-10-12-regular-annotated-agenda"
+   },
+   {
+    "locator": "Consent Calendar (PDF p. 2)",
+    "quote": "Action: M/S/C (Arreguin/Robinson) to adopt the Consent Calendar in one motion except as indicated. Vote: All Ayes.",
+    "source_id": "src-bcc-2021-10-12-regular-annotated-agenda"
+   },
+   {
+    "locator": "PDF p. 2, Background",
+    "quote": "On May 1, 2021 the City of Berkeley entered into a fully executable contract with the California Board of State and Community Corrections (BSCC) to implement a 3-year project (starting FY 2021-2022) under the Proposition 64 Public Health & Safety Grant Program. Total award amount across all three years is $1,000,000.",
+    "source_id": "src-bcc-2021-10-12-item-12-staff-report"
+   }
+  ],
+  "commitment_ids": [
+   "prop64-youth-cannabis-grant-2021-evaluation"
+  ],
+  "date": "2021-10-12",
+  "description": "On the Consent Calendar, the Council adopted Resolution No. 70,059–N.S., authorizing an amendment to Contract No. 32100181 with the Alameda County Healthcare Services Agency, adding $62,000 for a total not to exceed $100,000 for May 1, 2021 to July 31, 2024, for the program evaluation the grant requires. The Consent Calendar vote, as the annotated agenda prints it: M/S/C (Arreguin/Robinson), All Ayes. The staff report states the grant agreement and award.",
+  "id": "prop64-youth-cannabis-grant-2021-event-council-2021-10-12",
+  "kind": "council_action",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City of Berkeley, Department of Health, Housing and Community Services",
+  "citations": [
+   {
+    "locator": "PDF p. 1",
+    "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+    "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+   }
+  ],
+  "commitment_ids": [
+   "prop64-youth-cannabis-grant-2021-peer-educators-recruit",
+   "prop64-youth-cannabis-grant-2021-peer-educators-train",
+   "prop64-youth-cannabis-grant-2021-peer-sessions",
+   "prop64-youth-cannabis-grant-2021-counseling-enrollment",
+   "prop64-youth-cannabis-grant-2021-individual-plans",
+   "prop64-youth-cannabis-grant-2021-media-focus-groups",
+   "prop64-youth-cannabis-grant-2021-media-campaign",
+   "prop64-youth-cannabis-grant-2021-retailer-outreach",
+   "prop64-youth-cannabis-grant-2021-violence-taskforce",
+   "prop64-youth-cannabis-grant-2021-intensive-case-management",
+   "prop64-youth-cannabis-grant-2021-monthly-reports"
+  ],
+  "date": "2021-11-10",
+  "description": "The City resubmitted its Local Evaluation Plan for the grant to the BSCC. The plan sets the project's goals, objectives and measures; the commitments recorded here are taken from it.",
+  "id": "prop64-youth-cannabis-grant-2021-event-evaluation-plan",
+  "kind": "report_issued",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Consent Calendar, Item 3 (PDF p. 4)",
+    "quote": "Action: Adopted Resolution No. 70,220–N.S.",
+    "source_id": "src-bcc-2022-02-22-regular-annotated-agenda"
+   },
+   {
+    "locator": "Consent Calendar (PDF p. 3)",
+    "quote": "Action: M/S/C (Robinson/Hahn) to adopt the Consent Calendar in one motion except as indicated. Vote: Ayes – Kesarwani, Taplin, Harrison, Hahn, Wengraf, Robinson, Droste, Arreguin; Noes – None; Abstain – None; Absent – Bartlett.",
+    "source_id": "src-bcc-2022-02-22-regular-annotated-agenda"
+   },
+   {
+    "locator": "PDF p. 1, Current Situation and Its Effects",
+    "quote": "Direct services include case management and wrap-around services (i.e., prevention and intervention) for youth and their families, a youth peer education media campaign related to substance use, and development, implementation and management of a community-led violence prevention taskforce.",
+    "source_id": "src-bcc-2022-02-22-item-03-staff-report"
+   }
+  ],
+  "commitment_ids": [
+   "prop64-youth-cannabis-grant-2021-peer-educators-recruit",
+   "prop64-youth-cannabis-grant-2021-peer-educators-train",
+   "prop64-youth-cannabis-grant-2021-peer-sessions",
+   "prop64-youth-cannabis-grant-2021-counseling-enrollment",
+   "prop64-youth-cannabis-grant-2021-individual-plans",
+   "prop64-youth-cannabis-grant-2021-media-focus-groups",
+   "prop64-youth-cannabis-grant-2021-media-campaign",
+   "prop64-youth-cannabis-grant-2021-retailer-outreach",
+   "prop64-youth-cannabis-grant-2021-violence-taskforce",
+   "prop64-youth-cannabis-grant-2021-intensive-case-management",
+   "prop64-youth-cannabis-grant-2021-monthly-reports"
+  ],
+  "date": "2022-02-22",
+  "description": "On the Consent Calendar, the Council adopted Resolution No. 70,220–N.S., authorizing an expenditure contract and any amendments or extensions with Berkeley Youth Alternatives, not to exceed $625,000, for March 1, 2022 through April 30, 2024. The Consent Calendar vote, as the annotated agenda prints it: M/S/C (Robinson/Hahn); Ayes – Kesarwani, Taplin, Harrison, Hahn, Wengraf, Robinson, Droste, Arreguin; Noes – None; Abstain – None; Absent – Bartlett. The staff report describes the services the contract would reimburse; no contract or scope of work is attached to it.",
+  "id": "prop64-youth-cannabis-grant-2021-event-council-2022-02-22",
+  "kind": "council_action",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City of Berkeley, Department of Health, Housing and Community Services (written by the Alameda County Public Health Department's CAPE Unit)",
+  "citations": [
+   {
+    "locator": "PDF p. 3 (report p. 1), Executive Summary",
+    "quote": "The City’s Health, Housing, and Community Services Department oversaw the Proposition 64 grant, which was initially funded for the term of May 1, 2021 through October 31, 2024. In May 2024, BSCC granted an extension through April 30, 2025.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 5 (report p. 3)",
+    "quote": "In addition, with each monthly invoice to the City, BYA submitted a progress report to the City, documenting all of the services and people served through the contract. BYA submitted quarterly reports for submission to BSCC.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 8 (report p. 6), Table 1",
+    "quote": "Media contractor did not implement focus groups, citing that BYA already had eﬀective media messages from existing campaigns, such as the Smart Talk Cannabis Education Curriculum from Stanford.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 8 (report p. 6), Table 1",
+    "quote": "BYA and the City decided to focus the taskforce on cannabis rather than the violence. BYA did not implement a workplan with the community taskforce.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 10 (report p. 8)",
+    "quote": "BYA reported 70 outreach activities over 255 hours to recruit youth to their programs. BYA served a total of 62 unique youth in the Squash-It Peer Educator and Counseling programs.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 10 (report p. 8)",
+    "quote": "BYA reported hosting 39 community educational events in which 279 youth participated. Peer educators attended 34 out of 39 community educational activities.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 10 (report p. 8)",
+    "quote": "As explained further in the Process Evaluation Discussion section, BYA decided not to fully train peer educators to provide school-based events, concentrating instead on services to address immediate needs facing these young people, such as hunger, unstable housing and employability.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 10 (report p. 8)",
+    "quote": "BYA reported hosting one school educational event with assistance from peer educators. Twenty-ﬁve students attended this event.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 10 (report p. 8)",
+    "quote": "BYA reported 499 social media campaign educational activities, and 139 social media materials created (handouts/pamphlets, commercials, websites etc.)",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 12 (report p. 10)",
+    "quote": "Youth received an average of 34.5 counseling sessions, ranging from a low of 2 to a high of 125 sessions over the life of the project.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 13 (report p. 11)",
+    "quote": "BYA reported that its media campaigns received 1,516 “hits,” meaning someone clicked into the message to read it or respond. The age of the people making the hits and the content of the messaging is unknown.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 15 (report p. 13)",
+    "quote": "Originally expected to be ﬁnalized in March 2022, the contract was not executed until July 2022.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 15 (report p. 13)",
+    "quote": "Throughout the project, BYA was unable to oﬀer any payments to its Peer Educators due to reported problems with their payroll system. During quarter 11 (October – December 2023) BYA reported that they paused and then ended Squash-It Peer Educator recruitment due to funding shortages and conﬂicts with school schedules. BYA continued to provide the Counseling Program through quarter 15 (October 2024).",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 15 (report p. 13)",
+    "quote": "Some goals were adjusted due to the delayed start: for example, the number of peer educators was reduced from 20 to 12, and the number of counseling clients from up to 60 to 25 - 60 per program year.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 15 (report p. 13)",
+    "quote": "With 48 counseling clients in total, BYA approached its contractual objectives of serving 25 - 60 counseling youth annually (and 75 – 180 youth across the full project term). BYA did not meet the objective of providing intensive case management to an additional 8 to 15 youth with criminal justice experience in years 2 and 3.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 16 (report p. 14)",
+    "quote": "BYA served 16 peer educators over the project term, surpassing the contractual goal of recruiting 12 peer educators. Squash-It was not able to implement the original objective of training a cohort of youth to become peer educators who would then give cannabis education presentations to middle and high school students.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 16 (report p. 14)",
+    "quote": "BYA and its Media Campaign consultant (Upline Solutions) discontinued the objective to develop a youth-friendly and culturally relevant cannabis media campaign, citing the existence of other campaigns they could adapt.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 16 (report p. 14)",
+    "quote": "Counselors were able to collect satisfaction surveys from 22 out of the 48 counseling clients.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 16 (report p. 14)",
+    "quote": "BYA opted not to conduct focus groups with peer educators to identify program successes, challenges and lessons learned.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 17 (report p. 15)",
+    "quote": "[The Taskforce did not meet long enough to assess the collaboration]",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 18 (report p. 16), Table 2",
+    "quote": "BYA did not implement youth presentations at schools, so the survey was not done.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 18 (report p. 16), Table 2",
+    "quote": "Note: BYA did not implement visits and materials distribution with cannabis retailers.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 19 (report p. 17), Table 2",
+    "quote": "Note: During the implementation phase, BYA did not pursue MOUs with Taskforce members",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 21 (report p. 19)",
+    "quote": "BYA reported that all counseling participants received an individualized development plan.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 23 (report p. 21)",
+    "quote": "Fewer than half of counseling clients completed the Satisfaction Survey or the RS-14, resulting in data that was too limited to draw a signiﬁcant conclusion.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 23 (report p. 21)",
+    "quote": "The evaluation team determined that 62 clients was not a suﬃcient number to decrease citywide youth cannabis use, abuse, connections to the school and caring adults or feelings of safety at school.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   },
+   {
+    "locator": "PDF p. 24 (report p. 22)",
+    "quote": "It is the City’s understanding that that the internships that BYA oﬀered were unpaid, which may have contributed to the limited participation and high turnover of interns.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+   }
+  ],
+  "commitment_ids": [
+   "prop64-youth-cannabis-grant-2021-peer-educators-recruit",
+   "prop64-youth-cannabis-grant-2021-peer-educators-train",
+   "prop64-youth-cannabis-grant-2021-peer-sessions",
+   "prop64-youth-cannabis-grant-2021-counseling-enrollment",
+   "prop64-youth-cannabis-grant-2021-individual-plans",
+   "prop64-youth-cannabis-grant-2021-media-focus-groups",
+   "prop64-youth-cannabis-grant-2021-media-campaign",
+   "prop64-youth-cannabis-grant-2021-retailer-outreach",
+   "prop64-youth-cannabis-grant-2021-violence-taskforce",
+   "prop64-youth-cannabis-grant-2021-intensive-case-management",
+   "prop64-youth-cannabis-grant-2021-monthly-reports",
+   "prop64-youth-cannabis-grant-2021-evaluation",
+   "prop64-youth-cannabis-grant-2021-evaluation-follow-up"
+  ],
+  "date": "2025-04-30",
+  "description": "The City's Final Evaluation Report on the grant, written by the Alameda County Public Health Department's Community Assessment, Planning and Evaluation Unit under the City's evaluation contract and submitted by the City. It is a City-submitted report, not an independent audit, and its counts are as BYA and the City reported them. Its statements on the grant term, the BYA contract, and what was and was not delivered are quoted below in page order.",
+  "id": "prop64-youth-cannabis-grant-2021-event-final-evaluation-report",
+  "kind": "report_issued",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Consent Calendar, Item 24 (PDF p. 10)",
+    "quote": "3. $108,660 total grant to Berkeley Youth Alternatives to implement the Team Nutrition Program and to be disbursed as follows: $54,330 in FY 2026 and $54,330 in FY 2027.",
+    "source_id": "src-bcc-2025-06-17-regular-annotated-agenda-v2"
+   },
+   {
+    "locator": "Consent Calendar, Item 24, Action (PDF p. 10)",
+    "quote": "Resolution No. 71,817–N.S. (Berkeley Youth Alternatives)",
+    "source_id": "src-bcc-2025-06-17-regular-annotated-agenda-v2"
+   },
+   {
+    "locator": "Consent Calendar (PDF p. 2)",
+    "quote": "Action: M/S/C (Tregub/Humbert) to adopt the Consent Calendar in one motion except as indicated. Vote: All Ayes.",
+    "source_id": "src-bcc-2025-06-17-regular-annotated-agenda-v2"
+   },
+   {
+    "locator": "PDF p. 11, Attachment 3, Resolution",
+    "quote": "is authorized to execute a contract and any amendments with Berkeley Youth Alternatives in the amount not to exceed $108,660 for the two-year period of July 1, 2025 to June 30, 2027.",
+    "source_id": "src-bcc-2025-06-17-item-24-staff-report"
+   },
+   {
+    "locator": "PDF p. 2, Summary",
+    "quote": "The SSBPPE Commission asks the City Council to approve and authorize a total distribution of $1,810,584 for FY 2026 and FY 2027 under General Fund (Fund 011) as follows:",
+    "source_id": "src-bcc-2025-06-17-item-24-staff-report"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2025-06-17",
+  "description": "A separately funded City action. On the Consent Calendar, the Council adopted Resolution No. 71,817–N.S., authorizing a contract with Berkeley Youth Alternatives not to exceed $108,660 for July 1, 2025 to June 30, 2027, for its Team Nutrition Program, one of eight Healthy Berkeley grants recommended by the Sugar-Sweetened Beverage Product Panel of Experts Commission and funded from the General Fund. The item does not refer to the Proposition 64 grant; it is listed here only because the grantee is the same organization. The Consent Calendar vote, as the annotated agenda prints it: M/S/C (Tregub/Humbert), All Ayes.",
+  "id": "prop64-youth-cannabis-grant-2021-event-council-2025-06-17-healthy-berkeley",
+  "kind": "council_action",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_ids": []
  }
 ]

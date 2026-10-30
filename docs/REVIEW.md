@@ -67,7 +67,7 @@ undecided.
   Action, the Council's decision.
 - **For each proposed follow-up**, either confirm it with a `status` and a one-sentence `basis`, or
   reject it with a `reason`.
-  - The allowed statuses are `in_progress_reported`, `reported_complete`, `delayed` and
+  - The allowed statuses are `in_progress_reported`, `reported_complete`, `reported_not_met`, `delayed` and
     `cancelled_or_superseded`.
   - An agenda item is never independent evidence, so `completion_verified` is not allowed here.
 - A follow-up report is confirmed only as a link on its direction, never as a commitment by itself.

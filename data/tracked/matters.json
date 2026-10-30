@@ -845,5 +845,81 @@
    }
   ],
   "title": "Rocky Road streets audit (City Auditor, November 2020)"
+ },
+ {
+  "agenda_items": [
+   {
+    "item": "11",
+    "meeting_id": "city-council-2021-05-25"
+   },
+   {
+    "item": "12",
+    "meeting_id": "city-council-2021-10-12"
+   },
+   {
+    "item": "3",
+    "meeting_id": "city-council-2022-02-22"
+   },
+   {
+    "item": "24",
+    "meeting_id": "city-council-2025-06-17"
+   }
+  ],
+  "description": "The City's Proposition 64 Public Health and Safety grant from the California Board of State and Community Corrections (BSCC, Cohort 2), projected at $1,000,000 for May 1, 2021 to April 30, 2024, for youth substance-use prevention and intervention and violence prevention. The Council authorized the grant on May 25, 2021; an amendment to the City's evaluation contract with the Alameda County Healthcare Services Agency on October 12, 2021; and a contract with Berkeley Youth Alternatives (BYA), not to exceed $625,000 for March 1, 2022 through April 30, 2024, on February 22, 2022. The commitments are the objectives in the City's Local Evaluation Plan. Their statuses are as the City's Final Evaluation Report of April 30, 2025 states them; that report was written by the Alameda County Public Health Department's evaluation unit under the City's contract and says the grant was extended to April 30, 2025. On June 17, 2025 the Council separately approved a General Fund grant to BYA for a nutrition program.",
+  "id": "prop64-youth-cannabis-grant-2021",
+  "kind": "contract",
+  "last_reviewed": "2026-10-30",
+  "opened": "2021-05-25",
+  "qualifications": [
+   {
+    "locator": "PDF p. 15 (report p. 13)",
+    "quote": "Originally expected to be ﬁnalized in March 2022, the contract was not executed until July 2022.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report",
+    "unresolved": "The executed contract between the City and Berkeley Youth Alternatives, its scope of work and any amendments or extensions are not in the public-records archive. The Council authorized a term of March 1, 2022 through April 30, 2024 and allowed amendments and extensions without further Council action; this report says counseling continued through October 2024. The executed contract and amendments, which the resolution places on file with the City Clerk, would establish the actual term, scope and deliverables, including the \"contractual\" targets the report cites."
+   },
+   {
+    "locator": "Consent Calendar, Item 3 (PDF p. 4)",
+    "quote": "Adopt a Resolution authorizing the City Manager or her designee to execute an expenditure contract and any amendments or extensions with Berkeley Youth Alternatives (BYA) in an amount not to exceed $625,000 for the period March 1, 2022 through April 30, 2024.",
+    "source_id": "src-bcc-2022-02-22-regular-annotated-agenda",
+    "unresolved": "Council records state only this authorized, not-to-exceed amount. No archived record states the amount encumbered or paid to BYA. The City's payment records or its grant close-out with the BSCC would establish it."
+   },
+   {
+    "locator": "PDF p. 16 (report p. 14)",
+    "quote": "BYA and its Media Campaign consultant (Upline Solutions) discontinued the objective to develop a youth-friendly and culturally relevant cannabis media campaign, citing the existence of other campaigns they could adapt.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report",
+    "unresolved": "The report names a media campaign consultant working with BYA. No archived record shows whether there was a subcontract or consulting agreement under the BYA contract, or its terms; the agreement, or BYA's invoices to the City, would."
+   },
+   {
+    "locator": "PDF p. 5 (report p. 3)",
+    "quote": "BYA submitted quarterly reports for submission to BSCC. The City of Berkeley reviewed and, as needed, updated these reports, after discussing the information contained with BYA.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report",
+    "unresolved": "The quarterly progress reports the City filed with the BSCC, the extension the report says the BSCC granted in May 2024, and the City's grant close-out with the BSCC are not in the archive. Those records would establish what the City reported to the State, and when."
+   },
+   {
+    "locator": "PDF p. 3 (report p. 1), Executive Summary",
+    "quote": "The City’s Health, Housing, and Community Services Department oversaw the Proposition 64 grant, which was initially funded for the term of May 1, 2021 through October 31, 2024. In May 2024, BSCC granted an extension through April 30, 2025.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report",
+    "unresolved": "The Council resolution and the Local Evaluation Plan give the grant period as May 1, 2021 to April 30, 2024; this report gives an initial term ending October 31, 2024 and an extension to April 30, 2025. The executed BSCC grant agreement (Agreement BSCC 944-21, per the report, PDF p. 6) and any amendment would resolve the difference. No Council action on a term change was located in the archive's annotated agendas."
+   },
+   {
+    "locator": "Consent Calendar, Item 12 (PDF p. 7)",
+    "quote": "increase the total contract amount by $62,000 for a total contract amount not to exceed $100,000 for the period of May 1, 2021 to July 31, 2024 for epidemiology and program evaluation services.",
+    "source_id": "src-bcc-2021-10-12-regular-annotated-agenda",
+    "unresolved": "The Final Evaluation Report is dated April 30, 2025, after this term. No archived record shows a further amendment of Contract No. 32100181 or what was paid under it; the executed contract and its amendments would."
+   },
+   {
+    "locator": "PDF p. 2, page header",
+    "quote": "Prop 64 Final Evaluation Draft Report, April 21, 2025",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report",
+    "unresolved": "The archived copy is the file posted on the BSCC website. Its cover is dated April 30, 2025 and its contents page is headed as an April 21, 2025 draft. No archived record shows when the City received the final report from the evaluator or when it submitted the report to the BSCC; a transmittal or the City's close-out filing would."
+   },
+   {
+    "locator": "PDF p. 9 (report p. 7)",
+    "quote": "BYA reported monthly totals into the Prop 64 Excel Workbook and added the 3 months in each quarter, which the City of Berkeley entered into the QPR.",
+    "source_id": "src-prop64-2025-04-30-final-evaluation-report",
+    "unresolved": "The report's counts of youth, sessions, events and \"hits\" come from BYA's records as BYA and the City reported them. The underlying BYA database, workbook and quarterly reports are not in the archive, so the counts cannot be checked here."
+   }
+  ],
+  "title": "Proposition 64 youth prevention grant, Berkeley Youth Alternatives contract and evaluation (2021-2025)"
  }
 ]

@@ -458,6 +458,7 @@ COMMITMENT_STATUS = {
     "in_progress_reported": "In progress, as reported",
     "delayed": "Delayed",
     "reported_complete": "Reported complete",
+    "reported_not_met": "Reported not met",
     "completion_verified": "Completion verified",
     "cancelled_or_superseded": "Cancelled or superseded",
     "unknown_no_update_located": "No update located",
@@ -517,7 +518,12 @@ def render_matter(m, t, meta, meetings, att=None, h=None):
             links_.append(link(f"../meetings/{a['meeting_id']}.html", f"Council meeting, {when}, Item {a['item']}"))
         body.append("<p>On the agenda: " + " · ".join(links_) + "</p>")
     if m["qualifications"]:
-        body.append(f'<div class="note"><strong>Qualification in the source.</strong> {cites(m["qualifications"], sources)}</div>')
+        # A qualification may carry an "unresolved" note (project words): what the record cannot yet
+        # establish and which record would resolve it.
+        quals = "<br>".join(cites([q], sources) + (f"<br><strong>Unresolved.</strong> {esc(q['unresolved'])}"
+                                                   if q.get("unresolved") else "")
+                            for q in m["qualifications"])
+        body.append(f'<div class="note"><strong>Qualification in the source.</strong> {quals}</div>')
 
     if att is not None:
         body.append(time_site.matter_block(att, m, h))
@@ -538,6 +544,8 @@ def render_matter(m, t, meta, meetings, att=None, h=None):
                     f"<td><strong>{esc(COMMITMENT_STATUS[cur['status']])}</strong><br>"
                     f"<span class=\"muted\">as of {esc(fmt_date(cur['as_of']))}</span></td>"
                     f"<td><blockquote>{esc(c['statement'])}</blockquote>"
+                    + (f"<p class=\"muted\">Measure of success, as stated:</p><blockquote>{esc(c['success_measure'])}</blockquote>"
+                       if c.get("success_measure") else "") +
                     f"<span class=\"muted\">Source: {source_link(sources[c['citation']['source_id']], c['citation']['locator'])}</span>"
                     f"<details><summary>Status history</summary><ul>{''.join(hist)}</ul></details></td></tr>")
     body.append('<div class="table-wrap"><table><caption>Commitments</caption><thead><tr>'

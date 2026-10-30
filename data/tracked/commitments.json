@@ -2568,5 +2568,637 @@
    }
   ],
   "success_measure": null
+ },
+ {
+  "actor": "Berkeley Youth Alternatives, the City's contractor (the plan's objective names no party)",
+  "citation": {
+   "locator": "PDF p. 6, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "By end of PY1",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-peer-educators-recruit",
+  "kind": "deliverable",
+  "label": "Recruit youth as peer educators (target revised from 20 to 12)",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "By end of PY1, recruit and train up to 20 youth participants to become peer educators for the cannabis education awareness campaign.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "Recruitment only. The City's Final Evaluation Report states that the target was revised from 20 to 12 peer educators and that BYA served 16 over the project term, surpassing the revised recruitment goal. Training them to educate other youth is recorded separately.",
+    "citations": [
+     {
+      "locator": "PDF p. 15 (report p. 13)",
+      "quote": "Some goals were adjusted due to the delayed start: for example, the number of peer educators was reduced from 20 to 12, and the number of counseling clients from up to 60 to 25 - 60 per program year.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 16 (report p. 14)",
+      "quote": "BYA served 16 peer educators over the project term, surpassing the contractual goal of recruiting 12 peer educators.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Berkeley Youth Alternatives, the City's contractor (the plan's objective names no party)",
+  "citation": {
+   "locator": "PDF p. 6, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "By end of PY1",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-peer-educators-train",
+  "kind": "deliverable",
+  "label": "Train peer educators to give cannabis education to other youth",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "By end of PY1, recruit and train up to 20 youth participants to become peer educators for the cannabis education awareness campaign.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states that BYA did not provide training for peer educators to provide cannabis education to other youth, and that the original objective of training a cohort to give presentations in middle and high schools was not implemented.",
+    "citations": [
+     {
+      "locator": "PDF p. 7 (report p. 5), Table 1",
+      "quote": "BYA did not provide training for peer educators to provide cannabis education to other youth",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 16 (report p. 14)",
+      "quote": "Squash-It was not able to implement the original objective of training a cohort of youth to become peer educators who would then give cannabis education presentations to middle and high school students.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_not_met"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Peer educators, through Berkeley Youth Alternatives",
+  "citation": {
+   "locator": "PDF p. 6, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "In PY2 and 3",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-peer-sessions",
+  "kind": "deliverable",
+  "label": "Peer-led education sessions for 1,000 youth a year",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "In PY2 and 3, peer educators will conduct up to 10 peer led education sessions for 1,000 total youth per year.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report gives the revised objective as up to 500 youth a year in Years 2 and 3 (1,000 total). It states that BYA decided not to fully train peer educators to provide school-based events, and reports one school event attended by 25 students, plus 39 community educational events with 279 youth. It states that the survey of presentation participants was not done.",
+    "citations": [
+     {
+      "locator": "PDF p. 7 (report p. 5), Table 1",
+      "quote": "Up to 500 youth will attend peer-led sessions in Years 2 and 3 (1,000 total)",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 10 (report p. 8)",
+      "quote": "As explained further in the Process Evaluation Discussion section, BYA decided not to fully train peer educators to provide school-based events, concentrating instead on services to address immediate needs facing these young people, such as hunger, unstable housing and employability.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 10 (report p. 8)",
+      "quote": "BYA reported hosting one school educational event with assistance from peer educators. Twenty-ﬁve students attended this event.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 10 (report p. 8)",
+      "quote": "BYA reported hosting 39 community educational events in which 279 youth participated. Peer educators attended 34 out of 39 community educational activities.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 18 (report p. 16), Table 2",
+      "quote": "BYA did not implement youth presentations at schools, so the survey was not done.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_not_met"
+   }
+  ],
+  "success_measure": "At least 80% of youth presentation participants report that they learned a new fact about youth and cannabis use."
+ },
+ {
+  "actor": "Berkeley Youth Alternatives (the plan's \"selected NGO\")",
+  "citation": {
+   "locator": "PDF p. 6, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "By the end of each PY",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-counseling-enrollment",
+  "kind": "deliverable",
+  "label": "Enroll up to 60 new at-risk youth a year in support services",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "By the end of each PY, selected NGO will enroll up to 60 new youth clients experiencing at-risk situations for supportive and wrap-around services.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states that the target was revised from up to 60 to 25-60 clients per program year (75-180 across the project term). It reports 48 counseling clients in total and says BYA \"approached\" the revised objective, that is, did not reach it.",
+    "citations": [
+     {
+      "locator": "PDF p. 15 (report p. 13)",
+      "quote": "Some goals were adjusted due to the delayed start: for example, the number of peer educators was reduced from 20 to 12, and the number of counseling clients from up to 60 to 25 - 60 per program year.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 15 (report p. 13)",
+      "quote": "With 48 counseling clients in total, BYA approached its contractual objectives of serving 25 - 60 counseling youth annually (and 75 – 180 youth across the full project term).",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_not_met"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Berkeley Youth Alternatives (reported by the contractor, per the plan)",
+  "citation": {
+   "locator": "PDF p. 14, Table 4, Outcome Evaluation",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "Within 3 months (proposed) of starting",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-individual-plans",
+  "kind": "outcome_measure",
+  "label": "Individual development plans for youth in case management",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "All 60 youth who may be engaged in case management will receive an individual development plan within 3 months (proposed) of starting",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states, as BYA reported it, that all counseling participants received an individualized development plan. The report does not say whether each plan was in place within three months.",
+    "citations": [
+     {
+      "locator": "PDF p. 21 (report p. 19)",
+      "quote": "BYA reported that all counseling participants received an individualized development plan.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Selected media contractor (the Final Evaluation Report names Upline Solutions as BYA's media campaign consultant)",
+  "citation": {
+   "locator": "PDF p. 6, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "By the end of PY 1",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-media-focus-groups",
+  "kind": "deliverable",
+  "label": "Youth focus groups to test the media messaging",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "By the end of PY 1, selected media contractor will conduct focus groups with 15-20 youth to determine if messaging is youth-friendly, understandable and culturally competent.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states that the media contractor did not implement the focus groups, citing media messages BYA already had from existing campaigns, so the message-testing measure was not carried out.",
+    "citations": [
+     {
+      "locator": "PDF p. 8 (report p. 6), Table 1",
+      "quote": "Media contractor did not implement focus groups, citing that BYA already had eﬀective media messages from existing campaigns, such as the Smart Talk Cannabis Education Curriculum from Stanford.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 18 (report p. 16), Table 2",
+      "quote": "Note: The media contractor did not implement focus groups with youth.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_not_met"
+   }
+  ],
+  "success_measure": "By end of Year One 80% of youth who test the resulting media message will report it is a message that is youth friendly and culturally competent."
+ },
+ {
+  "actor": "Selected media contractor and Berkeley Youth Alternatives",
+  "citation": {
+   "locator": "PDF p. 6, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "By PY 2 & 3",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-media-campaign",
+  "kind": "deliverable",
+  "label": "Youth media campaign on cannabis reaching 3,000 youth",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "By PY 2 & 3, the media campaign will reach at least 3,000 youth (total) in the City of Berkeley.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states that BYA and its media consultant discontinued the objective to develop the campaign, citing other campaigns they could adapt. What replaced it, as the report describes it, was youth-oriented social media messages posted by other BYA staff, which received 1,516 \"hits\"; the age of the people reached and the content of the messaging are unknown.",
+    "citations": [
+     {
+      "locator": "PDF p. 16 (report p. 14)",
+      "quote": "BYA and its Media Campaign consultant (Upline Solutions) discontinued the objective to develop a youth-friendly and culturally relevant cannabis media campaign, citing the existence of other campaigns they could adapt. BYA and Upline Solutions did not include information documenting the strategy, goals or content of this campaign in their program reporting. Other BYA staﬀ regularly sent out youth-oriented social media messages on their platform and materials, resulting in 1,516 “hits.”",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 13 (report p. 11)",
+      "quote": "BYA reported that its media campaigns received 1,516 “hits,” meaning someone clicked into the message to read it or respond. The age of the people making the hits and the content of the messaging is unknown.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "cancelled_or_superseded"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Berkeley Youth Alternatives (the Final Evaluation Report: \"BYA will visit retailers\")",
+  "citation": {
+   "locator": "PDF p. 7, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "By the end of PYs 2 & 3",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-retailer-outreach",
+  "kind": "outcome_measure",
+  "label": "Cannabis retailers agree to display under-age sales ads",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "By the end of PYs 2 & 3, at least 50% of Berkeley cannabis retailers who received materials and outreach will agree to display ads regarding under-age sales either on their physical location or on their websites.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states that BYA did not implement visits and materials distribution with cannabis retailers.",
+    "citations": [
+     {
+      "locator": "PDF p. 18 (report p. 16), Table 2",
+      "quote": "Note: BYA did not implement visits and materials distribution with cannabis retailers.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_not_met"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Berkeley Youth Alternatives, the City's contractor (the plan's objective names no party)",
+  "citation": {
+   "locator": "PDF p. 7, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "By the end of PY 1",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-violence-taskforce",
+  "kind": "deliverable",
+  "label": "Work plan for a community taskforce against violence",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "By the end of PY 1, finalize a work plan for the community taskforce against violence including input from City departments, social services, and community stakeholders, such as faith-based organizations, schools, youth and families.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states that BYA did not implement a workplan with the community taskforce and did not pursue MOUs with taskforce members. It also states that BYA and the City decided to focus the taskforce on cannabis rather than violence, and reports an eight-member Community Care Workgroup on youth marijuana use, established in January-March 2024.",
+    "citations": [
+     {
+      "locator": "PDF p. 8 (report p. 6), Table 1",
+      "quote": "BYA and the City decided to focus the taskforce on cannabis rather than the violence. BYA did not implement a workplan with the community taskforce.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 19 (report p. 17), Table 2",
+      "quote": "Note: During the implementation phase, BYA did not pursue MOUs with Taskforce members",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 10 (report p. 8)",
+      "quote": "BYA reported that they established the Community Care Workgroup during quarter 12 (January – March 2024) to raise awareness of the risks of marijuana use among youth and their families and to prevent youth marijuana use.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 12 (report p. 10)",
+      "quote": "BYA met the goal of recruiting eight people from multiple sectors into the Community Care Workgroup.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_not_met"
+   }
+  ],
+  "success_measure": "At least 8 taskforce members will sign an MOU committing to attend at least 4 meetings per year to develop a joint work plan to address gun violence."
+ },
+ {
+  "actor": "Berkeley Youth Alternatives (the plan's \"selected NGO partner\")",
+  "citation": {
+   "locator": "PDF p. 7, Table 2, Project Workplan Goals & Objectives",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "In PYs 2 and 3",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-intensive-case-management",
+  "kind": "deliverable",
+  "label": "Focused services for up to 15 youth with past offenses each year",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "In PYs 2 and 3, identify up to 15 middle and high school students who are past offenders with the risk of reoffending in South and West Berkeley annually for focused interventions and services led by the selected NGO partner",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report gives the revised objective as an additional 8 to 15 youth in Years 2 and 3 and states that BYA did not meet it. It reports that BYA served 7 justice-involved youth within the regular Counseling Program.",
+    "citations": [
+     {
+      "locator": "PDF p. 10 (report p. 8)",
+      "quote": "In addition to serving up to 25 to 60 youth in the Counseling Program each year, BYA had a separate objective to serve an additional 8 to 15 youth in years 2 and 3 who needed intensive case management, due to involvement in the justice system and heightened risk of using cannabis.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     },
+     {
+      "locator": "PDF p. 15 (report p. 13)",
+      "quote": "BYA did not meet the objective of providing intensive case management to an additional 8 to 15 youth with criminal justice experience in years 2 and 3. BYA did serve 7 youth with prior involvement in the justice system as part of the regular Counseling Program.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_not_met"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Contractors (Berkeley Youth Alternatives)",
+  "citation": {
+   "locator": "PDF p. 16, Overall Project Management",
+   "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+  },
+  "due": {
+   "as_stated": "Monthly",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-monthly-reports",
+  "kind": "deliverable",
+  "label": "Monthly status reports from the contractor to the City",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "Upon selection, contractors will be responsible for project management and implementation activities and, at minimum, provide monthly status update reports to City of Berkeley Manager of Youthworks.",
+  "status_history": [
+   {
+    "as_of": "2021-11-10",
+    "basis": "The City's Local Evaluation Plan, resubmitted to the BSCC on November 10, 2021, sets this objective. Its stated period had not ended.",
+    "citations": [
+     {
+      "locator": "PDF p. 1",
+      "quote": "Date of Original Submission: August 31, 2021 Date of Resubmission: November 10, 2021",
+      "source_id": "src-prop64-2021-11-10-local-evaluation-plan"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report states that BYA submitted a progress report with each monthly invoice and quarterly reports for submission to the BSCC. Those reports are not in the public-records archive.",
+    "citations": [
+     {
+      "locator": "PDF p. 5 (report p. 3)",
+      "quote": "In addition, with each monthly invoice to the City, BYA submitted a progress report to the City, documenting all of the services and people served through the contract. BYA submitted quarterly reports for submission to BSCC.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "Alameda County Healthcare Services Agency (Community Assessment, Planning and Evaluation Unit), under Contract No. 32100181",
+  "citation": {
+   "locator": "PDF p. 1, Recommendation",
+   "source_id": "src-bcc-2021-10-12-item-12-staff-report"
+  },
+  "due": {
+   "as_stated": "Contract period May 1, 2021 to July 31, 2024",
+   "is_date": true
+  },
+  "id": "prop64-youth-cannabis-grant-2021-evaluation",
+  "kind": "deliverable",
+  "label": "Program evaluation required by the grant",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "The contract will allow the Public Health Division to provide the program evaluation required under the 3-year Prop 64 Cohort 2 grant funding that was awarded to the City of Berkeley in May 2021.",
+  "status_history": [
+   {
+    "as_of": "2021-10-12",
+    "basis": "The Council authorized the contract amendment on the Consent Calendar.",
+    "citations": [
+     {
+      "locator": "Consent Calendar, Item 12 (PDF p. 7)",
+      "quote": "Action: Adopted Resolution No. 70,059–N.S.",
+      "source_id": "src-bcc-2021-10-12-regular-annotated-agenda"
+     }
+    ],
+    "status": "not_yet_due"
+   },
+   {
+    "as_of": "2025-04-30",
+    "basis": "The City's Final Evaluation Report, dated April 30, 2025, was written by the Alameda County Public Health Department's CAPE Unit and submitted by the City. It is dated after the contract period the Council authorized; no further amendment of Contract No. 32100181 was located in the archive's annotated agendas.",
+    "citations": [
+     {
+      "locator": "PDF p. 1, cover",
+      "quote": "Written by: Alameda County Public Health Department, Community Assessment, Planning and Evaluation Unit",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "reported_complete"
+   }
+  ],
+  "success_measure": null
+ },
+ {
+  "actor": "City of Berkeley (a recommendation by the evaluator; no City response is in the sources cited)",
+  "citation": {
+   "locator": "PDF p. 3 (report p. 1), Executive Summary",
+   "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+  },
+  "due": {
+   "as_stated": null,
+   "is_date": false
+  },
+  "id": "prop64-youth-cannabis-grant-2021-evaluation-follow-up",
+  "kind": "corrective_action",
+  "label": "City follow-up on the evaluator's recommendation",
+  "matter_id": "prop64-youth-cannabis-grant-2021",
+  "recommendation_id": null,
+  "statement": "In the future, the evaluator recommends that the City of Berkeley manage youth intern onboarding and payroll in similar projects since it already has robust ﬁscal and employment systems.",
+  "status_history": [
+   {
+    "as_of": "2025-04-30",
+    "basis": "The report makes this recommendation and a second, on an alternate mechanism for school presentations. It states no date and records no City response.",
+    "citations": [
+     {
+      "locator": "PDF p. 24 (report p. 22)",
+      "quote": "Another recommendation would be to create an alternate mechanism for the school presentations by the youth interns.",
+      "source_id": "src-prop64-2025-04-30-final-evaluation-report"
+     }
+    ],
+    "status": "no_due_date_stated"
+   },
+   {
+    "as_of": "2026-10-30",
+    "basis": "No Council item, report or discussion of the Final Evaluation Report, its recommendations or any corrective action was located in the records searched. Work done outside Council meetings, for example in a department's later contracts, would not appear in them.",
+    "citations": [],
+    "searched": "Every City Council annotated agenda in the public-records archive dated May 6, 2025 through October 27, 2026 (66 files, 44 meeting dates), for \"youth alternatives\", \"Proposition 64\", \"Prop 64\", \"cannabis\", \"BSCC\" and \"Board of State and Community Corrections\"; the archive's caption transcripts of Council and committee meetings from May 6, 2025 through October 27, 2026 (56 files), for the same terms and \"BYA\" and \"Squash-It\"; and the archive's staff report texts and October 27, 2026 agenda packet text, for \"youth alternatives\", \"Proposition 64\" and \"Prop 64\". The matches concerned other matters: other BSCC grants (Byrne State Crisis Intervention Program, Proposition 47), Cannabis Tax Fund grants to the Police Department, a cannabis retail permit, cannabis-tax correspondence and public comment, the June 17, 2025 Healthy Berkeley grant to BYA, budget and fee listings, and ceremonial mentions of BYA.",
+    "status": "unknown_no_update_located"
+   }
+  ],
+  "success_measure": null
  }
 ]

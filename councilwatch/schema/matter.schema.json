@@ -64,7 +64,30 @@
   "qualifications": {
    "type": "array",
    "items": {
-    "$ref": "citation.schema.json"
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "source_id",
+     "locator"
+    ],
+    "properties": {
+     "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]*$"
+     },
+     "locator": {
+      "type": "string",
+      "minLength": 1
+     },
+     "quote": {
+      "type": "string",
+      "minLength": 1
+     },
+     "unresolved": {
+      "type": "string",
+      "minLength": 1
+     }
+    }
    }
   },
   "last_reviewed": {
