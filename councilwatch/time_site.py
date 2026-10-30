@@ -217,13 +217,19 @@ def axis_svg(width=900):
             f'{"".join(ticks)}</svg>')
 
 
-def row_svg(a, t, height=56, width=900, esc=None):
+def row_svg(a, t, height=56, width=900, esc=None, href=""):
+    """One topic's row. Each meeting's bar links to that meeting's row in the topic page's table
+    (`href` is the page, empty on the topic page itself)."""
     k = (height - 4) / a.max_minutes
     parts = []
     for date, r in sorted(a.rows[t].items()):
         x = x_of(date) * width - 2.5
         hd, hp = r["disc"] * k, r["pc"] * k
         y0 = height
+        label = (f"{date}: {r['disc']:.0f} min staff and Council, {r['pc']:.0f} min public comment, "
+                 f"{r['letters']} letters. Go to this meeting in the table.")
+        parts.append(f'<a class="bar" href="{href}#d-{date}" aria-label="{esc(label)}"><title>{esc(label)}</title>'
+                     f'<rect x="{x - 1:.1f}" y="0" width="7" height="{height + 20}" fill="transparent"/>')
         if hd > 0:
             parts.append(f'<rect x="{x:.1f}" y="{y0 - hd:.1f}" width="5" height="{hd:.1f}" fill="var(--c-staff)"/>')
         if hp > 0:
@@ -233,6 +239,7 @@ def row_svg(a, t, height=56, width=900, esc=None):
         if r["letters"]:
             rad = min(9, 1.2 + math.sqrt(r["letters"]) * 0.45)
             parts.append(f'<circle cx="{x + 2.5:.1f}" cy="{height + 11}" r="{rad:.1f}" fill="none" stroke="var(--c-letters)" stroke-width="1.2"/>')
+        parts.append("</a>")
     CH, base = 16, height + 24
     for date, cs in sorted(a.consent[t].items()):
         x = x_of(date) * width
@@ -320,7 +327,7 @@ def render_time_index(a, h):
                      for d, x, it in decs if d)
         body.append(f'<section class="thread" id="{t}"><h3>{link(t + ".html", info["label"])} '
                     f'<span class="muted">· {hours(a.total(t, "disc"))} h staff and Council, {hours(a.total(t, "pc"))} h public comment, '
-                    f'{a.total(t, "letters"):,} letters</span></h3>{row_svg(a, t, esc=esc)}'
+                    f'{a.total(t, "letters"):,} letters</span></h3>{row_svg(a, t, esc=esc, href=t + ".html")}'
                     + (f'<ul class="decisions">{dl}</ul>' if dl else "") + "</section>")
     body.append(axis_svg())
 
@@ -435,11 +442,19 @@ def render_thread(a, t, h):
         body.append("</ul>")
     body.append("<h2>Meeting by meeting</h2>")
     rows = []
+    dec_by_date = defaultdict(list)
+    for d, x, it in decs:
+        if d:
+            dec_by_date[d].append((x, it))
     for date, r in sorted(a.rows[t].items()):
         mids = sorted(r["meeting_ids"])
         when = " · ".join(mlink(h, m, fd(date)) for m in mids) or esc(fd(date))
         labs = "<br>".join(esc(x) for x in r["labels"]) or '<span class="muted">letters only</span>'
-        rows.append(f"<tr><td class=\"num\">{when}</td><td>{labs}</td><td class=\"num\">{minutes(r['disc'])}</td>"
+        for x, it in dec_by_date.get(date, []):
+            vt = vote_text(it)
+            labs = (f'<span class="decision">▼ Decision: {esc(x["label"])}{" · final vote " + esc(vt) if vt else ""}</span><br>'
+                    + labs)
+        rows.append(f"<tr id=\"d-{date}\"><td class=\"num\">{when}</td><td>{labs}</td><td class=\"num\">{minutes(r['disc'])}</td>"
                     f"<td class=\"num\">{minutes(r['pc'])}</td><td class=\"num\">{r['letters']:,}"
                     f"{' (' + format(r['form'], ',') + ' form)' if r['form'] else ''}</td>"
                     f"<td>{'Estimated' if r['est'] else ''}</td></tr>")
@@ -643,6 +658,13 @@ ul.decisions{margin:0 0 6px;padding-left:20px;font-size:.9rem;color:var(--muted)
 .key.dec{width:auto;height:auto;font-size:.8rem}
 .key.consent{width:4px;height:12px;background:var(--c-consent)}
 td.barcell{width:30%}.bar{display:block;height:10px;background:var(--c-staff)}
+svg.row a.bar:focus-visible rect:first-child{fill:var(--soft);stroke:var(--accent);stroke-width:2}
+svg.row a.bar:hover rect:first-child{fill:var(--soft)}
+tr:target td{background:var(--soft)}
+tr:target td:first-child{box-shadow:inset 4px 0 0 var(--accent)}
+.decision{font-weight:600}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .analysis{border:1px solid var(--line);border-radius:6px;padding:4px 14px;margin:14px 0;font-size:.95rem}
 .analysis h2{font-size:.95rem;margin:8px 0 4px;color:var(--muted)}
 .ask{background:var(--soft);padding:16px 18px;margin:20px 0;border-radius:6px}

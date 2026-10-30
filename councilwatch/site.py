@@ -368,6 +368,9 @@ fall between {cal['middle_half'][0]} and {cal['middle_half'][1]}, and the extrem
 been checked against the meeting video, so they are marked as inferred. Each records the words where it begins and
 its place in the transcript, so anyone can check it; the structure is published in the archive.</p>
 
+<p>On a topic's chart, each bar links to its meeting's row in the table below it; on the Council time page, to that row
+on the topic's page. A bar adds up every item on the topic at that meeting, so it goes to the meeting, not to one item.</p>
+
 <h2 id="topics">Topics</h2>
 <ul>
 <li><strong>A topic groups items by subject</strong> so their time can be read side by side. It is this site's grouping, not
