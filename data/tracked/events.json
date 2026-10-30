@@ -1118,5 +1118,233 @@
   "kind": "council_action",
   "matter_id": "wui-code-follow-up-2025",
   "recommendation_ids": []
+ },
+ {
+  "actor": "City Auditor",
+  "citations": [
+   {
+    "locator": "PDF p. 1",
+    "quote": "On November 19, 2020, the City Auditor published the Rocky Road: Berkeley Streets at Risk and Significantly Underfunded Audit Report, reviewing the funding resources to sufficiently maintain City streets, and asking if Public Works has clear policies and processes to guide paving decisions.",
+    "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2020-11-19",
+  "description": "The City Auditor published the audit report. The audit report is not in the public-records archive; its publication date is as stated in the City's status report.",
+  "id": "rocky-road-audit-2020-event-report",
+  "kind": "report_issued",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Auditor",
+  "citations": [
+   {
+    "locator": "City Auditor Comments (PDF p. 2)",
+    "quote": "The City Auditor provided a presentation on her Streets Audit (Item 27)",
+    "source_id": "src-bcc-2020-12-15-regular-annotated-agenda-v2"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2020-12-15",
+  "description": "The City Auditor presented the audit to the City Council.",
+  "id": "rocky-road-audit-2020-event-presentation",
+  "kind": "presentation",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Consent Calendar, Item 27 (PDF p. 12)",
+    "quote": "Action: Approved recommendation.",
+    "source_id": "src-bcc-2020-12-15-regular-annotated-agenda-v2"
+   }
+  ],
+  "commitment_ids": [
+   "rocky-road-audit-2020-report-back"
+  ],
+  "date": "2020-12-15",
+  "description": "On the Consent Calendar, the Council approved the Auditor's recommendation that the City Manager report back by June 15, 2021, and every six months thereafter.",
+  "id": "rocky-road-audit-2020-event-council-2020-12-15",
+  "kind": "council_action",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Auditor",
+  "citations": [
+   {
+    "locator": "Information Reports, Item 31 (PDF p. 11)",
+    "quote": "Action: Received and filed.",
+    "source_id": "src-bcc-2021-05-11-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2021-05-11",
+  "description": "The City Auditor submitted an information report titled \"Streets Audit Report Wins National Recognition\". The Council received and filed it.",
+  "id": "rocky-road-audit-2020-event-recognition-2021-05-11",
+  "kind": "other",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Manager",
+  "citations": [
+   {
+    "locator": "Information Reports, Item 44 (PDF p. 17)",
+    "quote": "Action: Referred to the Facilities, Infrastructure, Transportation, Environment & Sustainability Committee.",
+    "source_id": "src-bcc-2022-11-03-regular-annotated-agenda"
+   },
+   {
+    "locator": "PDF p. 1",
+    "quote": "Previous reports were issued on November 3, 2022, March 19, 2024, and December 10, 2024.",
+    "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+   }
+  ],
+  "commitment_ids": [
+   "rocky-road-audit-2020-report-back"
+  ],
+  "date": "2022-11-03",
+  "description": "The City Manager submitted the first status report on this audit and the Fleet Replacement Fund audit. The Council referred it to the Facilities, Infrastructure, Transportation, Environment & Sustainability Committee. The staff report is not in the public-records archive.",
+  "id": "rocky-road-audit-2020-event-status-2022-11-03",
+  "kind": "staff_report",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "Public Works",
+  "citations": [
+   {
+    "locator": "PDF pp. 1-6",
+    "quote": "Public Works Audit Status Reports",
+    "source_id": "src-bcc-fites-committee-2023-04-13-item-02-presentation"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2023-04-13",
+  "description": "Public Works presented the status of this audit's and the Fleet Replacement Fund audit's recommendations to the Facilities, Infrastructure, Transportation, Environment & Sustainability Policy Committee.",
+  "id": "rocky-road-audit-2020-event-fites-2023-04-13",
+  "kind": "presentation",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": [
+   "rocky-road-audit-2020-rec-1.1",
+   "rocky-road-audit-2020-rec-1.2",
+   "rocky-road-audit-2020-rec-2.1",
+   "rocky-road-audit-2020-rec-2.2",
+   "rocky-road-audit-2020-rec-2.3"
+  ]
+ },
+ {
+  "actor": "City Council",
+  "citations": [
+   {
+    "locator": "Consent Calendar, Item 26 (PDF p. 10)",
+    "quote": "Action: Approved as recommended by the Facilities, Infrastructure, Transportation, Environment & Sustainability Committee.",
+    "source_id": "src-bcc-2023-05-23-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [],
+  "date": "2023-05-23",
+  "description": "The audit status reports item returned to the Council after review by the Facilities, Infrastructure, Transportation, Environment & Sustainability Committee. On the Consent Calendar, the Council approved the committee's recommendation, whose two referrals concern the vehicle fleet and the vehicle replacement fund.",
+  "id": "rocky-road-audit-2020-event-council-2023-05-23",
+  "kind": "council_action",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Manager",
+  "citations": [
+   {
+    "locator": "Information Reports, Item 13 (PDF p. 6)",
+    "quote": "Action: Received and filed.",
+    "source_id": "src-bcc-2024-03-19-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "rocky-road-audit-2020-report-back"
+  ],
+  "date": "2024-03-19",
+  "description": "The City Manager submitted the second status report on this audit and the Fleet Replacement Fund audit. The Council received and filed it. The staff report is not in the public-records archive.",
+  "id": "rocky-road-audit-2020-event-status-2024-03-19",
+  "kind": "staff_report",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": []
+ },
+ {
+  "actor": "City Manager",
+  "citations": [
+   {
+    "locator": "PDF p. 1",
+    "quote": "As of this report, three recommendations have been implemented and two recommendations have been partly implemented.",
+    "source_id": "src-bcc-2024-12-10-item-24-staff-report"
+   },
+   {
+    "locator": "Information Reports, Item 24 (PDF p. 11)",
+    "quote": "Action: Received and filed.",
+    "source_id": "src-bcc-2024-12-10-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "rocky-road-audit-2020-report-back",
+   "rocky-road-audit-2020-impl-1.1",
+   "rocky-road-audit-2020-impl-1.2",
+   "rocky-road-audit-2020-impl-2.1",
+   "rocky-road-audit-2020-impl-2.2",
+   "rocky-road-audit-2020-impl-2.3"
+  ],
+  "date": "2024-12-10",
+  "description": "The City Manager submitted the third status report. It reports three of the five recommendations implemented and two partly implemented. The Council received and filed it.",
+  "id": "rocky-road-audit-2020-event-status-2024-12-10",
+  "kind": "staff_report",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": [
+   "rocky-road-audit-2020-rec-1.1",
+   "rocky-road-audit-2020-rec-1.2",
+   "rocky-road-audit-2020-rec-2.1",
+   "rocky-road-audit-2020-rec-2.2",
+   "rocky-road-audit-2020-rec-2.3"
+  ]
+ },
+ {
+  "actor": "City Manager",
+  "citations": [
+   {
+    "locator": "PDF p. 1",
+    "quote": "As of this report, all recommendations have been implemented.",
+    "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+   },
+   {
+    "locator": "PDF p. 2",
+    "quote": "The next status report for the fleet and street paving audits are expected to be presented in Fall 2026.",
+    "source_id": "src-bcc-2025-10-28-item-35-staff-report"
+   },
+   {
+    "locator": "Information Reports, Item 35 (PDF p. 14)",
+    "quote": "Action: Received and filed.",
+    "source_id": "src-bcc-2025-10-28-regular-annotated-agenda"
+   }
+  ],
+  "commitment_ids": [
+   "rocky-road-audit-2020-report-back",
+   "rocky-road-audit-2020-impl-1.1",
+   "rocky-road-audit-2020-impl-1.2",
+   "rocky-road-audit-2020-impl-2.1",
+   "rocky-road-audit-2020-impl-2.2",
+   "rocky-road-audit-2020-impl-2.3"
+  ],
+  "date": "2025-10-28",
+  "description": "The City Manager submitted the fourth status report. It reports all five recommendations implemented, and says the next status report is expected in Fall 2026. The Council received and filed it.",
+  "id": "rocky-road-audit-2020-event-status-2025-10-28",
+  "kind": "staff_report",
+  "matter_id": "rocky-road-audit-2020",
+  "recommendation_ids": [
+   "rocky-road-audit-2020-rec-1.1",
+   "rocky-road-audit-2020-rec-1.2",
+   "rocky-road-audit-2020-rec-2.1",
+   "rocky-road-audit-2020-rec-2.2",
+   "rocky-road-audit-2020-rec-2.3"
+  ]
  }
 ]
