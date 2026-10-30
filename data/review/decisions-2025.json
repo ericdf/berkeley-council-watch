@@ -1,0 +1,831 @@
+{
+ "year": "2025",
+ "rules_version": 4,
+ "archive_commit": "a2d1cbc466637b71fbcbcaa6a946d4596a0a0b2e",
+ "reviewed_on": "2026-10-30",
+ "decisions": [
+  {
+   "candidate_id": "city-council-2025-01-21--item-9",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-01-21--item-10",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-01-21--item-26",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager develop changes to BMC Title 21 (Subdivisions), and with the Planning Commission to Title 23 (Zoning), to expand ownership opportunities for middle housing",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "middle-income-homeownership-2025",
+    "title": "Middle-income homeownership through subdivision and zoning changes",
+    "kind": "council_referral",
+    "description": "City Council, 2025-01-21, Item 26: Expanding Homeownership Opportunities for Middle-Income Earners. Moved to the Consent Calendar and approved as revised in Supplemental Communications Packet #2."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-01-21--item-29",
+   "decision": "reject",
+   "reason": "Follow-up report from the City Auditor; the directions it covers are not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-02-11-0--item-2",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-02-11-0--item-7",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager prioritize study of intersections with traffic diverters but no stop signs, and update Council on the status and timeline of past referrals to adopt NACTO street design standards",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "traffic-diverter-intersections-nacto-2025",
+    "title": "Traffic-diverter intersections and NACTO street design standards",
+    "kind": "council_referral",
+    "description": "City Council, 2025-02-11, Item 7: Refer to City Manager study of intersections with traffic diverters. Approved as revised in Supplemental Communications Packet #2."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-02-11-0--item-8",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager report back on the status of the 8 re-opened 2009 leases audit recommendations in fall 2025, and every year until fully implemented",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "leases-audit-follow-up-2025",
+    "title": "2009 leases audit follow-up (City Auditor, 2025)",
+    "kind": "audit",
+    "description": "City Council, 2025-02-11, Item 8: 2009 Leases Audit Follow-Up: Berkeley Faces the Same Risks 16 Years Later. The Council approved the City Auditor's recommendation that the City Manager report back on the 8 re-opened recommendations."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-02-11-0--item-9",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager award six points for panel upgrades under the amended BESO; the Council also requested an evaluation report three years after implementation",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "beso-amendments-2025",
+    "title": "Building Emissions Saving Ordinance (BESO) amendments",
+    "kind": "council_referral",
+    "description": "City Council, 2025-02-11, Item 9: Proposed Amendments to the Building Emissions Saving Ordinance (BESO). The Council adopted the ordinance on first reading, referred the buyer/seller split to the City Attorney, referred panel-upgrade points to the City Manager, and requested an evaluation report three years after implementation."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-02-11-1--item-1b",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager return to Council by the end of 2025 with a resolution adopting building, historical and fire codes for Berkeley Fire Zones 3 and 4",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "ember-building-code-2025",
+    "title": "EMBER: building code amendments for Fire Zones 3 and 4",
+    "kind": "council_referral",
+    "description": "City Council, 2025-02-11 (special meeting), Item 1b: Effective Mitigations for Berkeley's Ember Resilience (EMBER): Building Code Amendments. Under Item 1a, the Council referred Items 1a, 1b and 1c to the City Manager for outreach and refinement, to be presented for adoption in March 2025 or as noted in each item."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-02-11-1--item-1c",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager return to Council by the second week of May 2025 on the thresholds for Extreme Fire Weather and Particularly Dangerous Situation designations and their effect on the Leave Early concept",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "ember-leave-early-2025",
+    "title": "EMBER: Leave Early and extreme fire weather thresholds",
+    "kind": "council_referral",
+    "description": "City Council, 2025-02-11 (special meeting), Item 1c: Effective Mitigations for Berkeley's Ember Resilience (EMBER): Leave Early and Fire Department Staffing. Under Item 1a, the Council referred Items 1a, 1b and 1c to the City Manager for outreach and refinement, to be presented for adoption in March 2025 or as noted in each item."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-02-11-1--item-1d",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager direct Public Works, Police and Fire to implement Safe Passages Program phases 1 and 2, and report back on progress by the second week of May 2025",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "ember-safe-passages-2025",
+    "title": "EMBER: Safe Passages Program",
+    "kind": "council_referral",
+    "description": "City Council, 2025-02-11 (special meeting), Item 1d: Request Inter-Departmental Collaboration and Implementation of Safe Passages. Under Item 1a, the Council referred Item 1d to the City Manager as written."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-02-25-0--item-1",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-03-11--item-6",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-03-11--item-14",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager study the fiscal impact and feasibility of a transfer tax exemption for 100% affordable housing owned by non-profits or community land trusts, and recommend further Council action",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "affordable-housing-transfer-tax-exemption-2025",
+    "title": "Transfer tax exemption for 100% affordable housing",
+    "kind": "council_referral",
+    "description": "City Council, 2025-03-11, Item 14: A Referral to the City Manager to make a recommendation for further Council action: Transfer Tax Exemption for 100% Affordable Housing Projects. Approved as recommended by the Land Use, Housing & Economic Development Policy Committee."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-03-11--item-16",
+   "decision": "reject",
+   "reason": "The Council adopted the policy committee's recommendation to take no action."
+  },
+  {
+   "candidate_id": "city-council-2025-03-11-0--item-1",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager run the 2025 referral ranking algorithm and return to Council with a final ranked list for adoption",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "action"
+   },
+   "matter_id": "referral-prioritization-rrv-2024"
+  },
+  {
+   "candidate_id": "city-council-2025-03-18--item-10",
+   "decision": "reject",
+   "reason": "The Council referred the item back to the Commission on the Status of Women, not to the City Manager.",
+   "links": [
+    {
+     "to": "city-council-2025-12-02-0--item-1",
+     "decision": "reject",
+     "reason": "The Vision 2050 Task Force report shares only title words with this item; it is not a follow-up."
+    }
+   ]
+  },
+  {
+   "candidate_id": "city-council-2025-03-18-0--item-1",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-03-25--item-4",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-03-25--item-10a",
+   "decision": "reject",
+   "reason": "The Council adopted the companion report (Item 10b) by resolution; the Item 10a directions quoted here were not adopted."
+  },
+  {
+   "candidate_id": "city-council-2025-03-25--item-11",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-04-15--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-04-15--item-11a",
+   "decision": "reject",
+   "reason": "The Council accepted the report and adopted the Item 11b resolution; the Item 11a direction to create a public repository was not adopted."
+  },
+  {
+   "candidate_id": "city-council-2025-04-15--item-12",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Attorney return to Council in June 2025 with an analysis and recommendation on codifying Berkeley's Sanctuary policies in an ordinance",
+    "actor": "City Attorney",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "sanctuary-city-ordinance-2025",
+    "title": "Sanctuary City ordinance",
+    "kind": "council_referral",
+    "description": "City Council, 2025-04-15, Item 12: Referral to City Attorney for Sanctuary City Ordinance. Approved recommendation."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-04-15--item-14",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager establish an open and transparent process for community-based organizations seeking emergency grants outside the City's RFP and procurement processes",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "cbo-emergency-funding-process-2025",
+    "title": "Process for community organizations seeking emergency funds outside procurement",
+    "kind": "council_referral",
+    "description": "City Council, 2025-04-15, Item 14: Establish Rules and Limits When Community-Based Organizations Receive City Funding Without Procurement. The Council adopted Resolution No. 71,719-N.S. as recommended by the Budget & Finance Committee."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-04-15--item-20",
+   "decision": "reject",
+   "reason": "The Council took no action, as the Budget & Finance Policy Committee recommended."
+  },
+  {
+   "candidate_id": "city-council-2025-04-15--item-22",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-04-15--item-23",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-04-29--item-2",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-05-06--item-8a",
+   "decision": "reject",
+   "reason": "The Council approved the companion report (Item 8b), which recommended no action on the commission's recommendation."
+  },
+  {
+   "candidate_id": "city-council-2025-05-20--item-21",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-05-20--item-29",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager identify potential City-owned and private sites for 24/7 staffed shelter, and report to Council on ongoing efforts to address homelessness and the mental health crisis, including costs",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "shelter-sites-and-homelessness-report-2025",
+    "title": "Potential 24/7 shelter sites and report on homelessness efforts",
+    "kind": "council_referral",
+    "description": "City Council, 2025-05-20, Item 29: Alternative Housing Options for People Experiencing Homelessness. Approved as recommended by the Health, Life Enrichment, Equity & Community Committee, with a request that the City Manager send a letter to the Alameda County Board of Supervisors."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-05-20--item-30",
+   "decision": "reject",
+   "reason": "Budget update report. Its recorded action also asks the City Manager to work with Charter Officers on a plan for a hiring freeze and vacant positions, which the candidate finder filed as a report, not a direction."
+  },
+  {
+   "candidate_id": "city-council-2025-06-03--item-4",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-06-03--item-24",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager design and build an interim quick-build project with Class IV protected bike lanes and pedestrian safety improvements on Oxford and Fulton Streets between Bancroft Way and Hearst Avenue, if feasible",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "oxford-street-safety-2025",
+    "title": "Oxford and Fulton Street bike and pedestrian safety (Oxford for All)",
+    "kind": "council_referral",
+    "description": "City Council, 2025-06-03, Item 24: Referral: Oxford for All. Approved as revised by Councilmember Tregub: implement adopted bike and multimodal plans on Oxford and Fulton Streets from Bancroft Way to Hearst Avenue alongside repaving, with an interim quick-build project, a $400,000 funding request, and a UC Berkeley partnership referral."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-06-17--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-06-17--item-27",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-06-17--item-28",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager assess potential 2026 revenue ballot measures for fire department facility improvements and return recommendations for Council adoption",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "fire-facility-revenue-measures-2025",
+    "title": "Fire facility revenue measures for 2026",
+    "kind": "council_referral",
+    "description": "City Council, 2025-06-17, Item 28: Fire Facility Revenue Measures. Approved as recommended by the Budget & Finance Committee."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-06-17--item-43a",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager return to Council before September 9, 2025 with an EMBER roll-out plan, and before December 31, 2025 with vegetation management amendments from a resident working group and clarifying Fire Code language",
+    "actor": "City Manager",
+    "kind": "deadline",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "ember-implementation-plan-2025",
+    "title": "EMBER implementation plan and vegetation management Fire Code review",
+    "kind": "council_referral",
+    "description": "City Council, 2025-06-17, Items 43a-43c: Modification and Adoption of Berkeley Fire Code Local Amendments, with the EMBER implementation, vegetation management working group and clarifying-language referrals in Item 43c."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-06-17--item-43c",
+   "decision": "reject",
+   "reason": "Adopted as part of the Item 43a action; recorded once, on Item 43a."
+  },
+  {
+   "candidate_id": "city-council-2025-06-24--item-24",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-07-08--item-7",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-07-22--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-07-22--item-17",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager include in each November biannual Surveillance Technology Report confirmation that BPD has no direct data-sharing agreements, and a log of any sharing of surveillance video or audio",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "flock-camera-safeguards-2025",
+    "title": "Flock Safety camera privacy safeguards",
+    "kind": "council_referral",
+    "description": "City Council, 2025-07-22, Item 17: Surveillance Technology Ordinance Submission for External Fixed Surveillance Cameras (Flock Safety Condor Video Cameras). The Council adopted Resolution No. 71,903-N.S. and directed the City Manager to add reporting and other safeguards."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-07-22--item-18",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-07-22--item-19",
+   "decision": "reject",
+   "reason": "Follow-up to 2024-07-30 Item 18 (restaurant inspections audit), which is tracked; it belongs in that matter's next status review, not this bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-07-29--item-4",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-07-29--item-9",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-07-29--item-23a",
+   "decision": "reject",
+   "reason": "The Council approved the recommendation in Item 23b; the Item 23a 30-day remediation standard was not adopted."
+  },
+  {
+   "candidate_id": "city-council-2025-07-29--item-25",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager analyze feasibility and recommend models for a City green workforce development board, or for closer alignment with the Alameda County Workforce Development Board",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "green-workforce-development-2025",
+    "title": "Green workforce development",
+    "kind": "council_referral",
+    "description": "City Council, 2025-07-29, Item 25: Berkeley Green New Deal: Workforce Development. Approved as recommended by the Land Use, Housing & Economic Development Committee and as revised by Councilmember Taplin."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-07-29--item-30",
+   "decision": "reject",
+   "reason": "Follow-up report from the City Auditor; the direction it answers is not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-07-29--item-32",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-07-29-1--item-2b",
+   "decision": "reject",
+   "reason": "Continued to a later meeting; the Council acted on it on 2025-09-16 (Item 1b), recorded there.",
+   "links": [
+    {
+     "to": "city-council-2026-10-13--item-17",
+     "decision": "reject",
+     "reason": "Recorded on the 2025-09-16 Item 1b record instead."
+    }
+   ]
+  },
+  {
+   "candidate_id": "city-council-2025-09-09--item-1",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-09-09--item-9",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-09-09--item-27",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-09-09--item-30",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-09-16-1--item-5",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-09-16-1--item-12",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager and Planning Commission amend BMC 23.204.020 to allow alcoholic beverage retail sales in the Telegraph Avenue Commercial District",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "telegraph-alcohol-retail-2025",
+    "title": "Alcoholic beverage retail sales in the Telegraph Avenue Commercial District",
+    "kind": "council_referral",
+    "description": "City Council, 2025-09-16, Item 12: Zoning Ordinance Modification for Telegraph Avenue Commercial District. Approved recommendation."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-09-16-3--item-1b",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager report back on the status of the Homeless Response Team audit recommendations in fall 2026, and annually until fully implemented",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "homeless-response-team-audit-2025",
+    "title": "Homeless Response Team audit (City Auditor, 2025)",
+    "kind": "audit",
+    "description": "City Council, 2025-09-16 (special meeting), Item 1b: Homeless Response Team: Opportunities Exist to Strengthen Procedures and Better Track Outcomes. Approved with the City Manager's amendment changing the reporting schedule from quarterly to semi-annually."
+   },
+   "links": [
+    {
+     "to": "city-council-2026-10-13--item-17",
+     "decision": "reject",
+     "reason": "The 2026-10-13 status report is outside the 2025 bundle; review it with 2026."
+    }
+   ]
+  },
+  {
+   "candidate_id": "city-council-2025-09-30--item-11",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager assess revenue measures for recreation and community facility improvements and return with recommendations for the November 2026 ballot",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "recreation-facility-revenue-measures-2025",
+    "title": "Recreation and community facility revenue measures for November 2026",
+    "kind": "council_referral",
+    "description": "City Council, 2025-09-30, Item 11: Recreation and Community Facility Improvement Measures. Approved as recommended by the Facilities, Infrastructure, Transportation, Environment & Sustainability Policy Committee."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-09-30--item-15",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager, with the City Attorney, develop proposed increases to shared micromobility program fees and return to Council within 120 days",
+    "actor": "City Manager",
+    "kind": "deadline",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "micromobility-fees-2025",
+    "title": "Shared micromobility program fees",
+    "kind": "council_referral",
+    "description": "City Council, 2025-09-30, Item 15: Refer to the City Manager in Collaboration with the City Attorney's Office to Develop Proposed Increases to the Shared Micromobility Program Fees. Approved as recommended by the policy committee."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-09-30--item-18",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Attorney prepare a memorandum to City staff and Council on the legal doctrines of due process and pending investigations",
+    "actor": "City Attorney",
+    "kind": "deliverable",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "personnel-investigation-communications-2025",
+    "title": "Legal guidance on communications during personnel investigations",
+    "kind": "council_referral",
+    "description": "City Council, 2025-09-30, Item 18: Resolution Directing the City Manager to Work with the City Attorney's Office to Establish a Communications Policy. The Council referred the item to the City Attorney to prepare a memorandum instead."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-10-14--item-7",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-10-14--item-12",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Attorney draft amendments to BMC Chapter 13.40 to prohibit, in certain circumstances, motion-activated devices that emit sound at people in public spaces",
+    "actor": "City Attorney",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "motion-activated-sound-devices-2025",
+    "title": "Motion-activated sound devices (ROBOCOP)",
+    "kind": "council_referral",
+    "description": "City Council, 2025-10-14, Item 12: Residents Oppose Broadcasting Obnoxious Cacophony Out in Public (ROBOCOP). Approved as recommended by the Public Safety Committee."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-10-14--item-16",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-10-14--item-18",
+   "decision": "reject",
+   "reason": "Follow-up report; the direction it answers is not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-10-28--item-2",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager work with BART to proceed with the Virginia Street Bikeway east of Acton Street (Option A)",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "virginia-street-bikeway-2025",
+    "title": "Virginia Street Bikeway at North Berkeley BART",
+    "kind": "council_referral",
+    "description": "City Council, 2025-10-28, Item 2: Affirm Staff Preference for the Virginia Street Bikeway. The Council adopted Resolution No. 71,985-N.S."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-10-28--item-4",
+   "decision": "reject",
+   "reason": "A single letter to the Alameda County Board of Supervisors; a minor act not worth following up."
+  },
+  {
+   "candidate_id": "city-council-2025-10-28--item-6",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-10-28--item-27",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager consider the Commission's recommendation on the Turtle Island Monument information and report back to Council",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "turtle-island-monument-2025",
+    "title": "Turtle Island Monument information",
+    "kind": "council_referral",
+    "description": "City Council, 2025-10-28, Item 27: Referral Request to Rescind Incorrect Information Related to Turtle Island Monument. Referred to the City Manager."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-10-28--item-34",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-10-28--item-36",
+   "decision": "reject",
+   "reason": "Status report on the 2009 leases audit tracked from 2025-02-11 Item 8; the finder did not propose it as a link, so it belongs in that matter's next status review."
+  },
+  {
+   "candidate_id": "city-council-2025-11-06--item-1",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-11-10--item-1",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-11-10--item-10",
+   "decision": "reject",
+   "reason": "First reading; the Council restated and revised these directions at the second reading on 2025-12-02 (Item 41), recorded there."
+  },
+  {
+   "candidate_id": "city-council-2025-11-10--item-12",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager and City Attorney consider amendments to BMC Chapter 3.24 on landmark designation procedures, from the two proposals referred",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "landmarks-designation-procedure-2025",
+    "title": "Landmark designation procedures (BMC Chapter 3.24)",
+    "kind": "council_referral",
+    "description": "City Council, 2025-11-10, Item 12: Referral to Amend Berkeley Municipal Codes 3.24.120 and 3.24.300. The Council referred two proposals to the City Manager and City Attorney."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-11-18--item-10",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-11-18--item-26",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager assess and present to Council a biennial bond issuance policy, and review and benchmark the City's investment policies",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "bond-issuance-and-investment-policy-2025",
+    "title": "Bond issuance framework and investment policy review",
+    "kind": "council_referral",
+    "description": "City Council, 2025-11-18, Item 26: Recommendations for the Formulation of Advanced Fiscal Policies. Approved as recommended by the Budget & Finance Committee."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-11-18--item-30",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager initiate non-renewal proceedings for all Mills Act contracts",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "mills-act-non-renewal-2025",
+    "title": "Mills Act contract non-renewal",
+    "kind": "council_referral",
+    "description": "City Council, 2025-11-18, Item 30: Pausing City of Berkeley Authorization for Mills Act Agreements. The Council adopted Resolution No. 72,048-N.S. as amended."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-11-18--item-31",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager start the Surveillance Technology Ordinance process for the Police Department to acquire and use drones, including Drones as First Responders",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "police-drones-2025",
+    "title": "Police drones and Drones as First Responders",
+    "kind": "council_referral",
+    "description": "City Council, 2025-11-18, Item 31: Unmanned Aerial Systems and Drones as First Responders. Approved recommendation."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-11-18--item-32",
+   "decision": "reject",
+   "reason": "Follow-up report from the City Auditor; the directions it covers are not in the 2025 bundle."
+  },
+  {
+   "candidate_id": "city-council-2025-11-18-0--item-1",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-12-02--item-9",
+   "decision": "reject",
+   "reason": "Standing language in every bid-solicitation list: each contract over the City Manager's threshold comes to Council anyway, so there is nothing separate to follow up."
+  },
+  {
+   "candidate_id": "city-council-2025-12-02--item-26a",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-12-02--item-27a",
+   "decision": "reject",
+   "reason": "The Council referred the report's recommendations to the City Manager for existing work if feasible or for referral ranking; nothing checkable is directed."
+  },
+  {
+   "candidate_id": "city-council-2025-12-02--item-33",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager and City Attorney develop a vibrant storefront policy with performance standards to address ground-floor vacancies",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "vibrant-storefront-policy-2025",
+    "title": "Vibrant storefront policy",
+    "kind": "council_referral",
+    "description": "City Council, 2025-12-02, Item 33: Referral to the City Manager and City Attorney: Vibrant Storefront Policy. Approved recommendation."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-12-02--item-34",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  },
+  {
+   "candidate_id": "city-council-2025-12-02--item-36",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager develop a proactive system to alert residents to upcoming Public Works, utility and large development projects",
+    "actor": "City Manager",
+    "kind": "deliverable",
+    "quote_field": "recommendation"
+   },
+   "matter": {
+    "id": "infrastructure-project-notification-2025",
+    "title": "Notifying residents of upcoming public works projects",
+    "kind": "council_referral",
+    "description": "City Council, 2025-12-02, Item 36: Notifying Residents of Upcoming Public Works Projects in their Neighborhoods. Approved recommendation."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-12-02--item-41",
+   "decision": "confirm",
+   "commitment": {
+    "label": "City Manager return with proposals on the WUI Workgroup's items, and report back within 90 days of the State's final Zone Zero rules on differences between state and local vegetation management law",
+    "actor": "City Manager",
+    "kind": "report_back",
+    "quote_field": "action"
+   },
+   "matter": {
+    "id": "wui-code-follow-up-2025",
+    "title": "Wildland-Urban Interface Code follow-up",
+    "kind": "council_referral",
+    "description": "City Council, 2025-12-02, Item 41: Adoption of and Amendments to the California Wildland-Urban Interface (WUI) Code, Second Reading. The Council adopted the ordinance and referred the Workgroup's recommendations to the City Manager."
+   }
+  },
+  {
+   "candidate_id": "city-council-2025-12-02-0--item-1",
+   "decision": "reject",
+   "reason": "Routine report, not a follow-up to a tracked commitment."
+  }
+ ]
+}
