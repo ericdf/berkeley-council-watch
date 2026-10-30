@@ -35,7 +35,7 @@ CATALOG = {"source": {"url": "https://berkeleyca.gov/x", "listing_sha256": "0" *
 MAP = {"meetings": [{"meeting": "city-council-2026-10-13", "archived": {"annotated_agenda": ["bcc-2026-10-13-regular-annotated-agenda"]},
                      "listed": {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda"}}], "unmatched": []}
 P = lambda m: {"member": m, "as_printed": m[4:].title()}
-RECORD = {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda",
+RECORD = {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda", "text": "r-text",
   "attendance": {"roll_call_time": "6:05 p.m.", "present": [P("off-taplin")], "absent": [P("off-tregub")],
                  "arrived_late": [dict(P("off-tregub"), time="6:30 p.m.")]},
   "items": [
@@ -44,7 +44,13 @@ RECORD = {"annotated_agenda": "bcc-2026-10-13-regular-annotated-agenda",
      "attribution": [dict(P("off-taplin"), role="author", order=1)], "added_cosponsors": [P("off-tregub")],
      "motions": [{"seq": 0, "final": True, "kind": "main", "disposition": "carried", "severed": False, "vote_label": "vote",
                   "movers": [P("off-taplin"), P("off-tregub")], "vote": {
-         "all_ayes": False, "ayes": [P("off-taplin")] * 7, "noes": [P("off-tregub")] * 2, "abstain": [], "absent": [], "recused": []}}]}],
+         "all_ayes": False, "ayes": [P("off-taplin")] * 7, "noes": [P("off-tregub")] * 2, "abstain": [], "absent": [], "recused": []}}]},
+    {"item": "3", "section": "Consent Calendar", "heading": "Amendment: FY 2026 Annual Appropriations Ordinance", "from": "City Manager",
+     "contact": None, "speakers": None, "lines": [1, 2], "attribution": [], "added_cosponsors": [], "motions": [],
+     "financial_implications": "See report",
+     "action": "Adopted first reading of Ordinance No. 8,010–N.S. Second reading scheduled for June 9, 2026."},
+    {"item": "4", "section": "Consent Calendar", "heading": "Relinquishment of Council Office Budget Funds", "from": "Councilmember Taplin",
+     "contact": None, "speakers": None, "lines": [3, 3], "attribution": [], "added_cosponsors": [], "motions": [], "action": "Adopted."}],
   "communications": [
     {"section": "Communications", "heading": "Item #18: Street Paving", "line": 40, "items": ["18"], "entries": [
         {"as_printed": "Jane Doe", "count": 1, "count_basis": "one entry"},
@@ -70,6 +76,9 @@ class Base(unittest.TestCase):
                                                                    {"id": "off-tregub", "name": "Igor Tregub", "office": "Councilmember", "district": 4}]}),
             "tools/meeting_map.py": "import json, sys\nprint(json.dumps(%s))\n" % json.dumps(MAP),
             "L1/council-captions/v.txt": VTT, "L1/council-captions/c.txt": CART,
+            "L1/annotated-agendas/r.txt": ("3. Amendment: FY 2026 Annual Appropriations Ordinance\nRecommendation: Adopt the first reading of an "
+                                          "Ordinance amending the FY 2026 AAO in the amount of $17,362,804 (gross appropriations) and "
+                                          "$16,419,776 (net appropriations).\n4. Relinquishment\n"),
             "L2/annotated-agendas/r.json": json.dumps(RECORD),
             "L3/council-captions/v-structure.json": json.dumps({"transcript_id": "v-text", "segments": [
                 seg("2026-10-13 regular", "opening", None, "Calling", start="00:00:00", end="00:10:00"),
@@ -86,6 +95,7 @@ class Base(unittest.TestCase):
             {"id": "v-structure", "layer": "L3", "doc_type": "council_captions_structure", "file": "L3/council-captions/v-structure.json"},
             {"id": "c-structure", "layer": "L3", "doc_type": "council_captions_structure", "file": "L3/council-captions/c-structure.json"},
             {"id": "r-record", "layer": "L2", "doc_type": "annotated_agenda_record", "file": "L2/annotated-agendas/r.json"},
+            {"id": "r-text", "layer": "L1", "file": "L1/annotated-agendas/r.txt"},
             {"id": "bcc-2026-10-13-regular-annotated-agenda", "layer": "L0", "meeting_date": "2026-10-13", "file": "x.pdf"},
         ]
         for e in entries:
@@ -155,7 +165,7 @@ class Generate(Base):
         self.assertEqual(first["record_ids"], ["city-council-2026-10-13--item-18"])
 
     def test_agenda_items_and_final_vote(self):
-        it = self.gen()["items.json"][0]
+        it = next(x for x in self.gen()["items.json"] if x["item"] == "18")
         self.assertEqual(it["record_id"], "city-council-2026-10-13--item-18")
         self.assertEqual(it["final_motion"]["vote"], {"all_ayes": False, "ayes": 7, "noes": 2, "abstain": 0, "absent": 0, "recused": 0})
         self.assertEqual(it["attribution"][0]["member"], "off-taplin")
@@ -163,6 +173,21 @@ class Generate(Base):
         d = self.gen()
         self.assertEqual(d["attendance.json"][0]["arrived_late"], [{"member": "off-tregub", "time": "6:30 p.m."}])
         self.assertEqual([m["member"] for m in d["members.json"]], ["off-taplin", "off-tregub"])
+
+    def test_consent_aao_amendment_counts_net_at_first_reading(self):
+        c = self.gen()["consent.json"]
+        self.assertEqual([x["item"] for x in c], ["3"])          # the relinquishment is routine
+        x = c[0]
+        self.assertEqual((x["aao"]["kind"], x["aao"]["reading"], x["aao"]["ordinance"]), ("amendment", "first", "8,010-N.S."))
+        self.assertEqual((x["amount"], x["amount_source"], x["policy_bearing"]), (16419776.0, "net appropriation", True))
+
+    def test_aao_second_reading_has_no_amount(self):
+        it = {"heading": "Amendment: FY 2026 Annual Appropriations Ordinance", "recommendation": "Adopt second reading of Ordinance No. 8,010-N.S.",
+              "action": "Adopted second reading of Ordinance No. 8,010–N.S.", "section": "Consent Calendar", "attribution": [], "from": "City Manager",
+              "speakers": None, "financial_implications": None, "record_id": "x", "meeting_id": "m", "meeting_date": "2026-06-09", "item": "2"}
+        x = ct.consent_records([it], [])[0]
+        self.assertEqual((x["amount"], x["policy_bearing"]), (None, False))
+        self.assertIn("counted at its first reading", x["reasons"][0])
 
     def test_turn_minutes_and_quote(self):
         d = self.gen()

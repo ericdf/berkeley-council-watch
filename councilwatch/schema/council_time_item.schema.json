@@ -19,7 +19,10 @@
   "contact",
   "attribution",
   "added_cosponsors",
-  "motions"
+  "motions",
+  "action",
+  "financial_implications",
+  "recommendation"
  ],
  "properties": {
   "record_id": {
@@ -322,6 +325,24 @@
      }
     }
    }
+  },
+  "action": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "financial_implications": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "recommendation": {
+   "type": [
+    "string",
+    "null"
+   ]
   }
  }
 }
