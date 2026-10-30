@@ -55,6 +55,17 @@ class Members:
                 t = self.timing.get((it["record_id"], x["member"]))
                 self.roles[x["member"]].append(("at_meeting" if t and t["finding"] == "at_meeting" else "later", it))
 
+    def scoped(self, member, kind="city"):
+        """A member's roles on City business (`city`), on state, federal and international positions
+        (`external`), or on routine items (`routine`)."""
+        out = []
+        for b, it in self.roles[member]:
+            t = self.thread_of(it)
+            k = "routine" if t == "routine" else "external" if t == "external" else "city"
+            if k == kind:
+                out.append((b, it))
+        return out
+
     def thread_of(self, it):
         return self.a.record_thread.get(it["record_id"]) or self.item_thread.get(it["record_id"]) or "other"
 
@@ -110,8 +121,8 @@ def member_page(M, member, h):
             "Each kind of count stands on its own and is never added to another. Each total is shown beside the "
             "median and range across the Council's nine members.</p>"]
     # items brought
-    per_bin = Counter(b for b, _ in M.roles[member])
-    others = {k: [Counter(b for b, _ in M.roles[x])[k] for x in M.ids()] for k, _, _ in BINS}
+    per_bin = Counter(b for b, _ in M.scoped(member, "city"))
+    others = {k: [Counter(b for b, _ in M.scoped(x, "city"))[k] for x in M.ids()] for k, _, _ in BINS}
     by_thread = defaultdict(Counter)
     for b, it in M.roles[member]:
         by_thread[M.thread_of(it)][b] += 1
@@ -121,7 +132,8 @@ def member_page(M, member, h):
         lab = "Routine items (relinquishments, donations, commemorations, appointments)" if t == "routine" else a.thread_info[t]["label"]
         cell = link(f"../time/{t}.html", lab) if t in a.rows else esc(lab)
         rows.append(f"<tr><th scope=\"row\">{cell}</th>" + "".join(f'<td class="num">{by_thread[t][k] or ""}</td>' for k, _, _ in BINS) + "</tr>")
-    rows.append('<tr class="tot"><th scope="row">Total</th>' + "".join(
+    rows.append('<tr class="tot"><th scope="row">Total on City business<br><span class="muted">not counting routine items '
+                'or state, federal &amp; international positions</span></th>' + "".join(
         f'<td class="num">{per_bin[k]}<br>{baseline(*M.stats(others[k]))}</td>' for k, _, _ in BINS) + "</tr>")
     body.append('<h2 id="items">Items they brought to the Council</h2>'
                 "<p>How the agenda named them, by subject. The kinds are kept apart and never added together.</p>"
@@ -236,12 +248,23 @@ def index_page(M, h):
             "Counts are by kind and never combined into a score.</p>",
             '<ul class="members">' + "".join(f"<li>{link(slug(x) + '.html', M.name[x])}</li>" for x in ids) + "</ul>"]
     head = "".join(f'<th scope="col">{esc(lab)}</th>' for _, lab, _ in BINS)
-    rows = "".join(f"<tr><th scope=\"row\">{link(slug(x) + '.html', M.name[x])}</th>" +
-                   "".join(f'<td class="num">{Counter(b for b, _ in M.roles[x])[k]}</td>' for k, _, _ in BINS) + "</tr>" for x in ids)
-    body.append('<h2 id="items">Items brought, by role</h2>'
-                f'<div class="table-wrap"><table><caption>Agenda items naming each member, by role</caption><thead><tr><th scope="col">Member</th>{head}</tr></thead>'
-                f'<tbody>{rows}</tbody></table></div><p class="muted">Each member\'s page breaks these down by subject. Routine items '
-                'such as relinquishments of office funds are included; member pages show them separately.</p>')
+    rows = []
+    for x in ids:
+        city = Counter(b for b, _ in M.scoped(x, "city"))
+        ext = M.scoped(x, "external")
+        led = sum(1 for b, _ in ext if b in ("lead", "joint"))
+        rows.append(f"<tr><th scope=\"row\">{link(slug(x) + '.html', M.name[x])}</th>"
+                    + "".join(f'<td class="num">{city[k]}</td>' for k, _, _ in BINS)
+                    + f'<td class="num ext">{led}<span class="muted"> of {len(ext)}</span></td></tr>')
+    body.append('<h2 id="items">Items brought on City business, by role</h2>'
+                '<p>Agenda items naming each member, by the role the agenda gives them. Routine items are left out: '
+                'relinquishments of office funds, donations, commemorations, appointments and excused absences. Each '
+                'member\'s page lists them. Positions on state, federal and international matters (resolutions and '
+                'letters on bills and on federal or foreign matters) are counted in the last column instead: those the '
+                'member authored, of all that name them.</p>'
+                f'<div class="table-wrap"><table><caption>Items on City business naming each member, by role</caption><thead><tr>'
+                f'<th scope="col">Member</th>{head}<th scope="col">State, federal &amp; international positions: authored, of all</th></tr></thead>'
+                f'<tbody>{"".join(rows)}</tbody></table></div>')
     finals = list(M.final_votes())
     unan = sum(1 for _, m in finals if m["vote"]["all_ayes"] or not (m["vote"]["noes"] or m["vote"]["abstain"]))
     dv = M.divided()
