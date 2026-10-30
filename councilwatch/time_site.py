@@ -151,6 +151,8 @@ class Attention:
             return c["label"]
         heads = [self.items[r]["heading"] for r in s["record_ids"] if r in self.items]
         if heads:
+            if (s["item_as_recorded"] or "").lower() in ("urgent", "urgency"):
+                return f"Urgency item: {heads[0]}"
             return f"Item {s['item_as_recorded']}: {heads[0]}"
         body = BODY_LABELS.get(s["meeting_body"], "")
         if s["item_as_recorded"]:

@@ -230,7 +230,7 @@ class Items(unittest.TestCase):
         self.assertEqual(ct.expand_items("43a-c"), ["43a", "43b", "43c"])
         self.assertEqual(ct.expand_items("24, 28, 29"), ["24", "28", "29"])
         self.assertEqual(ct.expand_items("11a+11b"), ["11a", "11b"])
-        self.assertEqual(ct.expand_items("Urgent"), [])
+        self.assertEqual(ct.expand_items("Urgent"), ["urgent-1"])
         self.assertEqual(ct.expand_items(None), [])
 
     def test_clock(self):

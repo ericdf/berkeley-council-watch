@@ -75,7 +75,7 @@
    "type": "array",
    "items": {
     "type": "string",
-    "pattern": "^city-council-[0-9-]+--item-[0-9A-Za-z]+$"
+    "pattern": "^city-council-[0-9-]+--item-[0-9A-Za-z-]+$"
    }
   },
   "minutes": {
