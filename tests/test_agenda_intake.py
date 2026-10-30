@@ -198,7 +198,7 @@ class SiteTests(Base):
         # one per thread) and the commitments index
         threads = len([x for x in os.listdir(os.path.join(out, "time")) if x != "index.html"])
         members = len(os.listdir(os.path.join(out, "members")))
-        self.assertEqual(n, 3 + 5 + 1 + threads + 1 + members)
+        self.assertEqual(n, 3 + 5 + 1 + 1 + threads + 1 + members)   # + the method page
         with open(os.path.join(out, "meetings", "city-council-2026-10-27.html")) as f:
             page = f.read()
         self.assertIn("Contract amendment &amp; &lt;renewal&gt;", page)

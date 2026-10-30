@@ -48,6 +48,7 @@ header{border-bottom:1px solid var(--line);padding-top:16px;padding-bottom:12px}
 header .name{font-size:1.25rem;font-weight:700;text-decoration:none;color:var(--fg)}
 header .tagline{margin:2px 0 8px;color:var(--muted)}
 .lede{font-size:1.1rem}
+ol.toc{columns:2;padding-left:20px;font-size:.95rem}
 nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:16px}
 h1{font-size:1.6rem;line-height:1.25;margin:24px 0 8px}
 h2{font-size:1.2rem;margin:28px 0 8px}
@@ -107,6 +108,7 @@ def page(title, body, depth, meta, extra=""):
 <li><a href="{up}matters/index.html">Tracked matters</a></li>
 <li><a href="{up}meetings/index.html">Meetings</a></li>
 <li><a href="{up}about.html">About the records</a></li>
+<li><a href="{up}method.html">How this data is derived</a></li>
 <li><a href="{up}data/index.html">Data</a></li>
 </ul></nav>
 </header>
@@ -305,42 +307,127 @@ record states. Not yet assigned to any item.</dd>
 <p>It does not say what a Councilmember meant, why an item was handled as it was, whether a promise was
 made or kept, or whether a policy worked. Those records need review, and will appear as reviewed tracker
 entries with their sources.</p>
-<h2 id="council-time">Council time</h2>
-<p>The {link("time/index.html", "Council time")} pages measure how the Council's meeting time and the public's
-correspondence divided among subjects. They are computed from the archive, and the classification behind them is
-published and reviewed.</p>
-<ul>
-<li><strong>Where the minutes come from.</strong> The archive divides each caption transcript into agenda items and
-procedural blocks, with each item's public-comment span. A timestamped (Zoom) transcript gives caption time. Most
-2025 transcripts were made by a court reporter and have no timestamps: an item's minutes are its share of the
-transcript's words times the meeting's length, from the call to order, adjournment and recesses. Tested on the
-timestamped transcripts, that estimate's median ratio to caption time is 1.01, with the middle half between 0.98
-and 1.05. Estimated minutes are marked.</li>
-<li><strong>What is counted.</strong> Staff and Council time is everything in an item outside its public comment:
-presentations, questions, deliberation, motions and votes. Minutes measure meeting time only: an item written by a
-member and adopted on consent took Council and staff time to prepare that no record measures in minutes, so the pages
-also count member-authored items by subject. Routine meeting business is not counted in minutes: ceremony, the consent
-calendar as a block, Council and City Manager comments, general public comment and adjournment. The exception is
-Gaza, which had one agenda item; speaker turns about it in general and consent public comment are counted, and turns
-that mainly concerned something else are not.</li>
-<li><strong>Letters.</strong> The Clerk's count of correspondence in each annotated agenda: one per listed entry,
-the number printed after a name, or the number of similarly worded form letters. Submissions from Councilmembers,
-the Mayor, staff and commissions are left out. Letters filed under a heard item take that item's thread; letters
-under a subject heading take the heading's.</li>
-<li><strong>Threads are this site's classification.</strong> A thread groups items by subject so their time can be
-read side by side. It says nothing about any item's merit. An audit is filed under its subject; City Auditor items
-are also listed together.</li>
-<li><strong>Boundaries are not authoritative.</strong> Where an item begins and ends was read from the transcript and
-has not been checked against video. Each segment carries the words where it begins and its place in the transcript,
-so anyone can check it.</li>
-</ul>
-<p>The full method, the classification files and how to propose a change are in the
-<a href="{REPO}/blob/main/docs/COUNCIL_TIME.md">source repository</a>.</p>
+<h2 id="council-time">Council time, votes and authorship</h2>
+<p>How the minutes, letters, topics, votes and authorship on this site are derived, and what they do not
+measure, is set out in {link("method.html", "How this data is derived")}.</p>
 <h2>Corrections</h2>
 <p>Report an error or a missing record as an <a href="{REPO}/issues">issue</a>, with the source and the page or
 timestamp that supports it.</p>
 """
     return page("About the records", body, 0, meta)
+
+
+def render_method(d, a, h):
+    cal = a.meta["calibration"]
+    c = a.meta["counts"]
+    toc = [("glance", "At a glance"), ("meeting-time", "Meeting time, and what it leaves out"),
+           ("minutes", "Where the minutes come from"), ("boundaries", "Where an item begins and ends"),
+           ("topics", "Topics"), ("letters", "Letters"), ("consent", "The consent calendar"),
+           ("authorship", "Who brought an item"), ("votes", "Votes, motions and attendance"),
+           ("corrections", "Data and corrections")]
+    body = f"""<h1>How this data is derived</h1>
+<p class="lede">Every figure on Council Watch is computed from the City's own records, as kept in the
+<a href="{ARCHIVE}">Berkeley public-records archive</a>. This page explains how, and what each figure does not measure.</p>
+<nav aria-label="On this page"><ol class="toc">{"".join(f'<li><a href="#{i}">{esc(t)}</a></li>' for i, t in toc)}</ol></nav>
+
+<h2 id="glance">At a glance</h2>
+<div class="table-wrap"><table><caption>Each measure and its source</caption>
+<thead><tr><th scope="col">Measure</th><th scope="col">Source</th><th scope="col">Keep in mind</th></tr></thead><tbody>
+<tr><td>Minutes of staff and Council time</td><td>Caption transcripts</td><td>Meeting time only; {c['transcripts_estimated']} of {c['transcripts']} transcripts give estimates</td></tr>
+<tr><td>Minutes of spoken public comment</td><td>Caption transcripts</td><td>The public-comment span of each item</td></tr>
+<tr><td>Letters</td><td>Annotated agendas</td><td>The Clerk's count; officials' submissions left out</td></tr>
+<tr><td>Items members wrote, by role</td><td>Annotated agendas (the From line)</td><td>Roles as printed; routine items compared apart</td></tr>
+<tr><td>Votes, motions, attendance</td><td>Annotated agendas</td><td>As the Clerk recorded them</td></tr>
+<tr><td>Consent calendar items and amounts</td><td>Annotated agendas</td><td>Amounts as printed, not amounts spent</td></tr>
+<tr><td>Topic of an item</td><td>This site</td><td>A grouping, reviewed and published, not the City's</td></tr>
+</tbody></table></div>
+
+<h2 id="meeting-time">Meeting time, and what it leaves out</h2>
+<p>Minutes measure time in Council meetings. They do not measure the rest of the Council's and staff's time. An item
+a member writes takes work before any meeting: drafting, agenda review, staff and legal review. That is true whether the
+Council discusses it or adopts it on the consent calendar in a single vote. No record measures that work in minutes, so
+the topic pages also count the items members wrote on each subject, heard or not.</p>
+<p>Routine meeting business is not counted in minutes: ceremonies, the consent calendar as a block, Council and City
+Manager comments, general public comment, and adjournment.</p>
+
+<h2 id="minutes">Where the minutes come from</h2>
+<ul>
+<li><strong>Timestamped transcripts</strong> (Zoom captions, most of 2026 and late 2025) give caption time: when an item
+begins and ends.</li>
+<li><strong>Court-reporter transcripts</strong> (most of 2025) have no timestamps. An item's minutes are its share of the
+transcript's words times the meeting's length: adjournment, less call to order, less recesses. These are estimates, drawn
+hatched.</li>
+<li><strong>How good the estimate is.</strong> Tested on the timestamped transcripts, across {cal['segments']} items of
+{cal['min_minutes']} minutes or more, the estimate's median ratio to true time is {cal['median_ratio']}; the middle half
+fall between {cal['middle_half'][0]} and {cal['middle_half'][1]}, and the extremes are {cal['range'][0]} and
+{cal['range'][1]}.</li>
+</ul>
+
+<h2 id="boundaries">Where an item begins and ends</h2>
+<p>Each transcript was divided into agenda items and procedural blocks by reading it. The boundaries have not yet
+been checked against the meeting video, so they are marked as inferred. Each records the words where it begins and
+its place in the transcript, so anyone can check it; the structure is published in the archive.</p>
+
+<p>On a topic's chart, each bar links to its meeting's row in the table below it; on the Council time page, to that row
+on the topic's page. A bar adds up every item on the topic at that meeting, so it goes to the meeting, not to one item.</p>
+
+<h2 id="topics">Topics</h2>
+<ul>
+<li><strong>A topic groups items by subject</strong> so their time can be read side by side. It is this site's grouping, not
+the City's, and says nothing about an item's merit.</li>
+<li><strong>City finances</strong> is shown as five separate topics on one scale, so no part is hidden inside a total.</li>
+<li><strong>Audits</strong> go to their subject. Items presented by or about the City Auditor are also listed together.</li>
+<li><strong>State, federal and international positions</strong>, such as resolutions and letters on bills, are a topic of
+their own.</li>
+<li><strong>Gaza</strong> had one agenda item. Speaker turns about it during general and consent public comment are also
+counted, when the turn was about it; turns that only touched on it are not.</li>
+<li><strong>The classification is published</strong> in the source repository and changes only by reviewed pull request.</li>
+</ul>
+
+<h2 id="letters">Letters</h2>
+<p>The count the Clerk gives in each annotated agenda: one per listed entry, the number printed after a name, or the
+number of "similarly worded form letters". Submissions from Councilmembers, the Mayor, staff and commissions are left
+out. Letters filed under an item take that item's topic; letters under a subject heading take the heading's.</p>
+
+<h2 id="consent">The consent calendar</h2>
+<ul>
+<li>Items adopted on the consent calendar pass in one vote with the rest of the calendar, with no discussion of their own.</li>
+<li>A <strong>filled</strong> tick marks a meeting where at least one such item on the topic shows, in the annotated agenda,
+more than a routine item: an ordinance, member authorship, a move from the action calendar, revision at adoption,
+speakers, or letters. A <strong>taller</strong> tick means a larger amount, on a log scale from $1,000 to $1 billion. A number beside a tick
+counts the consent items on that topic at that meeting, when there is more than one.</li>
+<li>An amount is as printed: the largest figure under Financial Implications, otherwise the first in the
+Recommendation. It is an authorized amount, not an amount spent.</li>
+<li>An amendment to the annual budget counts once, at its first reading, on its net appropriation. Amendments are not
+cumulative. The full budget is adopted on the action calendar.</li>
+</ul>
+
+<h2 id="authorship">Who brought an item</h2>
+<p>The annotated agenda names an item's sponsors and, usually, their role. Six roles are kept apart and never added
+together: lead author (the only author, or the one the agenda's Contact line names), joint author, co-sponsor on the
+agenda as posted, co-sponsor added at the meeting (the transcript shows it), co-sponsor added later where the record
+does not say when, and named with no role. Comparisons between members count items on City business, leaving out
+routine items (relinquishments, donations, commemorations, appointments, excused absences) and counting state,
+federal and international positions separately.</p>
+
+<h2 id="votes">Votes, motions and attendance</h2>
+<ul>
+<li>The vote counted for an item is the vote on its final motion, as printed.</li>
+<li>Where the Clerk printed "All Ayes" without names, that vote is shown as "All Ayes", not as named ayes: who was
+present at that moment is not printed.</li>
+<li>A failed motion followed by the one that decided the item is shown as competing, unless the transcript confirms it
+was a substitute.</li>
+<li>Attendance is absence at roll call and later arrival, as recorded. It says nothing about reasons, and early
+departures are not recorded.</li>
+</ul>
+
+<h2 id="corrections">Data and corrections</h2>
+<p>All the data behind these pages is on the {link("data/index.html", "Data")} page, and the code and the full method are in
+the <a href="{REPO}">source repository</a> (<a href="{REPO}/blob/main/docs/COUNCIL_TIME.md">council time</a>,
+<a href="{REPO}/blob/main/docs/MEMBERS.md">members</a>). To report an error, open an <a href="{REPO}/issues">issue</a> with the source
+and the page or timestamp that supports it.</p>
+"""
+    return page("How this data is derived", body, 0, d["meta.json"], extra=h["time_footer"])
 
 
 def render_data(d):
@@ -359,7 +446,7 @@ def render_data(d):
 <li>{link('council-time/segments.json', 'segments.json')}: minutes for every part of every transcribed meeting</li>
 <li>{link('council-time/correspondence.json', 'correspondence.json')}: letters by Clerk heading</li>
 <li>{link('council-time/items.json', 'items.json')}: agenda items from the annotated agendas, with final votes</li>
-<li>{link('council-time/turns.json', 'turns.json')}: public-comment turns on a thread outside its agenda item</li>
+<li>{link('council-time/turns.json', 'turns.json')}: public-comment turns on a topic outside its agenda item</li>
 <li>{link('council-time/consent.json', 'consent.json')}: items adopted on the consent calendar, with amounts as printed</li>
 <li>{link('council-time/meta.json', 'meta.json')}: the archive commit used, counts and exceptions</li>
 <li>The reviewed classification: <a href="{REPO}/tree/main/data/review/council-time">data/review/council-time</a></li>
@@ -521,6 +608,7 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     shutil.copytree(time_dir, os.path.join(out, "data", "council-time"))
     files = {
         "about.html": render_about(d),
+        "method.html": render_method(d, a, h),
         "meetings/index.html": render_meetings(d),
         "data/index.html": render_data(d),
         "time/index.html": time_site.render_time_index(a, h),
