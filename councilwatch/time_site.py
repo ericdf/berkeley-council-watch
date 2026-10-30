@@ -800,7 +800,7 @@ QUESTIONS = [
     ("How much time has the Council spent on the budget, and how much of it was public comment?", "time/budget.html"),
     ("Which commitments has the City reported complete?", "commitments/index.html#status-reported_complete"),
     ("Which items drew the most spoken public comment?", "time/index.html#ranking-comment"),
-    ("How many items has Councilmember Bartlett authored, and on what subjects?", "members/bartlett.html#items"),
+    ("How many items has Councilmember Bartlett, for example, authored, and on what subjects?", "members/bartlett.html#items"),
     ("Which commitments have no due date stated?", "commitments/index.html#status-no_due_date_stated"),
     ("How much time did the Council spend on housing and zoning?", "time/zoning.html"),
     ("Where has the Council split, and how did each member vote?", "members/index.html#divided"),
