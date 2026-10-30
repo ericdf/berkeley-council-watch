@@ -4,13 +4,14 @@ score; every count sits beside the range across the Council. Votes and authorshi
 Clerk printed them in the annotated agendas (archive L2), from the first meeting of the Council
 seated in December 2024.
 """
+import re
 import statistics
 from collections import Counter, defaultdict
 
 SEATED = "2024-12-10"
 BINS = [
     ("lead", "Lead author", "The only author named, or the author whose office the agenda gives as the contact"),
-    ("joint", "Joint author", "One of several authors or co-authors, where the agenda does not name a lead"),
+    ("joint", "Joint author", "One of several authors or co-authors who is not the lead: the agenda names no lead, or names another author"),
     ("listed", "Co-sponsor, on the agenda as posted", "Named as a co-sponsor in the agenda's From line"),
     ("at_meeting", "Co-sponsor, added at the meeting", "The annotated agenda records the addition, and the transcript shows it at the meeting"),
     ("later", "Co-sponsor, added later; when is not stated", "The annotated agenda records the addition; the transcript does not show when it was made"),
@@ -54,6 +55,15 @@ class Members:
             for x in it["added_cosponsors"]:
                 t = self.timing.get((it["record_id"], x["member"]))
                 self.roles[x["member"]].append(("at_meeting" if t and t["finding"] == "at_meeting" else "later", it))
+
+    def item_roles(self):
+        """record_id -> [(member, bin)] in the order the agenda names them, the reverse of `roles`."""
+        out = defaultdict(list)
+        for member, rs in self.roles.items():
+            for b, it in rs:
+                out[it["record_id"]].append((member, b))
+        order = {k: i for i, (k, _, _) in enumerate(BINS)}
+        return {r: sorted(v, key=lambda x: order[x[1]]) for r, v in out.items()}
 
     def scoped(self, member, kind="city"):
         """A member's roles on City business (`city`), on state, federal and international positions
@@ -104,6 +114,34 @@ class Members:
     def stats(self, values):
         vals = list(values)
         return statistics.median(vals), min(vals), max(vals)
+
+
+SHORT = {"lead": "Lead author", "joint": "Joint authors", "listed": "Co-sponsors on the agenda",
+         "at_meeting": "Added at the meeting", "later": "Added later; when not stated", "unlabeled": "Named, role not printed"}
+
+
+def roles_html(roles, name, link, up="../", contact=None):
+    """'Lead author: Kesarwani · Co-sponsors on the agenda: Ishii, Taplin', each name linking to the member page,
+    then the agenda's Contact line as printed (without its phone number), the basis for naming a lead."""
+    groups = defaultdict(list)
+    for member, b in roles:
+        if member in name:
+            label = link(f"{up}members/{slug(member)}.html", name[member].split()[-1])
+        else:
+            label = html_escape(member)
+        if label not in groups[b]:
+            groups[b].append(label)
+    out = " · ".join(f"{SHORT[k]}: {', '.join(groups[k])}" for k, _, _ in BINS if groups.get(k))
+    if contact:
+        c = re.sub(r",?\s*\(?\d{3}\)?[\s.-]*\d{3}[\s.-]*\d{4}.*$", "", contact).strip().rstrip(",")
+        if c:
+            out += f' <span class="muted">· Contact, as printed: {html_escape(c)}</span>'
+    return out
+
+
+def html_escape(s):
+    import html
+    return html.escape(str(s))
 
 
 def baseline(med, lo, hi):

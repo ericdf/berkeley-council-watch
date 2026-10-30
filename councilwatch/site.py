@@ -401,7 +401,8 @@ cumulative. The full budget is adopted on the action calendar.</li>
 
 <h2 id="authorship">Who brought an item</h2>
 <p>The annotated agenda names an item's sponsors and, usually, their role. Six roles are kept apart and never added
-together: lead author (the only author, or the one the agenda's Contact line names), joint author, co-sponsor on the
+together: lead author (the only author, or the one the agenda's Contact line names), joint author (any other
+author or co-author), co-sponsor on the
 agenda as posted, co-sponsor added at the meeting (the transcript shows it), co-sponsor added later where the record
 does not say when, and named with no role. Comparisons between members count items on City business, leaving out
 routine items (relinquishments, donations, commemorations, appointments, excused absences) and counting state,
@@ -599,11 +600,19 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     td = time_site.load(time_dir, review_dir or time_site.ct.REVIEW_DIR)
     a = time_site.Attention(td)
     mem = member_site.Members(a, td)
+    item_roles = mem.item_roles()
+    contacts = {it["record_id"]: it.get("contact") for it in td["items.json"]}
+    items_by_meeting = {}
+    for it in td["items.json"]:
+        items_by_meeting.setdefault(it["meeting_id"], []).append(it)
     t = tracked_mod.load(tracked_dir or tracked_mod.TRACKED_DIR)
     commit = a.meta["source"]["archive_commit"]
     h = {"esc": esc, "link": link, "page": page, "fmt_date": fmt_date, "meta": d["meta.json"], "repo": REPO,
          "status_labels": COMMITMENT_STATUS, "meeting_ids": {m["meeting_id"] for m in d["meetings.json"]},
-         "mlink": time_site.mlink, "bdp": BDP.rsplit("/", 1)[0] + "/",
+         "mlink": time_site.mlink, "item_roles": item_roles, "items_by_meeting": items_by_meeting,
+         "item_thread": mem.item_thread,
+         "roles_html": lambda rid: member_site.roles_html(item_roles.get(rid, []), mem.name, link,
+                                                          contact=contacts.get(rid)), "bdp": BDP.rsplit("/", 1)[0] + "/",
          "time_footer": f' Council time computed from the archive at commit <a href="{ARCHIVE}/tree/{esc(commit)}">'
                         f'<code>{esc(commit[:12])}</code></a>.'}
     if os.path.isdir(out):
