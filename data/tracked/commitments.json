@@ -758,7 +758,7 @@
    "is_date": false
   },
   "id": "smi-care-team-pilot-2024--2024-05-21--item-14",
-  "kind": "report_back",
+  "kind": "deliverable",
   "label": "City Manager develop a pilot program of care teams for 5-10 seriously mentally ill persons who have required frequent interventions",
   "matter_id": "smi-care-team-pilot-2024",
   "recommendation_id": null,
@@ -772,39 +772,6 @@
       "locator": "Item 14, Action (p. 7)",
       "quote": "Councilmember Humbert added as a co-sponsor. Approved recommendation.",
       "source_id": "src-bcc-2024-05-21-regular-annotated-agenda"
-     }
-    ],
-    "status": "no_due_date_stated"
-   }
-  ],
-  "success_measure": null
- },
- {
-  "actor": "City Manager",
-  "citation": {
-   "locator": "Item 33, Recommendation (p. 12)",
-   "quote": "Item is automatically returning to the Council agenda pursuant to the time limit for items referred to policy committees.",
-   "source_id": "src-bcc-2024-06-25-regular-annotated-agenda"
-  },
-  "due": {
-   "as_stated": null,
-   "is_date": false
-  },
-  "id": "berkeley-police-overtime-audit-2024--2024-06-25-0--item-33",
-  "kind": "report_back",
-  "label": "City Manager report on the status of the audit recommendations on Berkeley Police overtime and security work for outside entities",
-  "matter_id": "berkeley-police-overtime-audit-2024",
-  "recommendation_id": null,
-  "statement": "Item is automatically returning to the Council agenda pursuant to the time limit for items referred to policy committees.",
-  "status_history": [
-   {
-    "as_of": "2024-06-25",
-    "basis": "The City Council took the recorded action on Item 33.",
-    "citations": [
-     {
-      "locator": "Item 33, Action (p. 12)",
-      "quote": "Report received and filed.",
-      "source_id": "src-bcc-2024-06-25-regular-annotated-agenda"
      }
     ],
     "status": "no_due_date_stated"

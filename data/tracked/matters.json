@@ -188,21 +188,6 @@
  {
   "agenda_items": [
    {
-    "item": "33",
-    "meeting_id": "city-council-2024-06-25-0"
-   }
-  ],
-  "description": "City Council, 2024-06-25, Item 33: Audit Recommendation Status - Berkeley Police: Improvements Needed to Manage Overtime and Security Work for Outside Entities.",
-  "id": "berkeley-police-overtime-audit-2024",
-  "kind": "council_referral",
-  "last_reviewed": "2026-10-30",
-  "opened": "2024-06-25",
-  "qualifications": [],
-  "title": "Berkeley Police overtime and outside security work audit"
- },
- {
-  "agenda_items": [
-   {
     "item": "53",
     "meeting_id": "city-council-2024-06-25-0"
    }

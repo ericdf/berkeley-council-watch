@@ -303,7 +303,7 @@
    "candidate_id": "city-council-2024-05-21--item-14",
    "commitment": {
     "actor": "City Manager",
-    "kind": "report_back",
+    "kind": "deliverable",
     "label": "City Manager develop a pilot program of care teams for 5-10 seriously mentally ill persons who have required frequent interventions",
     "quote_field": "recommendation"
    },
@@ -342,19 +342,8 @@
   },
   {
    "candidate_id": "city-council-2024-06-25-0--item-33",
-   "commitment": {
-    "actor": "City Manager",
-    "kind": "report_back",
-    "label": "City Manager report on the status of the audit recommendations on Berkeley Police overtime and security work for outside entities",
-    "quote_field": "recommendation"
-   },
-   "decision": "confirm",
-   "matter": {
-    "description": "City Council, 2024-06-25, Item 33: Audit Recommendation Status - Berkeley Police: Improvements Needed to Manage Overtime and Security Work for Outside Entities.",
-    "id": "berkeley-police-overtime-audit-2024",
-    "kind": "council_referral",
-    "title": "Berkeley Police overtime and outside security work audit"
-   }
+   "decision": "reject",
+   "reason": "The only match is the automatic return of a policy-committee referral to the Council agenda; the Council received and filed the report and directed no further act."
   },
   {
    "candidate_id": "city-council-2024-06-25-0--item-53",
