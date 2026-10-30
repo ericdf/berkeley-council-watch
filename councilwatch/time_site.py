@@ -298,6 +298,89 @@ def mlink(h, mid, text):
     return h["esc"](text)
 
 
+def pick_example(a):
+    """The topic and meeting whose bar shows the most of the chart's parts, for the how-to-read figure: one with a
+    decision and consent items first, then the most parts, then a budget row, then the larger bar."""
+    best = None
+    for t in a.thread_ids():
+        decs = {d for d, _, _ in a.decision_rows(t) if d}
+        for date, r in a.rows[t].items():
+            cs = a.consent[t].get(date, [])
+            parts = sum([r["disc"] > 0, r["pc"] > 0, r["est"], r["letters"] > 0, date in decs, bool(cs),
+                         any(c["policy_bearing"] for c in cs), len(cs) > 1])
+            key = (date in decs, bool(cs), parts, t == "budget", r["disc"] + r["pc"])
+            if best is None or key > best[0]:
+                best = (key, t, date)
+    return (best[1], best[2]) if best else (None, None)
+
+
+def how_to_read(a, h, up=""):
+    """One real column of a topic chart, enlarged, with numbered parts explained in a list beside it."""
+    esc = h["esc"]
+    t, date = pick_example(a)
+    if not t:
+        return ""
+    r = a.rows[t][date]
+    cs = a.consent[t].get(date, [])
+    dec = next(((x, it) for d, x, it in a.decision_rows(t) if d == date), None)
+    W, H, k = 230, 300, 200 / max(r["disc"] + r["pc"], 1)
+    x0, base = 70, 230
+    hd, hp = r["disc"] * k, r["pc"] * k
+    parts, items, n = [], [], 0
+
+    def mark(x, y, text):
+        nonlocal n
+        n += 1
+        parts.append(f'<line x1="{x}" y1="{y}" x2="{x + 34}" y2="{y}" stroke="var(--muted)" stroke-width="1"/>'
+                     f'<circle cx="{x + 46}" cy="{y}" r="11" fill="var(--bg)" stroke="var(--fg)"/>'
+                     f'<text x="{x + 46}" y="{y + 4}" font-size="12" text-anchor="middle" fill="var(--fg)">{n}</text>')
+        items.append(text)
+    parts.append(f'<line x1="20" x2="{W - 10}" y1="{base}" y2="{base}" stroke="var(--line)"/>')
+    if hd:
+        parts.append(f'<rect x="{x0}" y="{base - hd:.1f}" width="34" height="{hd:.1f}" fill="var(--c-staff)"/>')
+    if hp:
+        parts.append(f'<rect x="{x0}" y="{base - hd - hp:.1f}" width="34" height="{hp:.1f}" fill="var(--c-pc)"/>')
+    if r["est"]:
+        parts.append(f'<rect x="{x0}" y="{base - hd - hp:.1f}" width="34" height="{hd + hp:.1f}" fill="url(#hatch)"/>')
+    if dec:
+        parts.append(f'<path d="M{x0 + 9},{base - hd - hp - 22} L{x0 + 25},{base - hd - hp - 22} L{x0 + 17},{base - hd - hp - 10} Z" fill="var(--fg)"/>')
+    if r["letters"]:
+        rad = min(18, 4 + math.sqrt(r["letters"]) * 1.2)
+        parts.append(f'<circle cx="{x0 + 17}" cy="{base + 26}" r="{rad:.1f}" fill="none" stroke="var(--c-letters)" stroke-width="2"/>')
+    if cs:
+        solid = any(c["policy_bearing"] for c in cs)
+        parts.append(f'<rect x="{x0 + 12}" y="{base + 50}" width="10" height="28" '
+                     + ('fill="var(--c-consent)"/>' if solid else 'fill="none" stroke="var(--c-consent)" stroke-width="2"/>'))
+        if len(cs) > 1:
+            parts.append(f'<text x="{x0 + 26}" y="{base + 78}" font-size="13" fill="var(--c-consent)">{len(cs)}</text>')
+    mx = x0 + 40
+    if hp:
+        mark(mx, base - hd - hp / 2, f"<strong>Spoken public comment</strong>, in minutes: {r['pc']:.0f} here.")
+    if hd:
+        mark(mx, base - hd / 2, f"<strong>Staff and Council time</strong>, in minutes: presentations, questions, deliberation and votes. {r['disc']:.0f} here.")
+    if r["est"]:
+        items[-1] += (" <strong>Hatching</strong> marks an estimate: this meeting's transcript has no timestamps, so minutes come "
+                      "from each item's share of the words.")
+    if dec:
+        x, it = dec
+        vt = vote_text(it)
+        mark(mx, base - hd - hp - 16, f"<strong>A decision</strong>, listed under the chart: “{esc(x['label'])}”"
+             + (f", final vote {esc(vt)}." if vt else "."))
+    if r["letters"]:
+        mark(mx, base + 26, f"<strong>Letters</strong> from the public on the topic: {r['letters']} here. A bigger circle means more letters.")
+    if cs:
+        mark(mx, base + 64, f"<strong>Consent calendar items</strong> on the topic, adopted without discussion: {len(cs)} here. "
+             "Filled when one shows more than a routine item (an ordinance, member authorship, speakers, letters); taller "
+             "for a larger amount; a number counts the items.")
+    items.append("<strong>Click any bar</strong> to go to that meeting in the topic's table.")
+    when = h["fmt_date"](date)
+    svg = (f'<svg class="how" viewBox="0 0 {W} {H + 20}" role="img" aria-label="Enlarged example bar; its parts are listed beside it">'
+           f'{"".join(parts)}</svg>')
+    return (f'<figure class="how-to-read" id="how-to-read"><div class="how-grid">{svg}<div><h2>How to read these charts</h2>'
+            f'<p class="muted">One real column, enlarged: {esc(a.thread_info[t]["label"])}, {esc(when)}.</p>'
+            f'<ol>{"".join(f"<li>{x}</li>" for x in items)}</ol></div></div></figure>')
+
+
 def thread_href(t, up=""):
     return f"{up}time/{t}.html"
 
@@ -309,10 +392,12 @@ def render_time_index(a, h):
             "each subject, meeting by meeting. Every row shares the same date axis and the same minutes scale, so "
             "rows can be compared directly.</p>",
             METHOD_LINK,
-            ANALYSIS.format(bdp=h["bdp"]),
-            LEGEND,
-            '<p class="muted">Jump to: <a href="#totals">totals by topic</a> · <a href="#ranking">items ranked by time</a> · '
+            '<p class="muted">Jump to: <a href="#how-to-read">how to read these charts</a> · <a href="#totals">totals by topic</a> · <a href="#ranking">items ranked by time</a> · '
+            '<a href="#ranking-comment">items by public comment</a> · '
             '<a href="#auditor">City Auditor items</a> · <a href="#connections">connections between topics</a></p>',
+            ANALYSIS.format(bdp=h["bdp"]),
+            how_to_read(a, h),
+
             axis_svg()]
     group = None
     for t in a.thread_ids():
@@ -376,6 +461,11 @@ def render_time_index(a, h):
     body.append(f'<details><summary>All {len(ranked)} items</summary><div class="table-wrap"><table><caption>Every heard item, by total minutes</caption>'
                 f'{head}<tbody>{rank_rows(ranked, 1)}</tbody></table></div></details>')
 
+    by_pc = sorted(ranked, key=lambda kv: -kv[1]["pc"])[:20]
+    body.append('<h2 id="ranking-comment">Items by spoken public comment</h2><p>The twenty items with the most minutes of '
+                'spoken public comment. Letters are counted separately, on each topic\'s page.</p>')
+    body.append(f'<div class="table-wrap"><table><caption>The 20 items with the most spoken public comment</caption>{head}'
+                f'<tbody>{rank_rows(by_pc, 1)}</tbody></table></div>')
     body.append('<h2 id="auditor">City Auditor items</h2><p>Items presented by or about the City Auditor, wherever their '
                 'subject put them.</p><ul>')
     for s, t, lab in sorted(a.auditor, key=lambda x: x[0]["meeting_date"]):
@@ -435,7 +525,8 @@ def render_thread(a, t, h):
             f"<p>{hours(a.total(t, 'disc'))} hours of staff and Council time and {hours(a.total(t, 'pc'))} hours of spoken "
             f"public comment, at {len(a.rows[t])} meetings, with {a.total(t, 'letters'):,} letters from the public"
             + (f" ({a.total(t, 'form'):,} of them form letters)" if a.total(t, 'form') else "") + ".</p>",
-            METHOD_LINK, LEGEND, axis_svg(), row_svg(a, t, height=90, esc=esc)]
+            METHOD_LINK, LEGEND.replace("</p>", ' · <a href="index.html#how-to-read">How to read these charts</a></p>'),
+            axis_svg(), row_svg(a, t, height=90, esc=esc)]
     decs = a.decision_rows(t)
     if decs:
         body.append("<h2>Decisions</h2><ul>")
@@ -616,6 +707,27 @@ def matter_block(a, m, h):
             + segments_table(segs, a, h, "Where the Council heard it"))
 
 
+STATUS_ORDER = ("in_progress_reported", "not_yet_due", "no_due_date_stated", "delayed", "unknown_no_update_located",
+                "reported_complete", "reported_not_met", "completion_verified", "cancelled_or_superseded")
+STATUS_NOTE = {
+    "in_progress_reported": "The responsible party reports the work under way.",
+    "not_yet_due": "A stated date or period has not passed.",
+    "no_due_date_stated": "The source states no date for the work.",
+    "delayed": "A stated date passed and the source says so.",
+    "unknown_no_update_located": "No update was found; each matter page says what was searched. This never means the work was not done.",
+    "reported_complete": "The responsible party reports the work done. That is its statement, not independent verification.",
+    "reported_not_met": "The responsible party, or a report it submitted, states the work was not done or the target not met.",
+    "completion_verified": "A record independent of the responsible party shows the work done.",
+    "cancelled_or_superseded": "The source records the commitment withdrawn or replaced.",
+}
+
+
+def status_counts(cs, labels):
+    """'2 reported complete · 1 in progress, as reported' for a list of commitments, in status order."""
+    n = Counter(tracked_mod.current_status(c)["status"] for c in cs)
+    return " · ".join(f"{n[k]} {labels[k][0].lower() + labels[k][1:]}" for k in STATUS_ORDER if n.get(k))
+
+
 def render_commitments(a, t, h):
     esc, link, page, fd = h["esc"], h["link"], h["page"], h["fmt_date"]
     matters = {m["id"]: m for m in t["matters.json"]}
@@ -638,12 +750,11 @@ def render_commitments(a, t, h):
             'in the public record, not proof that no work occurred. "Reported complete" and "reported not met" are the '
             'responsible party\'s statements; "completion verified" needs independent evidence.</p>',
             '<h2 id="status">By status</h2><ul>']
-    for k in ("in_progress_reported", "not_yet_due", "no_due_date_stated", "delayed", "unknown_no_update_located",
-              "reported_complete", "reported_not_met", "completion_verified", "cancelled_or_superseded"):
+    for k in STATUS_ORDER:
         if counts.get(k):
-            body.append(f"<li>{esc(labels[k])}: {counts[k]}</li>")
-    body.append("</ul><p class=\"muted\">Grouped by subject, using the same topics as "
-                f"{link('../time/index.html', 'Council time')}.</p>")
+            body.append(f'<li><a href="#status-{k}">{esc(labels[k])}</a>: {counts[k]}</li>')
+    body.append("</ul><p class=\"muted\">Each status links to the list of its commitments, below the subject tables. "
+                f"Subjects use the same topics as {link('../time/index.html', 'Council time')}.</p>")
     for g in order:
         anchor = "city-finances" if g == FINANCES else g.lower().replace(" ", "-").replace(",", "").replace("&", "and")
         rows = []
@@ -660,6 +771,17 @@ def render_commitments(a, t, h):
                     '<th scope="col">Commitment and who is responsible</th><th scope="col">Matter</th>'
                     '<th scope="col">Date, as stated</th><th scope="col">Status</th></tr></thead>'
                     f'<tbody>{"".join(rows)}</tbody></table></div>')
+    body.append('<h2 id="by-status">Commitments by status</h2>')
+    allc = [(c, th, cur) for g in groups.values() for c, th, cur in g]
+    for k in STATUS_ORDER:
+        cs = sorted((x for x in allc if x[2]["status"] == k), key=lambda x: (x[0]["matter_id"], x[0]["id"]))
+        if not cs:
+            continue
+        lis = "".join(f"<li>{esc(c['label'])} <span class=\"muted\">· {esc(c['actor'])} · "
+                      f"{link('../matters/' + c['matter_id'] + '.html', matters[c['matter_id']]['title'])} · as of {esc(fd(cur['as_of']))}</span></li>"
+                      for c, th, cur in cs)
+        body.append(f'<h3 id="status-{k}">{esc(labels[k])} <span class="muted">· {len(cs)}</span></h3>'
+                    f'<p class="muted">{esc(STATUS_NOTE[k])}</p><ul>{lis}</ul>')
     return page("Commitments", "\n".join(body), 1, h["meta"])
 
 
@@ -673,35 +795,54 @@ def keyframes(n):
 # The questions the home page offers. Each is a factual question this site's records answer, and each links to
 # the view that answers it. None states a conclusion.
 QUESTIONS = [
+    # Shown three at a time, in this order; keep each group to distinct kinds of question.
+    ("What did the Council decide at its most recent meeting?", "{latest_meeting}"),
     ("How much time has the Council spent on the budget, and how much of it was public comment?", "time/budget.html"),
-    ("Which City finance audits came before the Council while it was shaping the 2026 tax measures?", "time/index.html#city-finances"),
-    ("Which deliverables related to City finances are still open?", "commitments/index.html#city-finances"),
-    ("How much spoken and written public comment did Flock and surveillance technology draw?", "time/flock.html"),
-    ("What did City management commit to after the contracts audit, and what has been reported since?", "matters/contracts-audit-2026.html"),
-    ("Which items took the most Council time?", "time/index.html#ranking"),
-    ("Which commitments have no due date stated?", "commitments/index.html#status"),
-    ("How much meeting time went to Gaza, and how much of it was public comment?", "time/gaza.html"),
-    ("When did the Council hear Hopkins Street, and what did it decide?", "time/hopkins.html"),
+    ("Which commitments has the City reported complete?", "commitments/index.html#status-reported_complete"),
+    ("Which items drew the most spoken public comment?", "time/index.html#ranking-comment"),
     ("How many items has Councilmember Bartlett authored, and on what subjects?", "members/bartlett.html#items"),
+    ("Which commitments have no due date stated?", "commitments/index.html#status-no_due_date_stated"),
+    ("How much time did the Council spend on housing and zoning?", "time/zoning.html"),
     ("Where has the Council split, and how did each member vote?", "members/index.html#divided"),
-    ("Who moved substitute motions, and how did they fare?", "members/index.html#motions"),
+    ("What did City management commit to after the contracts audit, and what has been reported since?", "matters/contracts-audit-2026.html"),
+    ("How much spoken and written public comment did Flock and surveillance technology draw?", "time/flock.html"),
+    ("When did the Council hear Hopkins Street, and what did it decide?", "time/hopkins.html"),
+    ("Which deliverables related to City finances are still open?", "commitments/index.html#city-finances"),
+    ("How much meeting time went to Gaza, and how much of it was public comment?", "time/gaza.html"),
     ("How many positions on state, federal and international matters have Council members written?", "time/external.html#authored"),
+    ("Which City finance audits came before the Council while it was shaping the 2026 tax measures?", "time/index.html#city-finances"),
 ]
 
 
+GROUP = 3
+
+
+def questions(h, available):
+    """The questions whose answering page (and anchor) the site actually has, with their links resolved."""
+    out = []
+    for q, href in QUESTIONS:
+        href = href.format(latest_meeting=h.get("latest_meeting") or "")
+        if href and available(href):
+            out.append((q, href))
+    return out
+
+
 def questions_block(h, available):
-    """The questions whose answering page (and anchor) the site actually has."""
+    """Three questions at a time, rotating by CSS alone; a reversible control shows them all. Every question is
+    in the HTML as an ordinary list, so without CSS, with reduced motion, or in print the reader sees them all."""
     esc = h["esc"]
-    qs = [(q, href) for q, href in QUESTIONS if available(href)]
-    n = len(qs)
-    if not n:
+    qs = questions(h, available)
+    if not qs:
         return ""
-    items = "".join(f'<li style="--i:{i}"><a href="{esc(href)}">{esc(q)}</a></li>' for i, (q, href) in enumerate(qs))
+    groups = [qs[i:i + GROUP] for i in range(0, len(qs), GROUP)]
+    lis = "".join(f'<li class="grp" style="--i:{g}"><ul>'
+                  + "".join(f'<li><a href="{esc(href)}">{esc(q)}</a></li>' for q, href in grp) + "</ul></li>"
+                  for g, grp in enumerate(groups))
     return f"""<section class="ask" aria-labelledby="ask-h">
 <h2 id="ask-h">Questions the record can answer</h2>
 <input type="checkbox" id="allq" class="sr-only">
-<label for="allq" class="allq">Show all questions</label>
-<ul class="rotator" style="--n:{n}">{items}</ul>
+<ul class="rotator" style="--n:{len(groups)}">{lis}</ul>
+<label for="allq" class="allq"><span class="more">Show all {len(qs)} questions</span><span class="fewer">Show fewer</span></label>
 </section>"""
 
 
@@ -730,27 +871,33 @@ tr:target td:first-child{box-shadow:inset 4px 0 0 var(--accent)}
 .roles{font-size:.9rem}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.how-to-read{margin:20px 0;padding:14px 16px;border:1px solid var(--line);border-radius:6px}
+.how-to-read h2{margin:0 0 4px;font-size:1.05rem}
+.how-grid{display:grid;grid-template-columns:230px 1fr;gap:16px;align-items:start}
+.how-grid ol{padding-left:22px;margin:8px 0 0}.how-grid li{margin-bottom:6px}
+svg.how{width:230px;height:auto}
+@media (max-width:600px){.how-grid{grid-template-columns:1fr}svg.how{width:200px;margin:0 auto;display:block}}
 .analysis{border:1px solid var(--line);border-radius:6px;padding:4px 14px;margin:14px 0;font-size:.95rem}
 .analysis h2{font-size:.95rem;margin:8px 0 4px;color:var(--muted)}
-.ask{background:var(--soft);padding:16px 18px;margin:20px 0;border-radius:6px}
-.ask h2{margin:0 0 8px;font-size:1rem;color:var(--muted);font-weight:600}
-.rotator{list-style:none;margin:0;padding:0}
-.rotator li{font-size:1.25rem;line-height:1.35;margin:6px 0}
-.allq{font-size:.85rem;color:var(--muted);cursor:pointer;text-decoration:underline}
-.allq{display:none}
+.ask{background:var(--soft);padding:16px 18px;margin:20px 0 28px;border-radius:6px}
+.ask h2{margin:0 0 10px;font-size:.95rem;color:var(--muted);font-weight:600}
+.rotator,.rotator ul{list-style:none;margin:0;padding:0}
+.rotator li li{font-size:1.15rem;line-height:1.35;margin:0 0 10px}
+.rotator li li:last-child{margin-bottom:0}
+.rotator > li + li{margin-top:10px}
+.allq{display:none;font-size:.85rem;color:var(--muted);cursor:pointer;text-decoration:underline;margin-top:10px}
+.allq .fewer{display:none}
+#allq:checked~.allq .more{display:none}
+#allq:checked~.allq .fewer{display:inline}
+#allq:focus-visible~.allq{outline:3px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:no-preference){
- .allq{display:inline-block;margin-bottom:6px}
- #allq:not(:checked)~.rotator{position:relative;min-height:4.2em}
- @media (max-width:600px){#allq:not(:checked)~.rotator{min-height:6.4em}}
- #allq:not(:checked)~.rotator li{position:absolute;inset:0 0 auto 0;margin:0;opacity:0;visibility:hidden;
-   animation:cw-q calc(var(--n)*6s) linear infinite;animation-delay:calc(var(--i)*6s)}
- #allq:not(:checked)~.rotator:hover li,#allq:not(:checked)~.rotator:focus-within li{animation-play-state:paused}
- #allq:not(:checked)~.rotator li:focus-within{opacity:1;visibility:visible}
- #allq:checked+.allq{display:none}
+ .allq{display:inline-block}
+ #allq:not(:checked)~.rotator{display:grid}
+ #allq:not(:checked)~.rotator > li{grid-area:1/1;margin:0;opacity:0;visibility:hidden;
+   animation:cw-q calc(var(--n)*9s) linear infinite;animation-delay:calc(var(--i)*9s)}
+ #allq:not(:checked)~.rotator:hover > li,#allq:not(:checked)~.rotator:focus-within > li{animation-play-state:paused}
 }
-#allq:focus-visible+.allq{outline:3px solid var(--accent);outline-offset:2px}
-__KEYFRAMES__
-@media print{.allq{display:none}.rotator li{position:static!important;opacity:1!important;visibility:visible!important;animation:none!important}}
+@media print{.allq{display:none}.rotator > li{opacity:1!important;visibility:visible!important;animation:none!important}}
 """
 CSS = CSS.replace("__KEYFRAMES__", "")
 

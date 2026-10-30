@@ -284,7 +284,10 @@ def index_page(M, h):
     body = ["<h1>Members</h1>",
             "<p>What the record shows for each member of the Council seated in December 2024, and for the body as a whole. "
             "Counts are by kind and never combined into a score.</p>",
-            '<ul class="members">' + "".join(f"<li>{link(slug(x) + '.html', M.name[x])}</li>" for x in ids) + "</ul>"]
+            '<ul class="members">' + "".join(f"<li>{link(slug(x) + '.html', M.name[x])}</li>" for x in ids) + "</ul>",
+            '<p class="muted">On this page: <a href="#items">items brought, by role</a> · <a href="#motions">motions moved and '
+            'seconded</a> · <a href="#divided">where the vote divided</a> (a long table, last). Each member\'s own page breaks '
+            'these down by subject.</p>']
     head = "".join(f'<th scope="col">{esc(lab)}</th>' for _, lab, _ in BINS)
     rows = []
     for x in ids:
@@ -302,6 +305,17 @@ def index_page(M, h):
                 'member authored, of all that name them.</p>'
                 f'<div class="table-wrap"><table><caption>Items on City business naming each member, by role</caption><thead><tr>'
                 f'<th scope="col">Member</th>{head}<th scope="col">State, federal &amp; international positions: authored, of all</th></tr></thead>'
+                f'<tbody>{"".join(rows)}</tbody></table></div>')
+    rows = []
+    for x in ids:
+        mv = Counter(M.kind(it, m) for it in M.items for m in it["motions"] if m["movers"] and m["movers"][0] == x)
+        sec = sum(1 for it in M.items for m in it["motions"] if m["movers"] and m["movers"][1] == x)
+        rows.append(f"<tr><th scope=\"row\">{link(slug(x) + '.html', M.name[x])}</th><td class=\"num\">{mv['main'] + mv['action']}</td>"
+                    f"<td class=\"num\">{mv['substitute'] + mv['competing']}</td><td class=\"num\">{mv['amendment']}</td>"
+                    f"<td class=\"num\">{mv['procedural']}</td><td class=\"num\">{sec}</td></tr>")
+    body.append('<h2 id="motions">Motions moved and seconded</h2><div class="table-wrap"><table><caption>Motions by mover</caption>'
+                '<thead><tr><th scope="col">Member</th><th scope="col">Main motions</th><th scope="col">Substitute or competing</th>'
+                '<th scope="col">Amendments</th><th scope="col">Procedural</th><th scope="col">Seconded</th></tr></thead>'
                 f'<tbody>{"".join(rows)}</tbody></table></div>')
     finals = list(M.final_votes())
     unan = sum(1 for _, m in finals if m["vote"]["all_ayes"] or not (m["vote"]["noes"] or m["vote"]["abstain"]))
@@ -329,17 +343,6 @@ def index_page(M, h):
                     f"{esc(a.thread_info[t]['label'] if t != 'routine' else 'Routine')}</span></td>{''.join(cells)}</tr>")
     body.append(f'<div class="table-wrap"><table class="grid"><caption>Divided votes</caption><thead><tr><th scope="col">Meeting</th>'
                 f'<th scope="col">Motion</th>{th}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
-    rows = []
-    for x in ids:
-        mv = Counter(M.kind(it, m) for it in M.items for m in it["motions"] if m["movers"] and m["movers"][0] == x)
-        sec = sum(1 for it in M.items for m in it["motions"] if m["movers"] and m["movers"][1] == x)
-        rows.append(f"<tr><th scope=\"row\">{link(slug(x) + '.html', M.name[x])}</th><td class=\"num\">{mv['main'] + mv['action']}</td>"
-                    f"<td class=\"num\">{mv['substitute'] + mv['competing']}</td><td class=\"num\">{mv['amendment']}</td>"
-                    f"<td class=\"num\">{mv['procedural']}</td><td class=\"num\">{sec}</td></tr>")
-    body.append('<h2 id="motions">Motions moved and seconded</h2><div class="table-wrap"><table><caption>Motions by mover</caption>'
-                '<thead><tr><th scope="col">Member</th><th scope="col">Main motions</th><th scope="col">Substitute or competing</th>'
-                '<th scope="col">Amendments</th><th scope="col">Procedural</th><th scope="col">Seconded</th></tr></thead>'
-                f'<tbody>{"".join(rows)}</tbody></table></div>')
     body.append('<p class="muted">Votes, motions and authorship are as the City Clerk printed them in the annotated agendas. '
                 f'A member\'s record is a set of facts to read together, not a grade. Data: '
                 f'{link("../data/council-time/items.json", "items.json")}, {link("../data/council-time/attendance.json", "attendance.json")}.</p>')
