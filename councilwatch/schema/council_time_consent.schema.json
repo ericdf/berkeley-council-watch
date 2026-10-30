@@ -1,0 +1,121 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: an item adopted on the consent calendar",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "record_id",
+  "meeting_id",
+  "meeting_date",
+  "item",
+  "heading",
+  "from",
+  "moved_in",
+  "amount",
+  "amount_source",
+  "reasons",
+  "policy_bearing",
+  "aao"
+ ],
+ "properties": {
+  "record_id": {
+   "type": "string"
+  },
+  "meeting_id": {
+   "type": "string"
+  },
+  "meeting_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "item": {
+   "type": "string"
+  },
+  "heading": {
+   "type": "string"
+  },
+  "from": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "moved_in": {
+   "type": "boolean"
+  },
+  "amount": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "amount_source": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "reasons": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "policy_bearing": {
+   "type": "boolean"
+  },
+  "aao": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "additionalProperties": false,
+   "required": [
+    "kind",
+    "reading",
+    "ordinance",
+    "fiscal_year",
+    "gross",
+    "net"
+   ],
+   "properties": {
+    "kind": {
+     "enum": [
+      "base",
+      "amendment"
+     ]
+    },
+    "reading": {
+     "enum": [
+      "first",
+      "second"
+     ]
+    },
+    "ordinance": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "fiscal_year": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "gross": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "net": {
+     "type": [
+      "number",
+      "null"
+     ]
+    }
+   }
+  }
+ }
+}

@@ -11,6 +11,8 @@ Output, under data/generated/council-time/:
                        movers and the members recorded under each vote, and the final motion's tally
   attendance.json      roll call, absences and late arrivals per meeting, as the annotated agenda records them
   members.json         the officeholders in the archive's speaker registry
+  consent.json         items adopted on the consent calendar: amount as printed, what the agenda shows of their
+                       handling, and for an appropriations ordinance its kind, reading and gross and net amounts
   turns.json           minutes of each reviewed speaker turn on a thread during general or consent
                        public comment (data/review/council-time/turns.json)
   meta.json            the pinned archive commit, counts, method constants, and exceptions
@@ -316,16 +318,31 @@ def member_records(archive):
             for o in reg["officeholders"]]
 
 
+REC = re.compile(r"Recommendation:\s*(.*?)(?=\s(?:Financial Implications|Contact|Action):|$)", re.S)
+
+
+def recommendation(lines, span):
+    """The item's Recommendation as printed, from the annotated agenda's L1 text at the item's lines."""
+    text = " ".join(ln.strip() for ln in lines[span[0] - 1:span[1]])
+    m = REC.search(text)
+    return re.sub(r"\s+", " ", m.group(1)).strip() if m else None
+
+
 def agenda_item_records(archive):
     out = []
     for mid, rid in sorted(pick_records(archive).items()):
         e = archive.entry(rid)
         rec = archive.load(e["file"])
         date = archive.entry(rec["annotated_agenda"]).get("meeting_date")
+        with open(archive.path(archive.entry(rec["text"])["file"]), encoding="utf-8") as f:
+            l1 = f.read().split("\n")
         for it in rec["items"]:
             final = next((m for m in it["motions"] if m["final"]), None)
             out.append({
                 "contact": it.get("contact"),
+                "action": it.get("action"),
+                "financial_implications": it.get("financial_implications"),
+                "recommendation": recommendation(l1, it["lines"]),
                 "attribution": [{"member": who(x), "as_printed": x["as_printed"], "role": x["role"], "order": x["order"]}
                                 for x in it.get("attribution", [])],
                 "added_cosponsors": [{"member": who(x), "as_printed": x["as_printed"]} for x in it.get("added_cosponsors", [])],
@@ -340,6 +357,98 @@ def agenda_item_records(archive):
     return out
 
 
+MONEY = re.compile(r"\$\s?([\d,]+(?:\.\d+)?)\s*(million|billion)?", re.I)
+ROUTINE_CONSENT = re.compile(r"relinquish|^donation|minutes for approval|memorial bench|removed from (the )?agenda|withdrawn", re.I)
+
+
+def amounts(text):
+    out = []
+    for m in MONEY.finditer(text or ""):
+        v = float(m.group(1).replace(",", ""))
+        if m.group(2):
+            v *= 1e6 if m.group(2).lower() == "million" else 1e9
+        if v >= 1000:
+            out.append(v)
+    return out
+
+
+def aao(it):
+    """An Annual Appropriations Ordinance item: the base budget or an amendment, which reading, and its
+    gross and net appropriations as printed (the Action's figures where it revised the Recommendation's)."""
+    rec, act = it["recommendation"] or "", it["action"] or ""
+    kind = "amendment" if re.match(r"\s*Amendment", it["heading"]) else "base"
+    second = (re.search(r"Adopt (the )?second reading", rec, re.I) or re.search(r"Adopted (the )?second reading", act, re.I)) \
+        and not re.search(r"new first reading", act, re.I)
+
+    def pair(t):
+        g = re.search(r"\$([\d,]+)\s*\(gross", t) or re.search(r"gross appropriations amount of \$([\d,]+)", t)
+        n = re.search(r"\$([\d,]+)\s*\(net", t) or re.search(r"net appropriations amount of \$([\d,]+)", t)
+        f = lambda m: float(m.group(1).replace(",", "")) if m else None
+        return f(g), f(n)
+    g1, n1 = pair(rec)
+    g2, n2 = pair(act)
+    o = re.search(r"Ordinance No\. ([\d,]+)", act) or re.search(r"Ordinance No\. ([\d,]+)", rec)
+    fy = re.search(r"FY ?(\d{4})", it["heading"])
+    return {"kind": kind, "reading": "second" if second else "first", "ordinance": (o.group(1) + "-N.S.") if o else None,
+            "fiscal_year": fy.group(1) if fy else None, "gross": g2 or g1, "net": n2 or n1}
+
+
+def consent_records(items, corr):
+    """Items adopted on the consent calendar, with what the agenda shows of their size and handling.
+
+    `reasons` records only what the Clerk printed; none is a judgment. An amount is the largest figure in
+    Financial Implications, otherwise the first in the Recommendation. An appropriations ordinance's base
+    budget is decided on the action calendar; an amendment counts once, at its first reading, on its net
+    appropriation, and its second reading is listed without an amount.
+    """
+    letters = {}
+    for c in corr:
+        for r in c["record_ids"]:
+            letters[r] = letters.get(r, 0) + c["letters_public"]
+    out = []
+    for it in items:
+        sec, act = it["section"] or "", it["action"] or ""
+        in_consent = "Consent" in sec
+        if in_consent and re.search(r"Moved to Action Calendar", act):
+            continue
+        moved_in = not in_consent and bool(re.search(r"Moved to Consent Calendar", act))
+        if not (in_consent or moved_in) or ROUTINE_CONSENT.search(it["heading"]):
+            continue
+        reasons = []
+        if re.search(r"Ordinance", act) or re.search(r"appropriations ordinance", it["heading"], re.I):
+            reasons.append("ordinance or appropriations change")
+        if any(x["role"] for x in it["attribution"]) or re.search(r"Councilmember|Mayor", it["from"] or ""):
+            reasons.append("authored by a Council member")
+        if moved_in:
+            reasons.append("moved from the action calendar to consent")
+        if re.search(r"revised|Supplemental Communications|amended", act, re.I):
+            reasons.append("revised or amended at adoption")
+        if it["speakers"]:
+            reasons.append(f"{it['speakers']} speaker{'s' if it['speakers'] != 1 else ''} recorded")
+        if letters.get(it["record_id"]):
+            n = letters[it["record_id"]]
+            reasons.append(f"{n} letter{'s' if n != 1 else ''} filed under the item")
+        fin = amounts(it["financial_implications"])
+        rec = amounts(it["recommendation"])
+        amount, src = (max(fin), "financial implications") if fin else ((rec[0], "recommendation, first figure") if rec else (None, None))
+        a = None
+        if re.search(r"annual appropriations ordinance", it["heading"], re.I):
+            a = aao(it)
+            if a["kind"] == "base":
+                amount, src = None, None
+                reasons = ["reading of the annual budget appropriation, adopted on the action calendar"]
+            elif a["reading"] == "second":
+                amount, src = None, None
+                reasons = [f"second reading of Ordinance {a['ordinance'] or ''}; counted at its first reading"]
+            else:
+                amount, src = (a["net"], "net appropriation") if a["net"] else ((a["gross"], "gross appropriation") if a["gross"] else (None, None))
+        policy = bool(reasons) and not (a and (a["kind"] == "base" or a["reading"] == "second"))
+        out.append({"record_id": it["record_id"], "meeting_id": it["meeting_id"], "meeting_date": it["meeting_date"],
+                    "item": it["item"], "heading": it["heading"], "from": it["from"], "moved_in": moved_in,
+                    "amount": amount, "amount_source": src, "reasons": reasons, "policy_bearing": policy, "aao": a})
+    return out
+
+
 def generate(archive, review):
     exceptions = []
     segs = segment_records(archive, review, exceptions)
@@ -347,6 +456,7 @@ def generate(archive, review):
     turns = turn_records(archive, review, exceptions)
     items = agenda_item_records(archive)
     attendance = attendance_records(archive)
+    consent = consent_records(items, corr)
     by_rid = {i["record_id"]: i for i in items}
     texts = {}
 
@@ -396,6 +506,7 @@ def generate(archive, review):
             "turns": len(turns),
             "items": len(items),
             "meetings_with_attendance": len(attendance),
+            "consent_items": len(consent),
             "meetings_with_correspondence": len({c["meeting_id"] for c in corr}),
         },
         "exceptions": exceptions,
@@ -405,7 +516,7 @@ def generate(archive, review):
     items.sort(key=lambda i: (i["meeting_date"], i["meeting_id"], _item_key(i["item"])))
     return {"segments.json": segs, "correspondence.json": corr, "turns.json": turns, "items.json": items,
             "attendance.json": sorted(attendance, key=lambda a: (a["meeting_date"], a["meeting_id"])),
-            "members.json": members, "meta.json": meta}
+            "members.json": members, "consent.json": consent, "meta.json": meta}
 
 
 def _item_key(n):
@@ -434,7 +545,8 @@ def run(archive_root, out_dir=OUT_DIR, review_dir=REVIEW_DIR, allow_dirty=False)
 BLOCKING = ("no_meeting_clock", "unclassified_segment", "classified_segment_not_in_archive", "turn_quote_not_found",
             "decision_item_not_found", "reviewed_motion_not_found", "motion_quote_not_found",
             "reviewed_cosponsor_not_found", "cosponsor_quote_not_found")
-NAMES = ("segments.json", "correspondence.json", "turns.json", "items.json", "attendance.json", "members.json", "meta.json")
+NAMES = ("segments.json", "correspondence.json", "turns.json", "items.json", "attendance.json", "members.json", "consent.json",
+         "meta.json")
 
 
 def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None, matter_ids=None):
@@ -459,7 +571,8 @@ def validate(data_dir=OUT_DIR, review_dir=REVIEW_DIR, meeting_ids=None, matter_i
                               ("turns.json", "council_time_turn.schema.json", "turn_id"),
                               ("items.json", "council_time_item.schema.json", "record_id"),
                               ("attendance.json", "council_time_attendance.schema.json", "meeting_id"),
-                              ("members.json", "council_time_member.schema.json", "member")):
+                              ("members.json", "council_time_member.schema.json", "member"),
+                              ("consent.json", "council_time_consent.schema.json", "record_id")):
         sc = load_schema(schema)
         for r in data[name]:
             check_schema(r, sc, f"council-time/{name}[{r.get(key)}]", errors)

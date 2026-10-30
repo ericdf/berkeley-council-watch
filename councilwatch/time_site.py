@@ -136,6 +136,13 @@ class Attention:
             th = self.record_thread.get(it["record_id"]) or item_thread.get(it["record_id"])
             if th and th != "routine":
                 self.authored[th].append((it, it["record_id"] in self.record_thread))
+        self.consent = defaultdict(lambda: defaultdict(list))
+        for c in d.get("consent.json", []):
+            if c["meeting_date"] < "2024-12-10":
+                continue
+            th = item_thread.get(c["record_id"], "other")
+            if th != "routine":
+                self.consent[th][c["meeting_date"]].append(c)
         self.max_minutes = max((r["disc"] + r["pc"] for t in self.rows.values() for r in t.values()), default=1)
 
     def label(self, s):
@@ -152,7 +159,8 @@ class Attention:
 
     def thread_ids(self):
         """City finances first, in their own order; then the rest by total time; then Other."""
-        ids = [t["id"] for t in self.thread_info.values() if t["id"] != "routine" and (t["id"] in self.rows or t["id"] in self.authored)]
+        ids = [t["id"] for t in self.thread_info.values() if t["id"] != "routine"
+               and (t["id"] in self.rows or t["id"] in self.authored or t["id"] in self.consent)]
         fin = [t for t in ids if self.thread_info[t]["group"] == FINANCES]
         rest = sorted((t for t in ids if t not in fin and t != "other"), key=lambda t: -self.total(t))
         return fin + rest + (["other"] if "other" in ids else [])
@@ -225,6 +233,16 @@ def row_svg(a, t, height=56, width=900, esc=None):
         if r["letters"]:
             rad = min(9, 1.2 + math.sqrt(r["letters"]) * 0.45)
             parts.append(f'<circle cx="{x + 2.5:.1f}" cy="{height + 11}" r="{rad:.1f}" fill="none" stroke="var(--c-letters)" stroke-width="1.2"/>')
+    CH, base = 16, height + 24
+    for date, cs in sorted(a.consent[t].items()):
+        x = x_of(date) * width
+        amt = max((c["amount"] or 0 for c in cs if c["policy_bearing"]), default=0)
+        hgt = 4 + (CH - 4) * min(1, max(0, (math.log10(amt) - 3) / 6)) if amt else 4
+        solid = any(c["policy_bearing"] for c in cs)
+        parts.append(f'<rect x="{x - 1.5:.1f}" y="{base + CH - hgt:.1f}" width="3" height="{hgt:.1f}" '
+                     + (f'fill="var(--c-consent)"/>' if solid else f'fill="none" stroke="var(--c-consent)" stroke-width="1"/>'))
+        if len(cs) > 1:
+            parts.append(f'<text x="{x:.1f}" y="{base - 1}" font-size="8" text-anchor="middle" fill="var(--muted)">{len(cs)}</text>')
     for date, x_, it in a.decision_rows(t):
         if date:
             x = x_of(date) * width
@@ -232,13 +250,18 @@ def row_svg(a, t, height=56, width=900, esc=None):
     staff, pc = a.total(t, "disc"), a.total(t, "pc")
     desc = (f"{a.thread_info[t]['label']}: {hours(staff)} hours of staff and Council time and {hours(pc)} hours of "
             f"spoken public comment across {len(a.rows[t])} meetings, and {a.total(t, 'letters'):,} letters.")
-    return (f'<svg class="row" viewBox="0 0 {width} {height + 24}" role="img" aria-label="{esc(desc)}">'
+    nc = sum(len(v) for v in a.consent[t].values())
+    desc += f" {nc} consent calendar items." if nc else ""
+    return (f'<svg class="row" viewBox="0 0 {width} {height + 24 + (CH + 2 if a.consent[t] else 0)}" role="img" aria-label="{esc(desc)}">'
             f'<line x1="0" x2="{width}" y1="{height}" y2="{height}" stroke="var(--line)"/>{"".join(parts)}</svg>')
 
 
 LEGEND = """<p class="legend"><span class="key staff"></span> Staff and Council time
 <span class="key pc"></span> Spoken public comment <span class="key est"></span> Estimated (court-reporter transcript)
-<span class="key letters"></span> Letters (circle area) <span class="key dec">▼</span> Decision, listed below the chart</p>"""
+<span class="key letters"></span> Letters (circle area) <span class="key dec">▼</span> Decision, listed below the chart
+<br><span class="key consent"></span> Consent calendar items at a meeting: filled when the agenda shows an ordinance, member
+authorship, a move from the action calendar, revision at adoption, speakers or letters; height is the largest such
+amount, $1,000 to $1 billion on a log scale; a numeral counts the items. They are listed on each subject's page.</p>"""
 
 ANALYSIS = """<aside class="analysis"><h2>Analysis elsewhere</h2>
 <p>These pages show how the Council's attention is allocated; they do not judge it. The Berkeley Decision Project argues that
@@ -289,7 +312,7 @@ def render_time_index(a, h):
                 tot = sum(a.total(x) for x in a.thread_ids() if a.thread_info[x]["group"] == group)
                 body.append(f'<h2 id="city-finances">{esc(group)} <span class="muted">· {hours(tot)} hours in all</span></h2>'
                             '<p class="muted">Five rows on the same scale, so no part of the City\'s finances is hidden '
-                            'inside a total.</p>')
+                            'inside a total.</p>' + aao_note(a, h))
             else:
                 body.append('<h2 id="other-threads">Other threads</h2>')
         decs = a.decision_rows(t)
@@ -351,6 +374,23 @@ def render_time_index(a, h):
     body.append(connections(a, h, ""))
     body.append(unassigned(a, h))
     return page("Council time", "\n".join(body), 1, h["meta"], extra=h["time_footer"])
+
+
+def aao_note(a, h):
+    """Amendments to the Annual Appropriations Ordinance adopted on consent, at their first reading."""
+    esc, fd = h["esc"], h["fmt_date"]
+    rows = [c for t in a.consent for v in a.consent[t].values() for c in v
+            if c["aao"] and c["aao"]["kind"] == "amendment" and c["aao"]["reading"] == "first"]
+    if not rows:
+        return ""
+    lis = "".join(f"<li>{mlink(h, c['meeting_id'], fd(c['meeting_date']))}: amendment to the FY {esc(c['aao']['fiscal_year'])} "
+                  f"budget, Ordinance {esc(c['aao']['ordinance'] or '')}: "
+                  + (f"${c['aao']['net']:,.0f} net, ${c['aao']['gross']:,.0f} gross" if c["aao"]["net"] else "amount not printed in the agenda")
+                  + "</li>" for c in sorted(rows, key=lambda c: c["meeting_date"]))
+    return (f'<div class="note"><strong>Budget amendments on consent.</strong> These amendments to the Annual Appropriations '
+            f'Ordinance were adopted on the consent calendar at first reading, with no discussion of their own:<ul>{lis}</ul>'
+            f'Each is counted once, at its first reading. For an argument about this, see '
+            f'<a href="{h["bdp"]}consent-drip.html">Two Calendars</a>.</div>')
 
 
 def connections(a, h, up):
@@ -421,6 +461,26 @@ def render_thread(a, t, h):
                     '<thead><tr><th scope="col">Meeting</th><th scope="col">Item and authors, as printed</th>'
                     '<th scope="col">Agenda section</th><th scope="col">In the transcript</th></tr></thead>'
                     f'<tbody>{"".join(rows)}</tbody></table></div>')
+    cs = [c for _, v in sorted(a.consent[t].items()) for c in v]
+    if cs:
+        rows = []
+        for c in cs:
+            amt = f"${c['amount']:,.0f}<br><span class=\"muted\">{esc(c['amount_source'])}</span>" if c["amount"] else '<span class="muted">none printed</span>'
+            why = "; ".join(esc(r) for r in c["reasons"]) or '<span class="muted">nothing beyond the item</span>'
+            rows.append(f"<tr><td class=\"num\">{mlink(h, c['meeting_id'], fd(c['meeting_date']))}</td>"
+                        f"<td>Item {esc(c['item'])}: {esc(c['heading'])}<br><span class=\"muted\">{esc(c['from'] or '')}</span></td>"
+                        f"<td class=\"num\">{amt}</td><td>{why}</td></tr>")
+        n_pb = sum(1 for c in cs if c["policy_bearing"])
+        body.append(f'<h2 id="consent">On the consent calendar</h2><p>{len(cs)} items on this subject were adopted on the consent '
+                    f'calendar, in one motion with the rest of the calendar and no discussion of their own; {n_pb} of them show, '
+                    'in the annotated agenda, an ordinance, member authorship, a move from the action calendar, revision at '
+                    'adoption, speakers or letters. An amount is as printed: the largest figure under Financial Implications, '
+                    'otherwise the first in the Recommendation. Which items belong on which calendar is a Council choice; for an '
+                    f'argument that the sorting does not track the size of the commitment, see the Berkeley Decision Project\'s '
+                    f'<a href="{h["bdp"]}consent-drip.html">Two Calendars</a>.</p>'
+                    '<div class="table-wrap"><table><caption>Consent calendar items on this subject</caption><thead><tr>'
+                    '<th scope="col">Meeting</th><th scope="col">Item</th><th scope="col">Amount</th>'
+                    f'<th scope="col">What the agenda shows</th></tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
     if t == "gaza":
         body.append("<h2>Public comment outside the agenda item</h2><p>Turns about Gaza, Israel or Palestine during "
                     "general and consent public comment are counted above when the turn was about that subject. "
@@ -568,8 +628,8 @@ def questions_block(h, available):
 
 
 CSS = """
-:root{--c-staff:#3b6ea5;--c-pc:#d08a2c;--c-letters:#6b6b6b}
-@media (prefers-color-scheme:dark){:root{--c-staff:#7fa8d8;--c-pc:#e6a85a;--c-letters:#a8a8a8}}
+:root{--c-staff:#3b6ea5;--c-pc:#d08a2c;--c-letters:#6b6b6b;--c-consent:#7a5aa6}
+@media (prefers-color-scheme:dark){:root{--c-staff:#7fa8d8;--c-pc:#e6a85a;--c-letters:#a8a8a8;--c-consent:#b49ae0}}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 svg.row,svg.axis{display:block;width:100%;height:auto}
 section.thread h3{margin:14px 0 2px;font-size:1rem}
@@ -581,6 +641,7 @@ ul.decisions{margin:0 0 6px;padding-left:20px;font-size:.9rem;color:var(--muted)
 .key.est{background:repeating-linear-gradient(45deg,var(--c-staff) 0 3px,var(--bg) 3px 5px)}
 .key.letters{border:1.5px solid var(--c-letters);border-radius:50%}
 .key.dec{width:auto;height:auto;font-size:.8rem}
+.key.consent{width:4px;height:12px;background:var(--c-consent)}
 td.barcell{width:30%}.bar{display:block;height:10px;background:var(--c-staff)}
 .analysis{border:1px solid var(--line);border-radius:6px;padding:4px 14px;margin:14px 0;font-size:.95rem}
 .analysis h2{font-size:.95rem;margin:8px 0 4px;color:var(--muted)}

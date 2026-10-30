@@ -90,6 +90,26 @@ review) whether or not it is ever discussed, and most member items are adopted o
 discussion. No record measures that time, so the pages count member-authored items by thread,
 heard or not, beside the minutes.
 
+## The consent calendar
+
+`consent.json` lists every item adopted on the consent calendar (or moved onto it from the action
+calendar), less relinquishments of office funds, donations, minutes and withdrawn items. For each it
+records what the annotated agenda shows (`reasons`): an ordinance or appropriations change, member
+authorship, a move from the action calendar, revision at adoption, speakers, letters filed. An item
+with any of these is `policy_bearing`. Its amount is as printed: the largest figure under Financial
+Implications, otherwise the first in the Recommendation (read from the archive's L1 text at the
+item's lines).
+
+**Appropriations ordinance.** The base budget is adopted on the action calendar and is listed
+without an amount. An amendment counts once, at its first reading, on its net appropriation (the
+Action's figure where it revised the Recommendation's); its second reading is listed without one.
+Amendments are not cumulative: each states its own adjustment.
+
+Each consent item's subject is in `threads.json` → `items`, proposed by the subject rules and
+reviewed like any classification. On each thread's chart, a tick per meeting marks its consent
+items: filled when any is policy-bearing, its height the largest such amount on a log scale from
+$1,000 to $1 billion, a numeral when there are several. Every item is listed on the thread's page.
+
 ## Pages
 
 - `time/index.html`: one row per thread on a shared date axis and minutes scale, City finances first

@@ -360,6 +360,7 @@ def render_data(d):
 <li>{link('council-time/correspondence.json', 'correspondence.json')}: letters by Clerk heading</li>
 <li>{link('council-time/items.json', 'items.json')}: agenda items from the annotated agendas, with final votes</li>
 <li>{link('council-time/turns.json', 'turns.json')}: public-comment turns on a thread outside its agenda item</li>
+<li>{link('council-time/consent.json', 'consent.json')}: items adopted on the consent calendar, with amounts as printed</li>
 <li>{link('council-time/meta.json', 'meta.json')}: the archive commit used, counts and exceptions</li>
 <li>The reviewed classification: <a href="{REPO}/tree/main/data/review/council-time">data/review/council-time</a></li>
 </ul>
