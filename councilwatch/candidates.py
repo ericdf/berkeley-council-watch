@@ -39,6 +39,8 @@ def load_rules(path=RULES_PATH):
 
 
 def norm(s):
+    # A compound word broken across lines ("off-" / "street") keeps its hyphen and loses the line break.
+    s = re.sub(r"(?<=\w)-[ \t]*\n\s*(?=\w)", "-", s)
     return re.sub(r"\s+", " ", s).strip()
 
 
@@ -122,9 +124,9 @@ def parse_items(pages):
                 cur["fields"][field] = f.group(2)
                 cur["_title_open"] = False
             elif cur["_title_open"]:
-                cur["title"] += " " + head
+                cur["title"] += "\n" + head
             elif field:
-                cur["fields"][field] += " " + head
+                cur["fields"][field] += "\n" + head
     for it in items:
         it.pop("_title_open", None)
         it["title"] = norm(it["title"])
@@ -342,7 +344,7 @@ def verify(candidate, pages):
     check that would reject an invented quote from any finder, deterministic or not."""
     a, b = candidate["source"]["pages"]
     kept = [ln for p in pages[a - 1:b] for ln in p.splitlines() if not PAGE_HEADER_RE.search(ln)]
-    text = norm(" ".join(kept))
+    text = norm("\n".join(kept))
     problems = []
     for x in candidate.get("matches", []) + candidate.get("deadlines", []):
         if norm(x["quote"]) not in text:

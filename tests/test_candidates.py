@@ -131,6 +131,18 @@ class ParseTests(unittest.TestCase):
                                                  "with a revision to schedule the report back for December 2024.")
         self.assertNotIn("ANNOTATED AGENDA", it["fields"]["action"])
 
+    def test_word_hyphenated_across_lines_is_rejoined(self):
+        page = ("Action Calendar – New Business\n"
+                "\n"
+                "28.    Staff Parking\n"
+                "       Action: The Council finds that inadequate off- \n"
+                "       street parking exists.\n")
+        it = C.parse_items([page])[0]
+        self.assertEqual(it["fields"]["action"], "The Council finds that inadequate off-street parking exists.")
+        cand = {"candidate_id": "x", "source": {"pages": [1, 1]}, "matches": [], "deadlines": [],
+                "action": it["fields"]["action"]}
+        self.assertEqual(C.verify(cand, [page]), [])
+
     def test_ceremonial_list_and_communications_are_not_items(self):
         numbers = [i["number"] for i in C.parse_items(JULY.split("\f"))]
         self.assertNotIn("1", numbers)
