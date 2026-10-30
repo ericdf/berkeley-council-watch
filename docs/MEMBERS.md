@@ -27,6 +27,13 @@ pages keep the roles apart:
 The Clerk never prints which author led. The Contact line is the evidence used, and where it does
 not settle the question every author is a joint author: listing order is not used.
 
+**Comparisons use items on City business.** The members index and the total row on each member's
+page leave out routine items (the `routine` thread: relinquishments of office funds, donations,
+commemorations, appointments, excused absences) and count positions on state, federal and
+international matters (the `external` thread) in a column of their own. Each member's page still
+lists every item, routine ones included, by subject. Without this, a member who authors many
+relinquishments or support letters would read as a prolific author of City business.
+
 ## Votes
 
 The vote counted is the one on each item's final motion, as printed. "All Ayes" is kept as its own
