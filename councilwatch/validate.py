@@ -10,7 +10,8 @@ import re
 from .generate import OUT_DIR, STATUSES
 
 SCHEMA_DIR = os.path.join(os.path.dirname(__file__), "schema")
-TYPES = {"string": str, "integer": int, "boolean": bool, "object": dict, "array": list, "null": type(None)}
+TYPES = {"string": str, "integer": int, "number": (int, float), "boolean": bool, "object": dict, "array": list,
+         "null": type(None)}
 
 # Text that must never appear in published data: local paths, session links, credentials.
 FORBIDDEN = re.compile(
@@ -32,7 +33,7 @@ def check_schema(value, schema, where, errors):
     types = schema.get("type")
     if types:
         types = types if isinstance(types, list) else [types]
-        ok = any(isinstance(value, TYPES[t]) and not (t == "integer" and isinstance(value, bool)) for t in types)
+        ok = any(isinstance(value, TYPES[t]) and not (t in ("integer", "number") and isinstance(value, bool)) for t in types)
         if not ok:
             errors.append(f"{where}: expected {'/'.join(types)}, got {type(value).__name__}")
             return

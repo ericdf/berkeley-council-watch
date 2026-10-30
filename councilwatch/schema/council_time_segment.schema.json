@@ -1,0 +1,159 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: one segment of a caption transcript",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "segment_id",
+  "structure_archive_id",
+  "transcript_archive_id",
+  "meeting_date",
+  "meeting_body",
+  "meeting_id",
+  "kind",
+  "item_as_recorded",
+  "record_ids",
+  "minutes",
+  "public_comment_minutes",
+  "estimated",
+  "locator",
+  "public_comment_locators",
+  "evidence_start",
+  "boundary_level",
+  "archive_url"
+ ],
+ "properties": {
+  "segment_id": {
+   "type": "string",
+   "pattern": "^[a-z0-9-]+#\\d+$"
+  },
+  "structure_archive_id": {
+   "type": "string"
+  },
+  "transcript_archive_id": {
+   "type": "string"
+  },
+  "meeting_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "meeting_body": {
+   "enum": [
+    "regular",
+    "special",
+    "jpfa",
+    "sabra",
+    "committee"
+   ]
+  },
+  "meeting_id": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "kind": {
+   "enum": [
+    "opening",
+    "ceremonial",
+    "consent",
+    "item",
+    "public_comment_nonagenda",
+    "council_comments",
+    "recess",
+    "other_procedural",
+    "closing"
+   ]
+  },
+  "item_as_recorded": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "record_ids": {
+   "type": "array",
+   "items": {
+    "type": "string",
+    "pattern": "^city-council-[0-9-]+--item-[0-9A-Za-z]+$"
+   }
+  },
+  "minutes": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "public_comment_minutes": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "estimated": {
+   "type": "boolean"
+  },
+  "locator": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "start": {
+     "type": "string",
+     "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "end": {
+     "type": "string",
+     "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "start_line": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "end_line": {
+     "type": "integer",
+     "minimum": 1
+    }
+   }
+  },
+  "public_comment_locators": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+     "start": {
+      "type": "string",
+      "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+     },
+     "end": {
+      "type": "string",
+      "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+     },
+     "start_line": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "end_line": {
+      "type": "integer",
+      "minimum": 1
+     }
+    }
+   }
+  },
+  "evidence_start": {
+   "type": "string",
+   "minLength": 1
+  },
+  "boundary_level": {
+   "enum": [
+    "inferred",
+    "cued",
+    "verified"
+   ]
+  },
+  "archive_url": {
+   "type": "string",
+   "pattern": "^https://"
+  }
+ }
+}

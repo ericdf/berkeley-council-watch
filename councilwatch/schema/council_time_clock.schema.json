@@ -1,0 +1,42 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: the reviewed clock of a court-reporter transcript",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "called_to_order",
+  "called_to_order_basis",
+  "adjourned",
+  "adjourned_basis",
+  "recess_minutes",
+  "recess_basis"
+ ],
+ "properties": {
+  "called_to_order": {
+   "type": "string",
+   "pattern": "^\\d{1,2}:\\d{2} [ap]\\.m\\.$"
+  },
+  "adjourned": {
+   "type": "string",
+   "pattern": "^\\d{1,2}:\\d{2} [ap]\\.m\\.$"
+  },
+  "called_to_order_basis": {
+   "type": "string",
+   "minLength": 1
+  },
+  "adjourned_basis": {
+   "type": "string",
+   "minLength": 1
+  },
+  "recess_minutes": {
+   "type": "integer",
+   "minimum": 0
+  },
+  "recess_basis": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ }
+}

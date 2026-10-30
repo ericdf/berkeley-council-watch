@@ -1,0 +1,361 @@
+{
+ "transcripts": {
+  "bcc-2025-01-21-regular-captions-text": {
+   "adjourned": "8:46 p.m.",
+   "adjourned_basis": "8:46 p.m. (\"[ ADJOURNED 8:46 P.M. ]\")",
+   "called_to_order": "6:16 p.m.",
+   "called_to_order_basis": "6:16 p.m. (annotated agenda roll call time)",
+   "recess_basis": [
+    "{\"start\": \"8:00 p.m. (transcript \\\"[ BREAK ]\\\")\", \"end\": \"not stated\", \"start_line\": 2684, \"end_line\": 2725} [no duration stated; not subtracted]"
+   ],
+   "recess_minutes": 0
+  },
+  "bcc-2025-02-11-regular-captions-text": {
+   "adjourned": "10:46 p.m.",
+   "adjourned_basis": "10:46 p.m. (annotated agenda PDF, L0)",
+   "called_to_order": "6:50 p.m.",
+   "called_to_order_basis": "6:50 p.m. (annotated agenda roll call time)",
+   "recess_basis": [
+    "{\"start\": \"8:06 p.m.\", \"end\": \"8:18 p.m. (annotated agenda)\", \"start_line\": 1856, \"end_line\": 1865}"
+   ],
+   "recess_minutes": 12
+  },
+  "bcc-2025-02-11-special-captions-text": {
+   "adjourned": "6:24 p.m.",
+   "adjourned_basis": "6:24 p.m. per transcript (\"[ 6:24 P.M. ]\"); annotated agenda says 6:23 p.m.",
+   "called_to_order": "4:08 p.m.",
+   "called_to_order_basis": "4:08 p.m. (annotated agenda roll call time)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-02-25-regular-captions-text": {
+   "adjourned": "8:52 p.m.",
+   "adjourned_basis": "8:52 p.m. (transcript and annotated agenda)",
+   "called_to_order": "6:02 p.m.",
+   "called_to_order_basis": "6:02 p.m. (annotated agenda roll call)",
+   "recess_basis": [
+    "{\"start\": \"8:20 p.m.\", \"end\": \"8:35 p.m. (annotated agenda)\", \"start_line\": 3600, \"end_line\": 3640}"
+   ],
+   "recess_minutes": 15
+  },
+  "bcc-2025-02-25-special-captions-text": {
+   "adjourned": "5:27 p.m.",
+   "adjourned_basis": "5:27 p.m. (\"[ADJOURNED AT 5:27 PM]\"; annotated agenda)",
+   "called_to_order": "4:17 p.m.",
+   "called_to_order_basis": "4:17 p.m. (annotated agenda roll call)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-03-11-regular-captions-text": {
+   "adjourned": "9:57 p.m.",
+   "adjourned_basis": "9:57 p.m. (transcript and annotated agenda)",
+   "called_to_order": "6:38 p.m.",
+   "called_to_order_basis": "6:38 p.m. (annotated agenda roll call)",
+   "recess_basis": [
+    "{\"start\": \"8:22 p.m.\", \"end\": \"8:34 p.m. (annotated agenda)\", \"start_line\": 2739, \"end_line\": 2750}"
+   ],
+   "recess_minutes": 12
+  },
+  "bcc-2025-03-11-special-captions-text": {
+   "adjourned": "6:10 p.m.",
+   "adjourned_basis": "6:10 p.m. (transcript)",
+   "called_to_order": "5:07 p.m.",
+   "called_to_order_basis": "5:07 p.m. (annotated agenda roll call)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-03-18-regular-captions-text": {
+   "adjourned": "10:05 p.m.",
+   "adjourned_basis": "10:05 p.m. (transcript and annotated agenda)",
+   "called_to_order": "6:19 p.m.",
+   "called_to_order_basis": "6:19 p.m. (transcript and annotated agenda)",
+   "recess_basis": [
+    "{\"start\": \"7:33 p.m.\", \"end\": \"7:45 p.m. (annotated agenda)\", \"start_line\": 2019, \"end_line\": 2031}"
+   ],
+   "recess_minutes": 12
+  },
+  "bcc-2025-03-18-special-captions-text": {
+   "adjourned": "6:01 p.m.",
+   "adjourned_basis": "6:01 p.m. (annotated agenda)",
+   "called_to_order": "4:00 p.m.",
+   "called_to_order_basis": "4:00 p.m. stated by Mayor; roll call 4:07 p.m. (annotated agenda)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-03-25-regular-captions-text": {
+   "adjourned": "9:57 p.m.",
+   "adjourned_basis": "9:57 p.m. (transcript \"[ ADJOURNED ]\" and annotated agenda)",
+   "called_to_order": "6:50 p.m.",
+   "called_to_order_basis": "6:50 p.m. (stated by Mayor); roll call 6:49 p.m. (annotated agenda)",
+   "recess_basis": [
+    "{\"start_line\": 1987, \"end_line\": 1998, \"clock\": \"8:07 p.m. - 8:18 p.m. (annotated agenda)\"}"
+   ],
+   "recess_minutes": 11
+  },
+  "bcc-2025-03-25-special-captions-text": {
+   "adjourned": "6:29 p.m.",
+   "adjourned_basis": "6:29 p.m. (annotated agenda)",
+   "called_to_order": "4:09 p.m.",
+   "called_to_order_basis": "Called to order by Mayor (line 7); roll call 4:09 p.m. (annotated agenda)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-04-15-regular-captions-text": {
+   "adjourned": "10:40 p.m.",
+   "adjourned_basis": "10:40 p.m. (transcript \"[ADJOURNED 10:40 P.M.]\" and annotated agenda)",
+   "called_to_order": "7:05 p.m.",
+   "called_to_order_basis": "Not captured (transcript starts after a break); roll call 7:05 p.m. (annotated agenda)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-04-15-special-captions-text": {
+   "adjourned": "6:44 p.m.",
+   "adjourned_basis": "6:44 p.m. (annotated agenda)",
+   "called_to_order": "4:06 p.m.",
+   "called_to_order_basis": "Not captured in transcript; roll call 4:06 p.m. (annotated agenda)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-04-22-special-captions-text": {
+   "adjourned": "8:51 p.m.",
+   "adjourned_basis": "8:51 p.m. (annotated agenda)",
+   "called_to_order": "6:04 p.m.",
+   "called_to_order_basis": "6:04 p.m. (stated by Mayor; annotated agenda roll call 6:04 p.m.)",
+   "recess_basis": [
+    "{\"start_line\": 2569, \"end_line\": 2580, \"clock\": \"7:46 p.m. - 8:04 p.m. (annotated agenda)\"}"
+   ],
+   "recess_minutes": 18
+  },
+  "bcc-2025-04-28-special-captions-text": {
+   "adjourned": "11:48 p.m.",
+   "adjourned_basis": "11:48 p.m. per annotated agenda; transcript ends \"[ADJOURNED 11:51 P.M.]\"",
+   "called_to_order": "5:04 p.m.",
+   "called_to_order_basis": "No clock time spoken at call to order; roll call 5:04 p.m. (annotated agenda)",
+   "recess_basis": [
+    "{\"start_line\": 2259, \"end_line\": 2298, \"clock\": \"not stated (audio fix)\"} [no duration stated; not subtracted]",
+    "{\"start_line\": 4218, \"end_line\": 4227, \"clock\": \"not stated (10-minute break)\"}",
+    "{\"start_line\": 5949, \"end_line\": 5973, \"clock\": \"began about 9:45 p.m. (Mayor, line 5961); end not stated\"} [no duration stated; not subtracted]",
+    "{\"start_line\": 8301, \"end_line\": 8306, \"clock\": \"not stated (5-minute recess)\"}"
+   ],
+   "recess_minutes": 15
+  },
+  "bcc-2025-04-29-regular-captions-text": {
+   "adjourned": "8:58 p.m.",
+   "adjourned_basis": "8:58 p.m. (transcript \"[ADJOURNED 8:58 P.M.]\" and annotated agenda)",
+   "called_to_order": "6:08 p.m.",
+   "called_to_order_basis": "No clock time spoken; roll call 6:08 p.m. (annotated agenda)",
+   "recess_basis": [
+    "{\"start_line\": 2729, \"end_line\": 2775, \"clock\": \"not stated (15-minute break)\"}"
+   ],
+   "recess_minutes": 15
+  },
+  "bcc-2025-05-06-regular-captions-text": {
+   "adjourned": "8:05 p.m.",
+   "adjourned_basis": "8:05 p.m. (transcript \"[ADJOURNED 8:05 P.M.]\" and annotated agenda)",
+   "called_to_order": "6:06 p.m.",
+   "called_to_order_basis": "6:06 p.m. stated by Mayor before technical setup; roll call 6:09 p.m. (annotated agenda)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-05-06-special-captions-text": {
+   "adjourned": "5:31 p.m.",
+   "adjourned_basis": "5:31 p.m. (annotated agenda); transcript header says 5:32 p.m.",
+   "called_to_order": "4:30 p.m.",
+   "called_to_order_basis": "4:30 p.m. per transcript header; roll call 4:37 p.m. (annotated agenda)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-05-20-regular-captions-text": {
+   "adjourned": "11:36 p.m.",
+   "adjourned_basis": "11:36 p.m. ([ADJOURNED 11:36 P.M.] in transcript)",
+   "called_to_order": "6:08 p.m.",
+   "called_to_order_basis": "6:08 p.m. (annotated agenda roll call)",
+   "recess_basis": [
+    "{\"start_line\": 1862, \"end_line\": 1888, \"clock\": \"not stated (10-minute break announced)\"}",
+    "{\"start_line\": 2592, \"end_line\": 2611, \"clock\": \"not stated (5 minutes)\"}",
+    "{\"start_line\": 6458, \"end_line\": 6471, \"clock\": \"not stated (10 minutes)\"}"
+   ],
+   "recess_minutes": 25
+  },
+  "bcc-2025-05-20-special-captions-text": {
+   "adjourned": "5:17 p.m.",
+   "adjourned_basis": "annotated agenda: adjourned 5:17 p.m.",
+   "called_to_order": "4:36 p.m.",
+   "called_to_order_basis": "4:36 p.m. (annotated agenda roll call)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-06-03-regular-captions-text": {
+   "adjourned": "8:22 p.m.",
+   "adjourned_basis": "8:22 p.m. ([ADJOURNED 8:22 P.M.])",
+   "called_to_order": "6:06 p.m.",
+   "called_to_order_basis": "6:06 p.m. (annotated agenda roll call)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-06-17-regular-captions-text": {
+   "adjourned": "11:09 p.m.",
+   "adjourned_basis": "11:09 p.m. ([END 11:09 P.M.]; annotated agenda \"Adjourned at 11:09 p.m.\")",
+   "called_to_order": "6:02 p.m.",
+   "called_to_order_basis": "6:02 p.m. (annotated agenda roll call)",
+   "recess_basis": [
+    "{\"start_line\": 2395, \"end_line\": 2416, \"clock\": \"not stated (10 min)\"} [no duration stated; not subtracted]",
+    "{\"start_line\": 5957, \"end_line\": 5964, \"clock\": \"not stated (15 min)\"} [no duration stated; not subtracted]"
+   ],
+   "recess_minutes": 0
+  },
+  "bcc-2025-06-24-regular-captions-text": {
+   "adjourned": "12:27 a.m.",
+   "adjourned_basis": "12:27 a.m. ([ADJOURNED 12:27 A.M.])",
+   "called_to_order": "7:06 p.m.",
+   "called_to_order_basis": "7:06 p.m. (annotated agenda roll call)",
+   "recess_basis": [
+    "{\"start_line\": 2318, \"end_line\": 2329, \"clock\": \"resumed 8:45 p.m. (stated by Mayor)\"} [no duration stated; not subtracted]",
+    "{\"start_line\": 5745, \"end_line\": 5748, \"clock\": \"not stated\"} [no duration stated; not subtracted]"
+   ],
+   "recess_minutes": 0
+  },
+  "bcc-2025-06-24-special-captions-text": {
+   "adjourned": "6:40 p.m.",
+   "adjourned_basis": "annotated agenda: adjourned 6:40 p.m.",
+   "called_to_order": "4:09 p.m.",
+   "called_to_order_basis": "4:09 p.m. (annotated agenda roll call)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-06-26-special-captions-text": {
+   "adjourned": "12:15 a.m.",
+   "adjourned_basis": "not stated (meeting extended to 12:15 a.m.)",
+   "called_to_order": "6:11 p.m.",
+   "called_to_order_basis": "6:11 p.m. (annotated agenda roll call)",
+   "recess_basis": [
+    "{\"start_line\": 2430, \"end_line\": 2455, \"clock\": \"not stated (10 min)\"} [no duration stated; not subtracted]",
+    "{\"start_line\": 4760, \"end_line\": 4767, \"clock\": \"not stated (15 min)\"} [no duration stated; not subtracted]"
+   ],
+   "recess_minutes": 0
+  },
+  "bcc-2025-07-08-regular-captions-text": {
+   "adjourned": "8:08 p.m.",
+   "adjourned_basis": "8:08 p.m. ([ ADJOURNED 8:08 P.M. ])",
+   "called_to_order": "6:06 p.m.",
+   "called_to_order_basis": "6:06 p.m. (annotated agenda roll call)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-07-22-regular-captions-text": {
+   "adjourned": "12:11 a.m.",
+   "adjourned_basis": "12:11 a.m. (transcript \"[ ADJOURNED 12:11 A.M. PT ]\")",
+   "called_to_order": "6:37 p.m.",
+   "called_to_order_basis": "6:37 p.m. (annotated agenda roll call time)",
+   "recess_basis": [
+    "8:42 p.m. - 8:59 p.m. (annotated agenda, after Item 15)"
+   ],
+   "recess_minutes": 17
+  },
+  "bcc-2025-07-23-special-captions-text": {
+   "adjourned": "10:03 p.m.",
+   "adjourned_basis": "annotated agenda: adjourned 10:03 p.m.",
+   "called_to_order": "6:07 p.m.",
+   "called_to_order_basis": "6:07 p.m. (annotated agenda roll call time)",
+   "recess_basis": [
+    "8:09 p.m. - 8:20 p.m. (annotated agenda, after Item 2)"
+   ],
+   "recess_minutes": 11
+  },
+  "bcc-2025-07-29-regular-captions-text": {
+   "adjourned": "9:25 p.m.",
+   "adjourned_basis": "9:25 p.m. (transcript \"[ ADJOURNED 9:25 P.M. ]\")",
+   "called_to_order": "6:06 p.m.",
+   "called_to_order_basis": "6:06 p.m. (annotated agenda roll call time; not captured in transcript)",
+   "recess_basis": [
+    "five-minute break after consent (lines 802-813), clock times not stated",
+    "ten-minute break after Item 28 (lines 2859-2871), clock times not stated"
+   ],
+   "recess_minutes": 15
+  },
+  "bcc-2025-07-29-special-captions-text": {
+   "adjourned": "5:21 p.m.",
+   "adjourned_basis": "annotated agenda: adjourned 5:21 p.m.",
+   "called_to_order": "4:14 p.m.",
+   "called_to_order_basis": "4:14 p.m. (annotated agenda roll call time)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-09-09-regular-captions-text": {
+   "adjourned": "9:40 p.m.",
+   "adjourned_basis": "9:40 p.m. (annotated agenda; transcript \"[ ADJOURNED 9:40 P.\")",
+   "called_to_order": "6:07 p.m.",
+   "called_to_order_basis": "6:07 p.m. (annotated agenda roll call time)",
+   "recess_basis": [
+    "two-minute sound break during non-agenda comment (lines 840-850), clock times not stated",
+    "7:18 p.m. - 7:36 p.m. (annotated agenda, after consent)"
+   ],
+   "recess_minutes": 20
+  },
+  "bcc-2025-09-16-regular-captions-text": {
+   "adjourned": "7:55 p.m.",
+   "adjourned_basis": "annotated agenda: adjourned 7:55 p.m.",
+   "called_to_order": "6:42 p.m.",
+   "called_to_order_basis": "6:42 p.m. (regular meeting; annotated agenda roll call time)",
+   "recess_basis": [
+    "break between special and regular meetings (lines 174-187), ~15 minutes announced, clock times not stated"
+   ],
+   "recess_minutes": 15
+  },
+  "bcc-2025-09-16-special-captions-text": {
+   "adjourned": "6:17 p.m.",
+   "adjourned_basis": "annotated agenda: adjourned 6:17 p.m.",
+   "called_to_order": "4:06 p.m.",
+   "called_to_order_basis": "4:06 p.m. (annotated agenda roll call time)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-09-30-regular-captions-text": {
+   "adjourned": "8:36 p.m.",
+   "adjourned_basis": "8:36 p.m. (transcript \"[ ADJOURNED 8:36 P.M. ]\")",
+   "called_to_order": "6:05 p.m.",
+   "called_to_order_basis": "6:05 p.m. (annotated agenda roll call time)",
+   "recess_basis": [
+    "7:10 p.m. - 7:24 p.m. (annotated agenda, after Item 16)"
+   ],
+   "recess_minutes": 14
+  },
+  "bcc-2025-09-30-special-captions-text": {
+   "adjourned": "5:34 p.m.",
+   "adjourned_basis": "annotated agenda: adjourned 5:34 p.m.",
+   "called_to_order": "4:06 p.m.",
+   "called_to_order_basis": "4:06 p.m. (transcript and annotated agenda)",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-10-14-regular-captions-text": {
+   "adjourned": "7:25 p.m.",
+   "adjourned_basis": "7:25 p.m.",
+   "called_to_order": "6:07 p.m.",
+   "called_to_order_basis": "6:07 p.m.",
+   "recess_basis": [],
+   "recess_minutes": 0
+  },
+  "bcc-2025-10-28-regular-captions-text": {
+   "adjourned": "11:59 p.m.",
+   "adjourned_basis": "11:59 p.m. ([ ADJOURNED 11:59 P.M. ])",
+   "called_to_order": "6:27 p.m.",
+   "called_to_order_basis": "6:27 p.m. (roll call per annotated agenda; not stated in captions)",
+   "recess_basis": [
+    "{\"start\": \"~7:47 p.m.\", \"end\": \"7:57 p.m. (announced return)\", \"start_line\": 2412}",
+    "{\"start\": \"unstated\", \"end\": \"~10:06 p.m. (stated on resumption)\", \"start_line\": 5008} [no duration stated; not subtracted]"
+   ],
+   "recess_minutes": 10
+  },
+  "bcc-2025-11-10-regular-captions-text": {
+   "adjourned": "9:33 p.m.",
+   "adjourned_basis": "9:33 p.m. ([ END 9:33 P.M. ])",
+   "called_to_order": "6:04 p.m.",
+   "called_to_order_basis": "6:04 p.m. (roll call per annotated agenda)",
+   "recess_basis": [
+    "{\"start\": \"7:14 p.m.\", \"end\": \"7:27 p.m.\", \"start_line\": 2140, \"end_line\": 2145}"
+   ],
+   "recess_minutes": 13
+  }
+ }
+}

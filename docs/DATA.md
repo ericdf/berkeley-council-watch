@@ -80,6 +80,9 @@ no meeting in the City listing. They are mostly from before the listing's Januar
 Reviewed accountability records (matters, commitments, follow-up events) live separately in
 `data/tracked/`. See [TRACKED.md](TRACKED.md).
 
+Council time (minutes per transcript segment and correspondence per heading, with reviewed thread
+classification in `data/review/council-time/`) is described in [COUNCIL_TIME.md](COUNCIL_TIME.md).
+
 ## Deployment
 
 `.github/workflows/pages.yml` validates, builds and link-checks the site on every push to `main`, then

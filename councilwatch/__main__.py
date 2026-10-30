@@ -3,6 +3,11 @@
   generate --archive PATH   regenerate data/generated/agenda-intake/ from an archive checkout
   validate                  check the generated dataset and the reviewed records in data/tracked/
   reproduce --archive PATH  regenerate into a scratch directory and require byte-identical output
+  council-time --archive PATH
+                            regenerate data/generated/council-time/ from an archive checkout and the
+                            reviewed inputs in data/review/council-time/ (docs/COUNCIL_TIME.md)
+  reproduce-council-time --archive PATH
+                            regenerate council-time into a scratch directory; require identical bytes
   build                     render the static site into _site/
   check-links               check internal links in _site/
   paths FILE...             fail if any path is outside the agenda-intake allowlist
@@ -21,7 +26,7 @@ import os
 import sys
 import tempfile
 
-from . import candidates, decisions, generate, links, site, tracked, validate
+from . import candidates, council_time, decisions, generate, links, site, tracked, validate
 
 
 def main(argv=None):
@@ -50,6 +55,10 @@ def main(argv=None):
     c.add_argument("--out", default="_backfill")
     c.add_argument("--allow-dirty", action="store_true")
     sub.add_parser("replay-check").add_argument("--archive", required=True)
+    ct = sub.add_parser("council-time")
+    ct.add_argument("--archive", required=True)
+    ct.add_argument("--allow-dirty", action="store_true")
+    sub.add_parser("reproduce-council-time").add_argument("--archive", required=True)
     imp = sub.add_parser("import-decisions")
     imp.add_argument("--bundle", required=True)
     imp.add_argument("--decisions", required=True)
@@ -67,6 +76,7 @@ def main(argv=None):
         errors = validate.validate(a.data)
         meeting_ids = {m["meeting_id"] for m in validate.load_dataset(a.data)["meetings.json"]}
         errors += tracked.validate(a.tracked, meeting_ids)
+        errors += council_time.validate(meeting_ids=meeting_ids)
         for e in errors:
             print(e)
         print(f"{len(errors)} errors")
@@ -78,6 +88,21 @@ def main(argv=None):
             _, mismatch, missing = filecmp.cmpfiles(a.data, tmp, names, shallow=False)
             for n in mismatch + missing:
                 print(f"{n}: differs from a fresh generation")
+            print("reproducible" if not (mismatch or missing) else "not reproducible")
+            return 1 if mismatch or missing else 0
+    if a.cmd == "council-time":
+        d = council_time.run(a.archive, allow_dirty=a.allow_dirty)
+        c = d["meta.json"]["counts"]
+        print(f"{c['transcripts']} transcripts ({c['transcripts_estimated']} estimated), {c['segments']} segments, "
+              f"{c['correspondence_headings']} correspondence headings, {c['turns']} turns, "
+              f"{len(d['meta.json']['exceptions'])} exceptions from archive {d['meta.json']['source']['archive_commit'][:12]}")
+        return 1 if any(x["kind"] in council_time.BLOCKING for x in d["meta.json"]["exceptions"]) else 0
+    if a.cmd == "reproduce-council-time":
+        with tempfile.TemporaryDirectory() as tmp:
+            council_time.run(a.archive, tmp)
+            _, mismatch, missing = filecmp.cmpfiles(council_time.OUT_DIR, tmp, council_time.NAMES, shallow=False)
+            for n in mismatch + missing:
+                print(f"council-time/{n}: differs from a fresh generation")
             print("reproducible" if not (mismatch or missing) else "not reproducible")
             return 1 if mismatch or missing else 0
     if a.cmd == "build":

@@ -1,0 +1,30 @@
+{
+ "calibration": {
+  "median_ratio": 1.01,
+  "middle_half": [
+   0.98,
+   1.05
+  ],
+  "min_minutes": 10,
+  "range": [
+   0.78,
+   1.13
+  ],
+  "segments": 89
+ },
+ "counts": {
+  "correspondence_headings": 2125,
+  "meetings_with_correspondence": 78,
+  "segments": 734,
+  "transcripts": 73,
+  "transcripts_estimated": 38,
+  "turns": 143
+ },
+ "dataset": "council-time",
+ "exceptions": [],
+ "generator_version": 1,
+ "source": {
+  "archive_commit": "a1d736c9dcf41088d873f0502fa1cbe779a0951d",
+  "archive_repository": "ericdf/berkeley-public-records"
+ }
+}

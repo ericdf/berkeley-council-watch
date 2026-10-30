@@ -1,0 +1,5450 @@
+{
+ "correspondence_headings": [
+  {
+   "heading": "2425 Durant ZAB Appeal",
+   "thread": "appeals"
+  },
+  {
+   "heading": "2nd Street Encampment",
+   "thread": "homeless"
+  },
+  {
+   "heading": "2nd Street Encampments",
+   "thread": "homeless"
+  },
+  {
+   "heading": "8th and Harrison Encampment",
+   "thread": "homeless"
+  },
+  {
+   "heading": "ADU Data",
+   "thread": "zoning"
+  },
+  {
+   "heading": "ADU Ordinance",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Access to Police Communications",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Acton Courtyard Tenants Union",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Affordable Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Affordable Housing Month",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Affordable Housing for First Responders",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Alternative Housing",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Alternative Housing Options",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Ashby BART Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "BMR Rent Clarifications",
+   "thread": "zoning"
+  },
+  {
+   "heading": "BPD Radio Communications",
+   "thread": "oversight"
+  },
+  {
+   "heading": "BPD Surveillance Cameras",
+   "thread": "flock"
+  },
+  {
+   "heading": "Berkeley Bicycle Plan",
+   "thread": "streets"
+  },
+  {
+   "heading": "Berkeley Ferry Plan",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Berkeley Housing Concern",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Berkeley Marina",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Berkeley Marina Concerns",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Berkeley Marina Visit",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Berkeley Pier/Marina",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Berkeley Police Dept.",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Berkeley Police at City Council Meetings",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Berkeley Reparations Budget Allocation",
+   "thread": "budget"
+  },
+  {
+   "heading": "Berkeley Tax Measures",
+   "thread": "measures_both"
+  },
+  {
+   "heading": "Berkeley Waterfront Park User Concern",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Berkeley Waterfront and Park Fees",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Berkeley’s City Budget",
+   "thread": "budget"
+  },
+  {
+   "heading": "Berkeley’s Harrison Corridor",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Bicycle Accident Concern",
+   "thread": "streets"
+  },
+  {
+   "heading": "Bicycle Count",
+   "thread": "streets"
+  },
+  {
+   "heading": "Bicycle Plan",
+   "thread": "streets"
+  },
+  {
+   "heading": "Bicycles and Pedestrians",
+   "thread": "streets"
+  },
+  {
+   "heading": "Bike Lanes",
+   "thread": "streets"
+  },
+  {
+   "heading": "Bike Lanes on Hopkins",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Blind Intersection @ Hopkins CT and Hopkins Ave",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Bond Act of 2026",
+   "thread": "bond"
+  },
+  {
+   "heading": "Bond Vote",
+   "thread": "bond"
+  },
+  {
+   "heading": "Brown Act",
+   "thread": "governance"
+  },
+  {
+   "heading": "Budget",
+   "thread": "budget"
+  },
+  {
+   "heading": "Budget Concerns",
+   "thread": "budget"
+  },
+  {
+   "heading": "Budget Public Hearing #1",
+   "thread": "budget"
+  },
+  {
+   "heading": "California Housing supply",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Car-Free Telegraph",
+   "thread": "streets"
+  },
+  {
+   "heading": "Care for Homeless People",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Cesar Chavez Park",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Cesar Chavez Park and Dogs",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "College and Hopkins",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Convenience Fee",
+   "thread": "fees"
+  },
+  {
+   "heading": "Corridor Meetings",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Corridor Upzoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Courtyard Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Discarded Bicycles",
+   "thread": "streets"
+  },
+  {
+   "heading": "Draft Bicycle Plan",
+   "thread": "streets"
+  },
+  {
+   "heading": "Drone Proposal",
+   "thread": "flock"
+  },
+  {
+   "heading": "EHBO’s Affordable Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "EMBER",
+   "thread": "fire"
+  },
+  {
+   "heading": "Elmwood Corridor Workshop",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Encampment Concern",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Encampment Concerns",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Encampment Health Concern",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Encampment Resolution",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Encampment Sweeps",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Encampment Sweeps and Concerns",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Encampments",
+   "thread": "homeless"
+  },
+  {
+   "heading": "FLOCK Concerns",
+   "thread": "flock"
+  },
+  {
+   "heading": "FLOCK/ALPRs",
+   "thread": "flock"
+  },
+  {
+   "heading": "FY 2027-2031 Paving Plan",
+   "thread": "streets"
+  },
+  {
+   "heading": "Fair Housing Conference",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Ferry Development",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Ferry Parking Plan",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Ferry Project",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Fire Concerns",
+   "thread": "fire"
+  },
+  {
+   "heading": "Flock ALPRs",
+   "thread": "flock"
+  },
+  {
+   "heading": "Flock Cameras",
+   "thread": "flock"
+  },
+  {
+   "heading": "Flock Concerns",
+   "thread": "flock"
+  },
+  {
+   "heading": "Flock Safety",
+   "thread": "flock"
+  },
+  {
+   "heading": "Flock/Mass Surveillance Concern",
+   "thread": "flock"
+  },
+  {
+   "heading": "Fulton Bike Lane",
+   "thread": "streets"
+  },
+  {
+   "heading": "GO Bond Measure",
+   "thread": "bond"
+  },
+  {
+   "heading": "GO Bond Measures",
+   "thread": "bond"
+  },
+  {
+   "heading": "GOP Budget Cuts Concern",
+   "thread": "budget"
+  },
+  {
+   "heading": "Global Warming & Homelessness Solution",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Golden Gate Field Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Grayson Encampments",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Homeless Guest",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Homeless Housing",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Homeless Policy Concern",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Homelessness Concerns",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Hopkins",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Hopkins St.",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Hopkins Street",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Hopkins/McGee",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing & Homelessness",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Housing Affordability",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Affordability Concerns",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Choice Voucher",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Complaint",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Complaint Form",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Concern",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Concerns",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Market Practices",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Occupancy Data",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Safety Concern",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Shaking Concern",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing Voucher Concerns",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing for Elders",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Housing/Housing Concerns",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Infill Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Infrastructure Bond",
+   "thread": "bond"
+  },
+  {
+   "heading": "Insight Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Insight Housing Concern",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1 Adoption of CALFIRE Map and Additional Areas Designated as the City of Berkeley Fire Hazard Severity Zones / Item #9: Modification and Adoption of Berkeley Fire Code Local Amendments",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #10: Five-Year Street Rehabilitation and Measure FF Plans for Fiscal Years 2027-2031",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #10: ZAB Appeal: 1048 Keith Avenue, Use Permit ZP2024-0014",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #11: Annual Surveillance Technology Report for Body Worn Cameras, GPS Trackers, Fixed Surveillance Video Cameras, Parking Enforcement Officer Automated License Plate Readers, the Street Level Imagery Project, Unmanned Aerial Systems, and Fixed Automated License Plate Readers",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #11: Contracts: Pavement and Safety Improvement/Program Management Consulting Services for Measure FF-funded Projects",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #11: Revised External Fixed Surveillance Camera Locations and Vendor Transition",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #11a: Berkeley Police Department Texting Offences: An Independent Investigation by the Police Accountability Board (Reviewed by the Public Safety Policy Committee) (Item contains supplemental material)",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #11b: Resolution: Affirming Support for Berkeley Police Department, Police Accountability Board, and Office of the Director of Police Accountability in Response to Downtown Task Force Texting Offenses Investigation",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #12: Referral to Amend Berkeley Municipal Codes 3.24.120 and 3.24.300 to Improve Procedure for Designating Landmarks, Historic Districts and Structures of Merit",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #12: Zoning Ordinance Modification for Telegraph Avenue Commercial District",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #13: Amendment to BMC Chapter 2.99 to Establish Surveillance Technology Vendor Accountability Requirements and to Revise the Annual Surveillance Technology Reporting Schedule",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #13: Budget Referral: Ohlone Greenway Safety Improvements Project Unfunded Balance",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #13: Project to Increase Telegraph and Claremont Housing (PITCH) Rezoning (Reviewed by the Land Use, Housing & Economic Development Committee)",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #13: Referral to Establish a Citywide Local Density Bonus Program to Facilitate Lower-Cost Ownership Homes (Condominiums) (Reviewed by the Land Use, Housing & Economic Development Committee)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #13: Urging Police Accountability Board Regulations Completion",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #14: A Referral to the City Manager to make a recommendation for further Council action: Transfer Tax Exemption for 100% Affordable Housing Projects",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #14: A Referral to the City Manager to make a recommendation for further Council action: Transfer Tax Exemption for 100% Affordable Housing Projects (Reviewed by the Land Use, Housing & Economic Development Policy Committee)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #14: Amendments to BMC Title 23 (Zoning) to Update the Regulation of Nonconforming Lot Coverage, Floor Area Ratio and Density for Residential Uses in Selected Zoning Districts",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #14: Inclusionary Housing Ordinance In-Lieu Fee; Amending Berkeley Municipal Code Chapter 23.328",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #14: Zoning Adjustments Board Appeal: 2109 Virginia, Use Permit #ZP2024- 0066",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #15: Affordable Housing Preference Policy: Pilot Assessment and Policy Update (Continued from September 29, 2026)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #15: Zoning Ordinance Amendments to Title 23 of the Berkeley Municipal Code for Consistency with State Law Related to Electric Vehicle Charging and Technical Edits",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #17: Resolution Rescinding Berkeley Police Department’s Pepper Spray Reporting Requirement (Reviewed by the Public Safety Committee)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #17: Surveillance Technology Ordinance Submission for External Fixed Surveillance Cameras (Flock Safety Condor Video Cameras)",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #17: Transactions and Use (Sales) General Tax Measure on the November 3, 2026 Ballot",
+   "thread": "salestax"
+  },
+  {
+   "heading": "Item #18: Adopt an Ordinance to Prohibit the Sale or Use of Algorithmic Devices to Set Rents or Manage Occupancy Levels for Residential Dwelling Units (Reviewed by the Land Use, Housing & Economic Development Policy Committee)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #18: Authorization to Encrypt Berkeley Police Department Primary Radio Channels",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #18: City of Berkeley’s 2026 State and Federal Legislative Platform (Continued from February 24, 2026)",
+   "thread": "governance"
+  },
+  {
+   "heading": "Item #19: Budget Referral for Thousand Oaks Park Playground Update",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #19: Formal Bid Solicitations and Request for Proposals Scheduled for Possible Issuance After Council Approval on June 30, 2026 / Item #46: Surveillance Technology Ordinance Submissions for Community Video Streams and Investigative Software, Pursuant to Council Direction of May 7, 2026 (Reviewed by the Public Safety Committee)",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #19: Resolution in opposition to the handling, storage, and transport of coal and petroleum coke in the San Francisco Bay Region, urging stringent regulation of such facilities by the Bay Area Air District, and in support of Assembly Bill (AB) 40 / Item #21a: Resolution Reinstating the Berkeley Police Department’s Ability to Use Tear Gas for Critical Life-Threatening Incidents Only and Lifting the COVID-19 Moratorium on Smoke and Oleoresin Capsicum (OC) Spray (Continued from July 14, 2026) (Item Contains Supplemental Material) (Reviewed by the Public Safety Policy Committee) / Item #21b: Social Justice Implications of Proposed Use of Controlled Weapons and Other Policing Tools (Continued from July 14, 2026)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #1: 2024 Berkeley Police Department Annual Report",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #1: 2024 Police Accountability Board (PAB) & Office of the Director of Police Accountability (ODPA) Annual Report",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #1: 2025 Berkeley Police Department Annual Report",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #1: 2025 City Council Referral Prioritization Process Using Re-Weighted Range Voting (RRV)",
+   "thread": "governance"
+  },
+  {
+   "heading": "Item #1: 2025 Police Accountability Board (PAB) & Office of the Director of Police Accountability (ODPA) Annual Report",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #1: 2026 City Council Referral Prioritization Process Using Re-Weighted Range Voting (RRV)",
+   "thread": "governance"
+  },
+  {
+   "heading": "Item #1: 2026 City Council Referral Prioritization Results Using Re-Weighted Range Voting (RRV)",
+   "thread": "governance"
+  },
+  {
+   "heading": "Item #1: Adding an additional qualifying skillset for appointment to Measure FF Safe Streets Citizen Oversight Committee (SSCOC); Amending Berkeley Municipal Code Section 7.11.040",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #1: Adoption of CALFIRE Map and Additional Areas Designated as the City of Berkeley Fire Hazard Severity Zones",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #1: Adoption of CALFIRE Map and Additional Areas Designated as the City of Berkeley Fire Hazard Severity Zones (Reviewed by the Public Safety Committee)",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #1: Adoption of CALFIRE Map and Additional Areas Designated as the City of Berkeley Fire Hazard Severity Zones (Reviewed by the Public Safety Committee) / Item #2: Modification and Adoption of Berkeley Fire Code Local Amendments (Reviewed by the Public Safety Committee)",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #1: Adoption of CALFIRE Map and Additional Areas Designated as the City of Berkeley Fire Hazard Severity Zones / Item #9: Modification and Adoption of Berkeley Fire Code Local Amendments",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #1: Adoption of Fiscal Years 2027 and 2028 Biennial Budget and Fiscal Years 2027 – 2031 Capital Improvement Program",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #1: Amending Berkeley Municipal Code Chapter 7.54 The Empty Homes Tax / Item #2: Amendment to Ground Lease with East Bay Regional Park District at 400 Gilman Street (Tom Bates Regional Sports Complex) / Item #3: Remove Pre-Transfer Eligibility Restriction of the Transfer Tax Rebate for Wildfire Hardening / Item #26: Recommendations for the Formulation of Advanced Fiscal Policies to Institutionalize Strategic Bond Issuance, Optimize Municipal Investment Returns, and Leverage Intergovernmental and Philanthropic Capital Funding",
+   "thread": "bond"
+  },
+  {
+   "heading": "Item #1: Amendments to BMC Title 23 (Zoning) to Update the Regulation of Nonconforming Lot Coverage, Floor Area Ratio and Density for Residential Uses in Selected Zoning Districts",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1: Corridors Zoning Update",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1: Corridors Zoning Update / Item #2: San Pablo Avenue Specific Plan",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1: FY 2027 Annual Appropriations Ordinance",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #1: Fiscal Years 2027 & 2028 Biennial Budget Adoption and 5-Year CIP Adoption",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #1: Landmarks Preservation Commission Appeal: 2425 Durant, Landmark application #LMIN2024-0008",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #1: Landmarks Preservation Commission Appeal: 2425 Durant, Landmark application #LMIN2024-0008 / Item #2: Landmarks Preservation Commission Appeal: 2138 Kittredge, Landmark application #LMIN2024-0006",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #1: Landmarks Preservation Commission Appeal: 2425 Durant, Landmark application #LMIN2024-0008 / Item #2: Landmarks Preservation Commission Appeal: 2138 Kittredge, Landmark application #LMIN2024-0006 / Item #3: Zoning Adjustment Board Appeal: 2655 Shattuck, Use Permit #ZP2024- 0057",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1: Presentation and Discussion of Community Survey Results and Direction Regarding Potential Ballot Measures for the November 3, 2026, General Municipal Election",
+   "thread": "measures_both"
+  },
+  {
+   "heading": "Item #1: Presentation and Discussion of Second Community Survey Results and Direction Regarding Potential Ballot Measures for the November 3, 2026, General Municipal Election",
+   "thread": "measures_both"
+  },
+  {
+   "heading": "Item #1: Presentation and Discussion: Brown Act Training",
+   "thread": "governance"
+  },
+  {
+   "heading": "Item #1: Repeal and Reenact Berkeley Municipal Code (BMC) Chapter 14.52 to Adjust the goBerkeley Parking Management Program; Change Parking Permit Fees; Establish a New Schedule for Parking Violations, Fines, and Late Payment Penalties; and Rescind Resolution No. 71,627-N.S.",
+   "thread": "fees"
+  },
+  {
+   "heading": "Item #1: Resolution for an Immediate and Permanent Ceasefire in Gaza, and an End to U.S. Military Aid to Israel, and Support for Palestinian Self-Determination",
+   "thread": "gaza"
+  },
+  {
+   "heading": "Item #1: Social Housing Study and Recommendations",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1: ZAB Appeal: 2274 Shattuck Avenue, Use Permit #ZP2023-0079",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #1: Zoning Adjustments Board Appeal: 2298 Durant, Use Permit Application #ZP2024-0126",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1: Zoning Adjustments Board Appeal: 2298 Durant, Use Permit Application #ZP2024-0126 / Item #2: Zoning Adjustments Board Appeal: 2425 Durant Avenue, Use Permit Application #ZP2024-0162 / Item #3a: Zoning Adjustments Board Appeal: 2029 University Avenue, Use Permit Application #ZP2024-0182 (Student Housing-Oriented) / Item #3b: Zoning Adjustments Board Appeal: 2029 University Avenue, Use Permit Application #ZP2024-0181 (Multi-Family)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1: Zoning Ordinance and General Plan Amendments Relating to Middle Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #1a: Effective Mitigations for Berkeley’s Ember Resilience (EMBER): Fire Code Amendments",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #1a: Effective Mitigations for Berkeley’s Ember Resilience (EMBER): Fire Code Amendments / Item #1b: Effective Mitigations for Berkeley’s Ember Resilience (EMBER): Building Code Amendments Item#1c: Effective Mitigations for Berkeley’s Ember Resilience (EMBER): Leave Early and Fire Department Staffing / Item #1d: Request Inter-Departmental Collaboration and Implementation of Safe Passages",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #1a: Presentation: Comprehensive Summary of Berkeley’s Homeless Response (Continued from July 29, 2025)",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #1a: Public Safety Technology: Surveillance Technology Ordinance and Police Equipment Ordinance Approvals, Policy Updates, and Contract Authority / Item #1b: Social Justice Implications of contracts with the Immigration Data Broker, Flock Safety",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #1a: Resolution Reinstating the Berkeley Police Department’s Ability to Use Tear Gas for Critical Life-Threatening Incidents Only and Lifting the COVID-19 Moratorium on Smoke and Oleoresin Capsicum (OC) Spray (Continued from September 15, 2026) (Item Contains Revised and Supplemental Material) (Reviewed by the Public Safety Policy Committee)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #1b: Homeless Response Team: Opportunities Exist to Strengthen Procedures and Better Track Outcomes (Continued from July 29, 2025)",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #20: Amendments to BMC Title 3.24 (Landmarks Preservation Commission) to Revise Procedures for Designating Landmarks, Historic Districts and Structures of Merit and Incorporate Technical Edits",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #20: Amendments to Title 21 (Subdivisions Ordinance) and Title 23 (Zoning Ordinance) to implement Senate Bill (SB) 684",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #20: Zoning Adjustment Board Appeal: 2109 Virginia, Use Permit #ZP2024-0066",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #21: 2024 Police Equipment and Community Safety Ordinance Annual Report",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #21: Amendments to Title 21 (Subdivisions) to Allow Separate Sale of ADUs",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #21: Amendments to Title 21 (Subdivisions) to Allow Separate Sale of ADUs (Continued from December 2, 2025) (Item Contains Revised Material)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #21: Budget Referral: Deportation Defense Legal and Education Funds",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #21: City of Berkeley’s 2026 State and Federal Legislative Platform",
+   "thread": "governance"
+  },
+  {
+   "heading": "Item #21: Proposed FY 2027 and FY 2028 Biennial Budget and Proposed Biennial Budget Public Hearing #1",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #21: Re-Name the Park at the North Waterfront as Si Se Puede Park",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Item #21: Re-Name the park at the northern end of the Berkeley Waterfront as Si Se Puede Park",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Item #21: Rescission and replacement of the Police Equipment and Community Safety Ordinance (Reviewed by the Public Safety Policy Committee)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #21a: Resolution Reinstating the Berkeley Police Department’s Ability to Use Tear Gas for Critical Life-Threatening Incidents Only and Lifting the COVID-19 Moratorium on Smoke and Oleoresin Capsicum (OC) Spray (Continued from July 14, 2026) (Item Contains Supplemental Material) (Reviewed by the Public Safety Policy Committee)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #22: Creating Accessible Routes For Riders, Equity, and the Environment (CAR FREE): Budget Referral to Fund Limiting Cars on Telegraph Avenue",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #23: Changes to the Environmental Health Fee Schedule (Continued from May 19, 2026)",
+   "thread": "fees"
+  },
+  {
+   "heading": "Item #23a: Resolution Rescinding Resolution No. 51,408-N.S. Restricting the Use of Air Support and Canine Units And Updating Mutual Aid Policies (Reviewed by the Public Safety Policy Committee)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #23a: Resolution Rescinding Resolution No. 51,408-N.S. Restricting the Use of Air Support and Canine Units And Updating Mutual Aid Policies (Reviewed by the Public Safety Policy Committee) / Item #23b: Social Justice Implications of Proposed Use of Controlled Weapons and Other Policing Tools (Continued from April 21, 2026) / Item #24a: Resolution Reinstating the Berkeley Police Department’s Ability to Use Tear Gas for Critical Life-Threatening Incidents Only and Lifting the COVID-19 Moratorium on Smoke and Oleoresin Capsicum (OC) Spray (Reviewed by the Public Safety Policy Committee) / Item #24b: Social Justice Implications of Proposed Use of Controlled Weapons and Other Policing Tools (Continued from April 21, 2026)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #23a: Resolution Rescinding Resolution No. 51,408-N.S. Restricting the Use of Air Support and Canine Units And Updating Mutual Aid Policies (Reviewed by the Public Safety Policy Committee) / Item #23b: Social Justice Implications of Proposed Use of Controlled Weapons and Other Policing Tools (Continued from April 21, 2026) Item#24a: Resolution Reinstating the Berkeley Police Department’s Ability to Use Tear Gas for Critical Life-Threatening Incidents Only and Lifting the COVID-19 Moratorium on Smoke and Oleoresin Capsicum (OC) Spray (Reviewed by the Public Safety Policy Committee) / Item #24b: Social Justice Implications of Proposed Use of Controlled Weapons and Other Policing Tools (Continued from April 21, 2026)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #23a: Resolution Rescinding Resolution No. 51,408-N.S. Restricting the Use of Air Support and Canine Units And Updating Mutual Aid Policies (Reviewed by the Public Safety Policy Committee) / Item #24a: Resolution Reinstating the Berkeley Police Department’s Ability to Use Tear Gas for Critical Life-Threatening Incidents Only and Lifting the COVID-19 Moratorium on Smoke and Oleoresin Capsicum (OC) Spray (Reviewed by the Public Safety Policy Committee)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #24: Amendments to Title 23 (Zoning) to permit by-right approval of qualifying housing projects on sites identified in previous Housing Elements, and revisions related to Design Review",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #24: Berkeley Nightlife Council (Reviewed by the Land Use, Housing & Economic Development Committee)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #24: Changes to the Environmental Health Fee Schedule",
+   "thread": "fees"
+  },
+  {
+   "heading": "Item #24: Contract: Flock Safety for Condor Fixed Surveillance Cameras",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #24: Contract: Flock Safety for Condor Fixed Surveillance Cameras / Item #25: Proposed Sanctuary City Ordinance – Council Referral; Adding Berkeley Municipal Code Chapter 13.114",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #24: FY 2026 Proposed Budget Update Adoption",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #24: Refer $25,000 to the June 2025 Mid-BiennialBudget Process to Partially Cover Street Spirit’s Operational and Programming Costs",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #24: Repeal and Reenact Berkeley Municipal Code (BMC) Chapter 14.52 to Adjust the goBerkeley Parking Management Program; Change Parking Permit Fees; Establish a New Schedule for Parking Violations, Fines, and Late Payment Penalties; and Rescind Resolution No. 71,627-N.S. (Continued from May 19, 2026)",
+   "thread": "fees"
+  },
+  {
+   "heading": "Item #24a: Resolution Reinstating the Berkeley Police Department’s Ability to Use Tear Gas for Critical Life-Threatening Incidents Only and Lifting the COVID-19 Moratorium on Smoke and Oleoresin Capsicum (OC) Spray (Reviewed by the Public Safety Policy Committee)",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #25: Amendment to Berkeley Municipal Code Chapter 7.18 to Explicitly Require Competitive Procurement for Services to Promote Accountability and Transparency and Refer Development of Regulations to City Manager (Reviewed by the Budget & Finance Committee)",
+   "thread": "finaudit"
+  },
+  {
+   "heading": "Item #25: Berkeley Green New Deal: Workforce Development (Reviewed by the Land Use, Housing, & Economic Development Committee)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #25: FY 2026 Annual Appropriations Ordinance",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #25: ZAB Appeal: 2708 Prince Street, Use Permit ZP2024-0024",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #25: Zero Waste Plan Checks and Compliance Inspections Fees (Continued from May 19, 2026) (Item contains revised materials)",
+   "thread": "fees"
+  },
+  {
+   "heading": "Item #26: Appeal of the Housing Advisory Commission decision to deny the appeal and affirm the Determination by the Building Official for 1615 Fairview Street Regarding the Applicability of Exterior Elevated Elements Inspection Requirement",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #26: Letter in Support of California State Senate Bill 692 (Arreguín) Relating to Vehicles and Homelessness",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #26: Public Safety Technology: Surveillance Technology Ordinance and Police Equipment Ordinance Approvals, Policy Updates, and Contract Authority",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #26: Recommendations for the Formulation of Advanced Fiscal Policies to Institutionalize Strategic Bond Issuance, Optimize Municipal Investment Returns, and Leverage Intergovernmental and Philanthropic Capital Funding",
+   "thread": "bond"
+  },
+  {
+   "heading": "Item #26: Zoning Ordinance Amendments to Title 23 of the Berkeley Municipal Code for Consistency with State Law and Technical Edits (SLTE 2025)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #27: Referral to Schedule Hopkins Street for Paving with Enhanced Safety Improvements for all Users (Reviewed by the Facilities, Infrastructure, Transportation, Environment & Sustainability Committee)",
+   "thread": "hopkins"
+  },
+  {
+   "heading": "Item #27a: Affordable Housing for Artists Report / Item #27b: Companion Report: Affordable Housing for Artists Report",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #28: Accessory Dwelling Units (ADUs): Amendments to Title 21 (Subdivisions) to Allow Separate Sale of ADUs, and Amendments to Title 23 (Zoning) to Comply with State Law and Encourage ADU Development",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #28: Budget Referral: Curb Marking and Preventative Infrastructure Upgrades at High-Risk Intersections in Accordance with the New California Daylighting Law, AB 413",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #28: Proposed Five-Year Capital Improvement Program (CIP) and Proposed Five-Year CIP Public Hearing No. 1",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #28: Proposed Five-Year Capital Improvement Program (CIP) and Proposed FiveYear CIP Public Hearing No. 1",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #28: Remove Pre-Transfer Eligibility Restriction of the Transfer Tax Rebate for Wildfire Hardening",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #28: Repeal and Reenact Berkeley Municipal Code (BMC) Chapter 14.52 to Adjust the goBerkeley Parking Management Program; Change Parking Permit Fees; Establish a New Schedule for Parking Violations, Fines, and Late Payment Penalties; and Rescind Resolution No. 71,627-N.S.",
+   "thread": "fees"
+  },
+  {
+   "heading": "Item #28: Zoning Adjustments Board Appeal: 1950-1998 Shattuck Avenue, Use Permit #ZP2023-0040",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #29: 2026 Bicycle Plan Update",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #29: Alternative Housing Options for People Experiencing Homelessness",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #29: Alternative Housing Options for People Experiencing Homelessness (Reviewed by the Health, Life Enrichment, Equity & Community Committee)",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #29: North Berkeley BART Affordable Housing Projects – Additional Predevelopment Funding and Ownership Change",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #29: Zero Waste Plan Checks and Compliance Inspections Fees",
+   "thread": "fees"
+  },
+  {
+   "heading": "Item #2: Adopt an Ordinance to Prohibit the Sale or Use of Pricing Algorithms to Set Rents or Manage Occupancy Levels for Residential Dwelling Units; Adding Berkeley Municipal Code Chapter 13.63",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #2: Adoption of San Pablo Avenue Specific Plan",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #2: Amendment: FY 2025 Annual Appropriations Ordinance",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #2: Discussion Regarding Potential Ballot Measures for the November 3, 2026, General Municipal Election",
+   "thread": "measures_both"
+  },
+  {
+   "heading": "Item #2: FY 2027 Annual Appropriations Ordinance",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #2: Landmarks Preservation Commission Appeal: 2138 Kittredge, Landmark application #LMIN2024-0006",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #2: Modification and Adoption of Berkeley Fire Code Local Amendments (Reviewed by the Public Safety Committee)",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #2: Police Accountability Board - Appointment of New Member",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #2: San Pablo Avenue Specific Plan",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #2: Zoning Adjustments Board Appeal: 2425 Durant Avenue, Use Permit Application #ZP2024-0162",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #2: Zoning Ordinance Amendments to Title 23 of the Berkeley Municipal Code for Consistency with State Law Related to Electric Vehicle Charging and Technical Edits",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #2a: Presentation: Comprehensive Summary of Berkeley’s Homeless Response",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #2b: Homeless Response Team: Opportunities Exist to Strengthen Procedures and Better Track Outcomes",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #30: FY 2026 Proposed Mid-Biennial Budget Update and Public Hearing #1",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #30: Zoning Ordinance and General Plan Amendments Relating to Middle Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #31: LPC Appeal: 2500-2512 San Pablo Avenue, Landmark Application #LMIN2024-0004",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #31: Unmanned Aerial Systems and Drones as First Responders",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #32: Amendments to Title 21 (Subdivisions) to Allow Separate Sale of ADUs",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #32: Appointment of Four Berkeley Residents to the SAFE STREETS Citizen Oversight Committee",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #33: Telegraph Multimodal Corridor Project Conceptual Design",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #34: Adoption of San Pablo Avenue Specific Plan",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #35: Affordable Housing Preference Policy: Pilot Assessment and Policy Update",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #35: Housing Trust Fund and Small Sites Program Fees",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #36: Affirming All-Electric Standards for the 2026 Infrastructure Bond Measure and City Capital Projects (Reviewed by the Facilities, Infrastructure, Transportation, Environment & Sustainability Policy Committee)",
+   "thread": "bond"
+  },
+  {
+   "heading": "Item #36: Affordable Housing Compliance Review Fee",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #36: Surveillance Technology Ordinance Submission for Mutual Aid Air Support, Pursuant to Council Action of July 14, 2026",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #37: Placing a Charter Amendment Measure on the November 3, 2026 Ballot to Amend Multiple Administrative Provisions",
+   "thread": "ballot"
+  },
+  {
+   "heading": "Item #37: Selected Marina Fee Increases",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Item #38: Placing a General Obligation Bond Measure on the November 3, 2026 Ballot for the Acquisition or Improvement of Real Property for Public Infrastructure and Facilities",
+   "thread": "bond"
+  },
+  {
+   "heading": "Item #39: Placing a Transactions and Use (Sales) General Tax Measure on the November 3, 2026 Ballot",
+   "thread": "salestax"
+  },
+  {
+   "heading": "Item #3: 2025 City Council Referral Prioritization Results Using Re-Weighted Range Voting (RRV)",
+   "thread": "governance"
+  },
+  {
+   "heading": "Item #3: Police Accountability Board – Appointment of New Member",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Item #3: Remove Pre-Transfer Eligibility Restriction of the Transfer Tax Rebate for Wildfire Hardening",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #3: Zoning Adjustment Board Appeal: 2655 Shattuck, Use Permit #ZP2024- 0057",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #3: Zoning Adjustment Board Appeal: 2655 Shattuck, Use Permit #ZP2024-0057",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #3a: Zoning Adjustments Board Appeal: 2029 University Avenue, Use Permit Application #ZP2024-0182 (Student Housing-Oriented) / Item #3b: Zoning Adjustments Board Appeal: 2029 University Avenue, Use Permit Application #ZP2024-0181 (Multi-Family)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #40: Adopt a position of Support for California Senate Bill (SB) 1383 (Arreguín): Housing Development: Density Bonus: Labor Standards (Reviewed by the Land Use, Housing & Economic Development Committee)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #40: Adoption of the 2025 California Fire Code with Local Amendments – Second Reading",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #40a: Proposed FY 2027 and FY 2028 Biennial Budget and Five-Year Capital Improvement Program (CIP) and Proposed Biennial Budget and Five-Year CIP Public Hearing No. 2",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #43: Amendments to Title 21 (Subdivisions) to Allow Separate Sale of ADUs",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #43a: Modification and Adoption of Berkeley Fire Code Local Amendments (Continued from May 6, 2025)",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #43a: Modification and Adoption of Berkeley Fire Code Local Amendments (Continued from May 6, 2025) / Item #43b: Adoption of CALFIRE Map and Additional Areas Designated as the City of Berkeley Fire Hazard Severity Zones (Continued from May 6, 2025) / Item #43c: EMBER Implementation Plan, Vegetation Management Working Group, and Clarifying Fire Code Language",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #43b: Adoption of CALFIRE Map and Additional Areas Designated as the City of Berkeley Fire Hazard Severity Zones (Continued from May 6, 2025) / Item #43c: EMBER Implementation Plan, Vegetation Management Working Group, and Clarifying Fire Code Language",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #45: Placing an Initiative Ordinance Amending the Rent Stabilization Ordinance on the November 3, 2026 Ballot",
+   "thread": "ballot"
+  },
+  {
+   "heading": "Item #46: Surveillance Technology Ordinance Submissions for Community Video Streams and Investigative Software, Pursuant to Council Direction of May 7, 2026 (Reviewed by the Public Safety Committee)",
+   "thread": "flock"
+  },
+  {
+   "heading": "Item #4: Amendments to Title 23 (Zoning) to permit by-right approval of qualifying housing projects on sites identified in previous Housing Elements, and revisions related to Design Review",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #4: Letter to Alameda County Board of Supervisors re: Opportunities to Collaborate with Alameda County on Homelessness Programs Outside of Berkeley",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #4: Selected Marina Fee Increases",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Item #5: 2025 Annual Police Equipment Report",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #5: Accessory Dwelling Units (ADUs): Amendments to Title 23 (Zoning) to Comply with State Law and Encourage ADU Development",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #5: Rescission and replacement of the Police Equipment and Community Safety Ordinance",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Item #6: City Contracts: Outdated Process Led to Non-Competitive Contracts",
+   "thread": "finaudit"
+  },
+  {
+   "heading": "Item #6: Joint Homekey+ Application for Supportive Housing in People’s Park at 2556 Haste St.",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #7: Contract No: 32300104 Amendment: The Village of Love for Telegraph Neighborhood Sacred Rest Drop-In Center",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #7: Contracts: On-Call Equitable Community Engagement Services / Item #9: Contract: St. Francis Electric for On-Call Electrical Services / Item #10: Contract: Siemens Industry, Inc. dba SIEMENS for Inspection, Testing, and Monitoring Services for the City’s Fire and Life Safety System Equipment / Item #12: Contract No.101280-1 Amendment: On-Call Traffic Engineering Services with AECOM USA, Inc. for Engineering Services / Item #13: Contract No. 108037-1 Amendment: MSR Mechanical, LLC for On-Call Heating, Ventilation and Air Conditioning Services",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #7: Refer to City Manager study of intersections with traffic diverters",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #7: Refer to City Manager study of intersections with traffic diverters From: Councilmember Humbert (Author), Councilmember O'Keefe (Co-Sponsor), Councilmember Blackaby (Co-Sponsor)",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #8: 2009 Leases Audit Follow-Up: Berkeley Faces the Same Risks 16 Years Later",
+   "thread": "finaudit"
+  },
+  {
+   "heading": "Item #8: Amendment: FY 2026 Annual Appropriations Ordinance",
+   "thread": "budget"
+  },
+  {
+   "heading": "Item #8: Establishment of M-RD Zoning District, Associated General Plan and West Berkeley Plan Amendments, and Environmental Impact Report",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #8: Large Vehicle Parking Regulations in the Public Right-of-Way (Reviewed by the Health, Life Enrichment, Equity & Community Committee)",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Item #9: Adoption of the 2025 California Fire Code with Local Amendments",
+   "thread": "fire"
+  },
+  {
+   "heading": "Item #9: Amend Berkeley Municipal Code Chapter 14.68 – Bicycle Registration and Licensing / Item #18: Refer to the City Manager the Development of Comprehensive Transportation Design Standards",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item #9: Waterfront Specific Plan Environmental Review Authorization and Near- Term Priority Adjustments",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Item #9: ZAB Appeal: 3000 Shattuck Avenue, Use Permit #ZP2022-0046",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Item #A: Placing an Ordinance Amending the Rent Stabilization Ordinance on the November 3, 2026 Ballot (Continued from June 30, 2026) (Item Contains Revised Material)",
+   "thread": "ballot"
+  },
+  {
+   "heading": "Item #A: Zoning Ordinance and General Plan Amendments Relating to Middle Housing (Continued from June 26, 2025)",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Item #E: Bicycle and Pedestrian Access on the Richmond-San Rafael Bridge (Continued from December 3, 2024)",
+   "thread": "streets"
+  },
+  {
+   "heading": "Item 2: Adoption of San Pablo Avenue Specific Plan",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Landmarking",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Large RV Concerns",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Large Vehicle Parking",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Local Affects of Federal Budget",
+   "thread": "budget"
+  },
+  {
+   "heading": "Long-Term Vacant Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Marina Ave Stop Sign and Safety",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Marina Concerns",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Marina Parking Fee",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Marina Safety Monitors",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Measure FF",
+   "thread": "streets"
+  },
+  {
+   "heading": "Middle East Conflict",
+   "thread": "gaza"
+  },
+  {
+   "heading": "Middle Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "New Parking Meters",
+   "thread": "fees"
+  },
+  {
+   "heading": "New Zoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Nighttime Corridor",
+   "thread": "zoning"
+  },
+  {
+   "heading": "North Waterfront Park",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "OLA at Berkeley Marina",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Oakland ALPRs",
+   "thread": "flock"
+  },
+  {
+   "heading": "Ohlone Concerns and Encampments",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Ohlone Park",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Ohlone Park Concern",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Park Visit Fees",
+   "thread": "fees"
+  },
+  {
+   "heading": "Parking Meter Changes",
+   "thread": "fees"
+  },
+  {
+   "heading": "Parking Meter Concerns",
+   "thread": "fees"
+  },
+  {
+   "heading": "Parking Meters",
+   "thread": "fees"
+  },
+  {
+   "heading": "Parking at Berkeley Marina",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Parking at Marina",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Partial Paving",
+   "thread": "streets"
+  },
+  {
+   "heading": "Police Accountability",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Accountability Board",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Accountability Newsletter",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Action",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Alternative",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Authority Concern",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Dogs",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Police Oversight",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Radio Channels",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Police Report",
+   "thread": "oversight"
+  },
+  {
+   "heading": "Pool Fee Increases",
+   "thread": "fees"
+  },
+  {
+   "heading": "Porta Potties",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Potential Landmark Designation",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Property Tax Concern",
+   "thread": "budget"
+  },
+  {
+   "heading": "Property Tax Increase",
+   "thread": "budget"
+  },
+  {
+   "heading": "Property Tax Increases",
+   "thread": "budget"
+  },
+  {
+   "heading": "Property Taxes",
+   "thread": "budget"
+  },
+  {
+   "heading": "Proposed Ferry Dock",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Proposed Fire Code Modification",
+   "thread": "fire"
+  },
+  {
+   "heading": "Proposed Local Tax Increase",
+   "thread": "budget"
+  },
+  {
+   "heading": "Proposed Parking Meter Changes",
+   "thread": "fees"
+  },
+  {
+   "heading": "Proposed Unhoused Location",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Public Safety Technology",
+   "thread": "flock"
+  },
+  {
+   "heading": "RV Concerns",
+   "thread": "homeless"
+  },
+  {
+   "heading": "RV Living",
+   "thread": "homeless"
+  },
+  {
+   "heading": "RV Parking Concern",
+   "thread": "homeless"
+  },
+  {
+   "heading": "RV Policy Proposal",
+   "thread": "homeless"
+  },
+  {
+   "heading": "RV Regulations",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Rent Board",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Rent-Pricing Software",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Repaving Request",
+   "thread": "streets"
+  },
+  {
+   "heading": "Resolution for Mahmoud Khalil",
+   "thread": "gaza"
+  },
+  {
+   "heading": "Rezoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Road Paving",
+   "thread": "streets"
+  },
+  {
+   "heading": "Safe Streets",
+   "thread": "streets"
+  },
+  {
+   "heading": "Secure Bicycle Parking",
+   "thread": "streets"
+  },
+  {
+   "heading": "Senior Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Signatures for Landmark Sites",
+   "thread": "appeals"
+  },
+  {
+   "heading": "Social Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Social Housing in SF",
+   "thread": "zoning"
+  },
+  {
+   "heading": "South Cove Parking Fee",
+   "thread": "fees"
+  },
+  {
+   "heading": "Speed Cameras",
+   "thread": "flock"
+  },
+  {
+   "heading": "Stop Signs at Traffic Circles",
+   "thread": "streets"
+  },
+  {
+   "heading": "Street Paving",
+   "thread": "streets"
+  },
+  {
+   "heading": "Street Rehabilitation",
+   "thread": "streets"
+  },
+  {
+   "heading": "Student Housing Tour",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Supportive Housing",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Surveillance",
+   "thread": "flock"
+  },
+  {
+   "heading": "Surveillance System at CVS",
+   "thread": "flock"
+  },
+  {
+   "heading": "Tax Increase Concerns",
+   "thread": "budget"
+  },
+  {
+   "heading": "Tear Gas Concern",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Tear Gas Concerns",
+   "thread": "tactics"
+  },
+  {
+   "heading": "Telegraph Avenue Holiday Street Fair",
+   "thread": "streets"
+  },
+  {
+   "heading": "Telegraph Corridor",
+   "thread": "streets"
+  },
+  {
+   "heading": "Telegraph Holiday Fair",
+   "thread": "streets"
+  },
+  {
+   "heading": "Tenant Communications",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Tenant Concern",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Tent and RV Encampments",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Throne Restrooms",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Traffic Concern",
+   "thread": "streets"
+  },
+  {
+   "heading": "Traffic Data",
+   "thread": "streets"
+  },
+  {
+   "heading": "Traffic Enforcement",
+   "thread": "streets"
+  },
+  {
+   "heading": "Traffic Laws",
+   "thread": "streets"
+  },
+  {
+   "heading": "Traffic Safety",
+   "thread": "streets"
+  },
+  {
+   "heading": "Traffic Safety Concern",
+   "thread": "streets"
+  },
+  {
+   "heading": "Traffic Safety Concerns",
+   "thread": "streets"
+  },
+  {
+   "heading": "Unhoused Concern",
+   "thread": "homeless"
+  },
+  {
+   "heading": "Up Zoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Up-zoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Upzoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Upzoning/Zoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Urgency Item: Wildfire Resiliency Bills – Request for Governor’s Signature",
+   "thread": "fire"
+  },
+  {
+   "heading": "Use of Tear Gas and Flock Cameras Concerns",
+   "thread": "flock"
+  },
+  {
+   "heading": "Waterfront",
+   "thread": "waterfront"
+  },
+  {
+   "heading": "Wildfire Risk Concerns",
+   "thread": "fire"
+  },
+  {
+   "heading": "Zone Zero Fines",
+   "thread": "fire"
+  },
+  {
+   "heading": "Zone Zero Regulations",
+   "thread": "fire"
+  },
+  {
+   "heading": "Zone Zero and Water Hose",
+   "thread": "fire"
+  },
+  {
+   "heading": "Zoning",
+   "thread": "zoning"
+  },
+  {
+   "heading": "Zoning/Upzoning",
+   "thread": "zoning"
+  }
+ ],
+ "segments": [
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments on audit status reports (information items 21-24)",
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#6",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#10",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2024-12-10-special-and-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-01-21-regular-captions-structure#2",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#7",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#8",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#10",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-01-21-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-02-11-regular-captions-structure#8",
+   "thread": "finaudit"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#9",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-special-captions-structure#1",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-11-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#4",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#6",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-special-captions-structure#1",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-02-25-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#8",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#9",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-special-captions-structure#1",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-11-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#5",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#7",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-special-captions-structure#1",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-18-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#5",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#7",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-special-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-special-captions-structure#2",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-special-captions-structure#3",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-03-25-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-regular-captions-structure#1",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-special-captions-structure#1",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-special-captions-structure#3",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-15-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-22-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-22-special-captions-structure#1",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-22-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-22-special-captions-structure#3",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-22-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#1",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#2",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#3",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#5",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#7",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#8",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#9",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#11",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#12",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#13",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#14",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#15",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#16",
+   "thread": "gaza"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-28-special-captions-structure#17",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#5",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#8",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#9",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#10",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-04-29-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#6",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-special-captions-structure#1",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-06-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#6",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#8",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#9",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#11",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#1",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#2",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#4",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#7",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-05-20-special-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#6",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#7",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#8",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-03-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#6",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#7",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#8",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#9",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#10",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#11",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#12",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#14",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#15",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#16",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-17-regular-captions-structure#17",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#4",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#6",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#8",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#9",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#10",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-special-captions-structure#1",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-special-captions-structure#2",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-special-captions-structure#3",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-special-captions-structure#4",
+   "thread": "waterfront"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-24-special-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-26-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-26-special-captions-structure#1",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-26-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-26-special-captions-structure#3",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-26-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-26-special-captions-structure#5",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-06-26-special-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#8",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-08-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-07-22-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-07-22-regular-captions-structure#6",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#7",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#9",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#10",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#11",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-22-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-23-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-23-special-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-23-special-captions-structure#2",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-23-special-captions-structure#3",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-23-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-23-special-captions-structure#5",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-23-special-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-07-29-regular-captions-structure#1",
+   "thread": "finaudit"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#5",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#7",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-special-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-07-29-special-captions-structure#2",
+   "thread": "homeless"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#9",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#10",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-09-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-09-16-regular-captions-structure#0",
+   "thread": "homeless"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-16-special-captions-structure#1",
+   "thread": "homeless"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-09-16-special-captions-structure#2",
+   "thread": "homeless"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-09-16-special-captions-structure#3",
+   "thread": "homeless"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2025-09-30-regular-captions-structure#3",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#6",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#8",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#9",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-special-captions-structure#1",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-09-30-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-14-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-14-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-14-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments: audit follow-up (Information Items 16 staff retention/hiring audit status, 18 domestic violence policy audit directive)",
+   "segment": "bcc-2025-10-14-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-14-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-14-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-14-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-14-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments: progress by departments on several audits (incl. info items 35-36 audit status reports)",
+   "segment": "bcc-2025-10-28-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#7",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#9",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#11",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-regular-captions-structure#14",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-special-captions-zoom-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-special-captions-zoom-structure#1",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-10-28-special-captions-zoom-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#1",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#3",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#5",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#6",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-06-special-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#4",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#5",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#7",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#8",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-10-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#1",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "label": "Dissolution of the Successor Agency to the former Berkeley Redevelopment Agency",
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#6",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments: AAO (Item 8) auditor savings; 2025 Audit Recommendation Follow-up (Item 32); third-party audit of Payroll Audit Division (Item 33)",
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#10",
+   "thread": "finaudit"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#13",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#14",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#15",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#16",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#17",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#18",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-11-18-special-sabra-regular-captions-vtt-structure#19",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#1",
+   "thread": "bond"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#2",
+   "thread": "measures_both"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#14",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#15",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#16",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#17",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#18",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#19",
+   "thread": "fire"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#20",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#21",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2025-12-02-special-jpfa-and-regular-structure#22",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#6",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#8",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#9",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#10",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-20-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#1",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#8",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#9",
+   "thread": "waterfront"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#11",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-01-27-special-and-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#1",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#8",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#10",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-10-special-and-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-23-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-23-special-captions-structure#1",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-23-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-23-special-captions-structure#3",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-23-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2026-02-24-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2026-02-24-regular-captions-structure#6",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#8",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#9",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-special-captions-structure#1",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-02-24-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#1",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#6",
+   "thread": "finaudit"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#9",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#10",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#11",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#12",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-10-special-and-regular-captions-structure#14",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-17-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-17-special-captions-structure#1",
+   "thread": "measures_both"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-17-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-17-special-captions-structure#3",
+   "thread": "measures_both"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-17-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#0",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#7",
+   "thread": "finaudit"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#12",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#13",
+   "thread": "waterfront"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#14",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#15",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#16",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#17",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#18",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-03-24-special-and-regular-captions-structure#19",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#4",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#5",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-14-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-16-budget-committee-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-16-budget-committee-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-16-budget-committee-captions-structure#2",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-16-budget-committee-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-16-budget-committee-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-21-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-21-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-21-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-21-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-21-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-21-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#3",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#4",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#5",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-23-budget-committee-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2026-04-28-regular-captions-structure#2",
+   "thread": "finaudit"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#5",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#6",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#7",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#8",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-04-28-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-07-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-07-special-captions-structure#1",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-07-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-07-special-captions-structure#3",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-07-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-12-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-12-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-12-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-12-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-12-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#1",
+   "thread": "measures_both"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#9",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#11",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#13",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#14",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#15",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#16",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#17",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#18",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#19",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#20",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#21",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#22",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-05-19-special-and-regular-captions-structure#23",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#5",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#6",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#8",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#9",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#10",
+   "thread": "appeals"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#12",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#13",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#14",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-09-regular-captions-structure#15",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "label": "Bond disclosure training by bond counsel (Chris Lynch, Jones Hall) ahead of June 30 bond issuances",
+   "segment": "bcc-2026-06-16-regular-captions-structure#2",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#6",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#7",
+   "thread": "governance"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#8",
+   "thread": "bond"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#9",
+   "thread": "ballot"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#10",
+   "thread": "bond"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#11",
+   "thread": "salestax"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#13",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#14",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#15",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#16",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-16-regular-captions-structure#17",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-23-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-23-special-captions-structure#1",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-23-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-23-special-captions-structure#3",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-23-special-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-23-special-captions-structure#5",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-23-special-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "segment": "bcc-2026-06-30-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#6",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#7",
+   "thread": "budget"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#8",
+   "thread": "ballot"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#9",
+   "thread": "flock"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-06-30-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#6",
+   "thread": "fees"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#7",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#8",
+   "thread": "homeless"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#9",
+   "thread": "streets"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#11",
+   "thread": "ballot"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-07-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#1",
+   "thread": "oversight"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments: concern that public bank initiative (consent item 3) mandates audits without funding",
+   "segment": "bcc-2026-07-14-regular-captions-structure#6",
+   "thread": "ballot"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#9",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#12",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#14",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#15",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#16",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-14-regular-captions-structure#17",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#3",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#4",
+   "thread": "hopkins"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#6",
+   "thread": "hopkins"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#8",
+   "thread": "hopkins"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-07-28-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments: Whistleblower Program special report (consent item 14, evaluation of workplace relationship policy)",
+   "segment": "bcc-2026-09-15-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#6",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#7",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#9",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#11",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-15-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments: status of 2019 domestic violence leave audit and 2024 restaurant inspections audit (info items 37, 38)",
+   "segment": "bcc-2026-09-29-regular-captions-structure#3",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#6",
+   "thread": "other"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#7",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#9",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-special-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-special-captions-structure#1",
+   "thread": "tactics"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-09-29-special-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Manager comments (none); City Auditor update on 2025 Homeless Response Team audit",
+   "segment": "bcc-2026-10-13-regular-captions-structure#2",
+   "thread": "homeless"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#6",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#7",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#9",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#10",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#12",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-13-regular-captions-structure#13",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#3",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#5",
+   "thread": "routine"
+  },
+  {
+   "auditor": true,
+   "label": "City Auditor comments: support for item 25 (competitive procurement for service contracts, from non-competitive contracts audit) and status of 2009 Leases Audit follow-up (info item 31)",
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#6",
+   "thread": "finaudit"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#7",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#8",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#9",
+   "thread": "zoning"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#10",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-2026-10-27-jpfa-and-regular-captions-structure#11",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-budget-finance-committee-2026-10-22-regular-captions-structure#0",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-budget-finance-committee-2026-10-22-regular-captions-structure#1",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-budget-finance-committee-2026-10-22-regular-captions-structure#2",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-budget-finance-committee-2026-10-22-regular-captions-structure#3",
+   "thread": "waterfront"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-budget-finance-committee-2026-10-22-regular-captions-structure#4",
+   "thread": "routine"
+  },
+  {
+   "auditor": false,
+   "segment": "bcc-budget-finance-committee-2026-10-22-regular-captions-structure#5",
+   "thread": "routine"
+  }
+ ],
+ "threads": [
+  {
+   "group": "City finances",
+   "id": "budget",
+   "label": "Budget & capital plan"
+  },
+  {
+   "group": "City finances",
+   "id": "measures_both",
+   "label": "Bond and sales tax together (surveys, ballot planning)"
+  },
+  {
+   "group": "City finances",
+   "id": "bond",
+   "label": "GO bond measure ($300M infrastructure)"
+  },
+  {
+   "group": "City finances",
+   "id": "salestax",
+   "label": "Sales-tax measure (0.5%)"
+  },
+  {
+   "group": "City finances",
+   "id": "finaudit",
+   "label": "Financial audits & procurement"
+  },
+  {
+   "group": null,
+   "id": "gaza",
+   "label": "Gaza"
+  },
+  {
+   "group": null,
+   "id": "flock",
+   "label": "Flock & surveillance technology"
+  },
+  {
+   "group": null,
+   "id": "tactics",
+   "label": "Police tactics & equipment"
+  },
+  {
+   "group": null,
+   "id": "oversight",
+   "label": "Police oversight & reports"
+  },
+  {
+   "group": null,
+   "id": "fire",
+   "label": "Wildfire & fire code"
+  },
+  {
+   "group": null,
+   "id": "hopkins",
+   "label": "Hopkins Street"
+  },
+  {
+   "group": null,
+   "id": "waterfront",
+   "label": "Waterfront, pier & ferry planning"
+  },
+  {
+   "group": null,
+   "id": "homeless",
+   "label": "Homelessness, encampments & services"
+  },
+  {
+   "group": null,
+   "id": "streets",
+   "label": "Streets, paving & transportation"
+  },
+  {
+   "group": null,
+   "id": "zoning",
+   "label": "Housing, tenant protections & zoning"
+  },
+  {
+   "group": null,
+   "id": "appeals",
+   "label": "Land-use appeals"
+  },
+  {
+   "group": null,
+   "id": "fees",
+   "label": "Fees & parking charges"
+  },
+  {
+   "group": null,
+   "id": "governance",
+   "label": "Council governance & public participation"
+  },
+  {
+   "group": null,
+   "id": "ballot",
+   "label": "Other 2026 ballot measures"
+  },
+  {
+   "group": null,
+   "id": "other",
+   "label": "Other non-routine items"
+  },
+  {
+   "group": null,
+   "id": "routine",
+   "label": "Routine business"
+  }
+ ]
+}

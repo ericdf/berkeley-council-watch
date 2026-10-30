@@ -1,0 +1,68 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Council time: minutes of one reviewed public-comment turn",
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "turn_id",
+  "transcript_archive_id",
+  "meeting_date",
+  "thread",
+  "locator",
+  "estimated",
+  "minutes",
+  "extent"
+ ],
+ "properties": {
+  "turn_id": {
+   "type": "string"
+  },
+  "transcript_archive_id": {
+   "type": "string"
+  },
+  "meeting_date": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "thread": {
+   "type": "string"
+  },
+  "locator": {
+   "type": "object",
+   "additionalProperties": false,
+   "properties": {
+    "start": {
+     "type": "string",
+     "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "end": {
+     "type": "string",
+     "pattern": "^\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "start_line": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "end_line": {
+     "type": "integer",
+     "minimum": 1
+    }
+   }
+  },
+  "estimated": {
+   "type": "boolean"
+  },
+  "minutes": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "extent": {
+   "enum": [
+    "whole",
+    "partial"
+   ]
+  }
+ }
+}

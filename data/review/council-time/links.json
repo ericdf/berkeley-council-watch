@@ -1,0 +1,45 @@
+{
+ "links": [
+  {
+   "d": "2026-03-17",
+   "evidence": "Mar 17, 2026 special meeting, Item 1, 0:43:37 (City Manager, answering Councilmember O'Keefe's question at 0:43:06 on how each measure could address the structural deficit): the structural deficit is \"somewhere in the neighborhood of $27 to $30 million\"; were the sales tax to pass, \"we would be able to mitigate some of the reductions to, our public safety\" units.",
+   "from": "budget",
+   "label": "Sales tax would mitigate cuts",
+   "n": 1,
+   "to": "salestax"
+  },
+  {
+   "d": "2026-03-17",
+   "evidence": "Mar 17, 2026 special meeting, Item 1, 0:44:27 (City Manager; the Deputy City Manager refers to him at 0:45:36): the bond is \"not so much focused on, like, a budget reduction, although … part of our budget deficit challenge in public works includes shifting a lot of people off of general fund and into special funds … if we add more special fund dollars through this measure … we would be able to, you know, offset some of those staff challenges.\"",
+   "from": "budget",
+   "label": "Bond would move staff costs to special funds",
+   "n": 2,
+   "to": "bond"
+  },
+  {
+   "d": "2026-04-28",
+   "evidence": "Apr 28, 2026 regular meeting, 0:46:51 (Mayor Ishii, opening the consent calendar right after the Auditor's Financial Condition presentation): \"our audit from our auditor really highlighted something that's important … we are facing a structural deficit of $30 million for FY27 and FY28,\" then asks members to bring budget referrals by May 19.",
+   "from": "finaudit",
+   "label": "Mayor ties the audit to the budget",
+   "n": 3,
+   "to": "budget"
+  },
+  {
+   "d": "2026-05-19",
+   "evidence": "May 19, 2026 special meeting, Item 1, recorded action (annotated agenda): prepare ballot language for the 0.5% sales tax \"to address the City's projected General Fund structural deficit and support essential City services\"; the $300M GO bond \"to fund priority infrastructure investments.\"",
+   "from": "budget",
+   "label": "Sales tax adopted as deficit response",
+   "n": 4,
+   "to": "salestax"
+  },
+  {
+   "d": "2026-03-10",
+   "d2": "2026-10-27",
+   "evidence": "Mar 10, 2026: the City Auditor's report \"City Contracts: Outdated Process Led to Non-Competitive Contracts\" (Item 6), about 28 minutes with Council comment and public comment. Oct 27, 2026: Item 25, BMC 7.18 amendment requiring competitive procurement for services over $100,000 (Kesarwani; reviewed by the Budget & Finance Committee), first reading adopted on the consent calendar with no Council discussion; the City Auditor spoke for it in her comment slot (about 4 minutes).",
+   "from": "finaudit",
+   "label": "Contracts audit → procurement ordinance, on consent",
+   "n": 5,
+   "to": "finaudit"
+  }
+ ]
+}

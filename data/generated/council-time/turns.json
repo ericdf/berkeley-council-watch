@@ -1,0 +1,1861 @@
+[
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "01:07:24",
+   "start": "01:05:49"
+  },
+  "meeting_date": "2024-12-10",
+  "minutes": 1.58,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2024-12-10-special-and-regular-captions-text",
+  "turn_id": "bcc-2024-12-10-special-and-regular-captions-text#turn-0"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:07:28",
+   "start": "02:05:23"
+  },
+  "meeting_date": "2024-12-10",
+  "minutes": 2.08,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2024-12-10-special-and-regular-captions-text",
+  "turn_id": "bcc-2024-12-10-special-and-regular-captions-text#turn-1"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 770,
+   "start_line": 732
+  },
+  "meeting_date": "2025-01-21",
+  "minutes": 1.78,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-01-21-regular-captions-text",
+  "turn_id": "bcc-2025-01-21-regular-captions-text#turn-2"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 2289,
+   "start_line": 2260
+  },
+  "meeting_date": "2025-01-21",
+  "minutes": 1.27,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-01-21-regular-captions-text",
+  "turn_id": "bcc-2025-01-21-regular-captions-text#turn-3"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 401,
+   "start_line": 376
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 1.35,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-4"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 481,
+   "start_line": 456
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 1.22,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-5"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 632,
+   "start_line": 534
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 4.46,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-6"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 1071,
+   "start_line": 1026
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 2.1,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-7"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 4703,
+   "start_line": 4678
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 1.3,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-8"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 4752,
+   "start_line": 4725
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 1.27,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-9"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 4799,
+   "start_line": 4758
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 2.02,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-10"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 4890,
+   "start_line": 4864
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 1.3,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-11"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 4966,
+   "start_line": 4938
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 1.33,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-12"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 4997,
+   "start_line": 4970
+  },
+  "meeting_date": "2025-02-11",
+  "minutes": 1.33,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-11-regular-captions-text",
+  "turn_id": "bcc-2025-02-11-regular-captions-text#turn-13"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 153,
+   "start_line": 126
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.23,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-14"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 234,
+   "start_line": 208
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.09,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-15"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 306,
+   "start_line": 277
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.3,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-16"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 414,
+   "start_line": 400
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 0.59,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-17"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 447,
+   "start_line": 418
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.29,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-18"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 478,
+   "start_line": 455
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.12,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-19"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 692,
+   "start_line": 666
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.13,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-20"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 772,
+   "start_line": 758
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 0.62,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-21"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 903,
+   "start_line": 874
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.23,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-22"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 931,
+   "start_line": 905
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.15,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-23"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 1021,
+   "start_line": 993
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.12,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-24"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1054,
+   "start_line": 1025
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.25,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-25"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1146,
+   "start_line": 1132
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 0.54,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-26"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 3919,
+   "start_line": 3878
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.83,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-27"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 3958,
+   "start_line": 3923
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.61,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-28"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 3986,
+   "start_line": 3962
+  },
+  "meeting_date": "2025-02-25",
+  "minutes": 1.02,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-02-25-regular-captions-text",
+  "turn_id": "bcc-2025-02-25-regular-captions-text#turn-29"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 407,
+   "start_line": 381
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.22,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-30"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 444,
+   "start_line": 415
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.46,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-31"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 460,
+   "start_line": 448
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.55,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-32"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 497,
+   "start_line": 473
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.98,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-33"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 569,
+   "start_line": 546
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.13,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-34"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 685,
+   "start_line": 665
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.79,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-35"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 710,
+   "start_line": 689
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.08,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-36"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 740,
+   "start_line": 720
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.82,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-37"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 857,
+   "start_line": 763
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 4.11,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-38"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1298,
+   "start_line": 1190
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 4.44,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-39"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1329,
+   "start_line": 1302
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.12,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-40"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1366,
+   "start_line": 1333
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.51,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-41"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1437,
+   "start_line": 1384
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 2.23,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-42"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1466,
+   "start_line": 1441
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.03,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-43"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1486,
+   "start_line": 1470
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.78,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-44"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1539,
+   "start_line": 1521
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.75,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-45"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1601,
+   "start_line": 1545
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 2.41,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-46"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1664,
+   "start_line": 1637
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.16,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-47"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1688,
+   "start_line": 1668
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.87,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-48"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1709,
+   "start_line": 1692
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.79,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-49"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1740,
+   "start_line": 1711
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.26,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-50"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1766,
+   "start_line": 1744
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.96,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-51"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1985,
+   "start_line": 1968
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 0.92,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-52"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 2013,
+   "start_line": 1991
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.04,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-53"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 2044,
+   "start_line": 2019
+  },
+  "meeting_date": "2025-03-11",
+  "minutes": 1.27,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-11-regular-captions-text",
+  "turn_id": "bcc-2025-03-11-regular-captions-text#turn-54"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 520,
+   "start_line": 479
+  },
+  "meeting_date": "2025-03-18",
+  "minutes": 1.6,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-18-regular-captions-text",
+  "turn_id": "bcc-2025-03-18-regular-captions-text#turn-55"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 587,
+   "start_line": 575
+  },
+  "meeting_date": "2025-03-18",
+  "minutes": 0.46,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-03-18-regular-captions-text",
+  "turn_id": "bcc-2025-03-18-regular-captions-text#turn-56"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 2133,
+   "start_line": 2109
+  },
+  "meeting_date": "2025-04-15",
+  "minutes": 2.48,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-04-15-regular-captions-text",
+  "turn_id": "bcc-2025-04-15-regular-captions-text#turn-57"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 2255,
+   "start_line": 2230
+  },
+  "meeting_date": "2025-04-15",
+  "minutes": 1.92,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-04-15-regular-captions-text",
+  "turn_id": "bcc-2025-04-15-regular-captions-text#turn-58"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 2337,
+   "start_line": 2316
+  },
+  "meeting_date": "2025-04-15",
+  "minutes": 1.82,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-04-15-regular-captions-text",
+  "turn_id": "bcc-2025-04-15-regular-captions-text#turn-59"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 764,
+   "start_line": 722
+  },
+  "meeting_date": "2025-04-29",
+  "minutes": 1.69,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-04-29-regular-captions-text",
+  "turn_id": "bcc-2025-04-29-regular-captions-text#turn-60"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 4140,
+   "start_line": 4110
+  },
+  "meeting_date": "2025-04-29",
+  "minutes": 1.32,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-04-29-regular-captions-text",
+  "turn_id": "bcc-2025-04-29-regular-captions-text#turn-61"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 4187,
+   "start_line": 4159
+  },
+  "meeting_date": "2025-04-29",
+  "minutes": 1.3,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-04-29-regular-captions-text",
+  "turn_id": "bcc-2025-04-29-regular-captions-text#turn-62"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 731,
+   "start_line": 710
+  },
+  "meeting_date": "2025-05-20",
+  "minutes": 0.91,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-05-20-regular-captions-text",
+  "turn_id": "bcc-2025-05-20-regular-captions-text#turn-63"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 784,
+   "start_line": 759
+  },
+  "meeting_date": "2025-05-20",
+  "minutes": 0.98,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-05-20-regular-captions-text",
+  "turn_id": "bcc-2025-05-20-regular-captions-text#turn-64"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 841,
+   "start_line": 822
+  },
+  "meeting_date": "2025-05-20",
+  "minutes": 0.89,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-05-20-regular-captions-text",
+  "turn_id": "bcc-2025-05-20-regular-captions-text#turn-65"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 939,
+   "start_line": 908
+  },
+  "meeting_date": "2025-06-03",
+  "minutes": 1.2,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-06-03-regular-captions-text",
+  "turn_id": "bcc-2025-06-03-regular-captions-text#turn-66"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 3294,
+   "start_line": 3268
+  },
+  "meeting_date": "2025-06-03",
+  "minutes": 1.28,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-06-03-regular-captions-text",
+  "turn_id": "bcc-2025-06-03-regular-captions-text#turn-67"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 347,
+   "start_line": 315
+  },
+  "meeting_date": "2025-06-24",
+  "minutes": 1.61,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-06-24-regular-captions-text",
+  "turn_id": "bcc-2025-06-24-regular-captions-text#turn-68"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 578,
+   "start_line": 538
+  },
+  "meeting_date": "2025-07-08",
+  "minutes": 1.79,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-08-regular-captions-text",
+  "turn_id": "bcc-2025-07-08-regular-captions-text#turn-69"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1213,
+   "start_line": 1170
+  },
+  "meeting_date": "2025-07-22",
+  "minutes": 1.65,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-22-regular-captions-text",
+  "turn_id": "bcc-2025-07-22-regular-captions-text#turn-70"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 145,
+   "start_line": 133
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 0.77,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-71"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 190,
+   "start_line": 166
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 1.36,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-72"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 218,
+   "start_line": 203
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 0.69,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-73"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 257,
+   "start_line": 238
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 0.88,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-74"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 584,
+   "start_line": 562
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 1.33,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-75"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 704,
+   "start_line": 658
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 2.35,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-76"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 3710,
+   "start_line": 3683
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 1.43,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-77"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 3880,
+   "start_line": 3848
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 1.7,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-78"
+ },
+ {
+  "estimated": true,
+  "extent": "partial",
+  "locator": {
+   "end_line": 3915,
+   "start_line": 3883
+  },
+  "meeting_date": "2025-07-29",
+  "minutes": 1.72,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-07-29-regular-captions-text",
+  "turn_id": "bcc-2025-07-29-regular-captions-text#turn-79"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 568,
+   "start_line": 509
+  },
+  "meeting_date": "2025-09-09",
+  "minutes": 2.29,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-09-regular-captions-text",
+  "turn_id": "bcc-2025-09-09-regular-captions-text#turn-80"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 594,
+   "start_line": 573
+  },
+  "meeting_date": "2025-09-09",
+  "minutes": 0.92,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-09-regular-captions-text",
+  "turn_id": "bcc-2025-09-09-regular-captions-text#turn-81"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 839,
+   "start_line": 808
+  },
+  "meeting_date": "2025-09-09",
+  "minutes": 1.15,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-09-regular-captions-text",
+  "turn_id": "bcc-2025-09-09-regular-captions-text#turn-82"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1436,
+   "start_line": 1417
+  },
+  "meeting_date": "2025-09-09",
+  "minutes": 0.75,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-09-regular-captions-text",
+  "turn_id": "bcc-2025-09-09-regular-captions-text#turn-83"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1081,
+   "start_line": 1050
+  },
+  "meeting_date": "2025-09-16",
+  "minutes": 1.02,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-16-regular-captions-text",
+  "turn_id": "bcc-2025-09-16-regular-captions-text#turn-84"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1715,
+   "start_line": 1662
+  },
+  "meeting_date": "2025-09-16",
+  "minutes": 1.71,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-16-regular-captions-text",
+  "turn_id": "bcc-2025-09-16-regular-captions-text#turn-85"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 1861,
+   "start_line": 1830
+  },
+  "meeting_date": "2025-09-16",
+  "minutes": 1.0,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-16-regular-captions-text",
+  "turn_id": "bcc-2025-09-16-regular-captions-text#turn-86"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 711,
+   "start_line": 662
+  },
+  "meeting_date": "2025-09-30",
+  "minutes": 1.96,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-30-regular-captions-text",
+  "turn_id": "bcc-2025-09-30-regular-captions-text#turn-87"
+ },
+ {
+  "estimated": true,
+  "extent": "whole",
+  "locator": {
+   "end_line": 819,
+   "start_line": 792
+  },
+  "meeting_date": "2025-09-30",
+  "minutes": 1.11,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-09-30-regular-captions-text",
+  "turn_id": "bcc-2025-09-30-regular-captions-text#turn-88"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:30:08",
+   "start": "02:28:57"
+  },
+  "meeting_date": "2025-11-18",
+  "minutes": 1.18,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-11-18-special-sabra-regular-captions-vtt-text",
+  "turn_id": "bcc-2025-11-18-special-sabra-regular-captions-vtt-text#turn-89"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:15:23",
+   "start": "02:13:52"
+  },
+  "meeting_date": "2025-12-02",
+  "minutes": 1.52,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-12-02-special-jpfa-and-regular-text",
+  "turn_id": "bcc-2025-12-02-special-jpfa-and-regular-text#turn-90"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:50:34",
+   "start": "02:46:53"
+  },
+  "meeting_date": "2025-12-02",
+  "minutes": 3.68,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-12-02-special-jpfa-and-regular-text",
+  "turn_id": "bcc-2025-12-02-special-jpfa-and-regular-text#turn-91"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:52:05",
+   "start": "02:50:57"
+  },
+  "meeting_date": "2025-12-02",
+  "minutes": 1.13,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-12-02-special-jpfa-and-regular-text",
+  "turn_id": "bcc-2025-12-02-special-jpfa-and-regular-text#turn-92"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "02:56:24",
+   "start": "02:55:05"
+  },
+  "meeting_date": "2025-12-02",
+  "minutes": 1.32,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2025-12-02-special-jpfa-and-regular-text",
+  "turn_id": "bcc-2025-12-02-special-jpfa-and-regular-text#turn-93"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:23:19",
+   "start": "00:22:11"
+  },
+  "meeting_date": "2026-01-20",
+  "minutes": 1.13,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-01-20-regular-captions-text",
+  "turn_id": "bcc-2026-01-20-regular-captions-text#turn-94"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "01:09:24",
+   "start": "01:08:35"
+  },
+  "meeting_date": "2026-01-27",
+  "minutes": 0.82,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-01-27-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-01-27-special-and-regular-captions-text#turn-95"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "01:15:17",
+   "start": "01:13:06"
+  },
+  "meeting_date": "2026-01-27",
+  "minutes": 2.18,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-01-27-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-01-27-special-and-regular-captions-text#turn-96"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "01:59:53",
+   "start": "01:58:42"
+  },
+  "meeting_date": "2026-01-27",
+  "minutes": 1.18,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-01-27-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-01-27-special-and-regular-captions-text#turn-97"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "03:16:28",
+   "start": "03:15:15"
+  },
+  "meeting_date": "2026-02-10",
+  "minutes": 1.22,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-02-10-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-02-10-special-and-regular-captions-text#turn-98"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "03:21:14",
+   "start": "03:20:03"
+  },
+  "meeting_date": "2026-03-10",
+  "minutes": 1.18,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-03-10-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-03-10-special-and-regular-captions-text#turn-99"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:30:08",
+   "start": "02:29:05"
+  },
+  "meeting_date": "2026-03-24",
+  "minutes": 1.05,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-03-24-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-03-24-special-and-regular-captions-text#turn-100"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:31:28",
+   "start": "02:30:20"
+  },
+  "meeting_date": "2026-03-24",
+  "minutes": 1.13,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-03-24-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-03-24-special-and-regular-captions-text#turn-101"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "02:33:12",
+   "start": "02:32:06"
+  },
+  "meeting_date": "2026-03-24",
+  "minutes": 1.1,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-03-24-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-03-24-special-and-regular-captions-text#turn-102"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "03:04:38",
+   "start": "03:02:29"
+  },
+  "meeting_date": "2026-03-24",
+  "minutes": 2.15,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-03-24-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-03-24-special-and-regular-captions-text#turn-103"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "03:19:41",
+   "start": "03:18:26"
+  },
+  "meeting_date": "2026-03-24",
+  "minutes": 1.25,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-03-24-special-and-regular-captions-text",
+  "turn_id": "bcc-2026-03-24-special-and-regular-captions-text#turn-104"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "03:26:58",
+   "start": "03:26:00"
+  },
+  "meeting_date": "2026-04-14",
+  "minutes": 0.97,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-04-14-regular-captions-text",
+  "turn_id": "bcc-2026-04-14-regular-captions-text#turn-105"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:24:20",
+   "start": "00:23:29"
+  },
+  "meeting_date": "2026-06-09",
+  "minutes": 0.85,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-09-regular-captions-text",
+  "turn_id": "bcc-2026-06-09-regular-captions-text#turn-106"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "00:28:32",
+   "start": "00:27:26"
+  },
+  "meeting_date": "2026-06-09",
+  "minutes": 1.1,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-09-regular-captions-text",
+  "turn_id": "bcc-2026-06-09-regular-captions-text#turn-107"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:47:46",
+   "start": "00:46:52"
+  },
+  "meeting_date": "2026-06-09",
+  "minutes": 0.9,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-09-regular-captions-text",
+  "turn_id": "bcc-2026-06-09-regular-captions-text#turn-108"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:49:06",
+   "start": "00:48:15"
+  },
+  "meeting_date": "2026-06-09",
+  "minutes": 0.85,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-09-regular-captions-text",
+  "turn_id": "bcc-2026-06-09-regular-captions-text#turn-109"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:51:30",
+   "start": "00:50:38"
+  },
+  "meeting_date": "2026-06-09",
+  "minutes": 0.87,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-09-regular-captions-text",
+  "turn_id": "bcc-2026-06-09-regular-captions-text#turn-110"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "00:52:41",
+   "start": "00:51:38"
+  },
+  "meeting_date": "2026-06-09",
+  "minutes": 1.05,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-09-regular-captions-text",
+  "turn_id": "bcc-2026-06-09-regular-captions-text#turn-111"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "04:15:22",
+   "start": "04:14:16"
+  },
+  "meeting_date": "2026-06-09",
+  "minutes": 1.1,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-09-regular-captions-text",
+  "turn_id": "bcc-2026-06-09-regular-captions-text#turn-112"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "05:25:36",
+   "start": "05:24:29"
+  },
+  "meeting_date": "2026-06-16",
+  "minutes": 1.12,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-16-regular-captions-text",
+  "turn_id": "bcc-2026-06-16-regular-captions-text#turn-113"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:28:44",
+   "start": "00:27:28"
+  },
+  "meeting_date": "2026-06-30",
+  "minutes": 1.27,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-30-regular-captions-text",
+  "turn_id": "bcc-2026-06-30-regular-captions-text#turn-114"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:34:24",
+   "start": "00:33:20"
+  },
+  "meeting_date": "2026-06-30",
+  "minutes": 1.07,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-30-regular-captions-text",
+  "turn_id": "bcc-2026-06-30-regular-captions-text#turn-115"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:36:48",
+   "start": "00:35:24"
+  },
+  "meeting_date": "2026-06-30",
+  "minutes": 1.4,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-30-regular-captions-text",
+  "turn_id": "bcc-2026-06-30-regular-captions-text#turn-116"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "01:28:22",
+   "start": "01:27:17"
+  },
+  "meeting_date": "2026-06-30",
+  "minutes": 1.08,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-30-regular-captions-text",
+  "turn_id": "bcc-2026-06-30-regular-captions-text#turn-117"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "01:32:18",
+   "start": "01:31:03"
+  },
+  "meeting_date": "2026-06-30",
+  "minutes": 1.25,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-06-30-regular-captions-text",
+  "turn_id": "bcc-2026-06-30-regular-captions-text#turn-118"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:27:13",
+   "start": "00:26:14"
+  },
+  "meeting_date": "2026-07-07",
+  "minutes": 0.98,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-07-regular-captions-text",
+  "turn_id": "bcc-2026-07-07-regular-captions-text#turn-119"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:33:31",
+   "start": "00:32:28"
+  },
+  "meeting_date": "2026-07-07",
+  "minutes": 1.05,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-07-regular-captions-text",
+  "turn_id": "bcc-2026-07-07-regular-captions-text#turn-120"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:34:45",
+   "start": "00:33:34"
+  },
+  "meeting_date": "2026-07-07",
+  "minutes": 1.18,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-07-regular-captions-text",
+  "turn_id": "bcc-2026-07-07-regular-captions-text#turn-121"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "02:09:24",
+   "start": "02:08:14"
+  },
+  "meeting_date": "2026-07-14",
+  "minutes": 1.17,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-14-regular-captions-text",
+  "turn_id": "bcc-2026-07-14-regular-captions-text#turn-122"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "06:30:37",
+   "start": "06:29:25"
+  },
+  "meeting_date": "2026-07-14",
+  "minutes": 1.2,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-14-regular-captions-text",
+  "turn_id": "bcc-2026-07-14-regular-captions-text#turn-123"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:49:04",
+   "start": "00:47:53"
+  },
+  "meeting_date": "2026-07-28",
+  "minutes": 1.18,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-28-regular-captions-text",
+  "turn_id": "bcc-2026-07-28-regular-captions-text#turn-124"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:50:36",
+   "start": "00:49:07"
+  },
+  "meeting_date": "2026-07-28",
+  "minutes": 1.48,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-28-regular-captions-text",
+  "turn_id": "bcc-2026-07-28-regular-captions-text#turn-125"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "06:19:37",
+   "start": "06:18:26"
+  },
+  "meeting_date": "2026-07-28",
+  "minutes": 1.18,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-07-28-regular-captions-text",
+  "turn_id": "bcc-2026-07-28-regular-captions-text#turn-126"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "00:26:52",
+   "start": "00:25:27"
+  },
+  "meeting_date": "2026-09-15",
+  "minutes": 1.42,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-09-15-regular-captions-text",
+  "turn_id": "bcc-2026-09-15-regular-captions-text#turn-127"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "01:05:33",
+   "start": "01:02:23"
+  },
+  "meeting_date": "2026-09-15",
+  "minutes": 3.17,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-09-15-regular-captions-text",
+  "turn_id": "bcc-2026-09-15-regular-captions-text#turn-128"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "01:15:02",
+   "start": "01:10:40"
+  },
+  "meeting_date": "2026-09-15",
+  "minutes": 4.37,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-09-15-regular-captions-text",
+  "turn_id": "bcc-2026-09-15-regular-captions-text#turn-129"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:27:36",
+   "start": "00:26:14"
+  },
+  "meeting_date": "2026-09-29",
+  "minutes": 1.37,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-09-29-regular-captions-text",
+  "turn_id": "bcc-2026-09-29-regular-captions-text#turn-130"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "01:16:04",
+   "start": "01:14:54"
+  },
+  "meeting_date": "2026-09-29",
+  "minutes": 1.17,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-09-29-regular-captions-text",
+  "turn_id": "bcc-2026-09-29-regular-captions-text#turn-131"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "04:27:37",
+   "start": "04:26:36"
+  },
+  "meeting_date": "2026-09-29",
+  "minutes": 1.02,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-09-29-regular-captions-text",
+  "turn_id": "bcc-2026-09-29-regular-captions-text#turn-132"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "00:44:45",
+   "start": "00:43:16"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 1.48,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-133"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:47:20",
+   "start": "00:46:04"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 1.27,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-134"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:49:27",
+   "start": "00:48:51"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 0.6,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-135"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:50:19",
+   "start": "00:49:31"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 0.8,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-136"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "01:19:05",
+   "start": "01:14:23"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 4.7,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-137"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "01:28:36",
+   "start": "01:27:24"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 1.2,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-138"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "03:52:24",
+   "start": "03:50:09"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 2.25,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-139"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "03:54:32",
+   "start": "03:52:24"
+  },
+  "meeting_date": "2026-10-13",
+  "minutes": 2.13,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-13-regular-captions-text",
+  "turn_id": "bcc-2026-10-13-regular-captions-text#turn-140"
+ },
+ {
+  "estimated": false,
+  "extent": "whole",
+  "locator": {
+   "end": "00:42:48",
+   "start": "00:41:43"
+  },
+  "meeting_date": "2026-10-27",
+  "minutes": 1.08,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-27-jpfa-and-regular-captions-text",
+  "turn_id": "bcc-2026-10-27-jpfa-and-regular-captions-text#turn-141"
+ },
+ {
+  "estimated": false,
+  "extent": "partial",
+  "locator": {
+   "end": "01:21:18",
+   "start": "01:20:21"
+  },
+  "meeting_date": "2026-10-27",
+  "minutes": 0.95,
+  "thread": "gaza",
+  "transcript_archive_id": "bcc-2026-10-27-jpfa-and-regular-captions-text",
+  "turn_id": "bcc-2026-10-27-jpfa-and-regular-captions-text#turn-142"
+ }
+]
