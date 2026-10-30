@@ -242,7 +242,7 @@ def row_svg(a, t, height=56, width=900, esc=None):
         parts.append(f'<rect x="{x - 1.5:.1f}" y="{base + CH - hgt:.1f}" width="3" height="{hgt:.1f}" '
                      + (f'fill="var(--c-consent)"/>' if solid else f'fill="none" stroke="var(--c-consent)" stroke-width="1"/>'))
         if len(cs) > 1:
-            parts.append(f'<text x="{x:.1f}" y="{base - 1}" font-size="8" text-anchor="middle" fill="var(--muted)">{len(cs)}</text>')
+            parts.append(f'<text x="{x + 3:.1f}" y="{base + CH}" font-size="8" text-anchor="start" fill="var(--c-consent)">{len(cs)}</text>')
     for date, x_, it in a.decision_rows(t):
         if date:
             x = x_of(date) * width
@@ -259,7 +259,7 @@ def row_svg(a, t, height=56, width=900, esc=None):
 LEGEND = """<p class="legend"><span class="key staff"></span> Staff and Council time
 <span class="key pc"></span> Spoken public comment <span class="key est"></span> Estimate
 <span class="key letters"></span> Letters <span class="key dec">▼</span> Decision (listed below)
-<span class="key consent"></span> Consent calendar items (filled: more than routine; taller: larger amount)</p>"""
+<span class="key consent"></span> Consent calendar items (filled: more than routine; taller: larger amount; a number beside the tick counts the items)</p>"""
 
 ANALYSIS = """<aside class="analysis"><h2>Analysis elsewhere</h2>
 <p>These pages show how the Council's attention is allocated; they do not judge it. The Berkeley Decision Project argues that

@@ -391,7 +391,8 @@ out. Letters filed under an item take that item's topic; letters under a subject
 <li>Items adopted on the consent calendar pass in one vote with the rest of the calendar, with no discussion of their own.</li>
 <li>A <strong>filled</strong> tick marks a meeting where at least one such item on the topic shows, in the annotated agenda,
 more than a routine item: an ordinance, member authorship, a move from the action calendar, revision at adoption,
-speakers, or letters. A <strong>taller</strong> tick means a larger amount, on a log scale from $1,000 to $1 billion.</li>
+speakers, or letters. A <strong>taller</strong> tick means a larger amount, on a log scale from $1,000 to $1 billion. A number beside a tick
+counts the consent items on that topic at that meeting, when there is more than one.</li>
 <li>An amount is as printed: the largest figure under Financial Implications, otherwise the first in the
 Recommendation. It is an authorized amount, not an amount spent.</li>
 <li>An amendment to the annual budget counts once, at its first reading, on its net appropriation. Amendments are not
