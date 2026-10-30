@@ -273,7 +273,7 @@ LEGEND = """<p class="legend"><span class="key staff"></span> Staff and Council 
 <span class="key consent"></span> Consent calendar items (filled: more than routine; taller: larger amount; a number beside the tick counts the items)</p>"""
 
 ANALYSIS = """<aside class="analysis"><h2>Analysis elsewhere</h2>
-<p>These pages show how the Council's attention is allocated; they do not judge it. The Berkeley Decision Project argues that
+<p>These pages show how the Council's attention is allocated. The Berkeley Decision Project argues that
 Council and staff attention is a finite public resource, in <a href="{bdp}governance-by-exhaustion.html">Governance by
 Exhaustion</a>, and that what goes on the consent calendar does not track the size of the commitment, in
 <a href="{bdp}consent-drip.html">Two Calendars</a>.</p></aside>"""
@@ -286,8 +286,8 @@ TIME_NOTE = ("Minutes measure meeting time only. Writing an item and moving it t
              "pages also count the items Council members wrote on each subject, including those adopted on the consent "
              "calendar without discussion. Minutes come from the Council's caption transcripts. Item boundaries were read from each transcript and "
              "have not been checked against video. Most 2025 transcripts have no timestamps, so their minutes are "
-             "estimates from each item's share of the words, shown hatched. Which thread an item belongs to is this "
-             "site's classification, not the City's. Routine meeting business, including the consent calendar as a block, is "
+             "estimates from each item's share of the words, shown hatched. Each item's topic is this "
+             "site's classification. Routine meeting business, including the consent calendar as a block, is "
              "not counted in minutes.")
 
 
@@ -421,7 +421,7 @@ def render_time_index(a, h):
     body.append(axis_svg())
 
     body.append('<h2 id="totals">Totals by topic</h2><p>Meeting time and letters, and the items Council members wrote on '
-                'each subject. An item not timed separately has no transcript segment of its own: it was adopted on the consent '
+                'each subject. An item not timed separately has no separate transcript segment: it was adopted on the consent '
                 'calendar, taken up within another part of the meeting, or has not '
                 'yet come to a vote; it took no meeting time but did take the time of whoever wrote it and the staff who '
                 'reviewed it.</p>')
@@ -490,7 +490,7 @@ def aao_note(a, h):
                   + (f"${c['aao']['net']:,.0f} net, ${c['aao']['gross']:,.0f} gross" if c["aao"]["net"] else "amount not printed in the agenda")
                   + "</li>" for c in sorted(rows, key=lambda c: c["meeting_date"]))
     return (f'<div class="note"><strong>Budget amendments on consent.</strong> These amendments to the Annual Appropriations '
-            f'Ordinance were adopted on the consent calendar at first reading, with no discussion of their own:<ul>{lis}</ul>'
+            f'Ordinance were adopted on the consent calendar at first reading, with no separate discussion:<ul>{lis}</ul>'
             f'Each is counted once, at its first reading. For an argument about this, see '
             f'<a href="{h["bdp"]}consent-drip.html">Two Calendars</a>.</div>')
 
@@ -498,7 +498,7 @@ def aao_note(a, h):
 def connections(a, h, up):
     esc = h["esc"]
     out = ['<h2 id="connections">Connections between topics</h2><p>Where a speaker or a recorded action tied two '
-           'topics together, in the record\'s own words.</p><ul>']
+           'topics together, quoted from the record.</p><ul>']
     for ln in sorted(a.links, key=lambda x: x["d"]):
         ths = " → ".join(h["link"](f"{up}{x}.html", a.thread_info[x]["label"]) for x in dict.fromkeys((ln["from"], ln["to"])))
         out.append(f"<li><strong>{esc(ln['label'])}</strong> ({ths})<br>{esc(ln['evidence'])}</li>")
@@ -566,7 +566,7 @@ def render_thread(a, t, h):
                         f"<td>Item {esc(it['item'])}: {esc(it['heading'])}<br><span class=\"roles\">{authors}</span></td>"
                         f"<td>{esc(it['section'] or '')}</td><td>{'Timed' if heard else 'Not timed separately'}</td></tr>")
         n_not = sum(1 for _, heard in a.authored[t] if not heard)
-        body.append(f'<h2 id="authored">Items Council members wrote</h2><p>{len(a.authored[t])} items, {n_not} of them with no meeting time of their own: '
+        body.append(f'<h2 id="authored">Items Council members wrote</h2><p>{len(a.authored[t])} items, {n_not} of them never timed separately: '
                     'adopted on the consent calendar, or taken up within another part of the meeting. Those took no meeting time, but each was written, placed on an agenda '
                     'and reviewed by staff.</p><div class="table-wrap"><table><caption>Member-authored items on this subject</caption>'
                     '<thead><tr><th scope="col">Meeting</th><th scope="col">Item, and who brought it</th>'
@@ -583,7 +583,7 @@ def render_thread(a, t, h):
                         f"<td class=\"num\">{amt}</td><td>{why}</td></tr>")
         n_pb = sum(1 for c in cs if c["policy_bearing"])
         body.append(f'<h2 id="consent">On the consent calendar</h2><p>{len(cs)} items on this subject were adopted on the consent '
-                    f'calendar, in one motion with the rest of the calendar and no discussion of their own; {n_pb} of them show, '
+                    f'calendar, in one motion with the rest of the calendar and no separate discussion; {n_pb} of them show, '
                     'in the annotated agenda, an ordinance, member authorship, a move from the action calendar, revision at '
                     'adoption, speakers or letters. An amount is as printed: the largest figure under Financial Implications, '
                     'otherwise the first in the Recommendation. Which items belong on which calendar is a Council choice; for an '
@@ -714,8 +714,8 @@ STATUS_NOTE = {
     "not_yet_due": "A stated date or period has not passed.",
     "no_due_date_stated": "The source states no date for the work.",
     "delayed": "A stated date passed and the source says so.",
-    "unknown_no_update_located": "No update was found; each matter page says what was searched. This never means the work was not done.",
-    "reported_complete": "The responsible party reports the work done. That is its statement, not independent verification.",
+    "unknown_no_update_located": "No update was found; each matter page says what was searched. Work may still have occurred.",
+    "reported_complete": "The responsible party reports the work done. That is its statement, unverified by anyone else.",
     "reported_not_met": "The responsible party, or a report it submitted, states the work was not done or the target not met.",
     "completion_verified": "A record independent of the responsible party shows the work done.",
     "cancelled_or_superseded": "The source records the commitment withdrawn or replaced.",
@@ -747,7 +747,7 @@ def render_commitments(a, t, h):
             "status the record supports. Open commitments come first in each group. Each links to its matter, where "
             "every statement is cited.</p>",
             '<p class="note">A status describes the evidence located as of the date shown. "No update located" is a gap '
-            'in the public record, not proof that no work occurred. "Reported complete" and "reported not met" are the '
+            'in the public record, and work may still have occurred. "Reported complete" and "reported not met" are the '
             'responsible party\'s statements; "completion verified" needs independent evidence.</p>',
             '<h2 id="status">By status</h2><ul>']
     for k in STATUS_ORDER:

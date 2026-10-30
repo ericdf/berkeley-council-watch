@@ -17,7 +17,7 @@ The Council Watch site's existing publishing contract is authoritative: **a comm
 Preserve the existing information architecture:
 
 - **`ericdf/berkeley-public-records`** is the public source archive. It stores City records, source metadata, catalogs, indexes, and links to Internet Archive blobs. It does not store analysis or editorial commentary.
-- **Internet Archive** stores the large source files as durable public blobs. The archive manifest records each source URL, retrieval time, checksum, item identifier, and archive location. The archive's own daily job makes these copies; how is defined by the archive's `AGENTS.md`, which is normative for everything about the archive and is not restated here.
+- **Internet Archive** stores the large source files as durable public blobs. The archive manifest records each source URL, retrieval time, checksum, item identifier, and archive location. The archive's daily job makes these copies; how is defined by the archive's `AGENTS.md`, which is normative for everything about the archive and is not restated here.
 - **`ericdf/berkeley-council-watch`** stores the public accountability site's code and its generated, source-grounded Council Watch records. It links back to the public records archive. It does not become a second copy of the large source files.
 - **GitHub Pages** serves the Council Watch site from the current Pages workflow when a commit reaches `main`.
 
@@ -74,7 +74,7 @@ Validation failure must not replace the last known good source record. Record th
 
 After validation, add new official source files to the public-records archive as its `AGENTS.md` describes: files up to 25 MB in git, larger files staged. This pipeline never uploads to the Internet Archive or the archive's Google Drive, and holds no credential for either. The archive is public and has several writers, so it holds none either; the archive's daily job, run from a private repository the archive maintainer controls, makes those copies. Use stable, deterministic archive identifiers so retries do not create duplicate records. Never print secrets or signed URLs in logs.
 
-Do not overwrite prior source bytes when the City changes a file. Record a new retrieval/version with its own checksum and retrieval timestamp, retaining the prior version and linking the versions. If a City removes or replaces a file, record that event in the manifest rather than silently erasing the earlier capture.
+Do not overwrite prior source bytes when the City changes a file. Record a new retrieval/version with a separate checksum and retrieval timestamp, retaining the prior version and linking the versions. If a City removes or replaces a file, record that event in the manifest rather than silently erasing the earlier capture.
 
 Update the public-records repository's catalog/manifest with source metadata; the daily job records the Internet Archive location later. Keep all archive-repository changes limited to records, catalogs, and indexes. The ordinary automated route should open a bot-authored PR and use configured checks plus auto-merge to put approved-by-rules changes on `main`; it must not require a person to approve each routine record. If the existing repository policy or branch protection disallows this route, stop and report the specific configuration change needed rather than pushing around it.
 

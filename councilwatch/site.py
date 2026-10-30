@@ -128,8 +128,8 @@ retrieved {esc(fmt_date(src['catalog_retrieved']))}.{extra}</p>
 and subscribe on <a href="{SUBSTACK}">Substack</a>.</p>
 <p>Original written content by Berkeley Council Watch is licensed under <a href="{CC_BY}">CC BY 4.0</a>.
 Please credit Berkeley Council Watch, link to this page and the license, and indicate changes.
-Official records, source documents and quoted third-party material keep their own terms and are not
-relicensed by this notice.</p>
+Official records, source documents and quoted third-party material keep the terms they were published under
+and are not relicensed by this notice.</p>
 <p><a href="{REPO}">Source code and data</a> ·
 <a href="{REPO}/issues">Report a correction</a></p>
 </footer>
@@ -181,8 +181,8 @@ def render_index(d, a, t, h):
     body = f"""<h1>{TITLE}</h1>
 <p class="lede">Berkeley's City Council decides how the City spends its money and its attention. Council Watch keeps a
 plain record of both: what the Council spends its meeting time on, what it and City management commit to do, and what
-each member brings, moves and votes. Everything comes from the City's own records, linked at every step. The site does
-not draw conclusions; it shows what the record holds, so you can draw your own.</p>
+each member brings, moves and votes. Everything comes from the City's records, linked at every step, so you can check it and
+draw your conclusions.</p>
 {h["questions"]}
 <h2>What is the Council spending its time on?</h2>
 <p>{link("time/index.html", "Council time")} measures meeting time on every non-routine item in {cm['transcripts']} meeting
@@ -329,8 +329,8 @@ def render_method(d, a, h):
            ("authorship", "Who brought an item"), ("votes", "Votes, motions and attendance"),
            ("corrections", "Data and corrections")]
     body = f"""<h1>How this data is derived</h1>
-<p class="lede">Every figure on Council Watch is computed from the City's own records, as kept in the
-<a href="{ARCHIVE}">Berkeley public-records archive</a>. This page explains how, and what each figure does not measure.</p>
+<p class="lede">Every figure on Council Watch is computed from the City's records, as kept in the
+<a href="{ARCHIVE}">Berkeley public-records archive</a>. This page explains how, and where each figure stops.</p>
 <nav aria-label="On this page"><ol class="toc">{"".join(f'<li><a href="#{i}">{esc(t)}</a></li>' for i, t in toc)}</ol></nav>
 
 <h2 id="glance">At a glance</h2>
@@ -341,8 +341,8 @@ def render_method(d, a, h):
 <tr><td>Letters</td><td>Annotated agendas</td><td>The Clerk's count; officials' submissions left out</td></tr>
 <tr><td>Items members wrote, by role</td><td>Annotated agendas (the From line)</td><td>Roles as printed; routine items compared apart</td></tr>
 <tr><td>Votes, motions, attendance</td><td>Annotated agendas</td><td>As the Clerk recorded them</td></tr>
-<tr><td>Consent calendar items and amounts</td><td>Annotated agendas</td><td>Amounts as printed, not amounts spent</td></tr>
-<tr><td>Topic of an item</td><td>This site</td><td>A grouping, reviewed and published, not the City's</td></tr>
+<tr><td>Consent calendar items and amounts</td><td>Annotated agendas</td><td>Amounts as printed: authorized, with spending not shown</td></tr>
+<tr><td>Topic of an item</td><td>This site</td><td>This site's grouping, reviewed and published</td></tr>
 </tbody></table></div>
 
 <h2 id="meeting-time">Meeting time, and what it leaves out</h2>
@@ -372,16 +372,16 @@ been checked against the meeting video, so they are marked as inferred. Each rec
 its place in the transcript, so anyone can check it; the structure is published in the archive.</p>
 
 <p>On a topic's chart, each bar links to its meeting's row in the table below it; on the Council time page, to that row
-on the topic's page. A bar adds up every item on the topic at that meeting, so it goes to the meeting, not to one item.</p>
+on the topic's page. A bar adds up every item on the topic at that meeting, so it goes to the meeting's row.</p>
 
 <h2 id="topics">Topics</h2>
 <ul>
-<li><strong>A topic groups items by subject</strong> so their time can be read side by side. It is this site's grouping, not
-the City's, and says nothing about an item's merit.</li>
+<li><strong>A topic groups items by subject</strong> so their time can be read side by side. Topics are this site's grouping
+and say nothing about an item's merit.</li>
 <li><strong>City finances</strong> is shown as five separate topics on one scale, so no part is hidden inside a total.</li>
 <li><strong>Audits</strong> go to their subject. Items presented by or about the City Auditor are also listed together.</li>
-<li><strong>State, federal and international positions</strong>, such as resolutions and letters on bills, are a topic of
-their own.</li>
+<li><strong>State, federal and international positions</strong>, such as resolutions and letters on bills, are a
+separate topic.</li>
 <li><strong>Gaza</strong> had one agenda item. Speaker turns about it during general and consent public comment are also
 counted, when the turn was about it; turns that only touched on it are not.</li>
 <li><strong>The classification is published</strong> in the source repository and changes only by reviewed pull request.</li>
@@ -394,13 +394,13 @@ out. Letters filed under an item take that item's topic; letters under a subject
 
 <h2 id="consent">The consent calendar</h2>
 <ul>
-<li>Items adopted on the consent calendar pass in one vote with the rest of the calendar, with no discussion of their own.</li>
+<li>Items adopted on the consent calendar pass in one vote with the rest of the calendar, with no separate discussion.</li>
 <li>A <strong>filled</strong> tick marks a meeting where at least one such item on the topic shows, in the annotated agenda,
 more than a routine item: an ordinance, member authorship, a move from the action calendar, revision at adoption,
 speakers, or letters. A <strong>taller</strong> tick means a larger amount, on a log scale from $1,000 to $1 billion. A number beside a tick
 counts the consent items on that topic at that meeting, when there is more than one.</li>
 <li>An amount is as printed: the largest figure under Financial Implications, otherwise the first in the
-Recommendation. It is an authorized amount, not an amount spent.</li>
+Recommendation. It is the amount authorized; spending is not shown.</li>
 <li>An amendment to the annual budget counts once, at its first reading, on its net appropriation. Amendments are not
 cumulative. The full budget is adopted on the action calendar.</li>
 </ul>
@@ -417,8 +417,8 @@ federal and international positions separately.</p>
 <h2 id="votes">Votes, motions and attendance</h2>
 <ul>
 <li>The vote counted for an item is the vote on its final motion, as printed.</li>
-<li>Where the Clerk printed "All Ayes" without names, that vote is shown as "All Ayes", not as named ayes: who was
-present at that moment is not printed.</li>
+<li>Where the Clerk printed "All Ayes" without names, that vote is shown as "All Ayes", because the record does
+not show who was present at that moment.</li>
 <li>A failed motion followed by the one that decided the item is shown as competing, unless the transcript confirms it
 was a substitute.</li>
 <li>Attendance is absence at roll call and later arrival, as recorded. It says nothing about reasons, and early
@@ -503,7 +503,7 @@ def render_matters_index(t, meta):
             "published, and every statement links to its source.</p>"
             '<p class="muted">Where things stand counts each matter\'s commitments by the status the evidence supports '
             'as of the last review. "Reported" means the responsible party says so; "verified" needs independent '
-            'evidence; "no update located" is a gap in the public record, not proof that no work occurred. See '
+            'evidence; "no update located" marks a gap in the public record, and work may still have occurred. See '
             '<a href="../commitments/index.html#by-status">commitments by status</a>.</p>'
             '<div class="table-wrap"><table><caption>Tracked matters</caption><thead><tr>'
             '<th scope="col">Matter</th><th scope="col">Opened</th><th scope="col">Commitments</th>'
@@ -521,8 +521,8 @@ def render_matter(m, t, meta, meetings, att=None, h=None):
     body = [f"<h1>{esc(m['title'])}</h1>",
             f"<p>{esc(m['description'])}</p>",
             f"<p class=\"muted\">Last reviewed {esc(fmt_date(m['last_reviewed']))}. Statuses describe the "
-            "evidence located as of the date shown. A missing update is a gap in the public record, not proof "
-            "that no work occurred.</p>"]
+            "evidence located as of the date shown. A missing update marks a gap in the public record, and work may "
+            "still have occurred.</p>"]
     if m["agenda_items"]:
         links_ = []
         for a in m["agenda_items"]:
@@ -601,7 +601,7 @@ def render_matter(m, t, meta, meetings, att=None, h=None):
         date = fmt_date(s["document_date"]) if s.get("document_date") else "undated"
         body.append(f"<li>{esc(s['issuer'])}, <em>{esc(s['title'])}</em>, {esc(date)}. {' · '.join(bits)}."
                     f"<span class=\"muted\">{fp}{note}</span></li>")
-    body.append("</ul><p class=\"muted\">Quoted official records keep their own terms and are not relicensed "
+    body.append("</ul><p class=\"muted\">Quoted official records keep the terms they were published under and are not relicensed "
                 "by this site's content notice.</p>")
     return page(m["title"], "\n".join(body), 1, meta)
 

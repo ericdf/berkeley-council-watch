@@ -156,7 +156,7 @@ def member_page(M, member, h):
     body = [f"<h1>{esc(info['name'])}</h1>", f"<p class=\"muted\">{esc(office)} · {link('index.html', 'All members')}</p>",
             "<p>What the record shows for this member since the Council was seated in December 2024: the items they "
             "brought, how they voted on each item's final motion, the motions they made, and roll-call attendance. "
-            "Each kind of count stands on its own and is never added to another. Each total is shown beside the "
+            "Each kind of count is kept separate and never added to another. Each total is shown beside the "
             "median and range across the Council's nine members.</p>"]
     # items brought
     per_bin = Counter(b for b, _ in M.scoped(member, "city"))
@@ -210,9 +210,9 @@ def member_page(M, member, h):
         f'<td class="num">{mine[k]}<br>{baseline(*M.stats(allc[k]))}</td>' for k, _ in VOTE_COLS) + "</tr>")
     body.append('<h2 id="votes">How they voted on final motions</h2>'
                 '<p>The vote on the motion that decided each item, as the Clerk recorded it. Where the Clerk printed '
-                '“All Ayes” without names, the vote is counted under “All Ayes”, not as a named aye: who was present at '
-                'that moment is not printed. Consent calendar items, adopted together in one vote, have no vote of '
-                'their own and are not counted.</p>'
+                '“All Ayes” without names, the vote is counted under “All Ayes”, because '
+                'the record does not show who was present at that moment. Consent calendar items, adopted together in one vote, have no separate '
+                'vote and are not counted.</p>'
                 f'<div class="table-wrap"><table><caption>Final votes by subject</caption><thead><tr><th scope="col">Subject</th>'
                 f'{"".join(f"<th scope=col>{esc(l)}</th>" for _, l in VOTE_COLS)}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
     dv = [(it, m) for it, m in M.divided() if M.position(m["vote"], member) in ("no", "abstain", "aye", "absent", "recused")]
@@ -286,7 +286,7 @@ def index_page(M, h):
             "Counts are by kind and never combined into a score.</p>",
             '<ul class="members">' + "".join(f"<li>{link(slug(x) + '.html', M.name[x])}</li>" for x in ids) + "</ul>",
             '<p class="muted">On this page: <a href="#items">items brought, by role</a> · <a href="#motions">motions moved and '
-            'seconded</a> · <a href="#divided">where the vote divided</a> (a long table, last). Each member\'s own page breaks '
+            'seconded</a> · <a href="#divided">where the vote divided</a> (a long table, last). Each member\'s page breaks '
             'these down by subject.</p>']
     head = "".join(f'<th scope="col">{esc(lab)}</th>' for _, lab, _ in BINS)
     rows = []
@@ -344,7 +344,7 @@ def index_page(M, h):
     body.append(f'<div class="table-wrap"><table class="grid"><caption>Divided votes</caption><thead><tr><th scope="col">Meeting</th>'
                 f'<th scope="col">Motion</th>{th}</tr></thead><tbody>{"".join(rows)}</tbody></table></div>')
     body.append('<p class="muted">Votes, motions and authorship are as the City Clerk printed them in the annotated agendas. '
-                f'A member\'s record is a set of facts to read together, not a grade. Data: '
+                f'A member\'s record is a set of facts to read together. Data: '
                 f'{link("../data/council-time/items.json", "items.json")}, {link("../data/council-time/attendance.json", "attendance.json")}.</p>')
     return h["page"]("Members", "\n".join(body), 1, h["meta"])
 
