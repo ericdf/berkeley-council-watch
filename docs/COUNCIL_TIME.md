@@ -84,6 +84,12 @@ validate` checks every thread id and requires every generated segment to be clas
 Member pages, and the reviewed files they use (`motions.json`, `cosponsors.json`, and the
 `items` in `threads.json`), are described in [MEMBERS.md](MEMBERS.md).
 
+**Meeting time is not all of the Council's time.** Minutes measure meeting time. An item a member
+writes takes Council and staff time before any meeting (drafting, agenda review, staff and legal
+review) whether or not it is ever discussed, and most member items are adopted on consent without
+discussion. No record measures that time, so the pages count member-authored items by thread,
+heard or not, beside the minutes.
+
 ## Pages
 
 - `time/index.html`: one row per thread on a shared date axis and minutes scale, City finances first

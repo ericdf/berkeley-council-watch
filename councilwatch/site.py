@@ -177,9 +177,11 @@ meeting transcripts, annotated agendas, and the documents behind them. It does n
 the record holds, with a link to every source, so you can draw your own.</p>
 {h["questions"]}
 <h2>What is the Council spending its time on?</h2>
-<p>{link("time/index.html", "Council time")} measures every non-routine item in {cm['transcripts']} meeting transcripts, from
-December 2024 on: staff and Council time, spoken public comment, and the letters the public sent, side by side by
-subject. {hours_text(total)} of non-routine business in all. The largest threads:</p>
+<p>{link("time/index.html", "Council time")} measures meeting time on every non-routine item in {cm['transcripts']} meeting
+transcripts, from December 2024 on: staff and Council time, spoken public comment, and the letters the public sent, side
+by side by subject, {hours_text(total)} in all. It also counts the items members wrote on each subject, including the
+many adopted on consent without discussion: those take no meeting time, but someone wrote each one and staff reviewed it.
+The subjects with the most meeting time:</p>
 <ul>{"".join(f'<li>{link(time_site.thread_href(x), a.thread_info[x]["label"])}: {hours_text(a.total(x))}</li>' for x in top)}</ul>
 <h2>What has it committed to do?</h2>
 <p>{link("commitments/index.html", "Commitments")} lists {len(t['commitments.json'])} specific, checkable undertakings from
@@ -315,7 +317,9 @@ transcript's words times the meeting's length, from the call to order, adjournme
 timestamped transcripts, that estimate's median ratio to caption time is 1.01, with the middle half between 0.98
 and 1.05. Estimated minutes are marked.</li>
 <li><strong>What is counted.</strong> Staff and Council time is everything in an item outside its public comment:
-presentations, questions, deliberation, motions and votes. Routine business is not counted: ceremony, the consent
+presentations, questions, deliberation, motions and votes. Minutes measure meeting time only: an item written by a
+member and adopted on consent took Council and staff time to prepare that no record measures in minutes, so the pages
+also count member-authored items by subject. Routine meeting business is not counted in minutes: ceremony, the consent
 calendar as a block, Council and City Manager comments, general public comment and adjournment. The exception is
 Gaza, which had one agenda item; speaker turns about it in general and consent public comment are counted, and turns
 that mainly concerned something else are not.</li>
