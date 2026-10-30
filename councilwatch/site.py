@@ -458,6 +458,7 @@ COMMITMENT_STATUS = {
     "in_progress_reported": "In progress, as reported",
     "delayed": "Delayed",
     "reported_complete": "Reported complete",
+    "reported_not_met": "Reported not met",
     "completion_verified": "Completion verified",
     "cancelled_or_superseded": "Cancelled or superseded",
     "unknown_no_update_located": "No update located",
@@ -543,6 +544,8 @@ def render_matter(m, t, meta, meetings, att=None, h=None):
                     f"<td><strong>{esc(COMMITMENT_STATUS[cur['status']])}</strong><br>"
                     f"<span class=\"muted\">as of {esc(fmt_date(cur['as_of']))}</span></td>"
                     f"<td><blockquote>{esc(c['statement'])}</blockquote>"
+                    + (f"<p class=\"muted\">Measure of success, as stated:</p><blockquote>{esc(c['success_measure'])}</blockquote>"
+                       if c.get("success_measure") else "") +
                     f"<span class=\"muted\">Source: {source_link(sources[c['citation']['source_id']], c['citation']['locator'])}</span>"
                     f"<details><summary>Status history</summary><ul>{''.join(hist)}</ul></details></td></tr>")
     body.append('<div class="table-wrap"><table><caption>Commitments</caption><thead><tr>'

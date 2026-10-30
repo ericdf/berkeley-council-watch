@@ -619,11 +619,11 @@ def render_commitments(a, t, h):
             "status the record supports. Open commitments come first in each group. Each links to its matter, where "
             "every statement is cited.</p>",
             '<p class="note">A status describes the evidence located as of the date shown. "No update located" is a gap '
-            'in the public record, not proof that no work occurred. "Reported complete" is the responsible party\'s '
-            'statement; "completion verified" needs independent evidence.</p>',
+            'in the public record, not proof that no work occurred. "Reported complete" and "reported not met" are the '
+            'responsible party\'s statements; "completion verified" needs independent evidence.</p>',
             '<h2 id="status">By status</h2><ul>']
     for k in ("in_progress_reported", "not_yet_due", "no_due_date_stated", "delayed", "unknown_no_update_located",
-              "reported_complete", "completion_verified", "cancelled_or_superseded"):
+              "reported_complete", "reported_not_met", "completion_verified", "cancelled_or_superseded"):
         if counts.get(k):
             body.append(f"<li>{esc(labels[k])}: {counts[k]}</li>")
     body.append("</ul><p class=\"muted\">Grouped by subject, using the same topics as "

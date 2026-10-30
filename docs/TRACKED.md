@@ -37,6 +37,7 @@ Each commitment has a `status_history`. An entry is never edited away; new evide
 | `in_progress_reported` | The responsible party reports the work under way |
 | `delayed` | A stated date passed and the source says so, with a revised date when one is stated (`revised_due`) |
 | `reported_complete` | The responsible party reports the work done. A City statement of completion supports this status and no higher, however authoritative the speaker |
+| `reported_not_met` | The responsible party, or a report it submitted, states the work was not done or the target was not met. Like `reported_complete`, this is the reporting party's statement, not independent verification |
 | `completion_verified` | A record independent of that statement shows it done. The validator requires a citation to a source of kind `auditor_follow_up`, `executed_contract`, `adopted_legislation` or `published_deliverable` |
 | `cancelled_or_superseded` | The source records the commitment withdrawn or replaced |
 | `unknown_no_update_located` | No update was found. The entry must say what was `searched`; the site shows it. It never means the work was not done |
@@ -97,9 +98,11 @@ and the Final Evaluation Report of April 30, 2025.
   October 2021 contract amendment provides for, and the evaluator's recommendation to the City.
 - **Statuses:** as the Final Evaluation Report states them. It is City-submitted, written by the Alameda
   County Public Health Department's evaluation unit under the City's contract, so nothing is above
-  `reported_complete`. Objectives the report records as revised, discontinued or redirected are
-  `cancelled_or_superseded`, with the reported result in the basis. The status list has no value for "the
-  responsible party reports the work was not done"; where the report says only that, the basis says so.
+  `reported_complete`. Where the report says the work was not done or the target (revised or not) was not
+  met, the status is `reported_not_met`; `cancelled_or_superseded` is used only where it records an objective
+  discontinued or replaced, and the basis says what replaced it. The plan's peer-educator objective is split
+  into recruitment and training, and the media objectives into focus groups, the campaign and retailer
+  outreach, so each status is true of the whole commitment.
 - **Follow-up:** no Council item on the report or its recommendations was located in the annotated agendas
   and caption transcripts searched through October 27, 2026.
 - **Unresolved:** the executed BYA contract and amendments, any subcontract, the amounts paid, the City's

@@ -13,7 +13,8 @@ from . import tracked
 from .archive import Archive, ArchiveError
 from .validate import check_schema, load_schema
 
-LINK_STATUSES = {"in_progress_reported", "reported_complete", "delayed", "cancelled_or_superseded"}
+LINK_STATUSES = {"in_progress_reported", "reported_complete", "reported_not_met", "delayed",
+                 "cancelled_or_superseded"}
 COMMITMENT_KINDS = {"report_back", "deliverable", "deadline", "spending_condition", "outcome_measure"}
 
 

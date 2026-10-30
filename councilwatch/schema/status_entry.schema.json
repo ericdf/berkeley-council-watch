@@ -22,6 +22,7 @@
     "in_progress_reported",
     "delayed",
     "reported_complete",
+    "reported_not_met",
     "completion_verified",
     "cancelled_or_superseded",
     "unknown_no_update_located"
