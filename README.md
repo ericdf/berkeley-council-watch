@@ -68,7 +68,7 @@ The site is built from two kinds of data:
 - **Agenda records** for every City Council meeting the City lists. They are generated from the public-records archive; see [docs/DATA.md](docs/DATA.md).
 - **Reviewed tracked matters.** The first is the City Auditor's 2026 contracts audit; see [docs/TRACKED.md](docs/TRACKED.md).
 
-The historical backfill's candidate pass is built; see [docs/BACKFILL.md](docs/BACKFILL.md). GitHub Pages is not enabled yet.
+The historical backfill's candidate pass is built; see [docs/BACKFILL.md](docs/BACKFILL.md). The Pages deploy workflow is built; it publishes once the maintainer switches the Pages source to GitHub Actions (see [docs/DATA.md](docs/DATA.md#deployment)).
 
 ## Corrections and contributions
 

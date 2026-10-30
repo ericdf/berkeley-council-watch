@@ -80,8 +80,13 @@ no meeting in the City listing. They are mostly from before the listing's Januar
 Reviewed accountability records (matters, commitments, follow-up events) live separately in
 `data/tracked/`. See [TRACKED.md](TRACKED.md).
 
+## Deployment
+
+`.github/workflows/pages.yml` validates, builds and link-checks the site on every push to `main`, then
+deploys `_site/` to GitHub Pages. It publishes only once the maintainer sets Settings → Pages → Source
+to "GitHub Actions"; until then its deploy job fails and nothing is published.
+
 ## Not yet built
 
 - The unattended workflows: daily discovery in the archive, and sync and auto-merge here. Both wait on
   the records-archive policy change described in AUTOMATION_SPEC.md §2.
-- The Pages deploy workflow. Enabling Pages is a separate maintainer step.
