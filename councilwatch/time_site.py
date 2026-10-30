@@ -232,7 +232,11 @@ def row_svg(a, t, height=56, width=900, esc=None, href=""):
         y0 = height
         label = (f"{date}: {r['disc']:.0f} min staff and Council, {r['pc']:.0f} min public comment, "
                  f"{r['letters']} letters. Go to this meeting in the table.")
-        parts.append(f'<a class="bar" href="{href}#d-{date}" aria-label="{esc(label)}"><title>{esc(label)}</title>'
+        d = datetime.date.fromisoformat(date)
+        read = (f"{d.strftime('%B')} {d.day}, {d.year}: {r['disc']:.0f} min staff and Council, "
+                f"{r['pc']:.0f} min public comment, {r['letters']} letter{'' if r['letters'] == 1 else 's'}."
+                + (" Minutes are estimated." if r["est"] else ""))
+        parts.append(f'<a class="bar" href="{href}#d-{date}" aria-label="{esc(label)}" data-read="{esc(read)}"><title>{esc(label)}</title>'
                      f'<rect x="{x - 1:.1f}" y="0" width="7" height="{height + 20}" fill="transparent"/>')
         if hd > 0:
             parts.append(f'<rect x="{x:.1f}" y="{y0 - hd:.1f}" width="5" height="{hd:.1f}" fill="var(--c-staff)"/>')
@@ -265,6 +269,51 @@ def row_svg(a, t, height=56, width=900, esc=None, href=""):
     desc += f" {nc} consent calendar items." if nc else ""
     return (f'<svg class="row" viewBox="0 0 {width} {height + 24 + (CH + 2 if a.consent[t] else 0)}" role="img" aria-label="{esc(desc)}">'
             f'<line x1="0" x2="{width}" y1="{height}" y2="{height}" stroke="var(--line)"/>{"".join(parts)}</svg>')
+
+
+
+# On a touch screen a chart bar's <title> tooltip never appears, and a tap would jump straight to the
+# table. This script makes the first tap on a chart show the figures for the nearest bar under the
+# chart, with a link to the meeting's row; a second tap on the same bar follows the link. Bars are a
+# few pixels wide on a phone, so a tap picks the nearest bar within 24 pixels. Mouse and keyboard are unchanged, and
+# without the script a tap goes to the table row, which holds the same figures.
+READOUT_JS = """(function () {
+  var touch = false, sel = null, box = null;
+  document.addEventListener("pointerdown", function (e) { touch = e.pointerType !== "mouse"; }, true);
+  function clear() {
+    if (sel) sel.classList.remove("sel");
+    if (box) box.remove();
+    sel = box = null;
+  }
+  function nearest(svg, x) {
+    var best = null, d = 24;
+    svg.querySelectorAll("a.bar").forEach(function (b) {
+      var r = b.getBoundingClientRect(), dx = Math.abs(r.left + r.width / 2 - x);
+      if (dx < d) { d = dx; best = b; }
+    });
+    return best;
+  }
+  document.addEventListener("click", function (e) {
+    var svg = touch && e.target.closest && e.target.closest("svg.row");
+    var bar = svg && nearest(svg, e.clientX);
+    if (!bar) { if (box && !box.contains(e.target)) clear(); return; }
+    e.preventDefault();
+    if (bar === sel) { location.href = new URL(bar.getAttribute("href"), location.href).href; return; }
+    clear();
+    sel = bar;
+    bar.classList.add("sel");
+    box = document.createElement("p");
+    box.className = "readout";
+    box.setAttribute("role", "status");
+    box.textContent = bar.getAttribute("data-read") + " ";
+    var a = document.createElement("a");
+    a.href = bar.getAttribute("href");
+    a.textContent = "Go to this meeting in the table";
+    box.appendChild(a);
+    svg.parentNode.insertBefore(box, svg.nextSibling);
+  });
+})();
+"""
 
 
 LEGEND = """<p class="legend"><span class="key staff"></span> Staff and Council time
@@ -864,6 +913,9 @@ ul.decisions{margin:0 0 6px;padding-left:20px;font-size:.9rem;color:var(--muted)
 td.barcell{width:30%}.bar{display:block;height:10px;background:var(--c-staff)}
 svg.row a.bar:focus-visible rect:first-child{fill:var(--soft);stroke:var(--accent);stroke-width:2}
 svg.row a.bar:hover rect:first-child{fill:var(--soft)}
+svg.row a.bar.sel rect:first-child{fill:var(--soft);stroke:var(--accent);stroke-width:2}
+.readout{margin:4px 0 10px;padding:8px 12px;border-left:4px solid var(--accent);background:var(--soft);font-size:.95rem}
+.readout a{margin-left:.4em;white-space:nowrap}
 tr:target td{background:var(--soft)}
 tr.routine th,tr.routine td{color:var(--muted);font-weight:400}
 tr:target td:first-child{box-shadow:inset 4px 0 0 var(--accent)}

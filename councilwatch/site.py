@@ -99,6 +99,7 @@ def page(title, body, depth, meta, extra=""):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} · {TITLE}</title>
 <link rel="stylesheet" href="{up}assets/site.css?v={CSS_VERSION}">
+<script src="{up}assets/readout.js?v={CSS_VERSION}" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -667,9 +668,10 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
     files["index.html"] = render_index(d, a, t, h)
     nq = len(time_site.questions(h, available))
     files["assets/site.css"] = CSS + member_site.CSS + time_site.css(-(-nq // time_site.GROUP))
-    # Version the stylesheet URL by its content, so a browser holding the
-    # previous stylesheet never pairs it with new markup after a deploy.
-    version = hashlib.sha256(files["assets/site.css"].encode()).hexdigest()[:10]
+    files["assets/readout.js"] = time_site.READOUT_JS
+    # Version the stylesheet and script URLs by their content, so a browser holding the
+    # previous versions never pairs them with new markup after a deploy.
+    version = hashlib.sha256((files["assets/site.css"] + files["assets/readout.js"]).encode()).hexdigest()[:10]
     for name in files:
         if name.endswith(".html"):
             files[name] = files[name].replace(CSS_VERSION, version)
