@@ -336,7 +336,8 @@ def render_time_index(a, h):
     body.append(axis_svg())
 
     body.append('<h2 id="totals">Totals by topic</h2><p>Meeting time and letters, and the items Council members wrote on '
-                'each subject. An item not heard was adopted without discussion, usually on the consent calendar, or has not '
+                'each subject. An item not timed separately has no transcript segment of its own: it was adopted on the consent '
+                'calendar, taken up within another part of the meeting, or has not '
                 'yet come to a vote; it took no meeting time but did take the time of whoever wrote it and the staff who '
                 'reviewed it.</p>')
     rows = []
@@ -350,7 +351,7 @@ def render_time_index(a, h):
     body.append('<div class="table-wrap"><table><caption>Hours and letters by topic, across the transcript record</caption>'
                 '<thead><tr><th scope="col">Topic</th><th scope="col">Staff and Council (h)</th><th scope="col">Spoken public comment (h)</th>'
                 '<th scope="col">Letters</th><th scope="col">Meetings</th><th scope="col">Items members wrote</th>'
-                '<th scope="col">Of those, not heard</th><th scope="col"><span class="sr-only">Meeting time, as a bar</span></th></tr></thead>'
+                '<th scope="col">Of those, not timed separately</th><th scope="col"><span class="sr-only">Meeting time, as a bar</span></th></tr></thead>'
                 f'<tbody>{"".join(rows)}</tbody></table></div>')
 
     body.append('<h2 id="ranking">Items ranked by time</h2>'
