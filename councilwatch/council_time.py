@@ -76,6 +76,8 @@ def expand_items(item):
             continue
         if re.fullmatch(r"\d+[a-z]?|[A-Z]", part):
             out.append(part)
+        elif part.lower() in ("urgent", "urgency"):
+            out.append("urgent-1")   # the archive's L2 record numbers urgency items urgent-1, urgent-2, ...
     return out
 
 

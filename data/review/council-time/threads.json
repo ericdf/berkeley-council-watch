@@ -6552,6 +6552,7 @@
   },
   {
    "auditor": false,
+   "label": "Joint Powers Financing Authority: lease revenue notes for the Fire Administration and Training project",
    "segment": "bcc-2025-05-20-special-captions-structure#7",
    "thread": "other"
   },
@@ -8256,6 +8257,7 @@
   },
   {
    "auditor": false,
+   "label": "Budget & Finance Committee: overview of the FY 2027–2028 proposed budget balancing plan",
    "segment": "bcc-2026-04-16-budget-committee-captions-structure#2",
    "thread": "budget"
   },
@@ -8316,16 +8318,19 @@
   },
   {
    "auditor": false,
+   "label": "Budget & Finance Committee: FY 2027–2028 proposed budget balancing plan, continued from April 16",
    "segment": "bcc-2026-04-23-budget-committee-captions-structure#3",
    "thread": "budget"
   },
   {
    "auditor": false,
+   "label": "Budget & Finance Committee: City Attorney's Office budget reduction plan",
    "segment": "bcc-2026-04-23-budget-committee-captions-structure#4",
    "thread": "budget"
   },
   {
    "auditor": false,
+   "label": "Budget & Finance Committee: budget referral to reissue the RFP for Berkeley-based nonprofit food assistance providers",
    "segment": "bcc-2026-04-23-budget-committee-captions-structure#5",
    "thread": "budget"
   },
@@ -9342,6 +9347,7 @@
   },
   {
    "auditor": false,
+   "label": "Budget & Finance Committee: Marina Fund overview and update",
    "segment": "bcc-budget-finance-committee-2026-10-22-regular-captions-structure#3",
    "thread": "waterfront"
   },
