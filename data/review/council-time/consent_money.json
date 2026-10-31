@@ -1,0 +1,70 @@
+{
+ "_note": "Reviewed sorting of consent items with a printed amount, where the rules in councilwatch/consent_money.py are wrong or silent. Each entry names the item, the kind it belongs to, and why.",
+ "items": [
+  {
+   "record_id": "city-council-2025-04-15--item-14",
+   "kind": "not_spending",
+   "why": "$25,000 is the threshold the item proposes for funding community organizations without procurement."
+  },
+  {
+   "record_id": "city-council-2026-10-27--item-25",
+   "kind": "not_spending",
+   "why": "$100,000 is the competitive-procurement threshold written into the ordinance."
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-21",
+   "kind": "referrals",
+   "why": "A commission's request for General Fund money in the next budget."
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-22",
+   "kind": "referrals",
+   "why": "A commission's request for General Fund money in the next budget."
+  },
+  {
+   "record_id": "city-council-2025-06-24--item-12",
+   "kind": "incoming",
+   "why": "Federal Shelter Plus Care renewal grants the City receives."
+  },
+  {
+   "record_id": "city-council-2026-06-16--item-18",
+   "kind": "incoming",
+   "why": "Federal Shelter Plus Care renewal grants the City receives."
+  },
+  {
+   "record_id": "city-council-2025-07-22--item-6",
+   "kind": "grants_out",
+   "why": "Reallocation of youth funding to community programs."
+  },
+  {
+   "record_id": "city-council-2025-07-29--item-20",
+   "kind": "staffing",
+   "why": "Staff positions to implement Measure FF."
+  },
+  {
+   "record_id": "city-council-2026-04-21--item-7",
+   "kind": "grants_out",
+   "why": "Allocation of state Transportation Development Act funds to projects."
+  },
+  {
+   "record_id": "city-council-2026-07-07--item-9",
+   "kind": "contracts",
+   "why": "Authorization to spend on the Waterfront Specific Plan environmental review."
+  },
+  {
+   "record_id": "city-council-2026-09-29--item-16",
+   "kind": "incoming",
+   "why": "State Alcohol Policing Partnership grant the City receives."
+  },
+  {
+   "record_id": "city-council-2025-06-17--item-27",
+   "kind": "other",
+   "why": "Parking business improvement district formation; the figure is not a City appropriation."
+  },
+  {
+   "record_id": "city-council-2025-03-25--item-10b",
+   "kind": "grants_out",
+   "why": "Moved to the consent calendar and adopted; the Healthy Berkeley allocation was adopted under this companion item, and Item 10a refers to it."
+  }
+ ]
+}

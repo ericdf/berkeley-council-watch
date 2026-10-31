@@ -443,7 +443,8 @@ def render_time_index(a, h):
             METHOD_LINK,
             '<p class="muted">Jump to: <a href="#how-to-read">how to read these charts</a> · <a href="#totals">totals by topic</a> · <a href="#ranking">items ranked by time</a> · '
             '<a href="#ranking-comment">items by public comment</a> · '
-            '<a href="#auditor">City Auditor items</a> · <a href="#connections">connections between topics</a></p>',
+            '<a href="#auditor">City Auditor items</a> · <a href="#connections">connections between topics</a> · '
+            '<a href="consent-money.html">money on the consent calendar</a></p>',
             ANALYSIS.format(bdp=h["bdp"]),
             how_to_read(a, h),
 

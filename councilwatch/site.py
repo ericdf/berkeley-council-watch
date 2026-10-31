@@ -11,7 +11,7 @@ import html
 import os
 import shutil
 
-from . import member_site, ordinance_site, time_site
+from . import consent_money, member_site, ordinance_site, time_site
 from . import tracked as tracked_mod
 from .generate import OUT_DIR
 from .validate import load_dataset
@@ -218,6 +218,10 @@ by when, and what the record shows since.</p>
 joint author, co-sponsor, or added later as a co-sponsor), their vote on every item's final motion, the motions they made,
 and their roll-call attendance, each beside the range across the Council. The {link("members/index.html#divided", "divided votes")}
 show every motion on which the Council split, member by member.</p>
+<h2>What money passes without discussion?</h2>
+<p>{link("time/consent-money.html", "Money on the consent calendar")} lists every consent item that prints an amount,
+sorted by what the amount is: contracts, grants and housing funds, budget amendments, money coming in, bids not yet
+awarded, and figures that are not City spending at all.</p>
 <h2>Who brings the laws it adopts?</h2>
 <p>{link("ordinances/index.html", "Ordinances")} lists every ordinance the annotated agendas number: who brought it, and
 whether each reading was taken on the consent calendar or the action calendar.</p>
@@ -659,6 +663,12 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
         os.makedirs(os.path.join(out, sub))
     shutil.copytree(data_dir, os.path.join(out, "data", "agenda-intake"))
     shutil.copytree(time_dir, os.path.join(out, "data", "council-time"))
+    items_by_id = {x["record_id"]: x for x in td["items.json"]}
+
+    def topic_link(rid):
+        th = mem.thread_of(items_by_id[rid]) if rid in items_by_id else None
+        return link(f"{th}.html", a.thread_info[th]["label"]) if th in a.thread_info and th not in ("other", "routine") else ""
+
     files = {
         "about.html": render_about(d),
         "method.html": render_method(d, a, h),
@@ -672,6 +682,9 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
             "item_thread_label": lambda it: (lambda th: link(f"../time/{th}.html", a.thread_info[th]["label"])
                                              if th in a.thread_info and th not in ("other", "routine") else "")(mem.thread_of(it)),
         }, item_roles), 1, d["meta.json"]),
+        "time/consent-money.html": page("Money on the consent calendar", consent_money.page(
+            td["consent.json"], td["items.json"], {**h, "record_through": RECORD_THROUGH},
+            review_dir or time_site.ct.REVIEW_DIR, topic_link), 1, d["meta.json"]),
         ".nojekyll": "",
     }
     for th in a.thread_ids():

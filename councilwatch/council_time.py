@@ -361,6 +361,8 @@ def agenda_item_records(archive):
 
 MONEY = re.compile(r"\$\s?([\d,]+(?:\.\d+)?)\s*(million|billion)?", re.I)
 ROUTINE_CONSENT = re.compile(r"relinquish|^donation|minutes for approval|memorial bench|removed from (the )?agenda|withdrawn", re.I)
+# An item the City Manager or author removed from the agenda was never adopted, whatever its heading says.
+NOT_TAKEN_UP = re.compile(r"removed from the agenda|item withdrawn|withdrawn by", re.I)
 
 
 def amounts(text):
@@ -414,7 +416,7 @@ def consent_records(items, corr):
         if in_consent and re.search(r"Moved to Action Calendar", act):
             continue
         moved_in = not in_consent and bool(re.search(r"Moved to Consent Calendar", act))
-        if not (in_consent or moved_in) or ROUTINE_CONSENT.search(it["heading"]):
+        if not (in_consent or moved_in) or ROUTINE_CONSENT.search(it["heading"]) or NOT_TAKEN_UP.search(act):
             continue
         reasons = []
         if re.search(r"Ordinance", act) or re.search(r"appropriations ordinance", it["heading"], re.I):
