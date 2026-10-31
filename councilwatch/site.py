@@ -11,7 +11,7 @@ import html
 import os
 import shutil
 
-from . import member_site, time_site
+from . import member_site, ordinance_site, time_site
 from . import tracked as tracked_mod
 from .generate import OUT_DIR
 from .validate import load_dataset
@@ -113,6 +113,7 @@ def page(title, body, depth, meta, extra=""):
 <li><a href="{up}time/index.html">Council time</a></li>
 <li><a href="{up}commitments/index.html">Commitments</a></li>
 <li><a href="{up}members/index.html">Members</a></li>
+<li><a href="{up}ordinances/index.html">Ordinances</a></li>
 <li><a href="{up}matters/index.html">Tracked matters</a></li>
 <li><a href="{up}meetings/index.html">Meetings</a></li>
 <li><a href="{up}about.html">About the records</a></li>
@@ -217,6 +218,9 @@ by when, and what the record shows since.</p>
 joint author, co-sponsor, or added later as a co-sponsor), their vote on every item's final motion, the motions they made,
 and their roll-call attendance, each beside the range across the Council. The {link("members/index.html#divided", "divided votes")}
 show every motion on which the Council split, member by member.</p>
+<h2>Who brings the laws it adopts?</h2>
+<p>{link("ordinances/index.html", "Ordinances")} lists every ordinance the annotated agendas number: who brought it, and
+whether each reading was taken on the consent calendar or the action calendar.</p>
 <h2>What happened at a meeting?</h2>
 <p>Each {link("meetings/index.html", "meeting page")} links the City's agenda and the archived records, and shows how the
 meeting's time was spent.</p>
@@ -651,7 +655,7 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
                         f'<code>{esc(commit[:12])}</code></a>.'}
     if os.path.isdir(out):
         shutil.rmtree(out)
-    for sub in ("meetings", "matters", "assets", "time", "commitments", "members"):
+    for sub in ("meetings", "matters", "assets", "time", "commitments", "members", "ordinances"):
         os.makedirs(os.path.join(out, sub))
     shutil.copytree(data_dir, os.path.join(out, "data", "agenda-intake"))
     shutil.copytree(time_dir, os.path.join(out, "data", "council-time"))
@@ -663,6 +667,11 @@ def build(data_dir=OUT_DIR, out=SITE_DIR, tracked_dir=None, time_dir=None, revie
         "time/index.html": time_site.render_time_index(a, h),
         "commitments/index.html": time_site.render_commitments(a, t, h),
         "members/index.html": member_site.index_page(mem, h),
+        "ordinances/index.html": page("Ordinances", ordinance_site.page(td["items.json"], {
+            **h, "record_through": RECORD_THROUGH, "member_name": mem.name, "member_slug": member_site.slug,
+            "item_thread_label": lambda it: (lambda th: link(f"../time/{th}.html", a.thread_info[th]["label"])
+                                             if th in a.thread_info and th not in ("other", "routine") else "")(mem.thread_of(it)),
+        }, item_roles), 1, d["meta.json"]),
         ".nojekyll": "",
     }
     for th in a.thread_ids():
